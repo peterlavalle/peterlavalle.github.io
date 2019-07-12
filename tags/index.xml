@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/</link>
+    <description>Recent content in Tags on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Wed, 10 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://peterlavalle.github.io/tags/hugo/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mermaid</title>
+      <link>https://peterlavalle.github.io/tags/mermaid/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/mermaid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mermaid.JS</title>
+      <link>https://peterlavalle.github.io/tags/mermaid.js/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/mermaid.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pandoc</title>
+      <link>https://peterlavalle.github.io/tags/pandoc/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/pandoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DSA</title>
+      <link>https://peterlavalle.github.io/tags/dsa/</link>
+      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/dsa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GL4</title>
+      <link>https://peterlavalle.github.io/tags/gl4/</link>
+      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/gl4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenGL</title>
+      <link>https://peterlavalle.github.io/tags/opengl/</link>
+      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/opengl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VAO</title>
+      <link>https://peterlavalle.github.io/tags/vao/</link>
+      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/vao/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VBO</title>
+      <link>https://peterlavalle.github.io/tags/vbo/</link>
+      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/vbo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala</title>
+      <link>https://peterlavalle.github.io/tags/scala/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/scala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://peterlavalle.github.io/tags/git/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>https://peterlavalle.github.io/tags/github/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitLab</title>
+      <link>https://peterlavalle.github.io/tags/gitlab/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/gitlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GoGS</title>
+      <link>https://peterlavalle.github.io/tags/gogs/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/gogs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HowTo</title>
+      <link>https://peterlavalle.github.io/tags/howto/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/howto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>https://peterlavalle.github.io/tags/bash/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jenkins</title>
+      <link>https://peterlavalle.github.io/tags/jenkins/</link>
+      <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/jenkins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mercurial</title>
+      <link>https://peterlavalle.github.io/tags/mercurial/</link>
+      <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/mercurial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AIY</title>
+      <link>https://peterlavalle.github.io/tags/aiy/</link>
+      <pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/aiy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pi3</title>
+      <link>https://peterlavalle.github.io/tags/pi3/</link>
+      <pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/pi3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VR</title>
+      <link>https://peterlavalle.github.io/tags/vr/</link>
+      <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/vr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vive</title>
+      <link>https://peterlavalle.github.io/tags/vive/</link>
+      <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/vive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pi0W</title>
+      <link>https://peterlavalle.github.io/tags/pi0w/</link>
+      <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/pi0w/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://peterlavalle.github.io/tags/docker/</link>
+      <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mac</title>
+      <link>https://peterlavalle.github.io/tags/mac/</link>
+      <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://peterlavalle.github.io/tags/python/</link>
+      <pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://peterlavalle.github.io/tags/c&#43;&#43;/</link>
+      <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Whippet</title>
+      <link>https://peterlavalle.github.io/tags/whippet/</link>
+      <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/whippet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Article</title>
+      <link>https://peterlavalle.github.io/tags/article/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/article/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ECS</title>
+      <link>https://peterlavalle.github.io/tags/ecs/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/ecs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cmder</title>
+      <link>https://peterlavalle.github.io/tags/cmder/</link>
+      <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/cmder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ToritoiseHG</title>
+      <link>https://peterlavalle.github.io/tags/toritoisehg/</link>
+      <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/toritoisehg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macOS</title>
+      <link>https://peterlavalle.github.io/tags/macos/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unity3D</title>
+      <link>https://peterlavalle.github.io/tags/unity3d/</link>
+      <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/unity3d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Concurrency</title>
+      <link>https://peterlavalle.github.io/tags/concurrency/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/concurrency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi-Threading</title>
+      <link>https://peterlavalle.github.io/tags/multi-threading/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/multi-threading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FlexDock</title>
+      <link>https://peterlavalle.github.io/tags/flexdock/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/flexdock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gradle</title>
+      <link>https://peterlavalle.github.io/tags/gradle/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/gradle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://peterlavalle.github.io/tags/java/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nGinx</title>
+      <link>https://peterlavalle.github.io/tags/nginx/</link>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fullstak</title>
+      <link>https://peterlavalle.github.io/tags/fullstak/</link>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/fullstak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DynDNS</title>
+      <link>https://peterlavalle.github.io/tags/dyndns/</link>
+      <pubDate>Thu, 29 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/dyndns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSHFS</title>
+      <link>https://peterlavalle.github.io/tags/sshfs/</link>
+      <pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/sshfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows10</title>
+      <link>https://peterlavalle.github.io/tags/windows10/</link>
+      <pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/windows10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BulletPhysics</title>
+      <link>https://peterlavalle.github.io/tags/bulletphysics/</link>
+      <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/bulletphysics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>one-true-header</title>
+      <link>https://peterlavalle.github.io/tags/one-true-header/</link>
+      <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/one-true-header/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sorrynotsorry</title>
+      <link>https://peterlavalle.github.io/tags/sorrynotsorry/</link>
+      <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/sorrynotsorry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lua</title>
+      <link>https://peterlavalle.github.io/tags/lua/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/lua/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MadeWithUnity</title>
+      <link>https://peterlavalle.github.io/tags/madewithunity/</link>
+      <pubDate>Sat, 12 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/madewithunity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Procedural Generation</title>
+      <link>https://peterlavalle.github.io/tags/procedural-generation/</link>
+      <pubDate>Sat, 12 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/procedural-generation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>https://peterlavalle.github.io/tags/hardware/</link>
+      <pubDate>Thu, 12 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>humor</title>
+      <link>https://peterlavalle.github.io/tags/humor/</link>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/humor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GamePlay</title>
+      <link>https://peterlavalle.github.io/tags/gameplay/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/gameplay/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SpaceShips</title>
+      <link>https://peterlavalle.github.io/tags/spaceships/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/spaceships/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unity</title>
+      <link>https://peterlavalle.github.io/tags/unity/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/unity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hexo</title>
+      <link>https://peterlavalle.github.io/tags/hexo/</link>
+      <pubDate>Wed, 10 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/hexo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Template Programming</title>
+      <link>https://peterlavalle.github.io/tags/template-programming/</link>
+      <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/template-programming/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
