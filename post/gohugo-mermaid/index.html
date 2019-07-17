@@ -67,7 +67,18 @@ I found that the <a href="https://gohugo.io/content-management/syntax-highlighti
 
 <hr />
 
-<h2 id="via-pandoc-nope">via Pandoc? (Nope!)</h2>
+<aside style="float: right;">
+	<nav id="TableOfContents">
+<ul>
+<li><a href="#via-pandoc-nope">via Pandoc? (Nope!)</a></li>
+<li><a href="#shortcodes-yass">Shortcodes (Yass!)</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+</nav>
+</aside>
+
+<h1 id="via-pandoc-nope">via Pandoc? (Nope!)</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
     Alice-&gt;&gt;John: Hello John, how are you?
     John--&gt;&gt;Alice: Great!</code></pre></div>
@@ -121,7 +132,7 @@ Hilariously; it worked by embedding the generated image data into the markdown.<
 
 <p>I want to try a more-sane approach &hellip; which looks nicer with CSS.</p>
 
-<h2 id="shortcodes-yass">Shortcodes (Yass!)</h2>
+<h1 id="shortcodes-yass">Shortcodes (Yass!)</h1>
 
 <p>I tried copying the <a href="https://learn.netlify.com/en/shortcodes/mermaid/">Learn theme&rsquo;s shortcodes</a> but that scrambled my CSS.
 I (for no reason) switched to <a href="https://themes.gohugo.io/binario/">the Binario theme</a> and decided to try and &ldquo;roll my own&rdquo; <a href="https://gohugo.io/content-management/shortcodes/">shortcode</a> for <a href="https://mermaidjs.github.io/">Mermaid</a>.
@@ -146,7 +157,7 @@ The result, below, needs to be in a theme&rsquo;s <code>layouts/shortcodes/merma
     });
 &lt;/<span style="color:#f92672">script</span>&gt;
 &lt;<span style="color:#f92672">pre</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mermaid&#34;</span> <span style="color:#a6e22e">align</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ if .Get &#34;</span><span style="color:#a6e22e">align</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}{{</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Get</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">align</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}{{</span> <span style="color:#a6e22e">else</span> <span style="color:#960050;background-color:#1e0010">}}</span><span style="color:#a6e22e">center</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;{{ safeHTML .Inner }}&lt;/<span style="color:#f92672">pre</span>&gt;</code></pre></div>
-<h2 id="examples">Examples</h2>
+<h1 id="examples">Examples</h1>
 
 <p>Here are some example diagrams from the <a href="https://learn.netlify.com/en/shortcodes/mermaid/">Learn theme.</a></p>
 
@@ -315,7 +326,7 @@ end
 </pre>
 
 
-<h2 id="conclusion">Conclusion</h2>
+<h1 id="conclusion">Conclusion</h1>
 
 <p>I (finally) have a good way to drop charts into my blog posts.
 I was surprised how easy it was to develop the Shortcodes.

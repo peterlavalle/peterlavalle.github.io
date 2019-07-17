@@ -6,7 +6,7 @@
     <description>Recent content on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 16 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,13 +14,22 @@
     <item>
       <title>Food</title>
       <link>https://peterlavalle.github.io/food/</link>
-      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/food/</guid>
-      <description>I eat a lot of prepared food - I&amp;rsquo;m lazy.
+      <description>I eat a lot of prepared food - I&amp;rsquo;m lazy.1
 I try to follow a restrictive/gym diet - I&amp;rsquo;m vain.
-So I started keeping pictures of the things I ate - I&amp;rsquo;m meticulous.
+So I started keeping notes on the prepared foods I ate - I&amp;rsquo;m meticulous.
 Desk Meals Batchelor&amp;rsquo;s Chicken and Mushroom surprisingly good. it&amp;rsquo;s not as salty as I was dreading; still a bit saltier than I should be having I expect. needed stirring to actually mix but it turned into real looking food.</description>
+    </item>
+    
+    <item>
+      <title>goHugo Table of Contents</title>
+      <link>https://peterlavalle.github.io/post/gohugo-tofc/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/gohugo-tofc/</guid>
+      <description>&lt;p&gt;Quick explanation of using &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;Hugo&amp;rsquo;s shortcodes&lt;/a&gt; for a Table of Contents.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -110,7 +119,7 @@ I had a bit of trouble finding the pins, so I&amp;rsquo;m posting this here in c
       <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/work-and-contibutions/</guid>
-      <description>orcid.org/0000-0002-9737-6690 Work  PhD Student of;  Dr Henrik Nilsson Dr Michel Valstar  Research Programmer / Assistant at the University of Nottingham Computer Science Department  Dr Michel Valstar I&amp;rsquo;m working on/with the ARIA Virtual Human and eMax Emotion Detection projects  started July 2017  Dr Peter Blanchfield UoN iBit (here&amp;rsquo;s an old page about the project)  from Jan 2015 until July 2017 perform clinical evaluations of stereoscopic games for the treatment of lazy eye  (we know that they work in a lab)  currently, patching is used  patching is not very popular but it (usually) works  McGill / UbiSoft are doing something similar   I was the/a Tools Engineer for Big Fest Cabal Online as a Server Engineer Darkened Skye (GameCube) as a Gameplay Tester The usual &amp;ldquo;misc&amp;rdquo; development and testing including;  mobile games testing at Absolute Quality Glasgow some web pages while working here a VB front-end to Sage while working here a VLE for Sheffield University&amp;rsquo;s Archaeology Department   Most of my &amp;ldquo;passion projects&amp;rdquo; are in Mercurial, but, some old dumps are on my GitHub resume for the time being.</description>
+      <description>orcid.org/0000-0002-9737-6690  PhD Student of;  Dr Michel Valstar Dr Henrik Nilsson  Research Programmer / Assistant at the University of Nottingham Computer Science Department  Dr Michel Valstar I&amp;rsquo;m working on/with the ARIA Virtual Human and eMax Emotion Detection projects  started July 2017  Dr Peter Blanchfield UoN iBit (here&amp;rsquo;s an old page about the project)  from Jan 2015 until July 2017 perform clinical evaluations of stereoscopic games for the treatment of lazy eye  (we know that they work in a lab)  currently, patching is used  patching is not very popular but it (usually) works  McGill / UbiSoft are doing something similar   I was the/a Tools Engineer for Big Fest Cabal Online as a Server Engineer Darkened Skye (GameCube) as a Gameplay Tester The usual &amp;ldquo;misc&amp;rdquo; development and testing including;  mobile games testing at Absolute Quality Glasgow some web pages while working here a VB front-end to Sage while working here a VLE for Sheffield University&amp;rsquo;s Archaeology Department   I have been a lab-demonstrator for;</description>
     </item>
     
     <item>

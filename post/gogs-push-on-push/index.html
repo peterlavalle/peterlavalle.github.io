@@ -65,10 +65,27 @@ According to a <a href="https://www.atlassian.com/git/tutorials/git-hooks#server
 
 <hr />
 
+<aside style="float: right;">
+	<nav id="TableOfContents">
+<ul>
+<li><a href="#pre-work">Pre-Work</a></li>
+<li><a href="#is-it-bash">Is it bash?</a></li>
+<li><a href="#where-does-it-run">Where does it run?</a></li>
+<li><a href="#pushing">Pushing</a>
+<ul>
+<li><a href="#creating-the-ssh-key">Creating the SSH Key</a></li>
+<li><a href="#connect-to-server">Connect to server</a></li>
+<li><a href="#add-remote">Add Remote</a></li>
+<li><a href="#actual-push-command">Actual Push Command</a></li>
+</ul></li>
+</ul>
+</nav>
+</aside>
+
 <p>Follow me on this magical adventure to git-enlightenment.
 I&rsquo;m doing all of this by editing my <code>post-receive</code> hook and then force-pushing a nonsense commit to <em>kick</em> git.</p>
 
-<h2 id="pre-work">Pre-Work</h2>
+<h1 id="pre-work">Pre-Work</h1>
 
 <p>Digging around in the GoGS repository settings turned up a panel to edit the hooks.
 This was neither challenging or interesting; so is not described here.</p>
@@ -79,7 +96,7 @@ Presumably running <em>whatever</em> code is a privilege and needs to be limited
 The details are in this link; you can enable hooks from the admin panel.
 <a href="https://discuss.gogs.io/t/how-to-use-custom-git-hooks/967">https://discuss.gogs.io/t/how-to-use-custom-git-hooks/967</a></p>
 
-<h2 id="is-it-bash">Is it bash?</h2>
+<h1 id="is-it-bash">Is it bash?</h1>
 
 <p>The first question is what language are these written in?
 I&rsquo;m going to assume it&rsquo;s <code>bash</code> - let&rsquo;s try that out with this;</p>
@@ -98,7 +115,7 @@ remote: hello world!
 <p>Yass!
 That&rsquo;s a thread to pull on.</p>
 
-<h2 id="where-does-it-run">Where does it run?</h2>
+<h1 id="where-does-it-run">Where does it run?</h1>
 
 <p>I need to know what folder the hooks are running in.
 Again; I edited the script and pushed a nonsense commit.</p>
@@ -118,7 +135,7 @@ remote: /var/hosting/princeps/servo-skull.git
 <p>So far; nothing weird.
 That means that the hook is run in the root folder of the repository.</p>
 
-<h2 id="pushing">Pushing</h2>
+<h1 id="pushing">Pushing</h1>
 
 <p>I need to push &hellip; somewhere &hellip; when it&rsquo;s run.
 I need to;
@@ -126,7 +143,7 @@ I need to;
 - set the remote repository
 - actually push on commit</p>
 
-<h3 id="creating-the-ssh-key">Creating the SSH Key</h3>
+<h2 id="creating-the-ssh-key">Creating the SSH Key</h2>
 
 <p>I changed the hook (again) and pushed an useless commit (again) to generate and print out an ssh-key.</p>
 
@@ -139,7 +156,7 @@ fi
 cat ~/.ssh/id_rsa.pub
 </code></pre>
 
-<h3 id="connect-to-server">Connect to server</h3>
+<h2 id="connect-to-server">Connect to server</h2>
 
 <p>With this, I need to scan the server into the <code>known_hosts</code>.
 This step &hellip; shouldn&rsquo;t actually work.
@@ -150,7 +167,7 @@ It&rsquo;ll connect to the server then kick out an error; which is probably fine
 ssh -o StrictHostKeyChecking=no user@gitlab.com uptime
 </code></pre>
 
-<h3 id="add-remote">Add Remote</h3>
+<h2 id="add-remote">Add Remote</h2>
 
 <p>The commands to add the remote can only be executed once.
 I think; it&rsquo;s what I did.</p>
@@ -162,7 +179,7 @@ I think; it&rsquo;s what I did.</p>
 git remote add gitlab git@gitlab.com:whomever/whatever.git
 </code></pre>
 
-<h3 id="actual-push-command">Actual Push Command</h3>
+<h2 id="actual-push-command">Actual Push Command</h2>
 
 <p>As a final step; change the hook to just be this;</p>
 
