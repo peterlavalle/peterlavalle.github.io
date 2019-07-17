@@ -102,15 +102,6 @@
     </item>
     
     <item>
-      <title>Git</title>
-      <link>https://peterlavalle.github.io/tags/git/</link>
-      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>GitHub</title>
       <link>https://peterlavalle.github.io/tags/github/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
@@ -152,6 +143,15 @@
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://peterlavalle.github.io/tags/git/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/git/</guid>
       <description></description>
     </item>
     
@@ -327,7 +327,7 @@
     </item>
     
     <item>
-      <title>multi-threading</title>
+      <title>Multi-Threading</title>
       <link>https://peterlavalle.github.io/tags/multi-threading/</link>
       <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
       
