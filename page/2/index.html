@@ -14,7 +14,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://peterlavalle.github.io/" />
 
-<meta property="og:updated_time" content="2019-07-17T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-07-20T00:00:00&#43;00:00"/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -57,6 +57,13 @@ if (!doNotTrack) {
 	
 	<main class="main">
 			<div class="cards">
+					<div class="card card--2col">
+					<article class="post card__box block">
+	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/marhsalling-gits/">Marshalling Gits</a></h1>
+	<div class="post__content"><p>This is a quick post-mortem on the three methods I examined for nesting some of our Git repos.
+In the end, I ran out of time and felt that the <em>diversity</em> of a CS team means that special handling would not produce a time saving benefit for me.</p></div>
+</article>
+					</div>
 					<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/launch-docker-daemon-mac-cli/">Launch the Docker Daemon from osMac CLI</a></h1>
@@ -130,14 +137,6 @@ Based on this tweet, I spent &hellip; 30 minutes? Maybe? putting it together.
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/democore/">Adventures in Demo Making</a></h1>
 	<div class="post__content">I should just &ldquo;blog&rdquo; informally more often - so here goes.
 I&rsquo;ve cobbled together a toolchain/asset-conditioning-pipeline of sorts for demoscene type stuff. My system is written in Scala on Gradle and functions by emitting C/++ and CMake files for Visual Studio. All of this produces a C/++11&frasl;14 and GLFW/GLAD/OpenGL4.3&frasl;4.5 executable that displays someone else&rsquo;s ShaderToy project. Nothing revolutionary, but I&rsquo;m after pretty-code that I can keep using rather than actual hard &ldquo;street cred&rdquo; quality demo results.</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/delay-run/">(Scala) Delay Run</a></h1>
-	<div class="post__content">I wrote a threading primitive and I&rsquo;m very pleased with it. I plan to wrap all of my &ldquo;save file&rdquo; things in this, from now on.
-Delay Run This class acts as a sort of &ldquo;once inactive for X do Y&rdquo; pattern. In my design, I&rsquo;m wrapping my save actions in it and triggering schedule() after practically every edit.
-The class is passed a delay: Long value to specify how long to actually wait - I&rsquo;m using 1.</div>
 </article>
 					</div>
 			</div>
