@@ -1,9 +1,5 @@
 
 -- licesned as http://www.dbad-license.org/
--- licesned as http://www.dbad-license.org/
--- licesned as http://www.dbad-license.org/
--- licesned as http://www.dbad-license.org/
--- licesned as http://www.dbad-license.org/
 import Data.List
 import Test.QuickCheck
 
