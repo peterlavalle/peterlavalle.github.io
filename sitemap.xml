@@ -3,6 +3,35 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://peterlavalle.github.io/tags/idris/</loc>
+    <lastmod>2019-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/idris-monad-mine/</loc>
+    <lastmod>2019-09-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/</loc>
+    <lastmod>2019-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/</loc>
+    <lastmod>2019-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2019-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/tags/cuda/</loc>
     <lastmod>2019-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -33,24 +62,6 @@
   
   <url>
     <loc>https://peterlavalle.github.io/tags/linux/</loc>
-    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/post/</loc>
-    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
     <lastmod>2019-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -670,6 +681,10 @@
   <url>
     <loc>https://peterlavalle.github.io/kit-list/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/blackstone-rulebook/</loc>
   </url>
   
   <url>

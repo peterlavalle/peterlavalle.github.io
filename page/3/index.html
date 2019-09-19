@@ -14,7 +14,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://peterlavalle.github.io/" />
 
-<meta property="og:updated_time" content="2019-07-20T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-09-07T00:00:00&#43;00:00"/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -56,6 +56,13 @@ if (!doNotTrack) {
 	
 	<main class="main">
 			<div class="cards">
+					<div class="card card--2col">
+					<article class="post card__box block">
+	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/democore/">Adventures in Demo Making</a></h1>
+	<div class="post__content">I should just &ldquo;blog&rdquo; informally more often - so here goes.
+I&rsquo;ve cobbled together a toolchain/asset-conditioning-pipeline of sorts for demoscene type stuff. My system is written in Scala on Gradle and functions by emitting C/++ and CMake files for Visual Studio. All of this produces a C/++11&frasl;14 and GLFW/GLAD/OpenGL4.3&frasl;4.5 executable that displays someone else&rsquo;s ShaderToy project. Nothing revolutionary, but I&rsquo;m after pretty-code that I can keep using rather than actual hard &ldquo;street cred&rdquo; quality demo results.</div>
+</article>
+					</div>
 					<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/delay-run/">(Scala) Delay Run</a></h1>
@@ -125,17 +132,6 @@ DNS and Dynamic IP Addresses The Domain Naming System is how those readable text
 &hellip; whatevs &hellip;
  create a repository on GitHub  I created game-SpaceShips at git@github.com:g-pechorin/game-SpaceShips.git  run these from the root;
 rm -dfr .git git init git checkout -b gh-pages git add . git commit -m &#34;some stuffff or what&#34; git remote add origin git@github.com:g-pechorin/game-SpaceShips.git git push -f origin gh-pages  enjoy!   </div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/oth-bullet/">Single Header Bullet</a></h1>
-	<div class="post__content">https://github.com/g-pechorin/bullet2stripped
-What? I reduced Bullet 2.83 to a single C++ header file.
-Why? Largely to see if I could &hellip; hey - SQLite saw a 5% - 10% speed boost when they did this right?
-&hellip; oh - and to ease adoption I guess &hellip; maybe &hellip;
-How? I used a slightly complicated Scala script that I&rsquo;m not interested in examining again &hellip; for now &hellip;
-Basically; I took the 2.</div>
 </article>
 					</div>
 			</div>

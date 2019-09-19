@@ -6,10 +6,19 @@
     <description>Recent content on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 20 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Implementing an Idris Monad from &#34;Scratch&#34;</title>
+      <link>https://peterlavalle.github.io/post/idris-monad-mine/</link>
+      <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/idris-monad-mine/</guid>
+      <description>&lt;p&gt;I implemented the &lt;a href=&#34;http://docs.idris-lang.org/en/latest/tutorial/interfaces.html#monads-and-do-notation&#34;&gt;Idris Monad Interface&lt;/a&gt; by hand because I didn&amp;rsquo;t see a better way.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Docker with nVidia&#39;s CUDA Support</title>
@@ -611,6 +620,19 @@ why aren&amp;rsquo;t variables being set?
       <guid>https://peterlavalle.github.io/kit-list/</guid>
       <description>My &amp;ldquo;arsenal&amp;rdquo; - this isn&amp;rsquo;t meant to be public, but I see no harm to making it such.
    GPU OpenGL OpenCL GLES     HD 6770 4.4 1.2 ??   HD 7340 (Laptop) 4.3 ?? ??   Adreno 330 (Nexus 5)  1.1ep 3.0   PNY K620 4.5 1.2 ??   GTX 970 (Desktop) 4.5 1.2 ??   Tegra 3 T33 (Ouya)   +2.</description>
+    </item>
+    
+    <item>
+      <title>Blackstone Rulebook</title>
+      <link>https://peterlavalle.github.io/blackstone-rulebook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/blackstone-rulebook/</guid>
+      <description>&lt;aside style=&#34;float: right;&#34;&gt;
+	
+&lt;/aside&gt;
+
+&lt;p&gt;What follows is my attempt to transcribe and annotate the various rules for &lt;a href=&#34;https://warhammer40000.com/blackstone-fortress/&#34;&gt;Blackstone Fortress&lt;/a&gt; which we/I hope to use and enjoy.&lt;/p&gt;</description>
     </item>
     
   </channel>
