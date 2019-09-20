@@ -6,7 +6,7 @@
     <description>Recent content in Idris on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 07 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/idris/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Implementing an Idris Monad from &#34;Scratch&#34;</title>
       <link>https://peterlavalle.github.io/post/idris-monad-mine/</link>
-      <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/idris-monad-mine/</guid>
       <description>&lt;p&gt;I implemented the &lt;a href=&#34;http://docs.idris-lang.org/en/latest/tutorial/interfaces.html#monads-and-do-notation&#34;&gt;Idris Monad Interface&lt;/a&gt; by hand because I didn&amp;rsquo;t see a better way.&lt;/p&gt;</description>

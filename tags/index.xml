@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 07 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Idris</title>
       <link>https://peterlavalle.github.io/tags/idris/</link>
-      <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/idris/</guid>
       <description></description>
@@ -201,7 +201,7 @@
     </item>
     
     <item>
-      <title>Gogs</title>
+      <title>GoGS</title>
       <link>https://peterlavalle.github.io/tags/gogs/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
       
