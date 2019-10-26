@@ -54,8 +54,26 @@ Leader Stage
 
 Precipice
 
-legacy
-trading / facilities
+Legacy Step
+Trading Step
+
+UoN
+
+Quest for the Hidden Vault
+
+Expedition 1 / An Inauspicious Start
+
+Precipice
+Precipice
+
+Expedition 2
+Expedition 3
+Expedition 4
+
+Precipice
+
+Expedition 5
+
 
 
 
@@ -152,8 +170,26 @@ if (!doNotTrack) {
 </ul></li>
 <li><a href="#precipice">Precipice</a>
 <ul>
-<li><a href="#legacy">legacy</a></li>
-<li><a href="#trading-facilities">trading / facilities</a></li>
+<li><a href="#legacy-step">Legacy Step</a></li>
+<li><a href="#trading-step">Trading Step</a></li>
+</ul></li>
+<li><a href="#uon">UoN</a>
+<ul>
+<li><a href="#quest-for-the-hidden-vault">Quest for the Hidden Vault</a>
+<ul>
+<li><a href="#expedition-1-an-inauspicious-start">Expedition 1 / An Inauspicious Start</a>
+<ul>
+<li><a href="#precipice-1">Precipice</a></li>
+<li><a href="#precipice-2">Precipice</a></li>
+</ul></li>
+<li><a href="#expedition-2">Expedition 2</a></li>
+<li><a href="#expedition-3">Expedition 3</a></li>
+<li><a href="#expedition-4">Expedition 4</a>
+<ul>
+<li><a href="#precipice-3">Precipice</a></li>
+</ul></li>
+<li><a href="#expedition-5">Expedition 5</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -234,14 +270,14 @@ The card will either be <a href="#exploration-challenge-card">a Challenge Card</
 <li>check for big obvious features on the diagrams and then the tiles</li>
 <li>&ldquo;count&rdquo; along the edges if you&rsquo;re having trouble</li>
 </ul></li>
-<li>plkace discovery markers</li>
+<li>place discovery markers</li>
 <li>draw encounter cards, grab those minis and place them
 
 <ul>
 <li>if you&rsquo;re out of the minis; wee - no baddies</li>
 <li>if you draw a &ldquo;twist&rdquo; for that encounter - leave the marker in place for looting</li>
 </ul></li>
-<li>ensure that the explorers are eitehr in the MagLev transport, or, on the &ldquo;A&rdquo; marked squares</li>
+<li>ensure that the explorers are either in the MagLev transport, or, on the &ldquo;A&rdquo; marked squares</li>
 </ul>
 
 <h4 id="fight">fight</h4>
@@ -340,13 +376,25 @@ Any unspent dice are used for <a href="#explorer-overwatch">Overwatch</a></p>
 <tr>
 <td align="right">1+</td>
 <td align="center">Aiming</td>
-<td>The next weapon action durring this activation ignores cover.</td>
+<td>The next weapon action during this activation ignores cover.</td>
 </tr>
 
 <tr>
 <td align="right">1+</td>
 <td align="center">Move</td>
-<td>Move up to the &ldquo;move value&rdquo; hexes. If a minature enters a hex adjacent to an enemy model, then, movement stops. Models may not move through hexes occupied by enemies, but, may move through &ldquo;full&rdquo; hexes with allies.</td>
+<td>Move up to the &ldquo;move value&rdquo; hexes.</td>
+</tr>
+
+<tr>
+<td align="right"></td>
+<td align="center"></td>
+<td>If a miniature enters a hex adjacent to an enemy model, then, movement stops.</td>
+</tr>
+
+<tr>
+<td align="right"></td>
+<td align="center"></td>
+<td>Models may not move through hexes occupied by enemies, but, may move through &ldquo;full&rdquo; hexes with allies.</td>
 </tr>
 
 <tr>
@@ -378,7 +426,41 @@ If the hostile has slain - the remaining Overwatch explorers still discard a (wh
 
 <h6 id="explorer-inspiration-roll">(Explorer) Inspiration Roll</h6>
 
-<p>???</p>
+<p>At the end of an explorer&rsquo;s activation - roll 1d20.
+If, and only if, you roll &lt;= the total number of <em>wounds</em> of all hostiles slain durring the Explorer&rsquo;s activation; the explorer recieves an inspiration point.</p>
+
+<p>Explorers can hold no more than 4 points</p>
+
+<table>
+<thead>
+<tr>
+<th align="right">Cost</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="right">1</td>
+<td>Re-roll a (white d6) Action Die</td>
+</tr>
+
+<tr>
+<td align="right">2</td>
+<td>Attempt a Gambit (for free)</td>
+</tr>
+
+<tr>
+<td align="right"></td>
+<td>Ignore the need for a Discovery Marker</td>
+</tr>
+
+<tr>
+<td align="right">3</td>
+<td>Become Inspired</td>
+</tr>
+</tbody>
+</table>
 
 <h4 id="clean">clean</h4>
 
@@ -388,21 +470,22 @@ If the hostile has slain - the remaining Overwatch explorers still discard a (wh
 
 <h2 id="recovery-stage">Recovery Stage</h2>
 
-<p>After resolving an Exploration card, one follows these steps before</p>
+<p>After resolving an Exploration card, follow these steps;</p>
 
 <ol>
-<li>roll a &ldquo;Recovery Check&rdquo; for any exploer who is out of action
+<li>roll a &ldquo;Recovery Check&rdquo; for any explorer who is out of action
 
 <ul>
 <li>roll the d20</li>
 <li>if it&rsquo;s less than the number of &ldquo;Grievous Wounds&rdquo; on the Explorer&rsquo;s card; the explorer is &ldquo;dead&rdquo;
 
 <ul>
-<li>give the explorer a &ldquo;Mortis&rdquo; card</li>
+<li>give the explorer a &ldquo;Mortis&rdquo; card - they are dead and cannot trade anything under any circumstances</li>
 <li>the explorer may not trade or act anymore<sup class="footnote-ref" id="fnref:resurrection"><a href="#fn:resurrection">9</a></sup></li>
 </ul></li>
 </ul></li>
 <li>if any explorers (now) have a Mortis card; the expedition returns to <a href="#precipice">Precipice</a></li>
+<li>if the players all agree; the expedition returns to <a href="#precipice">Precipice</a></li>
 <li>do up to one Recuperate action per Explorer
 
 <ul>
@@ -415,27 +498,28 @@ If the hostile has slain - the remaining Overwatch explorers still discard a (wh
 <p>now (after dead checks) leader marker is passed clockwise and explorers can give eachother treasure cards</p>
 
 <p>next, if &hellip;
-- no exploration cqards left
+- no exploration cards left
 - all players agree to go home
 - all explorers were out of action
     - even if any are not dead now
-- any exporer died</p>
+- any explorer died</p>
 
 <p>&hellip; the expedition is over <a href="#precipice">return to Precipice</a></p>
 
 <h1 id="precipice">Precipice</h1>
 
-<p>explorers can swap any cards thatthe explorers wish to swap at any time on precipce</p>
+<p>Explorers who explored (but are not Mortis) can exchange or discard non-discovery cards at any time on Precipice.
+<a href="https://www.facebook.com/groups/BlackStoneFortress/permalink/389057901748272/">Discovery Cards must be traded before reaching Precipice.</a></p>
 
-<h2 id="legacy">legacy</h2>
+<h2 id="legacy-step">Legacy Step</h2>
 
 <p>Draw a Legacy Card from the Legacy Deck and deal with it, then place it in the &ldquo;data chamber&rdquo; pounch
 - if no leg cards left; explorers have failed - rest the game
-- if it&rsquo;s a &ldquo;COuntdown&rdquo; card; do nothing other than place it there
+- if it&rsquo;s a &ldquo;Countdown&rdquo; card; do nothing other than place it there
 - if it adds hostiles; add them
 - if it&rsquo;s a fortress upgrade; do nothing &hellip; for now</p>
 
-<h2 id="trading-facilities">trading / facilities</h2>
+<h2 id="trading-step">Trading Step</h2>
 
 <ul>
 <li>flip the four spacecraft you have to the &ldquo;support&rdquo; sides</li>
@@ -463,6 +547,115 @@ If the hostile has slain - the remaining Overwatch explorers still discard a (wh
 </ul></li>
 <li>after all exploreres have take turns; return the unused Resource and Discovery cards to their decks</li>
 </ul>
+
+<h1 id="uon">UoN</h1>
+
+<h2 id="quest-for-the-hidden-vault">Quest for the Hidden Vault</h2>
+
+<h3 id="expedition-1-an-inauspicious-start">Expedition 1 / An Inauspicious Start</h3>
+
+<h4 id="precipice-1">Precipice</h4>
+
+<p>Janus Draik, Dahyak Grekh, Amallyn Shadowguide and the Ratling Twins, Rein and Raus came together and entered one of the functioning MagLev chambers headed towards the locations Amallyn and Janus had earmarked.
+The initial exchange of pleasantries escalated and once the chamber deposited the explorers the Twins and Amallyn began exchanging blows over the term &ldquo;monkeih.&rdquo;
+The Twins collected a sprain dampening their willingness to fight while Janus baited Amallyn to cease with the discovery of a Wraithbone artefact containing Remnants of the Fall.</p>
+
+<p>As another transport deposited the group in another chamber, they spotted shadowy figures and Dahyak dashed forward and planted one of his hunting traps.
+Two groups of guardsmen were assisting a group of cultists whose corrupted mecha dendrites crawled over an improvised dais.
+Amallyn and Raus took aim at the approaching hostiles and made ready to open fire as Janus and Dahyakprepared to dispatch these ragtag rebels.
+After the initial exchange of gunfire, several of the guardsmen lay on the floor gasping while Janus squared off against the four cultists and Rein used his grapple to reach the dais and pocketed The Empryian Chronometer.
+A stray weapon shot activated some fortress system, and the numerous piles of debris all had been hiding from became unstable enough that navigating the room would be challenging and slow.
+The fight quickly threatened to overwhelm the explorers; a guardsman charged Rein while detonating a grenade while his comrades opened fire scoring hits on the ratling.
+With his brother out of action - Raus became hysteric and unable to focus on anything other than resuing his brother.
+While Janus and Amallyn were able to subdue the Negavolt Cultists the Guardsmen swarmed Dahyak almost as if they were familiar with the tracker&rsquo;s prowess.
+Screaming from the far end of the room - one of the Negavolt Cultists arose in the far corner of the room with unholy vigour ready to threaten the explorers again.</p>
+
+<p>Determined to retain The Empryian Chronometer Janus assisted Raus in dragging Rein to the nearest exit chamber summoning a MagLev to take them away from this chaos.
+Injured and bleeding Dahyak thought of the facilities that awaited him and was able to viperously dispatch the cultists threatening him.
+As  Dahyak slid into the chamber the blast from another traitor&rsquo;s grenade threw him against the wall while leaving Janus unscathed.
+Disgusted with the animal&rsquo;s ineptness and frustrated by the monkeih&rsquo;s inability to overcome their own degenerate fallen kinsman Amallyn shouldered her rifle, and traversed the entirety of the room in a blink and sent the MagLev transport to exit the area.</p>
+
+<h4 id="precipice-2">Precipice</h4>
+
+<p>The injuries sustained by Dahyak and The Twins were not mortal, however, the group decided to return to Precipice regardless.
+The Twins begrudgingly surrendered The Empryian Chronometer to Janus with the understanding that the group would await their recovery before returning tot he fortress.
+Neither the deserters nor the Rouge Traitor expected the oath to be fulfilled, and, when none were looking The Twins combined a spare component discovered with previous salvage in their cargo bay to produce a valuable but useless archotech trinket.
+Having explored the fortress for somewhat longer than he&rsquo;d previously admitted, Dahyak warned the group that the perception of an Astra Militarum and Aeldari alliance operating with a Rouge trader would garner the attention of more powerful foes from within the fortress.
+as Dahyak described the foes to Janus, Amallyn recognised the monsters of whom he spoke; traitor legionaries, veterans of the long war and foes she hadn&rsquo;t expected would feel the need to attend to this place.</p>
+
+<p>Clearly, the fortress held secrets beyond those that Janus and Amallyn had sought for their own interests and threats beyond those that had just defeated them.</p>
+
+<h3 id="expedition-2">Expedition 2</h3>
+
+<h3 id="expedition-3">Expedition 3</h3>
+
+<h3 id="expedition-4">Expedition 4</h3>
+
+<h4 id="precipice-3">Precipice</h4>
+
+<p>Exhausted but alive, the Explorers have returned to the collection of ships called Precipice Station to recover before their next attempt to locate The Hidden Vault.</p>
+
+<p>Carrying the auspex of leadership, (Victoria) Amallyn had first pick for trading, followed by (Gregor) Pious, then (motor Gareth) UR-025 before (Sam) Rein &amp; Raus and finally (Adam) Espern.</p>
+
+<p>The explorer&rsquo;s assets were limited, some had found the trinkets which inspired them to search out the fortress. Would the to the &ldquo;Remnants of the Fall&rdquo; a curiosity which had drawn her to the fortress, before the Explorers had become aware of the Vault.</p>
+
+<p>Amallyn (Inspired)
+= 3 points (secret agenda)
+= 1 free point on Steed of Mathurir</p>
+
+<p>Pious
+= 1pt generic loot card
+= 1 free point on Clarion</p>
+
+<p>UR-025 (Inspired - but that&rsquo;s irrelvant)
+= 1 Clue
+= 1pt generic loot card
+= 1pt generic loot card
+= 1 free point on Long Hauler
+- Void Viewer (Discard to stack the encounter deck)
+- Explosive Round (Discard for splash damage including neighboring hexes)</p>
+
+<p>Rein &amp; Raus (Inspired)
+= 3 points (secret agenda)
+= 2pt generic loot card
+= 1 free point on any ship (they&rsquo;re inspired)
+- Homing Round (Discard after rolling to &ldquo;upgrade&rdquo; the value of an attack roll and ignore cover)
+- Ur-Ghuls Contract (Discard to re-roll failures to hit Ur-Ghuls for the rest of the expedition)</p>
+
+<p>Espern
+= 1 free point on the Traveller</p>
+
+<p>Steed of Mathurir
+= Facility / Roll 1d20 (Amallyn can re-roll)
+    if &lt;= number of &ldquo;Clue Cards&rdquo; := recieve a Clue Card.
+- 1pt / Webway Portal (Discard at start of Combat to put the explorer on any hex withouth a Hostile or a Discovery Marker)
+- 1pt / Celestial Shield (Discard durring Initiave Phase. Explorer&rsquo;s defense becomes 1d12 until the end of the turn)
+- 5pt / Exodite Kris (Always re-roll failed attack rolls for adjacent hexes)</p>
+
+<p>Clarion
+= Facility / roll 1d20 (Pious can re-roll)
+    if 1 := lose a Clue Card
+    if &gt;=16 := gain a clue card
+- 1pt / Hospitaller Medpack (Discard at end of combat turn, or, between &ldquo;Exploration&rdquo; cards. Remove not-grievous wounds)
+- 1pt / Hospitaller Medpack (Discard at end of combat turn, or, between &ldquo;Exploration&rdquo; cards. Remove not-grievous wounds)
+- 4pt / Bionic Muscle Fibres (+1 to movement forever)</p>
+
+<p>Traveller
+= Facility / roll 1d20 (Espern re-rolls)
+    if &gt;= 16 := resurrect a dead explorer
+- 1pt / Sigil of Corruption (Discard to perform a 1+ action that poisons a hostile for 1 wound at the end of each turn)
+- 2pt / Transference Key (Discard to perform a 1+ action that swaps the user and a single hostile or the user and another Explorer)
+- 3pt / Illusion Prism / (Discard after a hostile&rsquo;s behaviour role. It treats all other hostiles as Explorers, and, hostiles in its own hex as range 1)</p>
+
+<p>Long Hauler
+= Facility / roll 1d20 (UR025 and Twins re-roll)
+    if 1 := explorer is killed
+    if &gt;= 11 := explorer recieves an Archotech card
+- 1pt / Scryer Skull (Discard to treat the next attack as &ldquo;aimed&rdquo; and choose what range to consider the hostile at)
+- 3pt / Anzion&rsquo;s Pseudogenetor (Discard to perform a 1+ action on an adjacent and visible hostile, that hostile receives a number of wounds equal to the die that was spent)
+- 5pt / Raiment of Technomartyr (Use at end of combat turn, or, between &ldquo;Exploration&rdquo; cards. Remove a wound, roll 1d20 and discard if 1. OR Reduce a wound, 1d20 and discard if &lt;=5)</p>
+
+<h3 id="expedition-5">Expedition 5</h3>
 <div class="footnotes">
 
 <hr />

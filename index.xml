@@ -6,10 +6,20 @@
     <description>Recent content on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 19 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OpenVPN on a Pi3</title>
+      <link>https://peterlavalle.github.io/post/pi3-openvpn/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-openvpn/</guid>
+      <description>&lt;p&gt;These are some old notes on using a Pi3 as a VPN host - I can&amp;rsquo;t remember why I un-published them.
+Might be fun to &lt;a href=&#34;https://hub.docker.com/r/raspbian/stretch&#34;&gt;stuff in a container someday.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Implementing an Idris Monad from &#34;Scratch&#34;</title>
@@ -620,6 +630,15 @@ why aren&amp;rsquo;t variables being set?
       <guid>https://peterlavalle.github.io/kit-list/</guid>
       <description>My &amp;ldquo;arsenal&amp;rdquo; - this isn&amp;rsquo;t meant to be public, but I see no harm to making it such.
    GPU OpenGL OpenCL GLES     HD 6770 4.4 1.2 ??   HD 7340 (Laptop) 4.3 ?? ??   Adreno 330 (Nexus 5)  1.1ep 3.0   PNY K620 4.5 1.2 ??   GTX 970 (Desktop) 4.5 1.2 ??   Tegra 3 T33 (Ouya)   +2.</description>
+    </item>
+    
+    <item>
+      <title>40k 8th CheatSheet</title>
+      <link>https://peterlavalle.github.io/40k8th-cheat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/40k8th-cheat/</guid>
+      <description>Weapon Stationary Moved Advanced Retreat     Charge ?  No No   Assault ?  ? ?   Pistol ? ? ? ?   Rapid Fire ? ? ? ?   Heavy ? ? ? ?   Grenade ? ? ? ?   Macro ? ? ? ?       S vs T Roll     S &amp;gt;= 2*T ?</description>
     </item>
     
     <item>
