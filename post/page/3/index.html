@@ -13,7 +13,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://peterlavalle.github.io/post/" />
 
-<meta property="og:updated_time" content="2019-09-19T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-10-28T00:00:00&#43;00:00"/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -62,6 +62,28 @@ if (!doNotTrack) {
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
+	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/macos-open-terminal-in-folder/">Open macOS Terminal in Folder</a></h1>
+	<div class="post__content">In January of 2018, you can launch macOS&rsquo;s terminal with the command /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal1
+I have (to use) a macOS computer. I choose to use TortoiseHG because it is lovely. TortoiseHG has a &ldquo;launch the terminal&rdquo; context menu entry.
+Under macOS, you need to specify the terminal command that TortoiseHG should use. You need this, in your preference, to launch the terminal in the repo;
+ /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal %(root)s
+  https://stackoverflow.com/questions/4404242/programmatically-launch-terminal-app-with-a-specified-command-and-custom-colors [return]   </div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="post card__box block">
+	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/unity3d-moving-platform/">Moving Platforms in Unity3D</a></h1>
+	<div class="post__content">This is a short example of moving platforms in Unity3D.
+Based on this tweet, I spent &hellip; 30 minutes? Maybe? putting it together.
+ This writeup took longer.
+ The approach uses two behaviour classes to achive the classical effect of moving platforms that follow some path.
+ mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&rsquo;ve reached the Waypoint, continue with its next one   My example;</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/democore/">Adventures in Demo Making</a></h1>
 	<div class="post__content">I should just &ldquo;blog&rdquo; informally more often - so here goes.
 I&rsquo;ve cobbled together a toolchain/asset-conditioning-pipeline of sorts for demoscene type stuff. My system is written in Scala on Gradle and functions by emitting C/++ and CMake files for Visual Studio. All of this produces a C/++11&frasl;14 and GLFW/GLAD/OpenGL4.3&frasl;4.5 executable that displays someone else&rsquo;s ShaderToy project. Nothing revolutionary, but I&rsquo;m after pretty-code that I can keep using rather than actual hard &ldquo;street cred&rdquo; quality demo results.</div>
@@ -97,8 +119,9 @@ I&rsquo;m doing something else (of course) I&rsquo;m setting up (what I call) na
 				<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/pi3-docker-gogs/">GoGS on a Pi3 (via Docker)</a></h1>
-	<div class="post__content">I&rsquo;ve been assembling a &ldquo;full stack&rdquo;1 for development that runs on my Pi3. This is all happening inside of Docker containers which made cleanup redonkulously easy. Today I was looking at a source code management system; something of a &ldquo;my own GitHub&rdquo; which I can run on my own network.
-We have GitLab at work; so I wanted something different &hellip; also; the authors don&rsquo;t suggest using a Pi3 for &ldquo;real.</div>
+	<div class="post__content"><p>I&rsquo;ve been assembling a &ldquo;full stack&rdquo;<sup class="footnote-ref" id="fnref:fwiw"><a href="#fn:fwiw">1</a></sup> for development that runs on my Pi3.
+This is all happening inside of <a href="https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/">Docker</a> containers which made cleanup redonkulously easy.
+Today I was looking at a source code management system; something of a &ldquo;my own GitHub&rdquo; which I can run on my own network.</p></div>
 </article>
 				</div>
 			
@@ -129,25 +152,6 @@ For some reason one of our SaMBa systems got twitchy sometime last month. This i
 </article>
 				</div>
 			
-				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/pi3-dyndns/">Pi3 DynDNS</a></h1>
-	<div class="post__content">This has been replaced
-Pi3 DynDNS I want to give my home&rsquo;s Raspberry Pi3 a DNS name so that I can access it more easily.
-DNS and Dynamic IP Addresses The Domain Naming System is how those readable textual names like example.com become the actual IP Addresses like 127.0.0.1 that web pages, email, and everything else needs to work. Various groups allow people to register a domain (or subdomain) and specify the IP address of a computer that the domain should reffer to.</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/github-pages-publish/">GitHub Pages Publish</a></h1>
-	<div class="post__content">GitHub pages allow a GitHub repository to function as a web-server thing.
-&hellip; whatevs &hellip;
- create a repository on GitHub  I created game-SpaceShips at git@github.com:g-pechorin/game-SpaceShips.git  run these from the root;
-rm -dfr .git git init git checkout -b gh-pages git add . git commit -m &#34;some stuffff or what&#34; git remote add origin git@github.com:g-pechorin/game-SpaceShips.git git push -f origin gh-pages  enjoy!   </div>
-</article>
-				</div>
-			
 		</div>
 	</main>
 	
@@ -156,11 +160,12 @@ rm -dfr .git git init git checkout -b gh-pages git add . git commit -m &#34;some
 	
 	<a class="pagination__item pagination__item--desktop" href="/post/page/2/">2</a>
 	
-	<span class="pagination__item pagination__item--active" data-total="5">3</span>
+	<span class="pagination__item pagination__item--active" data-total="6">3</span>
 	
 	<a class="pagination__item pagination__item--desktop" href="/post/page/4/">4</a>
 	
-	<a class="pagination__item pagination__item--desktop" href="/post/page/5/">5</a>
+		<span class="pagination__item pagination__item--gap">&hellip;</span>
+	<a class="pagination__item pagination__item--desktop" href="/post/page/6/">6</a>
 	
 </div>
 

@@ -6,10 +6,19 @@
     <description>Recent content in Git on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git Flow</title>
+      <link>https://peterlavalle.github.io/post/gitflow/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/gitflow/</guid>
+      <description>&lt;p&gt;In which I briefly pontificate on the Git-Flow Workflow.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Pushing (from GoGS) with `post-receive` (to a mirror)</title>
@@ -47,8 +56,9 @@ In the end, I ran out of time and felt that the &lt;em&gt;diversity&lt;/em&gt; o
       <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/pi3-docker-gogs/</guid>
-      <description>I&amp;rsquo;ve been assembling a &amp;ldquo;full stack&amp;rdquo;1 for development that runs on my Pi3. This is all happening inside of Docker containers which made cleanup redonkulously easy. Today I was looking at a source code management system; something of a &amp;ldquo;my own GitHub&amp;rdquo; which I can run on my own network.
-We have GitLab at work; so I wanted something different &amp;hellip; also; the authors don&amp;rsquo;t suggest using a Pi3 for &amp;ldquo;real.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been assembling a &amp;ldquo;full stack&amp;rdquo;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:fwiw&#34;&gt;&lt;a href=&#34;#fn:fwiw&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; for development that runs on my Pi3.
+This is all happening inside of &lt;a href=&#34;https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/&#34;&gt;Docker&lt;/a&gt; containers which made cleanup redonkulously easy.
+Today I was looking at a source code management system; something of a &amp;ldquo;my own GitHub&amp;rdquo; which I can run on my own network.&lt;/p&gt;</description>
     </item>
     
     <item>

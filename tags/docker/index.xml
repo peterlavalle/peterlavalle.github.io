@@ -46,8 +46,9 @@ I&amp;rsquo;m doing something else (of course) I&amp;rsquo;m setting up (what I 
       <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/pi3-docker-gogs/</guid>
-      <description>I&amp;rsquo;ve been assembling a &amp;ldquo;full stack&amp;rdquo;1 for development that runs on my Pi3. This is all happening inside of Docker containers which made cleanup redonkulously easy. Today I was looking at a source code management system; something of a &amp;ldquo;my own GitHub&amp;rdquo; which I can run on my own network.
-We have GitLab at work; so I wanted something different &amp;hellip; also; the authors don&amp;rsquo;t suggest using a Pi3 for &amp;ldquo;real.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been assembling a &amp;ldquo;full stack&amp;rdquo;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:fwiw&#34;&gt;&lt;a href=&#34;#fn:fwiw&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; for development that runs on my Pi3.
+This is all happening inside of &lt;a href=&#34;https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/&#34;&gt;Docker&lt;/a&gt; containers which made cleanup redonkulously easy.
+Today I was looking at a source code management system; something of a &amp;ldquo;my own GitHub&amp;rdquo; which I can run on my own network.&lt;/p&gt;</description>
     </item>
     
   </channel>
