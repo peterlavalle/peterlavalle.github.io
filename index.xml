@@ -643,6 +643,15 @@ why aren&amp;rsquo;t variables being set?
     </item>
     
     <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/notebooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/notebooks/</guid>
+      <description>Notebooks  2019-10-29  the system currently encodes &amp;ldquo;some&amp;rdquo; needs as unit-tests meaning I can see what&amp;rsquo;s missing my original approach used lambdas for event/signal input/output I polled all events within API objects exposed, and, expected signals to all signal objects  this is a bug; scenario should not be expected/able to manipulate objects  I now believe that a &amp;ldquo;higher&amp;rdquo; layer is needed to produce these methods this is (poorly) illustrated with this table     Layer Role     Configuration?</description>
+    </item>
+    
+    <item>
       <title>40k 8th CheatSheet</title>
       <link>https://peterlavalle.github.io/40k8th-cheat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
