@@ -6,10 +6,21 @@
     <description>Recent content on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Mon, 28 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blackstone Rule List</title>
+      <link>https://peterlavalle.github.io/blackstone-rulelist/</link>
+      <pubDate>Fri, 17 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/blackstone-rulelist/</guid>
+      <description>This is an attempt to &amp;ldquo;distill&amp;rdquo; the BlackStone Fortress rules into a more-dry form (like X-Wing or Dominion!) after several play sessions. Should make for quicker reference and play (if you&amp;rsquo;re like me) at the potential cost of being &amp;ldquo;scary&amp;rdquo; to people who like their information burried in prose.
+I may-have &amp;ldquo;introduced&amp;rdquo; some terms &amp;hellip; Chain, Precise, Injury etc.
+Reinforcements  is there a priority? smallest hostile first?</description>
+    </item>
     
     <item>
       <title>Git Flow</title>
