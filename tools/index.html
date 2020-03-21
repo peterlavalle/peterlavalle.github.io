@@ -105,30 +105,33 @@ if (!doNotTrack) {
 
 <ul>
 <li><a href="https://duktape.org/">https://duktape.org/</a></li>
+<li>works like a second-generation Lua</li>
 <li>it&rsquo;s a (ES5) ECMAScript engine in &ldquo;single source&rdquo; build-able</li>
 
-<li><p>it&rsquo;s C, but, there&rsquo;s no build script; just drop it into your project</p>
+<li><p>it&rsquo;s C, but, there&rsquo;s no build script; just drop it into your project</p></li>
 
-<ul>
-<li><p>needed a CMake/<code>#define</code> tweak to get it to run in Windows 7</p>
+<li><p>needed a CMake/<code>#define</code> tweak to get it to run in Windows 7</p></li>
+</ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmake" data-lang="cmake"><span style="color:#75715e"># make it work on Windows 7
 </span><span style="color:#75715e"></span>add_definitions(<span style="color:#e6db74">-DDUK_USE_DATE_NOW_WINDOWS</span>)</code></pre></div>
-<ul>
-<li>works like a second-generation Lua</li>
-</ul>
-
 <h1 id="coffeescript">CoffeeScript</h1>
 
 <ul>
 <li><a href="https://coffeescript.org/v1/">https://coffeescript.org/v1/</a></li>
 <li>looks a bit like a less-verbose python</li>
 <li>compiles to JavaScript</li>
-<li>v1 compiles to ES5 that DukTape can use</li>
+<li>v1 compiles to ES5 that DukTape can use
+
+<ul>
 <li>i&rsquo;ve successfully embedded v1 in a C/++ application</li>
 <li>&hellip; have/am building a weird like-Unity3D eDSL from it</li>
-<li>can dump AST nodes</li>
+</ul></li>
+<li>can dump AST nodes
+
+<ul>
 <li>i would love to interpret those directly</li>
 <li>also; add a do-notation to the nodes</li>
+</ul></li>
 </ul>
 
 <h1 id="cmder">cmder</h1>
@@ -144,8 +147,11 @@ if (!doNotTrack) {
 <ul>
 <li><a href="https://www.mercurial-scm.org/">https://www.mercurial-scm.org/</a></li>
 <li>DVCS</li>
-<li>has a GUI by default - git people hate it</li>
+<li>has a GUI by default - git people hate it
+
+<ul>
 <li>I prefer using it for git</li>
+</ul></li>
 <li>uses an immutable db by default - git people hate it</li>
 <li>built for source code and blows up on 100mb+ files - git people hate it</li>
 <li>the GUI has been vaguely &ldquo;portable&rdquo; in the past</li>
@@ -163,12 +169,18 @@ if (!doNotTrack) {
 
 <ul>
 <li><a href="https://sourcehut.org/">https://sourcehut.org/</a></li>
-<li>yet another me-too GitLab/GitHub</li>
+<li>yet another me-too GitLab/GitHub
+
+<ul>
 <li>you can host your own - but i haven&rsquo;t tried</li>
+</ul></li>
 <li>smoler and lighter than the other two</li>
 <li><a href="https://hg.sr.ht/">supports mercurial</a></li>
-<li>has CI et al</li>
+<li>has CI et al
+
+<ul>
 <li>&hellip; but i&rsquo;ve not had viel glück with them</li>
+</ul></li>
 </ul>
 
 <h1 id="gogs">GoGS</h1>
@@ -184,10 +196,13 @@ if (!doNotTrack) {
 <ul>
 <li><a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
 <li>text editor with all-the-features</li>
-<li>has mechanisms for turning it into an IDE</li>
+<li>has mechanisms for turning it into an IDE
+
+<ul>
 <li>you can setup build commands, but in a script</li>
 <li>error matching; but from a script/regex</li>
 <li>i haven&rsquo;t used it as much as i&rsquo;d like</li>
+</ul></li>
 <li>faster than Atom :&lsquo;( but both are M$ now</li>
 </ul>
 
@@ -196,25 +211,32 @@ if (!doNotTrack) {
 <ul>
 <li><a href="http://kdiff3.sourceforge.net/">http://kdiff3.sourceforge.net/</a></li>
 <li>it&rsquo;s a windows diff tool</li>
-<li>when writing text comparison unit tests;</li>
+<li>when writing text comparison unit tests;
+
+<ol>
 <li>dump mis-matches to files in build folder</li>
 <li>emit an error message with a CLI to invoke KDiff on the mismatches</li>
+</ol></li>
 </ul>
 
 <h1 id="pandoc">PanDoc</h1>
 
 <ul>
 <li><a href="https://pandoc.org/">https://pandoc.org/</a></li>
-<li>write <code>.md</code> then translate to <code>.tex</code></li>
+<li>write <code>.md</code> then translate to <code>.tex</code>
+
+<ul>
 <li>&hellip; then use an <code>outer.tex</code> to include the <code>.tex</code></li>
-<li>amazingly simpler than writing everything in <code>.tex</code></li>
+</ul></li>
+<li>amazingly simpler than writing everything in <code>.tex</code>
+
+<ul>
 <li>there are multiple ways to use <a href="#mermaid">Mermaid</a> in it</li>
+</ul></li>
 <li>&hellip; and I can <code>\cite{whatnot}</code></li>
 </ul>
 
-<p>I don&rsquo;t have a preferred git client - I dislike them all right now.</p></li>
-</ul></li>
-</ul>
+<p>I don&rsquo;t have a preferred git client - I dislike them all right now.</p>
 </div>
 				
 				<footer class="post__footer">
