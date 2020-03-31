@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HowTo on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/howto/</link>
+    <description>Recent content in HowTo on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sat, 20 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://peterlavalle.github.io/tags/howto/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker with nVidia&#39;s CUDA Support</title>
+      <link>https://peterlavalle.github.io/post/docker-with-cuda/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/docker-with-cuda/</guid>
+      <description>&lt;p&gt;Months ago &amp;hellip; I setup Docker with nVidia support on pokey old computer with a PNY K620 Quadro GPU.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pushing (from GoGS) with `post-receive` (to a mirror)</title>
+      <link>https://peterlavalle.github.io/post/gogs-push-on-push/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/gogs-push-on-push/</guid>
+      <description>&lt;p&gt;I have a &lt;a href=&#34;https://gogs.io/&#34;&gt;GoGS&lt;/a&gt; server for my work.
+I want to back it up off-site to &lt;a href=&#34;https://gitlab.com/gitlab-org/gitlab-ce&#34;&gt;our GitLab instance&lt;/a&gt;.
+According to a &lt;a href=&#34;https://www.atlassian.com/git/tutorials/git-hooks#server-side-hooks&#34;&gt;document I read&lt;/a&gt; this should be possible using &lt;code&gt;post-receive&lt;/code&gt; hooks.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MultiBranch Mercurial JenkinsFile</title>
+      <link>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</link>
+      <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING;&lt;/strong&gt; this configuration doesn&amp;rsquo;t seem to delete old builds.
+Ever, see; &lt;a href=&#34;https://issues.jenkins-ci.org/browse/JENKINS-34738&#34;&gt;https://issues.jenkins-ci.org/browse/JENKINS-34738&lt;/a&gt;.
+I&amp;rsquo;ve worked around it by putting the following blurb near the top of my &lt;code&gt;JenkinsFile&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>(GZ3)Doom (1993) VR is totally worth it</title>
+      <link>https://peterlavalle.github.io/post/gz3doomvr/</link>
+      <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/gz3doomvr/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/Fishbiter/gz3doom&#34;&gt;Someone has ported Doom (1993) to VR&lt;/a&gt; and it is as vomit-inducing-awesome in VR as you would expect.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Launch the Docker Daemon from osMac CLI</title>
+      <link>https://peterlavalle.github.io/post/launch-docker-daemon-mac-cli/</link>
+      <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/launch-docker-daemon-mac-cli/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m away and want to start the Docker daemon.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:suspectRestart&#34;&gt;&lt;a href=&#34;#fn:suspectRestart&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Moving Platforms in Unity3D</title>
+      <link>https://peterlavalle.github.io/post/unity3d-moving-platform/</link>
+      <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/unity3d-moving-platform/</guid>
+      <description>This is a short example of moving platforms in Unity3D.
+Based on this tweet, I spent &amp;hellip; 30 minutes? Maybe? putting it together.
+ This writeup took longer.
+ The approach uses two behaviour classes to achive the classical effect of moving platforms that follow some path.
+ mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&amp;rsquo;ve reached the Waypoint, continue with its next one   My example;</description>
+    </item>
+    
+    <item>
+      <title>Pi3 NameCheap</title>
+      <link>https://peterlavalle.github.io/post/pi3-namecheap/</link>
+      <pubDate>Thu, 29 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-namecheap/</guid>
+      <description>This is a followup to a previous post because that one stopped working, now - this works.
+There&amp;rsquo;s not a lot of OC here, just clarity.
+NameCheap DynDNS on a Pi3 I use NameCheap (because they&amp;rsquo;re anti-SOPA) for DNS. The client program, ddclient, can connect to NameCheap.
+I&amp;rsquo;m using raspbian, so, first;
+ run sudo apt-get install ddclient on your Pi find the dynamic DNS settings on NameCheap&amp;rsquo;s website  Dashboard &amp;gt;&amp;gt;&amp;gt; Domain List &amp;gt;&amp;gt;&amp;gt; Manage &amp;gt;&amp;gt;&amp;gt; Advanced DNS they do like to change these things around  halfway down the page, there should be a DYNAMIC DNS thingie  enable it (if you haven&amp;rsquo;t already) note the blurb-what-looks-like-a-SHA  edit your /etc/ddclient.</description>
+    </item>
+    
+    <item>
+      <title>Replace SaMBa with WinSSHFS!</title>
+      <link>https://peterlavalle.github.io/post/replace-samba-with-winsshfs/</link>
+      <pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/replace-samba-with-winsshfs/</guid>
+      <description>I connected my Windows desktop to our office file server using SSHFS rather than SaMBa. I am happy about that.
+For some reason one of our SaMBa systems got twitchy sometime last month. This is a problem since I&amp;rsquo;ve inherited a script that;
+ I don&amp;rsquo;t yet understand runs on Windows (10?) exclusively reads data from \\foo\bar\project\user\project3\data\something paths  Since I know that SSHFS already works, I&amp;rsquo;m setting that up as a substitue.</description>
+    </item>
+    
+    <item>
+      <title>Pi3 DynDNS</title>
+      <link>https://peterlavalle.github.io/post/pi3-dyndns/</link>
+      <pubDate>Sun, 21 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-dyndns/</guid>
+      <description>This has been replaced
+Pi3 DynDNS I want to give my home&amp;rsquo;s Raspberry Pi3 a DNS name so that I can access it more easily.
+DNS and Dynamic IP Addresses The Domain Naming System is how those readable textual names like example.com become the actual IP Addresses like 127.0.0.1 that web pages, email, and everything else needs to work. Various groups allow people to register a domain (or subdomain) and specify the IP address of a computer that the domain should reffer to.</description>
+    </item>
+    
+    <item>
+      <title>GitHub Pages Publish</title>
+      <link>https://peterlavalle.github.io/post/github-pages-publish/</link>
+      <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/github-pages-publish/</guid>
+      <description>GitHub pages allow a GitHub repository to function as a web-server thing.
+&amp;hellip; whatevs &amp;hellip;
+ create a repository on GitHub  I created game-SpaceShips at git@github.com:g-pechorin/game-SpaceShips.git  run these from the root;
+rm -dfr .git git init git checkout -b gh-pages git add . git commit -m &amp;#34;some stuffff or what&amp;#34; git remote add origin git@github.com:g-pechorin/game-SpaceShips.git git push -f origin gh-pages  enjoy!   </description>
+    </item>
+    
+    <item>
+      <title>Adding NotePad&#43;&#43; Macros to Atom.io</title>
+      <link>https://peterlavalle.github.io/post/atom-macros/</link>
+      <pubDate>Thu, 11 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/atom-macros/</guid>
+      <description>I haven&amp;rsquo;t posted anything in awhile &amp;hellip; so here&amp;rsquo;s how to get Atom.io to get macros that work kind-of-like NotePad++
+ Install atom-keyboard-macros into Atom. &amp;gt; The default keybindings did nothing for me &amp;hellip; sorry
+ open your keybindings.cson
+ Hit CTRL+, &amp;gt; click on Keybindings &amp;gt; click on the blue text that says your keymap file  paste this wodge into the bottom of your keybindings.cson PRESERVE THE INDENTATION!</description>
+    </item>
+    
+    <item>
+      <title>Mirroring Git/GitHub to Hg/BitBucket</title>
+      <link>https://peterlavalle.github.io/post/mirroring-github-to-bitbucket/</link>
+      <pubDate>Fri, 22 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/mirroring-github-to-bitbucket/</guid>
+      <description>This seemed a lot longer when I planned it in my notebook at lunch.
+   GitHub user project (both sides) BitBucket user SCM Schedule     ocornut imgui g-pechorin None Periodic     Install hg-git  You&amp;rsquo;ll have to do this on the Jenkins server You&amp;rsquo;ll have to do it either for the Jenkins user or all I&amp;rsquo;m using an OsX machine as my host, so I was able to use easy_install to install hg-git and dulwich  setup a project on GitHub create a Jenkins Freestyle project which runs periodically  Polling the SCM was NOT an option since there&amp;rsquo;s no default branch on GitHub  &amp;hellip; this is a quirk of hg-git &amp;hellip; I think &amp;hellip; IIRC/YRMV - so sling me a tweet or whatever if I&amp;rsquo;m wrong   program the job to pull from git, push to hg, and ignore results of 1</description>
+    </item>
+    
+    <item>
+      <title>Mercurial / Hg SubRepos</title>
+      <link>https://peterlavalle.github.io/post/hg-subrepos/</link>
+      <pubDate>Tue, 19 Jul 2016 19:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/hg-subrepos/</guid>
+      <description>I&amp;rsquo;m still trying to catch up on stuff following Develop. I&amp;rsquo;ve decided to write a post about my experience(s) switching my work over to SubRepos.
+I am unaware of the &amp;ldquo;reason&amp;rdquo; why they&amp;rsquo;re considered &amp;ldquo;bad.&amp;rdquo; Perhaps it&amp;rsquo;s a Unix thing? Maybe they don&amp;rsquo;t work as well as people feel that they should?
+Whatever
+I have a (secret) project called &amp;ldquo;nite-nite/&amp;rdquo; in which I use and develop some public-domain headers. I want this public-domain stuff to be &amp;hellip; well &amp;hellip; public-domain and visible to all.</description>
+    </item>
+    
+    <item>
+      <title>Automated Unity WebGL Deployment</title>
+      <link>https://peterlavalle.github.io/post/myspaceships/</link>
+      <pubDate>Fri, 26 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/myspaceships/</guid>
+      <description>I have an old Unity project that I haven&amp;rsquo;t looked at in awhile - this one. If memory serves; assembling a WebGL version is slow and boring - so I&amp;rsquo;m making my eager little Jenkins server do it.
+Really I&amp;rsquo;m a bit bored with sbt-launch malarkey and I wanted to see if I could get this rolling. Broadly the steps that I followed went like this;
+ Install Unity (5.</description>
+    </item>
+    
+    <item>
+      <title>Hexo and Jenkins atop Os X</title>
+      <link>https://peterlavalle.github.io/post/hexo-os-x/</link>
+      <pubDate>Wed, 10 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/hexo-os-x/</guid>
+      <description>In which I ramble a bit about setting up CI for this very blog.
+I have a Jenkins server running on my OsX computer. (&amp;hellip; or &amp;hellip; I&amp;rsquo;m setting one up anyway) I also have (am establishing?) a blog built by Hexo &amp;hellip; because that seems the right way to do this sort of thing. My constraints of &amp;ldquo;MarkDown&amp;rdquo; and &amp;ldquo;no really - let me use MarkDown because I&amp;rsquo;m going to have a lot of code fragments&amp;rdquo; seem alien to most blogging software - &amp;ldquo;Hexo delivers&amp;rdquo; as the kids say.</description>
+    </item>
+    
+  </channel>
+</rss>

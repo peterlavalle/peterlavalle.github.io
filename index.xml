@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/</link>
+    <description>Recent content on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sat, 21 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tools Page</title>
+      <link>https://peterlavalle.github.io/post/tools/</link>
+      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/tools/</guid>
+      <description>PhD is hard.
+COVID-19 sucks.
+I started a staff-wiki-page listing development tools then decided that it should be here too.</description>
+    </item>
+    
+    <item>
+      <title>Tools that I like</title>
+      <link>https://peterlavalle.github.io/tools/</link>
+      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tools/</guid>
+      <description>Mermaid  https://mermaidjs.github.io/ documents, but, you write them like markdown has a live editor  &amp;hellip; which can create markdown it encodes your work creates a markdown image ref to that wraps the image ref in a link to the editor   fips  http://floooh.github.io/fips/ C/++ et al build automaton uses cmake/python and &amp;ldquo;smooths the edges&amp;rdquo; that those two leave behind  DukTape  https://duktape.org/ works like a second-generation Lua it&amp;rsquo;s a (ES5) ECMAScript engine in &amp;ldquo;single source&amp;rdquo; build-able it&amp;rsquo;s C, but, there&amp;rsquo;s no build script; just drop it into your project</description>
+    </item>
+    
+    <item>
+      <title>Blackstone Rule List</title>
+      <link>https://peterlavalle.github.io/blackstone-rulelist/</link>
+      <pubDate>Fri, 17 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/blackstone-rulelist/</guid>
+      <description>This is an attempt to &amp;ldquo;distill&amp;rdquo; the BlackStone Fortress rules into a more-dry form (like X-Wing or Dominion!) after several play sessions. Should make for quicker reference and play (if you&amp;rsquo;re like me) at the potential cost of being &amp;ldquo;scary&amp;rdquo; to people who like their information burried in prose.
+I may-have &amp;ldquo;introduced&amp;rdquo; some terms &amp;hellip; Chain, Precise, Injury etc.
+Reinforcements  is there a priority? smallest hostile first?</description>
+    </item>
+    
+    <item>
+      <title>Git Flow</title>
+      <link>https://peterlavalle.github.io/post/gitflow/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/gitflow/</guid>
+      <description>&lt;p&gt;In which I briefly pontificate on the Git-Flow Workflow.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OpenVPN on a Pi3</title>
+      <link>https://peterlavalle.github.io/post/pi3-openvpn/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-openvpn/</guid>
+      <description>&lt;p&gt;These are some old notes on using a Pi3 as a VPN host - I can&amp;rsquo;t remember why I un-published them.
+Might be fun to &lt;a href=&#34;https://hub.docker.com/r/raspbian/stretch&#34;&gt;stuff in a container someday.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Implementing an Idris Monad from &#34;Scratch&#34;</title>
+      <link>https://peterlavalle.github.io/post/idris-monad-mine/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/idris-monad-mine/</guid>
+      <description>&lt;p&gt;I implemented the &lt;a href=&#34;http://docs.idris-lang.org/en/latest/tutorial/interfaces.html#monads-and-do-notation&#34;&gt;Idris Monad Interface&lt;/a&gt; by hand because I didn&amp;rsquo;t see a better way.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker with nVidia&#39;s CUDA Support</title>
+      <link>https://peterlavalle.github.io/post/docker-with-cuda/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/docker-with-cuda/</guid>
+      <description>&lt;p&gt;Months ago &amp;hellip; I setup Docker with nVidia support on pokey old computer with a PNY K620 Quadro GPU.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mortal Realms</title>
+      <link>https://peterlavalle.github.io/mortal-realms-partworks/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/mortal-realms-partworks/</guid>
+      <description>This is a bit of a Work In Progress.
+Entries with just a number need to be filled in (by me) before I put this page &amp;ldquo;live&amp;rdquo; on the main menu.
+   These links have an affiliate ID
+ The Mortal Realms has released a partwork magazine thing. I&amp;rsquo;ve found myself enthralled by it. Here, I&amp;rsquo;m collecting an index of the contents and where they came from.</description>
+    </item>
+    
+    <item>
+      <title>goHugo Table of Contents</title>
+      <link>https://peterlavalle.github.io/post/gohugo-tofc/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/gohugo-tofc/</guid>
+      <description>&lt;p&gt;Quick explanation of using &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;Hugo&amp;rsquo;s shortcodes&lt;/a&gt; for a Table of Contents.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>goHugo Mermaid</title>
+      <link>https://peterlavalle.github.io/post/gohugo-mermaid/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/gohugo-mermaid/</guid>
+      <description>&lt;p&gt;I did some tinkering with &lt;a href=&#34;https://mermaidjs.github.io/&#34;&gt;Mermaid&lt;/a&gt; and settled on a shortcode that I&amp;rsquo;m happy with for my &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; blog.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve switched from the &lt;a href=&#34;https://themes.gohugo.io/mainroad/&#34;&gt;Mainroad theme&lt;/a&gt; to the &lt;a href=&#34;https://themes.gohugo.io/binario/&#34;&gt;Binario theme&lt;/a&gt; initally as a (failed) workaround.
+I found that the &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34;&gt;syntax highlighing&lt;/a&gt; for &lt;a href=&#34;https://themes.gohugo.io/binario/&#34;&gt;Binario theme&lt;/a&gt; worked better so I&amp;rsquo;ve kept it.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OpenGL-Vertex-Array-Objects</title>
+      <link>https://peterlavalle.github.io/post/opengl-vertex-array-objects/</link>
+      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/opengl-vertex-array-objects/</guid>
+      <description>&lt;p&gt;OpenGL introduced yet-another object in the form of the &amp;ldquo;Vertex Array Object&amp;rdquo; to carry (in effect) the vertex format data.
+Here&amp;rsquo;s an example of how to create an OpenGL4.3+DSA Vertex Array Object.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scala Maybe</title>
+      <link>https://peterlavalle.github.io/post/scala-maybe/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/scala-maybe/</guid>
+      <description>&lt;p&gt;I wrote a &lt;a href=&#34;https://wiki.haskell.org/Maybe&#34;&gt;Maybe&lt;/a&gt; (a lazy &lt;code&gt;Option[T]&lt;/code&gt;) that I can use in Scala.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pushing (from GoGS) with `post-receive` (to a mirror)</title>
+      <link>https://peterlavalle.github.io/post/gogs-push-on-push/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/gogs-push-on-push/</guid>
+      <description>&lt;p&gt;I have a &lt;a href=&#34;https://gogs.io/&#34;&gt;GoGS&lt;/a&gt; server for my work.
+I want to back it up off-site to &lt;a href=&#34;https://gitlab.com/gitlab-org/gitlab-ce&#34;&gt;our GitLab instance&lt;/a&gt;.
+According to a &lt;a href=&#34;https://www.atlassian.com/git/tutorials/git-hooks#server-side-hooks&#34;&gt;document I read&lt;/a&gt; this should be possible using &lt;code&gt;post-receive&lt;/code&gt; hooks.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MultiBranch Mercurial JenkinsFile</title>
+      <link>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</link>
+      <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING;&lt;/strong&gt; this configuration doesn&amp;rsquo;t seem to delete old builds.
+Ever, see; &lt;a href=&#34;https://issues.jenkins-ci.org/browse/JENKINS-34738&#34;&gt;https://issues.jenkins-ci.org/browse/JENKINS-34738&lt;/a&gt;.
+I&amp;rsquo;ve worked around it by putting the following blurb near the top of my &lt;code&gt;JenkinsFile&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AIY and Pi4j (Voice V1) GPIO Reference</title>
+      <link>https://peterlavalle.github.io/post/aiy-voice-v1-reference/</link>
+      <pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/aiy-voice-v1-reference/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m trying to use a &lt;a href=&#34;https://aiyprojects.withgoogle.com/voice-v1/&#34;&gt;Google AIY Voice V1&lt;/a&gt; with &lt;a href=&#34;http://pi4j.com/&#34;&gt;Pi4J&lt;/a&gt;.
+I had a bit of trouble finding the pins, so I&amp;rsquo;m posting this here in case anyone else is looking.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>(GZ3)Doom (1993) VR is totally worth it</title>
+      <link>https://peterlavalle.github.io/post/gz3doomvr/</link>
+      <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/gz3doomvr/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/Fishbiter/gz3doom&#34;&gt;Someone has ported Doom (1993) to VR&lt;/a&gt; and it is as vomit-inducing-awesome in VR as you would expect.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WiFi on a headless Raspberry Pi</title>
+      <link>https://peterlavalle.github.io/post/pi3-wifi/</link>
+      <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-wifi/</guid>
+      <description>&lt;p&gt;I have no idea why the other guides for this take four pages.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Work</title>
+      <link>https://peterlavalle.github.io/work-and-contibutions/</link>
+      <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/work-and-contibutions/</guid>
+      <description>orcid.org/0000-0002-9737-6690  PhD Student of;  Dr Michel Valstar Dr Henrik Nilsson  Research Programmer / Assistant at the University of Nottingham Computer Science Department  Dr Michel Valstar I&amp;rsquo;m working on/with the ARIA Virtual Human and eMax Emotion Detection projects  started July 2017  Dr Peter Blanchfield UoN iBit (here&amp;rsquo;s an old page about the project)  from Jan 2015 until July 2017 perform clinical evaluations of stereoscopic games for the treatment of lazy eye  (we know that they work in a lab)  currently, patching is used  patching is not very popular but it (usually) works  McGill / UbiSoft are doing something similar   I was the/a Tools Engineer for Big Fest Cabal Online as a Server Engineer Darkened Skye (GameCube) as a Gameplay Tester The usual &amp;ldquo;misc&amp;rdquo; development and testing including;  mobile games testing at Absolute Quality Glasgow some web pages while working here a VB front-end to Sage while working here a VLE for Sheffield University&amp;rsquo;s Archaeology Department   I have been a lab-demonstrator for;</description>
+    </item>
+    
+    <item>
+      <title>Marshalling Gits</title>
+      <link>https://peterlavalle.github.io/post/marhsalling-gits/</link>
+      <pubDate>Sun, 25 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/marhsalling-gits/</guid>
+      <description>&lt;p&gt;This is a quick post-mortem on the three methods I examined for nesting some of our Git repos.
+In the end, I ran out of time and felt that the &lt;em&gt;diversity&lt;/em&gt; of a CS team means that special handling would not produce a time saving benefit for me.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Launch the Docker Daemon from osMac CLI</title>
+      <link>https://peterlavalle.github.io/post/launch-docker-daemon-mac-cli/</link>
+      <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/launch-docker-daemon-mac-cli/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m away and want to start the Docker daemon.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:suspectRestart&#34;&gt;&lt;a href=&#34;#fn:suspectRestart&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Git Copy PY Script</title>
+      <link>https://peterlavalle.github.io/post/git-copy-py/</link>
+      <pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/git-copy-py/</guid>
+      <description>I found a set of git tasks was taking non-trivial time to checkout and push between repositories. I couldn&amp;rsquo;t find docs for a (working) git command sequence1 that pushed branches from one remote to another; so I wrote a python script to checkout a branch to local then push it. Once I was sure that it was running; I could reallocate my attention to something more deserving of my talents.</description>
+    </item>
+    
+    <item>
+      <title>Scala Extractors</title>
+      <link>https://peterlavalle.github.io/post/scala-extractor/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/scala-extractor/</guid>
+      <description>Scala&amp;rsquo;s extractors and unapply() represent a concept that I haven&amp;rsquo;t grok&amp;rsquo;ed until now.
+Most demonstrations seem to be too long or use the same types everywhere. Here are my thoughts on the concept;
+val a: C = ??? val i: I = ??? i match { case a(f: O) =&amp;gt; ??? }  This will try to call the below method
+class C { def unapply(i: I): Option[O] = ??? }  There&amp;rsquo;s some more flexibility;</description>
+    </item>
+    
+    <item>
+      <title>Whippet</title>
+      <link>https://peterlavalle.github.io/post/whippet/</link>
+      <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/whippet/</guid>
+      <description>I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of contemporary game-engines.
+This post is a bit crude; I keep thinking about it then adding features to Whippet instead of writing this up.
+Whippet on GitHub Google built CORGI which isn&amp;rsquo;t (yet?) trying to act cache coherent. It also is more than trivial to build, and suffers from NIH for me. Actually; that last bit isn&amp;rsquo;t likely to be a problem for most, but I didn&amp;rsquo;t like their license.</description>
+    </item>
+    
+    <item>
+      <title>Of Entity-Component-Systems</title>
+      <link>https://peterlavalle.github.io/post/whippet-ecs/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/whippet-ecs/</guid>
+      <description>I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of modern game-engines.
+This post is largely a gooey weasel opinion piece. It started as an introduction that grew out of control. So, for now, it&amp;rsquo;s just a bit of rambling while I clean-up the documentation for my tool.
+Of Entity-Component-Systems Among other things, Jason Gregory&amp;rsquo;s book Game Engine Architecture discusses the concept of a data-driven architecture for game software.</description>
+    </item>
+    
+    <item>
+      <title>Cmder in TortoiseHG</title>
+      <link>https://peterlavalle.github.io/post/cmder-intortoisehg/</link>
+      <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/cmder-intortoisehg/</guid>
+      <description>Have you used TortoiseHG?
+ It is lovely!
+ Have you used Cmder?
+ It is lovely!
+ If you &amp;hellip;
+ setup cmder to launch from the command line open TortoiseHG Workbench &amp;gt; File / Settings &amp;gt; TortoiseHG / Shell put cmder %(root)s into the Shell field  &amp;hellip; then you can have these two lovely tools holding hands and kicking-bugs!</description>
+    </item>
+    
+    <item>
+      <title>Open macOS Terminal in Folder</title>
+      <link>https://peterlavalle.github.io/post/macos-open-terminal-in-folder/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/macos-open-terminal-in-folder/</guid>
+      <description>In January of 2018, you can launch macOS&amp;rsquo;s terminal with the command /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal1
+I have (to use) a macOS computer. I choose to use TortoiseHG because it is lovely. TortoiseHG has a &amp;ldquo;launch the terminal&amp;rdquo; context menu entry.
+Under macOS, you need to specify the terminal command that TortoiseHG should use. You need this, in your preference, to launch the terminal in the repo;
+ /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal %(root)s
+  https://stackoverflow.com/questions/4404242/programmatically-launch-terminal-app-with-a-specified-command-and-custom-colors [return]   </description>
+    </item>
+    
+    <item>
+      <title>Moving Platforms in Unity3D</title>
+      <link>https://peterlavalle.github.io/post/unity3d-moving-platform/</link>
+      <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/unity3d-moving-platform/</guid>
+      <description>This is a short example of moving platforms in Unity3D.
+Based on this tweet, I spent &amp;hellip; 30 minutes? Maybe? putting it together.
+ This writeup took longer.
+ The approach uses two behaviour classes to achive the classical effect of moving platforms that follow some path.
+ mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&amp;rsquo;ve reached the Waypoint, continue with its next one   My example;</description>
+    </item>
+    
+    <item>
+      <title>Adventures in Demo Making</title>
+      <link>https://peterlavalle.github.io/post/democore/</link>
+      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/democore/</guid>
+      <description>I should just &amp;ldquo;blog&amp;rdquo; informally more often - so here goes.
+I&amp;rsquo;ve cobbled together a toolchain/asset-conditioning-pipeline of sorts for demoscene type stuff. My system is written in Scala on Gradle and functions by emitting C/++ and CMake files for Visual Studio. All of this produces a C/++11&amp;frasl;14 and GLFW/GLAD/OpenGL4.3&amp;frasl;4.5 executable that displays someone else&amp;rsquo;s ShaderToy project. Nothing revolutionary, but I&amp;rsquo;m after pretty-code that I can keep using rather than actual hard &amp;ldquo;street cred&amp;rdquo; quality demo results.</description>
+    </item>
+    
+    <item>
+      <title>How To</title>
+      <link>https://peterlavalle.github.io/how-to/</link>
+      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/how-to/</guid>
+      <description>This is a hand-rolled list of posts that explain how to get some weirdness running on a PC.
+In which, I explain how to &amp;hellip;
+ &amp;hellip; write Scala Extractors (for pattern matching) &amp;hellip; run Jenkin MultiBranch builds from Mercurial &amp;hellip; setup an nGinx reverse proxy on a Pi3 &amp;hellip; install GOGS into a Docker container on a Pi3 &amp;hellip; setup NameCheap&amp;rsquo;s DynamicDNS on a Pi3 &amp;hellip; use WinSSH-FS as a replacement for SaMBa &amp;hellip; setup OpenVPN on a Pi3 &amp;hellip; automate deployment of a Unity WebGL App  </description>
+    </item>
+    
+    <item>
+      <title>(Scala) Delay Run</title>
+      <link>https://peterlavalle.github.io/post/delay-run/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/delay-run/</guid>
+      <description>I wrote a threading primitive and I&amp;rsquo;m very pleased with it. I plan to wrap all of my &amp;ldquo;save file&amp;rdquo; things in this, from now on.
+Delay Run This class acts as a sort of &amp;ldquo;once inactive for X do Y&amp;rdquo; pattern. In my design, I&amp;rsquo;m wrapping my save actions in it and triggering schedule() after practically every edit.
+The class is passed a delay: Long value to specify how long to actually wait - I&amp;rsquo;m using 1.</description>
+    </item>
+    
+    <item>
+      <title>Gradlification of FlexDock</title>
+      <link>https://peterlavalle.github.io/post/gradlfy-flexdock/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/gradlfy-flexdock/</guid>
+      <description>Some clever clogs made a snazzy tool called SciLab as another not-MatLab.1 Flex Dock is the framework that (I think) they developed for docking frames. It&amp;rsquo;s not in Maven Central so I&amp;rsquo;ve forked it and deployed it to my own repository.
+convert the build The actual conversion was embarrassingly easy since the gradle importer stuff really works for this sort of thing. As a matter of personal preference, I re-arranged the build scripts to be a single file but otherwise left them as-is.</description>
+    </item>
+    
+    <item>
+      <title>Pi3 nGinx Reverse Proxy</title>
+      <link>https://peterlavalle.github.io/post/pi3-nginx/</link>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-nginx/</guid>
+      <description>So &amp;hellip; you&amp;rsquo;ve got a Pi3 running as a Docker host with some services that you want your buddies to have access to. You could try and get them to SSH into your home network; just like you could type all your programs with a touchscreen.
+I&amp;rsquo;m going to use nGinx to setup a reverse-proxy from my real-Pi3 to various Docker containers based on URL rewriting.
+I&amp;rsquo;m doing something else (of course) I&amp;rsquo;m setting up (what I call) name-based-virtual-hosting.</description>
+    </item>
+    
+    <item>
+      <title>GoGS on a Pi3 (via Docker)</title>
+      <link>https://peterlavalle.github.io/post/pi3-docker-gogs/</link>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-docker-gogs/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been assembling a &amp;ldquo;full stack&amp;rdquo;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:fwiw&#34;&gt;&lt;a href=&#34;#fn:fwiw&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; for development that runs on my Pi3.
+This is all happening inside of &lt;a href=&#34;https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/&#34;&gt;Docker&lt;/a&gt; containers which made cleanup redonkulously easy.
+Today I was looking at a source code management system; something of a &amp;ldquo;my own GitHub&amp;rdquo; which I can run on my own network.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pipe Sink</title>
+      <link>https://peterlavalle.github.io/post/pal-pipe-sink/</link>
+      <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pal-pipe-sink/</guid>
+      <description>I had an idea/desire for a &amp;ldquo;simple&amp;rdquo; template class that&amp;rsquo;d work as my OpenGL thread. A contemporary design for multi-threaded 3D games10 seems to be pooling work and processing it in whatever threads are available. IME OpenGL/GLFW are not re-entrant; Apple2 and GLFW3 explicitly states that it won&amp;rsquo;t work - so it seems safe to assume that I shouldn&amp;rsquo;t call functions from different threads. So to make a super-fast 3D game (or whatever) I need to do less work on the thread which is running OpenGL while allowing other threads to send it whatever work they please.</description>
+    </item>
+    
+    <item>
+      <title>Pi3 NameCheap</title>
+      <link>https://peterlavalle.github.io/post/pi3-namecheap/</link>
+      <pubDate>Thu, 29 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-namecheap/</guid>
+      <description>This is a followup to a previous post because that one stopped working, now - this works.
+There&amp;rsquo;s not a lot of OC here, just clarity.
+NameCheap DynDNS on a Pi3 I use NameCheap (because they&amp;rsquo;re anti-SOPA) for DNS. The client program, ddclient, can connect to NameCheap.
+I&amp;rsquo;m using raspbian, so, first;
+ run sudo apt-get install ddclient on your Pi find the dynamic DNS settings on NameCheap&amp;rsquo;s website  Dashboard &amp;gt;&amp;gt;&amp;gt; Domain List &amp;gt;&amp;gt;&amp;gt; Manage &amp;gt;&amp;gt;&amp;gt; Advanced DNS they do like to change these things around  halfway down the page, there should be a DYNAMIC DNS thingie  enable it (if you haven&amp;rsquo;t already) note the blurb-what-looks-like-a-SHA  edit your /etc/ddclient.</description>
+    </item>
+    
+    <item>
+      <title>Replace SaMBa with WinSSHFS!</title>
+      <link>https://peterlavalle.github.io/post/replace-samba-with-winsshfs/</link>
+      <pubDate>Sat, 24 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/replace-samba-with-winsshfs/</guid>
+      <description>I connected my Windows desktop to our office file server using SSHFS rather than SaMBa. I am happy about that.
+For some reason one of our SaMBa systems got twitchy sometime last month. This is a problem since I&amp;rsquo;ve inherited a script that;
+ I don&amp;rsquo;t yet understand runs on Windows (10?) exclusively reads data from \\foo\bar\project\user\project3\data\something paths  Since I know that SSHFS already works, I&amp;rsquo;m setting that up as a substitue.</description>
+    </item>
+    
+    <item>
+      <title>Pi3 DynDNS</title>
+      <link>https://peterlavalle.github.io/post/pi3-dyndns/</link>
+      <pubDate>Sun, 21 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-dyndns/</guid>
+      <description>This has been replaced
+Pi3 DynDNS I want to give my home&amp;rsquo;s Raspberry Pi3 a DNS name so that I can access it more easily.
+DNS and Dynamic IP Addresses The Domain Naming System is how those readable textual names like example.com become the actual IP Addresses like 127.0.0.1 that web pages, email, and everything else needs to work. Various groups allow people to register a domain (or subdomain) and specify the IP address of a computer that the domain should reffer to.</description>
+    </item>
+    
+    <item>
+      <title>GitHub Pages Publish</title>
+      <link>https://peterlavalle.github.io/post/github-pages-publish/</link>
+      <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/github-pages-publish/</guid>
+      <description>GitHub pages allow a GitHub repository to function as a web-server thing.
+&amp;hellip; whatevs &amp;hellip;
+ create a repository on GitHub  I created game-SpaceShips at git@github.com:g-pechorin/game-SpaceShips.git  run these from the root;
+rm -dfr .git git init git checkout -b gh-pages git add . git commit -m &amp;#34;some stuffff or what&amp;#34; git remote add origin git@github.com:g-pechorin/game-SpaceShips.git git push -f origin gh-pages  enjoy!   </description>
+    </item>
+    
+    <item>
+      <title>Single Header Bullet</title>
+      <link>https://peterlavalle.github.io/post/oth-bullet/</link>
+      <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/oth-bullet/</guid>
+      <description>https://github.com/g-pechorin/bullet2stripped
+What? I reduced Bullet 2.83 to a single C++ header file.
+Why? Largely to see if I could &amp;hellip; hey - SQLite saw a 5% - 10% speed boost when they did this right?
+&amp;hellip; oh - and to ease adoption I guess &amp;hellip; maybe &amp;hellip;
+How? I used a slightly complicated Scala script that I&amp;rsquo;m not interested in examining again &amp;hellip; for now &amp;hellip;
+Basically; I took the 2.</description>
+    </item>
+    
+    <item>
+      <title>Peter&#39;s Awesome Lua with the Core functionality we care about</title>
+      <link>https://peterlavalle.github.io/post/oth-palua-core/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/oth-palua-core/</guid>
+      <description>TL:DR ; results
+DukTape is a C engine for executing ECMAScript 5.1ish. (&amp;hellip; or JavaScript or whatever we&amp;rsquo;re calling it this week) Notably, it&amp;rsquo;s distributed as a trio of source files to ease integration.
+Lua is a C script engine (for the Lua languages) and is not distributed in such a nice way. So I spent a few hours preparing a (Python) script to repack Lua 5.3.3 into a single header.</description>
+    </item>
+    
+    <item>
+      <title>PAL-System</title>
+      <link>https://peterlavalle.github.io/post/palsystem/</link>
+      <pubDate>Sat, 12 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/palsystem/</guid>
+      <description>Lindenmayer Systems allow one to specify a series of replacement rules for transforming strings.
+If the text is used as a series of drawing commands, including saving and restoring the cursor&amp;rsquo;s position, the technique can generate fairly interesting foliage.
+A scene graph offers the ability to save/restore by chaining segments together. I used Unity3D&amp;rsquo;s ScriptableObject to create &amp;ldquo;Languages&amp;rdquo; with replacement rules. I also created &amp;ldquo;Dictionaries&amp;rdquo; mapping symbols to segments made from GameObject prefabs.</description>
+    </item>
+    
+    <item>
+      <title>Vive Cane</title>
+      <link>https://peterlavalle.github.io/post/vive-cane/</link>
+      <pubDate>Sun, 04 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/vive-cane/</guid>
+      <description>I&amp;rsquo;m still alive just &amp;hellip; busy, not bloggy &amp;hellip; maybe someday I&amp;rsquo;ll be more bloggy. Here&amp;rsquo;s something that kept me busy &amp;hellip;
+Teleporting everywhere feels wrong, so my suggestion is to use the Vive wand like a cane. Two minutes feels a bit long, but here&amp;rsquo;s a video showing it off.
+  More or less; when you grip the/a wand - your avatar is planting a cane in the world from which you can push yourself.</description>
+    </item>
+    
+    <item>
+      <title>Adding NotePad&#43;&#43; Macros to Atom.io</title>
+      <link>https://peterlavalle.github.io/post/atom-macros/</link>
+      <pubDate>Thu, 11 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/atom-macros/</guid>
+      <description>I haven&amp;rsquo;t posted anything in awhile &amp;hellip; so here&amp;rsquo;s how to get Atom.io to get macros that work kind-of-like NotePad++
+ Install atom-keyboard-macros into Atom. &amp;gt; The default keybindings did nothing for me &amp;hellip; sorry
+ open your keybindings.cson
+ Hit CTRL+, &amp;gt; click on Keybindings &amp;gt; click on the blue text that says your keymap file  paste this wodge into the bottom of your keybindings.cson PRESERVE THE INDENTATION!</description>
+    </item>
+    
+    <item>
+      <title>Mirroring Git/GitHub to Hg/BitBucket</title>
+      <link>https://peterlavalle.github.io/post/mirroring-github-to-bitbucket/</link>
+      <pubDate>Fri, 22 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/mirroring-github-to-bitbucket/</guid>
+      <description>This seemed a lot longer when I planned it in my notebook at lunch.
+   GitHub user project (both sides) BitBucket user SCM Schedule     ocornut imgui g-pechorin None Periodic     Install hg-git  You&amp;rsquo;ll have to do this on the Jenkins server You&amp;rsquo;ll have to do it either for the Jenkins user or all I&amp;rsquo;m using an OsX machine as my host, so I was able to use easy_install to install hg-git and dulwich  setup a project on GitHub create a Jenkins Freestyle project which runs periodically  Polling the SCM was NOT an option since there&amp;rsquo;s no default branch on GitHub  &amp;hellip; this is a quirk of hg-git &amp;hellip; I think &amp;hellip; IIRC/YRMV - so sling me a tweet or whatever if I&amp;rsquo;m wrong   program the job to pull from git, push to hg, and ignore results of 1</description>
+    </item>
+    
+    <item>
+      <title>Mercurial / Hg SubRepos</title>
+      <link>https://peterlavalle.github.io/post/hg-subrepos/</link>
+      <pubDate>Tue, 19 Jul 2016 19:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/hg-subrepos/</guid>
+      <description>I&amp;rsquo;m still trying to catch up on stuff following Develop. I&amp;rsquo;ve decided to write a post about my experience(s) switching my work over to SubRepos.
+I am unaware of the &amp;ldquo;reason&amp;rdquo; why they&amp;rsquo;re considered &amp;ldquo;bad.&amp;rdquo; Perhaps it&amp;rsquo;s a Unix thing? Maybe they don&amp;rsquo;t work as well as people feel that they should?
+Whatever
+I have a (secret) project called &amp;ldquo;nite-nite/&amp;rdquo; in which I use and develop some public-domain headers. I want this public-domain stuff to be &amp;hellip; well &amp;hellip; public-domain and visible to all.</description>
+    </item>
+    
+    <item>
+      <title>Stop Motion</title>
+      <link>https://peterlavalle.github.io/post/stop-motion/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/stop-motion/</guid>
+      <description>Mother told me to try something different.
+{% youtube NKtWPRFU_HA %}
+I made a stop-motion video (mostly to see if I could) with bits I had lying around or withing a 5 minute walk. &amp;hellip; also, I wanted to see if I could record &amp;ldquo;blocked out&amp;rdquo; storyboards since I&amp;rsquo;m a crap pose drawing person.
+I spent £2 on some pipe cleaners and a dopey phone stand. I took the pictures on my phone.</description>
+    </item>
+    
+    <item>
+      <title>Dual Hetero Quadro on Heaven</title>
+      <link>https://peterlavalle.github.io/post/dual-hetero-quadro-on-heaven/</link>
+      <pubDate>Thu, 12 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/dual-hetero-quadro-on-heaven/</guid>
+      <description>Literally the punchiest title I could come up with. I&amp;rsquo;ve been told that heterogeneous GPU setups are ridiculously slower than a single-GPU. This is largely an anecdotal shrug of &amp;ldquo;hey - a second GPU doesn&amp;rsquo;t really slow my computer down in any meaningful manner at all!&amp;rdquo; I&amp;rsquo;m sure that I did this all wrong and that the GPU is capable of being tweaked into a setting where this all becomes conclusively - the legwork for that isn&amp;rsquo;t interesting to me so I haven&amp;rsquo;t done it.</description>
+    </item>
+    
+    <item>
+      <title>Canadian Racing Geese</title>
+      <link>https://peterlavalle.github.io/post/racing-geese/</link>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/racing-geese/</guid>
+      <description>I have had several geese charge me - this is a poor approximation.
+I was quite young and the geese were acclimated to humans, more importantly, they knew how tasty the french fries and clam strips we carried were. I never had a chance, nor will I ever forget. Honking with a bestial hunger, the savage geese charged! Pursing me across the fried clam shop&amp;rsquo;s parking lot, my mother could only cackle as she scrambled for the camera.</description>
+    </item>
+    
+    <item>
+      <title>Bin Plugins / Python 3.5.1</title>
+      <link>https://peterlavalle.github.io/post/binplugin-python3.5.1/</link>
+      <pubDate>Wed, 13 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/binplugin-python3.5.1/</guid>
+      <description>I was playing with Python&amp;rsquo;s binary extension system and was impressed with the simplicity. I think that the usage of setup.py encourages a consistent ecosystem &amp;hellip; as opposed to the more open conventions used by Java and CLR.
+(I followed the generic instructions and they worked fine on Windows 8.1 - disregard the hype/hate!)
+Example on GitHub</description>
+    </item>
+    
+    <item>
+      <title>Hungarian Notation</title>
+      <link>https://peterlavalle.github.io/post/hungarian-notation/</link>
+      <pubDate>Wed, 02 Mar 2016 15:39:37 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/hungarian-notation/</guid>
+      <description>In which I pontificate on the subject of Hungarian Notation
+Hungarian Notation is a contentious topic It boils down to an ambiguity for the word &amp;ldquo;type&amp;rdquo; within English / C++. MicroSfot&amp;rsquo;s modern style-guide says not to use &amp;ldquo;Abbreviations and Acronyms&amp;rdquo; or &amp;ldquo;Hungarian Notation&amp;rdquo; - originally Hungarian Notation was a style of abbreviation. I&amp;rsquo;m going to paraphrase a long blog post by Joel on Software and summarize my thoughts at the end.</description>
+    </item>
+    
+    <item>
+      <title>Space Ships</title>
+      <link>https://peterlavalle.github.io/post/space-ships/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/space-ships/</guid>
+      <description>Awhile ago I undertook a goofy little &amp;ldquo;game-play study&amp;rdquo; with space ships.
+It has space ships
+I&amp;rsquo;m calling it Space-Ships.
+I wanted to see if 2D game-play (like S.P.A.Z.) could &amp;ldquo;feel&amp;rdquo; like traditional 3D. (like Freelancer) To study this I built a game-play prototype with a 2.5D chase-cam in (Unity) a 3D game engine. I used engine&amp;rsquo;s existing rigid body simulator (PhysX) to provide a limited version of physics. After constraining everything to a 2D plane and fiddling with the inertia values in various ways I was happy with the flight mechanics.</description>
+    </item>
+    
+    <item>
+      <title>Automated Unity WebGL Deployment</title>
+      <link>https://peterlavalle.github.io/post/myspaceships/</link>
+      <pubDate>Fri, 26 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/myspaceships/</guid>
+      <description>I have an old Unity project that I haven&amp;rsquo;t looked at in awhile - this one. If memory serves; assembling a WebGL version is slow and boring - so I&amp;rsquo;m making my eager little Jenkins server do it.
+Really I&amp;rsquo;m a bit bored with sbt-launch malarkey and I wanted to see if I could get this rolling. Broadly the steps that I followed went like this;
+ Install Unity (5.</description>
+    </item>
+    
+    <item>
+      <title>Hexo and Jenkins atop Os X</title>
+      <link>https://peterlavalle.github.io/post/hexo-os-x/</link>
+      <pubDate>Wed, 10 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/hexo-os-x/</guid>
+      <description>In which I ramble a bit about setting up CI for this very blog.
+I have a Jenkins server running on my OsX computer. (&amp;hellip; or &amp;hellip; I&amp;rsquo;m setting one up anyway) I also have (am establishing?) a blog built by Hexo &amp;hellip; because that seems the right way to do this sort of thing. My constraints of &amp;ldquo;MarkDown&amp;rdquo; and &amp;ldquo;no really - let me use MarkDown because I&amp;rsquo;m going to have a lot of code fragments&amp;rdquo; seem alien to most blogging software - &amp;ldquo;Hexo delivers&amp;rdquo; as the kids say.</description>
+    </item>
+    
+    <item>
+      <title>New Digs</title>
+      <link>https://peterlavalle.github.io/post/new-digs/</link>
+      <pubDate>Tue, 19 Jan 2016 20:54:04 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/new-digs/</guid>
+      <description>I am experimenting with Hexo. I do believe it&amp;rsquo;s much nicer than my old system.
+So far I&amp;rsquo;ve setup a basic site, a sitemap generator and it deploys to my existing GitHub pages configuration. Now I&amp;rsquo;m tweaking themes/ and copying over worthwhile articles from previous blogs!
+The whole thing weighs in at 480K (or did before I added this sentence) so I&amp;rsquo;m fighting the Website Obesity Crisis somewhat &amp;hellip; right?</description>
+    </item>
+    
+    <item>
+      <title>Swag</title>
+      <link>https://peterlavalle.github.io/post/swag/</link>
+      <pubDate>Thu, 12 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/swag/</guid>
+      <description>You don’t need members when you’ve got SWAG!
+Actually &amp;hellip; you don&amp;rsquo;t get many members with this idea. By casting this I can pass around an immutable structure of up-to sizeof(void*) bytes.
+Gist; https://gist.github.com/g-pechorin/d5eb8a1a770f783943a0
+ </description>
+    </item>
+    
+    <item>
+      <title>First Post</title>
+      <link>https://peterlavalle.github.io/post/first-post/</link>
+      <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/first-post/</guid>
+      <description>Can I use polymorphic-static-templates to automagically wire meta-functions into a Lua allocator?
+Presently I’m using several “make—” functions to “decorate” objects after allocation and enable get/set/run meta-functions. I keep feeling the “smell” that some esoteric template thingies could be used to make these steps declarative (or maybe automatic!)</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://peterlavalle.github.io/post/hello-world/</link>
+      <pubDate>Mon, 14 Mar 1983 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/hello-world/</guid>
+      <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start Create a new post $ hexo new &amp;#34;My New Post&amp;#34; More info: Writing
+Run server $ hexo server More info: Server
+Generate static files $ hexo generate More info: Generating
+Deploy to remote sites $ hexo deploy More info: Deployment</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/junk/benchmarks/qham/no-ant-virus.basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/junk/benchmarks/qham/no-ant-virus.basic/</guid>
+      <description>Unigine benchmark results body { background: #1a242a; color: #b4c8d2; margin-right: 20px; margin-left: 20px; font-size: 14px; font-family: Arial, sans-serif, sans; } a { } a:link { color: #b4c8d2; } a:active { color: #ff9900; } a:visited { color: #b4c8d2; } a:hover { color: #ff9900; } h1 { color: #ff9900; font-size: 36px; text-align: center; } h2 { text-align: center; font-size: 24px; } h3 { color: #ffffff; text-align: center; } .right { text-align: right; } div.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/junk/benchmarks/qham/no-ant-virus.extreme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/junk/benchmarks/qham/no-ant-virus.extreme/</guid>
+      <description>Unigine benchmark results body { background: #1a242a; color: #b4c8d2; margin-right: 20px; margin-left: 20px; font-size: 14px; font-family: Arial, sans-serif, sans; } a { } a:link { color: #b4c8d2; } a:active { color: #ff9900; } a:visited { color: #b4c8d2; } a:hover { color: #ff9900; } h1 { color: #ff9900; font-size: 36px; text-align: center; } h2 { text-align: center; font-size: 24px; } h3 { color: #ffffff; text-align: center; } .right { text-align: right; } div.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/junk/benchmarks/qham/sophos.basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/junk/benchmarks/qham/sophos.basic/</guid>
+      <description>Unigine benchmark results body { background: #1a242a; color: #b4c8d2; margin-right: 20px; margin-left: 20px; font-size: 14px; font-family: Arial, sans-serif, sans; } a { } a:link { color: #b4c8d2; } a:active { color: #ff9900; } a:visited { color: #b4c8d2; } a:hover { color: #ff9900; } h1 { color: #ff9900; font-size: 36px; text-align: center; } h2 { text-align: center; font-size: 24px; } h3 { color: #ffffff; text-align: center; } .right { text-align: right; } div.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/junk/benchmarks/qham/sophos.extreme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/junk/benchmarks/qham/sophos.extreme/</guid>
+      <description>Unigine benchmark results body { background: #1a242a; color: #b4c8d2; margin-right: 20px; margin-left: 20px; font-size: 14px; font-family: Arial, sans-serif, sans; } a { } a:link { color: #b4c8d2; } a:active { color: #ff9900; } a:visited { color: #b4c8d2; } a:hover { color: #ff9900; } h1 { color: #ff9900; font-size: 36px; text-align: center; } h2 { text-align: center; font-size: 24px; } h3 { color: #ffffff; text-align: center; } .right { text-align: right; } div.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/junk/dukrow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/junk/dukrow/</guid>
+      <description>DukRow 2017-03-21 I seem to be missing some of the fields? The &amp;ldquo;each&amp;rdquo; method isn&amp;rsquo;t working for behaviour_test.row.js
+(started using GitLab to organise issues)
+https://gitlab.com/g-pechorin/dukrow/issues/1
+the variables being set by the script aren&amp;rsquo;t being saved &amp;hellip; because &amp;hellip; of &amp;hellip; what?
+the functions are being save just fine, but, the variables aren&amp;rsquo;t?
+why aren&amp;rsquo;t variables being set?
+2017-03-20 Had a &amp;ldquo;sick weekend&amp;rdquo; where I &amp;hellip; think that I got &amp;ldquo;a lot&amp;rdquo; done &amp;hellip; maybe &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/kit-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/kit-list/</guid>
+      <description>My &amp;ldquo;arsenal&amp;rdquo; - this isn&amp;rsquo;t meant to be public, but I see no harm to making it such.
+   GPU OpenGL OpenCL GLES     HD 6770 4.4 1.2 ??   HD 7340 (Laptop) 4.3 ?? ??   Adreno 330 (Nexus 5)  1.1ep 3.0   PNY K620 4.5 1.2 ??   GTX 970 (Desktop) 4.5 1.2 ??   Tegra 3 T33 (Ouya)   +2.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/notebooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/notebooks/</guid>
+      <description>Notebooks  2019-10-29 / Paint  tried some mixes of what not to make a poor contrast  tried VJ thinner and lahmian  &amp;ldquo;lahmian:2&amp;rdquo; with &amp;ldquo;alien purple:1&amp;rdquo; looks good for what I want next step is to test it with reds/browns/blacks for the traitor guard  2019-10-29 / Cooking    Count Ingridient     25g double cream   50g chocolate   75g soft cheese     nuked chocolate whipped all else spread over biscuit in Yorkie tin set in freezer</description>
+    </item>
+    
+    <item>
+      <title>40k 8th CheatSheet</title>
+      <link>https://peterlavalle.github.io/40k8th-cheat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/40k8th-cheat/</guid>
+      <description>Weapon Stationary Moved Advanced Retreat     Charge ?  No No   Assault ?  ? ?   Pistol ? ? ? ?   Rapid Fire ? ? ? ?   Heavy ? ? ? ?   Grenade ? ? ? ?   Macro ? ? ? ?       S vs T Roll     S &amp;gt;= 2*T ?</description>
+    </item>
+    
+    <item>
+      <title>Blackstone Rulebook</title>
+      <link>https://peterlavalle.github.io/blackstone-rulebook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/blackstone-rulebook/</guid>
+      <description>&lt;aside style=&#34;float: right;&#34;&gt;
+	
+&lt;/aside&gt;
+
+&lt;p&gt;What follows is my attempt to transcribe and annotate the various rules for &lt;a href=&#34;https://warhammer40000.com/blackstone-fortress/&#34;&gt;Blackstone Fortress&lt;/a&gt; which we/I hope to use and enjoy.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
