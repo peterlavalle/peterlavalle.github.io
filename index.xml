@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Tools</title>
+      <link>https://peterlavalle.github.io/tools/</link>
+      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tools/</guid>
+      <description>&amp;hellip; that I like
+ Mermaid  https://mermaidjs.github.io/ documents, but, you write them like markdown has a live editor  &amp;hellip; which can create markdown  it encodes your work creates a markdown image ref to that wraps the image ref in a link to the editor   there are some PanDoc integrations  fips  http://floooh.github.io/fips/ C/++ et al build automaton uses cmake/python and &amp;ldquo;smooths the edges&amp;rdquo; that those two leave behind  DukTape  https://duktape.</description>
+    </item>
+    
+    <item>
       <title>Tools Page</title>
       <link>https://peterlavalle.github.io/post/tools/</link>
       <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
@@ -20,15 +30,6 @@
       <description>PhD is hard.
 COVID-19 sucks.
 I started a staff-wiki-page listing development tools then decided that it should be here too.</description>
-    </item>
-    
-    <item>
-      <title>Tools that I like</title>
-      <link>https://peterlavalle.github.io/tools/</link>
-      <pubDate>Sat, 21 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tools/</guid>
-      <description>Mermaid  https://mermaidjs.github.io/ documents, but, you write them like markdown has a live editor  &amp;hellip; which can create markdown it encodes your work creates a markdown image ref to that wraps the image ref in a link to the editor   fips  http://floooh.github.io/fips/ C/++ et al build automaton uses cmake/python and &amp;ldquo;smooths the edges&amp;rdquo; that those two leave behind  DukTape  https://duktape.org/ works like a second-generation Lua it&amp;rsquo;s a (ES5) ECMAScript engine in &amp;ldquo;single source&amp;rdquo; build-able it&amp;rsquo;s C, but, there&amp;rsquo;s no build script; just drop it into your project</description>
     </item>
     
     <item>
