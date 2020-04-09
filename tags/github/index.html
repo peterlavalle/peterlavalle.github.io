@@ -13,7 +13,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://peterlavalle.github.io/tags/github/" />
 
-<meta property="og:updated_time" content="2018-09-19T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2020-04-09T00:00:00&#43;00:00"/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -68,20 +68,20 @@ if (!doNotTrack) {
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/gogs-push-on-push/">Pushing (from GoGS) with `post-receive` (to a mirror)</a></h1>
-	<div class="post__content"><p>I have a <a href="https://gogs.io/">GoGS</a> server for my work.
-I want to back it up off-site to <a href="https://gitlab.com/gitlab-org/gitlab-ce">our GitLab instance</a>.
-According to a <a href="https://www.atlassian.com/git/tutorials/git-hooks#server-side-hooks">document I read</a> this should be possible using <code>post-receive</code> hooks.</p></div>
+	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/github-pages-publish/">GitHub Pages Publish</a></h1>
+	<div class="post__content">GitHub pages allow a GitHub repository to function as a web-server thing.
+Certain branches can be marked as the source for a static webserver &hellip; and more?
+&hellip; whatevs; I&rsquo;m not worried about &ldquo;more&rdquo; so here&rsquo;s how to dump a static website into a GitHub repo &hellip;
+ create/find a repository on GitHub  I created game-SpaceShips at git@github.com:g-pechorin/game-SpaceShips.git  clone it  git clone git@github.com:g-pechorin/game-SpaceShips.git  overwrite the source contents (but not the .</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/github-pages-publish/">GitHub Pages Publish</a></h1>
-	<div class="post__content">GitHub pages allow a GitHub repository to function as a web-server thing.
-&hellip; whatevs &hellip;
- create a repository on GitHub  I created game-SpaceShips at git@github.com:g-pechorin/game-SpaceShips.git  run these from the root;
-rm -dfr .git git init git checkout -b gh-pages git add . git commit -m &#34;some stuffff or what&#34; git remote add origin git@github.com:g-pechorin/game-SpaceShips.git git push -f origin gh-pages  enjoy!   </div>
+	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/gogs-push-on-push/">Pushing (from GoGS) with `post-receive` (to a mirror)</a></h1>
+	<div class="post__content"><p>I have a <a href="https://gogs.io/">GoGS</a> server for my work.
+I want to back it up off-site to <a href="https://gitlab.com/gitlab-org/gitlab-ce">our GitLab instance</a>.
+According to a <a href="https://www.atlassian.com/git/tutorials/git-hooks#server-side-hooks">document I read</a> this should be possible using <code>post-receive</code> hooks.</p></div>
 </article>
 				</div>
 			

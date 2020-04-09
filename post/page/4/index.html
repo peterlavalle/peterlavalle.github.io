@@ -13,7 +13,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://peterlavalle.github.io/post/" />
 
-<meta property="og:updated_time" content="2020-03-21T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2020-04-09T00:00:00&#43;00:00"/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -68,6 +68,17 @@ if (!doNotTrack) {
 			
 				<div class="card card--2col">
 					<article class="post card__box block">
+	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/pi3-namecheap/">Pi3 NameCheap</a></h1>
+	<div class="post__content">This is a followup to a previous post because that one stopped working, now - this works.
+There&rsquo;s not a lot of OC here, just clarity.
+NameCheap DynDNS on a Pi3 I use NameCheap (because they&rsquo;re anti-SOPA) for DNS. The client program, ddclient, can connect to NameCheap.
+I&rsquo;m using raspbian, so, first;
+ run sudo apt-get install ddclient on your Pi find the dynamic DNS settings on NameCheap&rsquo;s website  Dashboard &gt;&gt;&gt; Domain List &gt;&gt;&gt; Manage &gt;&gt;&gt; Advanced DNS they do like to change these things around  halfway down the page, there should be a DYNAMIC DNS thingie  enable it (if you haven&rsquo;t already) note the blurb-what-looks-like-a-SHA  edit your /etc/ddclient.</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/replace-samba-with-winsshfs/">Replace SaMBa with WinSSHFS!</a></h1>
 	<div class="post__content">I connected my Windows desktop to our office file server using SSHFS rather than SaMBa. I am happy about that.
 For some reason one of our SaMBa systems got twitchy sometime last month. This is a problem since I&rsquo;ve inherited a script that;
@@ -81,16 +92,6 @@ For some reason one of our SaMBa systems got twitchy sometime last month. This i
 	<div class="post__content">This has been replaced
 Pi3 DynDNS I want to give my home&rsquo;s Raspberry Pi3 a DNS name so that I can access it more easily.
 DNS and Dynamic IP Addresses The Domain Naming System is how those readable textual names like example.com become the actual IP Addresses like 127.0.0.1 that web pages, email, and everything else needs to work. Various groups allow people to register a domain (or subdomain) and specify the IP address of a computer that the domain should reffer to.</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/github-pages-publish/">GitHub Pages Publish</a></h1>
-	<div class="post__content">GitHub pages allow a GitHub repository to function as a web-server thing.
-&hellip; whatevs &hellip;
- create a repository on GitHub  I created game-SpaceShips at git@github.com:g-pechorin/game-SpaceShips.git  run these from the root;
-rm -dfr .git git init git checkout -b gh-pages git add . git commit -m &#34;some stuffff or what&#34; git remote add origin git@github.com:g-pechorin/game-SpaceShips.git git push -f origin gh-pages  enjoy!   </div>
 </article>
 				</div>
 			

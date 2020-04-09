@@ -6,10 +6,22 @@
     <description>Recent content in Git on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Mon, 28 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GitHub Pages Publish</title>
+      <link>https://peterlavalle.github.io/post/github-pages-publish/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/github-pages-publish/</guid>
+      <description>GitHub pages allow a GitHub repository to function as a web-server thing.
+Certain branches can be marked as the source for a static webserver &amp;hellip; and more?
+&amp;hellip; whatevs; I&amp;rsquo;m not worried about &amp;ldquo;more&amp;rdquo; so here&amp;rsquo;s how to dump a static website into a GitHub repo &amp;hellip;
+ create/find a repository on GitHub  I created game-SpaceShips at git@github.com:g-pechorin/game-SpaceShips.git  clone it  git clone git@github.com:g-pechorin/game-SpaceShips.git  overwrite the source contents (but not the .</description>
+    </item>
     
     <item>
       <title>Git Flow</title>
@@ -59,18 +71,6 @@ In the end, I ran out of time and felt that the &lt;em&gt;diversity&lt;/em&gt; o
       <description>&lt;p&gt;I&amp;rsquo;ve been assembling a &amp;ldquo;full stack&amp;rdquo;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:fwiw&#34;&gt;&lt;a href=&#34;#fn:fwiw&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; for development that runs on my Pi3.
 This is all happening inside of &lt;a href=&#34;https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/&#34;&gt;Docker&lt;/a&gt; containers which made cleanup redonkulously easy.
 Today I was looking at a source code management system; something of a &amp;ldquo;my own GitHub&amp;rdquo; which I can run on my own network.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>GitHub Pages Publish</title>
-      <link>https://peterlavalle.github.io/post/github-pages-publish/</link>
-      <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/post/github-pages-publish/</guid>
-      <description>GitHub pages allow a GitHub repository to function as a web-server thing.
-&amp;hellip; whatevs &amp;hellip;
- create a repository on GitHub  I created game-SpaceShips at git@github.com:g-pechorin/game-SpaceShips.git  run these from the root;
-rm -dfr .git git init git checkout -b gh-pages git add . git commit -m &amp;#34;some stuffff or what&amp;#34; git remote add origin git@github.com:g-pechorin/game-SpaceShips.git git push -f origin gh-pages  enjoy!   </description>
     </item>
     
     <item>

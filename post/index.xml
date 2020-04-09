@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 21 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GitHub Pages Publish</title>
+      <link>https://peterlavalle.github.io/post/github-pages-publish/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/github-pages-publish/</guid>
+      <description>GitHub pages allow a GitHub repository to function as a web-server thing.
+Certain branches can be marked as the source for a static webserver &amp;hellip; and more?
+&amp;hellip; whatevs; I&amp;rsquo;m not worried about &amp;ldquo;more&amp;rdquo; so here&amp;rsquo;s how to dump a static website into a GitHub repo &amp;hellip;
+ create/find a repository on GitHub  I created game-SpaceShips at git@github.com:g-pechorin/game-SpaceShips.git  clone it  git clone git@github.com:g-pechorin/game-SpaceShips.git  overwrite the source contents (but not the .</description>
+    </item>
     
     <item>
       <title>Tools Page</title>
@@ -346,18 +358,6 @@ For some reason one of our SaMBa systems got twitchy sometime last month. This i
       <description>This has been replaced
 Pi3 DynDNS I want to give my home&amp;rsquo;s Raspberry Pi3 a DNS name so that I can access it more easily.
 DNS and Dynamic IP Addresses The Domain Naming System is how those readable textual names like example.com become the actual IP Addresses like 127.0.0.1 that web pages, email, and everything else needs to work. Various groups allow people to register a domain (or subdomain) and specify the IP address of a computer that the domain should reffer to.</description>
-    </item>
-    
-    <item>
-      <title>GitHub Pages Publish</title>
-      <link>https://peterlavalle.github.io/post/github-pages-publish/</link>
-      <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/post/github-pages-publish/</guid>
-      <description>GitHub pages allow a GitHub repository to function as a web-server thing.
-&amp;hellip; whatevs &amp;hellip;
- create a repository on GitHub  I created game-SpaceShips at git@github.com:g-pechorin/game-SpaceShips.git  run these from the root;
-rm -dfr .git git init git checkout -b gh-pages git add . git commit -m &amp;#34;some stuffff or what&amp;#34; git remote add origin git@github.com:g-pechorin/game-SpaceShips.git git push -f origin gh-pages  enjoy!   </description>
     </item>
     
     <item>

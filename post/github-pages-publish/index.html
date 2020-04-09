@@ -10,13 +10,13 @@
 	<meta name="description" content="">
 		<meta property="og:title" content="GitHub Pages Publish" />
 <meta property="og:description" content="GitHub pages allow a GitHub repository to function as a web-server thing.
-&hellip; whatevs &hellip;
- create a repository on GitHub  I created game-SpaceShips at git@github.com:g-pechorin/game-SpaceShips.git  run these from the root;
-rm -dfr .git git init git checkout -b gh-pages git add . git commit -m &#34;some stuffff or what&#34; git remote add origin git@github.com:g-pechorin/game-SpaceShips.git git push -f origin gh-pages  enjoy!   " />
+Certain branches can be marked as the source for a static webserver &hellip; and more?
+&hellip; whatevs; I&rsquo;m not worried about &ldquo;more&rdquo; so here&rsquo;s how to dump a static website into a GitHub repo &hellip;
+ create/find a repository on GitHub  I created game-SpaceShips at git@github.com:g-pechorin/game-SpaceShips.git  clone it  git clone git@github.com:g-pechorin/game-SpaceShips.git  overwrite the source contents (but not the ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://peterlavalle.github.io/post/github-pages-publish/" />
-<meta property="article:published_time" content="2017-01-19T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-01-19T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2020-04-09T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2020-04-09T00:00:00&#43;00:00"/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -67,27 +67,41 @@ if (!doNotTrack) {
 				<h1 class="post__title">GitHub Pages Publish</h1>
 				<div class="post__content"><p>GitHub pages allow a GitHub repository to function as a web-server thing.</p>
 
-<p>&hellip; whatevs &hellip;</p>
+<p>Certain branches can be marked as the source for a static webserver &hellip; and more?</p>
+
+<p>&hellip; whatevs; I&rsquo;m not worried about &ldquo;more&rdquo; so here&rsquo;s how to dump a static website into a GitHub repo &hellip;</p>
 
 <ol>
-<li>create a repository on GitHub
+<li>create/find a repository on GitHub
 
 <ul>
 <li>I created <code>game-SpaceShips</code> at <code>git@github.com:g-pechorin/game-SpaceShips.git</code></li>
 </ul></li>
+<li>clone it
 
-<li><p>run these from the root;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rm -dfr .git
-git init
-git checkout -b gh-pages
-git add .
-git commit -m <span style="color:#e6db74">&#34;some stuffff or what&#34;</span>
-git remote add origin git@github.com:g-pechorin/game-SpaceShips.git
-git push -f origin gh-pages</code></pre></div>
-<ol>
-<li>enjoy!</li>
-</ol></li>
+<ul>
+<li><code>git clone git@github.com:g-pechorin/game-SpaceShips.git</code></li>
+</ul></li>
+<li>overwrite the source contents (but not the <code>.git/</code> folder) with your site&rsquo;s content</li>
+<li>commit <code>git commit -m &quot;some stuffff or what&quot;</code></li>
+<li>push! <code>git push origin master</code> your site will update in a few minutes
+
+<ul>
+<li>this one is was <a href="http://g-pechorin.github.io/game-SpaceShips/">http://g-pechorin.github.io/game-SpaceShips/</a>
+
+<ul>
+<li>&hellip; which doesn&rsquo;t seem to work anymore &hellip; hmm &hellip;</li>
+</ul></li>
+<li>your site will be different</li>
+</ul></li>
 </ol>
+
+<dl>
+<dt>2020-04-09</dt>
+<dd>Updated with instructions to &ldquo;get around&rdquo; the GitHub issue when overwriting old versions of a site.</dd>
+<dt>2017-01-19</dt>
+<dd>Initial post.</dd>
+</dl>
 </div>
 				
 				<footer class="post__footer">
