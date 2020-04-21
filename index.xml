@@ -6,10 +6,21 @@
     <description>Recent content on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 09 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mortal Realms</title>
+      <link>https://peterlavalle.github.io/mortal-realms-partworks/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/mortal-realms-partworks/</guid>
+      <description>These links have an affiliate ID
+ The Mortal Realms has released a partwork magazine thing. I&amp;rsquo;ve found myself enthralled by it. Here, I&amp;rsquo;m collecting an index of the contents and where they came from.
+ForbiddenPlanet sells the things, lets you pic-and-mix, ships internationally, ships sooner and can be cheaper than the producer &amp;hellip; when you purchase at least 11 issues at once.1 I&amp;rsquo;m only putting titles and links on things that are in stock.</description>
+    </item>
     
     <item>
       <title>GitHub Pages Publish</title>
@@ -18,19 +29,6 @@
       
       <guid>https://peterlavalle.github.io/post/github-pages-publish/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub pages&lt;/a&gt; allows a GitHub repository to function as a static web-server thing.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Mortal Realms</title>
-      <link>https://peterlavalle.github.io/mortal-realms-partworks/</link>
-      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/mortal-realms-partworks/</guid>
-      <description>This is a Work In Progress.
-Entries with just a number need to be filled in (by me) before I put this page &amp;ldquo;live&amp;rdquo; on the main menu.
-   These links have an affiliate ID
- The Mortal Realms has released a partwork magazine thing. I&amp;rsquo;ve found myself enthralled by it. Here, I&amp;rsquo;m collecting an index of the contents and where they came from.
-ForbiddenPlanet sells the things, lets you pic-and-mix, ships internationally, ships sooner and can be cheaper than the producer &amp;hellip; when you purchase at least 11 issues at once.</description>
     </item>
     
     <item>
