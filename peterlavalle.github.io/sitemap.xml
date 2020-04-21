@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://peterlavalle.github.io/mortal-realms-partworks/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/git/</loc>
+    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/github/</loc>
+    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/github-pages-publish/</loc>
+    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/howto/</loc>
+    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/</loc>
+    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tools/</loc>
+    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/tools/</loc>
+    <lastmod>2020-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/blackstone-rulelist/</loc>
+    <lastmod>2020-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/gitflow/</loc>
+    <lastmod>2019-10-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/openvpn/</loc>
+    <lastmod>2019-10-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/pi3-openvpn/</loc>
+    <lastmod>2019-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/pi3/</loc>
+    <lastmod>2019-10-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/raspberry-pi/</loc>
+    <lastmod>2019-10-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/idris/</loc>
+    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/idris-monad-mine/</loc>
+    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/cuda/</loc>
+    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/docker/</loc>
+    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/docker-with-cuda/</loc>
+    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/k620/</loc>
+    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/linux/</loc>
+    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/ubuntu/</loc>
+    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/nvidia/</loc>
+    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/hugo/</loc>
+    <lastmod>2019-07-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/gohugo-tofc/</loc>
+    <lastmod>2019-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/mermaid/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/mermaid.js/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/pandoc/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/gohugo-mermaid/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/dsa/</loc>
+    <lastmod>2019-05-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/gl4/</loc>
+    <lastmod>2019-05-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/opengl/</loc>
+    <lastmod>2019-05-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/opengl-vertex-array-objects/</loc>
+    <lastmod>2019-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/vao/</loc>
+    <lastmod>2019-05-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/vbo/</loc>
+    <lastmod>2019-05-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/scala/</loc>
+    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/scala-maybe/</loc>
+    <lastmod>2018-12-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/gitlab/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/gogs/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/gogs-push-on-push/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/bash/</loc>
+    <lastmod>2018-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/jenkins/</loc>
+    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
+    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
+    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/aiy/</loc>
+    <lastmod>2018-09-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/aiy-voice-v1-reference/</loc>
+    <lastmod>2018-09-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/gz3doomvr/</loc>
+    <lastmod>2018-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/vr/</loc>
+    <lastmod>2018-08-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/vive/</loc>
+    <lastmod>2018-08-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/pi0w/</loc>
+    <lastmod>2018-08-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/pi3-wifi/</loc>
+    <lastmod>2018-08-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/work-and-contibutions/</loc>
+    <lastmod>2018-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/marhsalling-gits/</loc>
+    <lastmod>2018-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/launch-docker-daemon-mac-cli/</loc>
+    <lastmod>2018-03-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/mac/</loc>
+    <lastmod>2018-03-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/git-copy-py/</loc>
+    <lastmod>2018-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/python/</loc>
+    <lastmod>2018-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/scala-extractor/</loc>
+    <lastmod>2018-01-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/c&#43;&#43;/</loc>
+    <lastmod>2018-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/whippet/</loc>
+    <lastmod>2018-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/whippet/</loc>
+    <lastmod>2018-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/article/</loc>
+    <lastmod>2018-01-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/ecs/</loc>
+    <lastmod>2018-01-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/whippet-ecs/</loc>
+    <lastmod>2018-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/cmder/</loc>
+    <lastmod>2018-01-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/cmder-intortoisehg/</loc>
+    <lastmod>2018-01-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/toritoisehg/</loc>
+    <lastmod>2018-01-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/macos-open-terminal-in-folder/</loc>
+    <lastmod>2018-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/macos/</loc>
+    <lastmod>2018-01-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/unity3d-moving-platform/</loc>
+    <lastmod>2017-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/unity3d/</loc>
+    <lastmod>2017-12-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/democore/</loc>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/how-to/</loc>
+    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/delay-run/</loc>
+    <lastmod>2017-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/concurrency/</loc>
+    <lastmod>2017-11-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/multi-threading/</loc>
+    <lastmod>2017-11-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/flexdock/</loc>
+    <lastmod>2017-11-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/gradle/</loc>
+    <lastmod>2017-11-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/gradlfy-flexdock/</loc>
+    <lastmod>2017-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/java/</loc>
+    <lastmod>2017-11-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/pi3-nginx/</loc>
+    <lastmod>2017-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/nginx/</loc>
+    <lastmod>2017-09-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/pi3-docker-gogs/</loc>
+    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/fullstak/</loc>
+    <lastmod>2017-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/pal-pipe-sink/</loc>
+    <lastmod>2017-08-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/dyndns/</loc>
+    <lastmod>2017-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/pi3-namecheap/</loc>
+    <lastmod>2017-06-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/replace-samba-with-winsshfs/</loc>
+    <lastmod>2017-06-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/sshfs/</loc>
+    <lastmod>2017-06-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/windows10/</loc>
+    <lastmod>2017-06-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/pi3-dyndns/</loc>
+    <lastmod>2017-05-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/bulletphysics/</loc>
+    <lastmod>2017-01-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/oth-bullet/</loc>
+    <lastmod>2017-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/one-true-header/</loc>
+    <lastmod>2017-01-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/sorrynotsorry/</loc>
+    <lastmod>2017-01-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/lua/</loc>
+    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/oth-palua-core/</loc>
+    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/madewithunity/</loc>
+    <lastmod>2016-11-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/palsystem/</loc>
+    <lastmod>2016-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/procedural-generation/</loc>
+    <lastmod>2016-11-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/vive-cane/</loc>
+    <lastmod>2016-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/atom-macros/</loc>
+    <lastmod>2016-08-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/mirroring-github-to-bitbucket/</loc>
+    <lastmod>2016-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/hg-subrepos/</loc>
+    <lastmod>2016-07-19T19:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/stop-motion/</loc>
+    <lastmod>2016-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/dual-hetero-quadro-on-heaven/</loc>
+    <lastmod>2016-05-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/hardware/</loc>
+    <lastmod>2016-05-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/racing-geese/</loc>
+    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/humor/</loc>
+    <lastmod>2016-04-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/binplugin-python3.5.1/</loc>
+    <lastmod>2016-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/hungarian-notation/</loc>
+    <lastmod>2016-03-02T15:39:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/gameplay/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/space-ships/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/spaceships/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/unity/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/myspaceships/</loc>
+    <lastmod>2016-02-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/hexo/</loc>
+    <lastmod>2016-02-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/hexo-os-x/</loc>
+    <lastmod>2016-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/new-digs/</loc>
+    <lastmod>2016-01-19T20:54:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/swag/</loc>
+    <lastmod>2015-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/first-post/</loc>
+    <lastmod>2015-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/template-programming/</loc>
+    <lastmod>2015-10-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/hello-world/</loc>
+    <lastmod>1983-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/junk/benchmarks/qham/no-ant-virus.basic/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/junk/benchmarks/qham/no-ant-virus.extreme/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/junk/benchmarks/qham/sophos.basic/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/junk/benchmarks/qham/sophos.extreme/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/junk/dukrow/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/kit-list/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/notebooks/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/40k8th-cheat/</loc>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/blackstone-rulebook/</loc>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/junk/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

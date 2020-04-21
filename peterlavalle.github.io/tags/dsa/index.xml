@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DSA on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/dsa/</link>
+    <description>Recent content in DSA on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Mon, 27 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://peterlavalle.github.io/tags/dsa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OpenGL-Vertex-Array-Objects</title>
+      <link>https://peterlavalle.github.io/post/opengl-vertex-array-objects/</link>
+      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/opengl-vertex-array-objects/</guid>
+      <description>&lt;p&gt;OpenGL introduced yet-another object in the form of the &amp;ldquo;Vertex Array Object&amp;rdquo; to carry (in effect) the vertex format data.
+Here&amp;rsquo;s an example of how to create an OpenGL4.3+DSA Vertex Array Object.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
