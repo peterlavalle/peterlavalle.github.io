@@ -14,12 +14,6 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/git/</loc>
-    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/github/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -44,6 +38,12 @@
   
   <url>
     <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/git/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

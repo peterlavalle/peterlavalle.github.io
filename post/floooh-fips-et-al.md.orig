@@ -1,0 +1,165 @@
+---
+draft: true
+---
+
+# 2020-01-02
+
+- `tree::scan` wasn't workling because `tinydir_open_sorted()` wasn't "working"
+- now; my "pack" verb doesn't like recursion
+	- ... and it isn't zipping?
+	- ... and the node isn't unzipping
+- want to "open" a scene from a popup
+
+# 2020-01-01
+
+- want to convert to _fio
+	- i've updated the save thing; it works!
+	- loading from the file ... seems to work too
+	- node::scan method feels inefficent
+	- `tree::scan` or `join::scan` is failing
+		- i don't see a file if it's added to the `var/` while running
+	- need to "open from" the asset tree ... which'll mean popups
+		- ... but i can drop a case for noc!
+		- ... and normalisation
+	- normalisation might be redundant
+
+
+# 2019-12-30
+
+- need/want to switch over to using `resources::_fio&` in the `Widgets` class
+	- currently in the process of it, but, however i'm saving things isn't saving the scene files
+		- i suspect an exception in the yaml/fstream stuff
+	- i feel that the solution is to "press on" and deal with the specific bug/s when they reveal themselves
+
+# 2019-12-29
+
+- trying to get a list of resources (et al) in place
+
+# 2019-12-28
+
+- let's load!
+- i'm noticing "new" limitations
+ 	- **NOTE** i can *only* handle componentes/plugins linked/registered with the system (obvious but) this wasn't noticable at first
+	- **NOTE** i'll probably want the camera (at least) to be "outside of scene" entity for the inspector
+- "first step" took about two hours - looks like there's a bug in the camera save/load ... but ... otherwise it's fine?
+	- yeah; camera nodes weren't saving cause they're empty
+		 - i blame YAML not the lib
+	- cameras weren't in the inspector ... weird
+		- problem was that the inspector needed a separate "hooking up" of editing things
+		- i rewrote the inspector to be "better" so ... YAY!
+	- fixed a projection issue
+		- after loading a camera; the initial camera's projection was still being used as a write-to point for the projection
+		- ... and i wasn't de-selecting things after the scene is cnagesd
+- had an infinte pups bug; fixed it :/
+- can add pups fine (still no reparaenting)
+
+- i want mesh and cedric's widget
+	- cedrics gizmo allows one to manipulate ... something ...
+
+
+- save/load last opened scene
+	- kind of half did the thing ... meh
+- do all paths as relative
+
+# 2019-12-27
+
+- okay ... need save/load the components
+	- the use of `T::save` when linking components is interesting
+	- ... actually; the whole setup is interesting, but, is a massive mess of guesses and winging it
+- i kind of wish I was/could be writing the editor windows in coffeescript
+- so it's saving ... now ... not happy about a few of the shortcuts
+
+# 2019-12-26
+
+- let's do selection of pups and editing of their components
+	- got it; i can attach and detach componenets and edit them from the inspector
+		- ... if they've been added to the list of inspectable things ...
+
+- file menu; new/save/load/revert/quit
+
+# 2019-12-25
+
+- there is/was some setting for unit tests; seems to have atrophied
+	- needt top `fips set config .\win64-vstudio-unittest` 
+- trying `catch2` to test whippet things
+
+- so ... i want "ordering" in whippet
+	- hierarchy should edit this!
+	- ... yes ... and parenting
+	- ... with DaD from ImGui
+	- UPDATE; I hate this and it's not something that I want to try anymore
+
+# 2019-12-24
+
+- moved project to a folder, and, used agressive ignore rles; good result
+- fips generators ... need files listed one at a time
+	- ick!
+
+- so;
+	- maybe something like `wndrbred.yml` to define *how* to generate ma blobs
+	- spits out `.cpp` / `.hpp` whatnots
+	- runs always, but, uses "overWriter" pattern?
+
+- first; 3D oryol test
+	- with ImGUI!
+	- ... and script it ... somehow
+
+
+
+# 2019-12-23
+
+- so ... fips is (maybe) a CMake front-end that builds for everything (et al) that also does dep-res and some manner of src-gen
+
+- seems to be happy with "hatever" python
+
+- relies on "workspace" parent folder(s) 
+
+- i'm not 100% sure how to setup the/a actual projects and source
+
+- i thinkt that; i can copy an init project into a repo, and doop things - let's see!
+	- i'll have to do ignores
+
+- well ... that was painless
+
+- building something
+	- i've heard good things about QUickJS
+		- don't want the whole tar-tree
+		- https://bellard.org/quickjs/
+		- no obvious "how to embed" instructions, just notes that it's easy ... hmm ...
+		- oh hell; needs junk that's not on windows. great.
+	- let's just do DukTape and be done with it
+		- good old duktape; it's working
+		- chose to go with the separate files
+
+
+- ide
+	- the thing has done a V$ project
+	- ... looks fine ...
+	- NO WAIT! `fips open` seems to be the way to open things
+- no "tests" thing ... hmm ...
+
+- i can run soime duktape
+- i want some oroyl
+	- https://github.com/floooh/oryol-test-app
+
+
+# 2019-12-22
+
+Who is floooh, aka "floh of woe?" - I don't know.
+
+... but [fips][https://github.com/floooh/fips] looks like a tool for C/++ that might be nices
+
+http://floooh.github.io/fips/docs/getstarted/
+
+
+... hmm ... i can do this
+
+
+fips setup involves runnin the diagnistic to find wha t tttools are needed
+
+i had to add cmake to my path;meh
+
+
+looks like the fips wrapper is ... fine?
+
+
