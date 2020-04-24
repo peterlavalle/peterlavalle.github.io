@@ -14,7 +14,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://peterlavalle.github.io/" />
 
-<meta property="og:updated_time" content="2020-04-23T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2020-04-24T00:00:00&#43;00:00"/>
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -63,6 +63,12 @@ if (!doNotTrack) {
 	
 	<main class="main">
 			<div class="cards">
+					<div class="card card--2col">
+					<article class="post card__box block">
+	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/pal-pipe-sink/">Pipe Sink</a></h1>
+	<div class="post__content">I had an idea/desire for a &ldquo;simple&rdquo; template class that&rsquo;d work as my OpenGL thread. A contemporary design for multi-threaded 3D games10 seems to be pooling work and processing it in whatever threads are available. IME OpenGL/GLFW are not re-entrant; Apple2 and GLFW3 explicitly states that it won&rsquo;t work - so it seems safe to assume that I shouldn&rsquo;t call functions from different threads. So to make a super-fast 3D game (or whatever) I need to do less work on the thread which is running OpenGL while allowing other threads to send it whatever work they please.</div>
+</article>
+					</div>
 					<div class="card card--2col">
 					<article class="post card__box block">
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/pi3-namecheap/">Pi3 NameCheap</a></h1>
@@ -138,15 +144,6 @@ Teleporting everywhere feels wrong, so my suggestion is to use the Vive wand lik
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/mirroring-github-to-bitbucket/">Mirroring Git/GitHub to Hg/BitBucket</a></h1>
 	<div class="post__content">This seemed a lot longer when I planned it in my notebook at lunch.
    GitHub user project (both sides) BitBucket user SCM Schedule     ocornut imgui g-pechorin None Periodic     Install hg-git  You&rsquo;ll have to do this on the Jenkins server You&rsquo;ll have to do it either for the Jenkins user or all I&rsquo;m using an OsX machine as my host, so I was able to use easy_install to install hg-git and dulwich  setup a project on GitHub create a Jenkins Freestyle project which runs periodically  Polling the SCM was NOT an option since there&rsquo;s no default branch on GitHub  &hellip; this is a quirk of hg-git &hellip; I think &hellip; IIRC/YRMV - so sling me a tweet or whatever if I&rsquo;m wrong   program the job to pull from git, push to hg, and ignore results of 1</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/hg-subrepos/">Mercurial / Hg SubRepos</a></h1>
-	<div class="post__content">I&rsquo;m still trying to catch up on stuff following Develop. I&rsquo;ve decided to write a post about my experience(s) switching my work over to SubRepos.
-I am unaware of the &ldquo;reason&rdquo; why they&rsquo;re considered &ldquo;bad.&rdquo; Perhaps it&rsquo;s a Unix thing? Maybe they don&rsquo;t work as well as people feel that they should?
-Whatever
-I have a (secret) project called &ldquo;nite-nite/&rdquo; in which I use and develop some public-domain headers. I want this public-domain stuff to be &hellip; well &hellip; public-domain and visible to all.</div>
 </article>
 					</div>
 			</div>
