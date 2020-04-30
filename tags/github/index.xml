@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/github/</link>
+    <description>Recent content in GitHub on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Thu, 09 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://peterlavalle.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GitHub Pages Publish</title>
+      <link>https://peterlavalle.github.io/post/github-pages-publish/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/github-pages-publish/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub pages&lt;/a&gt; allows a GitHub repository to function as a static web-server thing.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pushing (from GoGS) with `post-receive` (to a mirror)</title>
+      <link>https://peterlavalle.github.io/post/gogs-push-on-push/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/gogs-push-on-push/</guid>
+      <description>&lt;p&gt;I have a &lt;a href=&#34;https://gogs.io/&#34;&gt;GoGS&lt;/a&gt; server for my work.
+I want to back it up off-site to &lt;a href=&#34;https://gitlab.com/gitlab-org/gitlab-ce&#34;&gt;our GitLab instance&lt;/a&gt;.
+According to a &lt;a href=&#34;https://www.atlassian.com/git/tutorials/git-hooks#server-side-hooks&#34;&gt;document I read&lt;/a&gt; this should be possible using &lt;code&gt;post-receive&lt;/code&gt; hooks.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

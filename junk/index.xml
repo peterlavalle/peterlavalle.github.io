@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Junks on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/junk/</link>
+    <description>Recent content in Junks on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    
+	<atom:link href="https://peterlavalle.github.io/junk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/junk/benchmarks/qham/no-ant-virus.basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/junk/benchmarks/qham/no-ant-virus.basic/</guid>
+      <description>Unigine benchmark results body { background: #1a242a; color: #b4c8d2; margin-right: 20px; margin-left: 20px; font-size: 14px; font-family: Arial, sans-serif, sans; } a { } a:link { color: #b4c8d2; } a:active { color: #ff9900; } a:visited { color: #b4c8d2; } a:hover { color: #ff9900; } h1 { color: #ff9900; font-size: 36px; text-align: center; } h2 { text-align: center; font-size: 24px; } h3 { color: #ffffff; text-align: center; } .right { text-align: right; } div.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/junk/benchmarks/qham/no-ant-virus.extreme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/junk/benchmarks/qham/no-ant-virus.extreme/</guid>
+      <description>Unigine benchmark results body { background: #1a242a; color: #b4c8d2; margin-right: 20px; margin-left: 20px; font-size: 14px; font-family: Arial, sans-serif, sans; } a { } a:link { color: #b4c8d2; } a:active { color: #ff9900; } a:visited { color: #b4c8d2; } a:hover { color: #ff9900; } h1 { color: #ff9900; font-size: 36px; text-align: center; } h2 { text-align: center; font-size: 24px; } h3 { color: #ffffff; text-align: center; } .right { text-align: right; } div.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/junk/benchmarks/qham/sophos.basic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/junk/benchmarks/qham/sophos.basic/</guid>
+      <description>Unigine benchmark results body { background: #1a242a; color: #b4c8d2; margin-right: 20px; margin-left: 20px; font-size: 14px; font-family: Arial, sans-serif, sans; } a { } a:link { color: #b4c8d2; } a:active { color: #ff9900; } a:visited { color: #b4c8d2; } a:hover { color: #ff9900; } h1 { color: #ff9900; font-size: 36px; text-align: center; } h2 { text-align: center; font-size: 24px; } h3 { color: #ffffff; text-align: center; } .right { text-align: right; } div.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/junk/benchmarks/qham/sophos.extreme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/junk/benchmarks/qham/sophos.extreme/</guid>
+      <description>Unigine benchmark results body { background: #1a242a; color: #b4c8d2; margin-right: 20px; margin-left: 20px; font-size: 14px; font-family: Arial, sans-serif, sans; } a { } a:link { color: #b4c8d2; } a:active { color: #ff9900; } a:visited { color: #b4c8d2; } a:hover { color: #ff9900; } h1 { color: #ff9900; font-size: 36px; text-align: center; } h2 { text-align: center; font-size: 24px; } h3 { color: #ffffff; text-align: center; } .right { text-align: right; } div.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/junk/dukrow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/junk/dukrow/</guid>
+      <description>DukRow 2017-03-21 I seem to be missing some of the fields? The &amp;ldquo;each&amp;rdquo; method isn&amp;rsquo;t working for behaviour_test.row.js
+(started using GitLab to organise issues)
+https://gitlab.com/g-pechorin/dukrow/issues/1
+the variables being set by the script aren&amp;rsquo;t being saved &amp;hellip; because &amp;hellip; of &amp;hellip; what?
+the functions are being save just fine, but, the variables aren&amp;rsquo;t?
+why aren&amp;rsquo;t variables being set?
+2017-03-20 Had a &amp;ldquo;sick weekend&amp;rdquo; where I &amp;hellip; think that I got &amp;ldquo;a lot&amp;rdquo; done &amp;hellip; maybe &amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

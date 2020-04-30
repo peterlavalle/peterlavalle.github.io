@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ToritoiseHG on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/toritoisehg/</link>
+    <description>Recent content in ToritoiseHG on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Mon, 15 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://peterlavalle.github.io/tags/toritoisehg/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cmder in TortoiseHG</title>
+      <link>https://peterlavalle.github.io/post/cmder-intortoisehg/</link>
+      <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/cmder-intortoisehg/</guid>
+      <description>Have you used TortoiseHG?
+ It is lovely!
+ Have you used Cmder?
+ It is lovely!
+ If you &amp;hellip;
+ setup cmder to launch from the command line open TortoiseHG Workbench &amp;gt; File / Settings &amp;gt; TortoiseHG / Shell put cmder %(root)s into the Shell field  &amp;hellip; then you can have these two lovely tools holding hands and kicking-bugs!</description>
+    </item>
+    
+    <item>
+      <title>Open macOS Terminal in Folder</title>
+      <link>https://peterlavalle.github.io/post/macos-open-terminal-in-folder/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/macos-open-terminal-in-folder/</guid>
+      <description>In January of 2018, you can launch macOS&amp;rsquo;s terminal with the command /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal1
+I have (to use) a macOS computer. I choose to use TortoiseHG because it is lovely. TortoiseHG has a &amp;ldquo;launch the terminal&amp;rdquo; context menu entry.
+Under macOS, you need to specify the terminal command that TortoiseHG should use. You need this, in your preference, to launch the terminal in the repo;
+ /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal %(root)s
+  https://stackoverflow.com/questions/4404242/programmatically-launch-terminal-app-with-a-specified-command-and-custom-colors [return]   </description>
+    </item>
+    
+  </channel>
+</rss>
