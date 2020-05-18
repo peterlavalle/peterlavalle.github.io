@@ -15,7 +15,7 @@
 
 <meta property="og:updated_time" content="2017-06-29T00:00:00&#43;00:00"/>
 
-	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 	<link rel="alternate" type="application/rss+xml" href="/tags/dyndns/index.xml" title="Peter's Notebook">
@@ -34,11 +34,6 @@ if (!doNotTrack) {
 </head>
 <body>
 	<header class="header">
-	<script type='text/javascript'>
-		
-		if ('peterlavalle.com' == window.location.hostname)
-			location.replace('https://peterlavalle.github.io' + window.location.pathname);
-	</script>
 	<a class="logo" href="/">Peter&#39;s Notebook</a>
 	
 <nav class="main-nav" role="navigation">
@@ -51,16 +46,41 @@ if (!doNotTrack) {
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/how-to/">How To</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/mortal-realms-partworks/">Mortal Realms</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/tools/">Tools</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/work-and-contibutions/">Work</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/how-to/">
+					
+					<span class="main-nav__text">How To</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/mortal-realms-partworks/">
+					
+					<span class="main-nav__text">Mortal Realms</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/tools/">
+					
+					<span class="main-nav__text">Tools</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/work-and-contibutions/">
+					
+					<span class="main-nav__text">Work</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
 	<div class="primary">
 	
 	<main class="main">
+		
 		<div class="page block">
 			<h1 class="page__title">DynDNS</h1>
 			
@@ -68,22 +88,28 @@ if (!doNotTrack) {
 		<div class="cards">
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/pi3-namecheap/">Pi3 NameCheap</a></h1>
-	<div class="post__content">This is a followup to a previous post because that one stopped working, now - this works.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-namecheap/">Pi3 NameCheap</a></h1>
+	<div class="entry__content">This is a followup to a previous post because that one stopped working, now - this works.
 There&rsquo;s not a lot of OC here, just clarity.
 NameCheap DynDNS on a Pi3 I use NameCheap (because they&rsquo;re anti-SOPA) for DNS. The client program, ddclient, can connect to NameCheap.
 I&rsquo;m using raspbian, so, first;
  run sudo apt-get install ddclient on your Pi find the dynamic DNS settings on NameCheap&rsquo;s website  Dashboard &gt;&gt;&gt; Domain List &gt;&gt;&gt; Manage &gt;&gt;&gt; Advanced DNS they do like to change these things around  halfway down the page, there should be a DYNAMIC DNS thingie  enable it (if you haven&rsquo;t already) note the blurb-what-looks-like-a-SHA  edit your /etc/ddclient.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-06-29T00:00:00Z">June 29, 2017</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/pi3-dyndns/">Pi3 DynDNS</a></h1>
-	<div class="post__content">This has been replaced
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-dyndns/">Pi3 DynDNS</a></h1>
+	<div class="entry__content">This has been replaced
 Pi3 DynDNS I want to give my home&rsquo;s Raspberry Pi3 a DNS name so that I can access it more easily.
 DNS and Dynamic IP Addresses The Domain Naming System is how those readable textual names like example.com become the actual IP Addresses like 127.0.0.1 that web pages, email, and everything else needs to work. Various groups allow people to register a domain (or subdomain) and specify the IP address of a computer that the domain should reffer to.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-05-21T00:00:00Z">May 21, 2017</time>
+	</div>
 </article>
 				</div>
 			
@@ -112,5 +138,6 @@ DNS and Dynamic IP Addresses The Domain Naming System is how those readable text
 </div>
 	<div class="footer__copyright">© 2020 Peter&#39;s Notebook. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
-<script src="/js/menu.js"></script></body>
+<script src="/js/menu.js"></script>
+</body>
 </html>

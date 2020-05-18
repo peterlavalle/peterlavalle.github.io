@@ -15,7 +15,7 @@
 
 <meta property="og:updated_time" content="2018-01-28T00:00:00&#43;00:00"/>
 
-	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 	<link rel="alternate" type="application/rss+xml" href="/tags/c++/index.xml" title="Peter's Notebook">
@@ -34,11 +34,6 @@ if (!doNotTrack) {
 </head>
 <body>
 	<header class="header">
-	<script type='text/javascript'>
-		
-		if ('peterlavalle.com' == window.location.hostname)
-			location.replace('https://peterlavalle.github.io' + window.location.pathname);
-	</script>
 	<a class="logo" href="/">Peter&#39;s Notebook</a>
 	
 <nav class="main-nav" role="navigation">
@@ -51,16 +46,41 @@ if (!doNotTrack) {
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/how-to/">How To</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/mortal-realms-partworks/">Mortal Realms</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/tools/">Tools</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/work-and-contibutions/">Work</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/how-to/">
+					
+					<span class="main-nav__text">How To</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/mortal-realms-partworks/">
+					
+					<span class="main-nav__text">Mortal Realms</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/tools/">
+					
+					<span class="main-nav__text">Tools</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/work-and-contibutions/">
+					
+					<span class="main-nav__text">Work</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
 	<div class="primary">
 	
 	<main class="main">
+		
 		<div class="page block">
 			<h1 class="page__title">C&#43;&#43;</h1>
 			
@@ -68,65 +88,86 @@ if (!doNotTrack) {
 		<div class="cards">
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/whippet/">Whippet</a></h1>
-	<div class="post__content">I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of contemporary game-engines.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/whippet/">Whippet</a></h1>
+	<div class="entry__content">I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of contemporary game-engines.
 This post is a bit crude; I keep thinking about it then adding features to Whippet instead of writing this up.
 Whippet on GitHub Google built CORGI which isn&rsquo;t (yet?) trying to act cache coherent. It also is more than trivial to build, and suffers from NIH for me. Actually; that last bit isn&rsquo;t likely to be a problem for most, but I didn&rsquo;t like their license.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-01-28T00:00:00Z">January 28, 2018</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/whippet-ecs/">Of Entity-Component-Systems</a></h1>
-	<div class="post__content">I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of modern game-engines.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/whippet-ecs/">Of Entity-Component-Systems</a></h1>
+	<div class="entry__content">I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of modern game-engines.
 This post is largely a gooey weasel opinion piece. It started as an introduction that grew out of control. So, for now, it&rsquo;s just a bit of rambling while I clean-up the documentation for my tool.
 Of Entity-Component-Systems Among other things, Jason Gregory&rsquo;s book Game Engine Architecture discusses the concept of a data-driven architecture for game software.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-01-19T00:00:00Z">January 19, 2018</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/pal-pipe-sink/">Pipe Sink</a></h1>
-	<div class="post__content">I had an idea/desire for a &ldquo;simple&rdquo; template class that&rsquo;d work as my OpenGL thread. A contemporary design for multi-threaded 3D games10 seems to be pooling work and processing it in whatever threads are available. IME OpenGL/GLFW are not re-entrant; Apple2 and GLFW3 explicitly states that it won&rsquo;t work - so it seems safe to assume that I shouldn&rsquo;t call functions from different threads. So to make a super-fast 3D game (or whatever) I need to do less work on the thread which is running OpenGL while allowing other threads to send it whatever work they please.</div>
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pal-pipe-sink/">Pipe Sink</a></h1>
+	<div class="entry__content">I had an idea/desire for a &ldquo;simple&rdquo; template class that&rsquo;d work as my OpenGL thread. A contemporary design for multi-threaded 3D games10 seems to be pooling work and processing it in whatever threads are available. IME OpenGL/GLFW are not re-entrant; Apple2 and GLFW3 explicitly states that it won&rsquo;t work - so it seems safe to assume that I shouldn&rsquo;t call functions from different threads. So to make a super-fast 3D game (or whatever) I need to do less work on the thread which is running OpenGL while allowing other threads to send it whatever work they please.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-08-03T00:00:00Z">August 03, 2017</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/oth-bullet/">Single Header Bullet</a></h1>
-	<div class="post__content">https://github.com/g-pechorin/bullet2stripped
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/oth-bullet/">Single Header Bullet</a></h1>
+	<div class="entry__content">https://github.com/g-pechorin/bullet2stripped
 What? I reduced Bullet 2.83 to a single C++ header file.
 Why? Largely to see if I could &hellip; hey - SQLite saw a 5% - 10% speed boost when they did this right?
 &hellip; oh - and to ease adoption I guess &hellip; maybe &hellip;
 How? I used a slightly complicated Scala script that I&rsquo;m not interested in examining again &hellip; for now &hellip;
 Basically; I took the 2.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-01-09T00:00:00Z">January 09, 2017</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/hungarian-notation/">Hungarian Notation</a></h1>
-	<div class="post__content">In which I pontificate on the subject of Hungarian Notation
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/hungarian-notation/">Hungarian Notation</a></h1>
+	<div class="entry__content">In which I pontificate on the subject of Hungarian Notation
 Hungarian Notation is a contentious topic It boils down to an ambiguity for the word &ldquo;type&rdquo; within English / C++. MicroSfot&rsquo;s modern style-guide says not to use &ldquo;Abbreviations and Acronyms&rdquo; or &ldquo;Hungarian Notation&rdquo; - originally Hungarian Notation was a style of abbreviation. I&rsquo;m going to paraphrase a long blog post by Joel on Software and summarize my thoughts at the end.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-03-02T15:39:37Z">March 02, 2016</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/swag/">Swag</a></h1>
-	<div class="post__content">You don’t need members when you’ve got SWAG!
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/swag/">Swag</a></h1>
+	<div class="entry__content">You don’t need members when you’ve got SWAG!
 Actually &hellip; you don&rsquo;t get many members with this idea. By casting this I can pass around an immutable structure of up-to sizeof(void*) bytes.
 Gist; https://gist.github.com/g-pechorin/d5eb8a1a770f783943a0
  </div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2015-11-12T00:00:00Z">November 12, 2015</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/first-post/">First Post</a></h1>
-	<div class="post__content">Can I use polymorphic-static-templates to automagically wire meta-functions into a Lua allocator?
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/first-post/">First Post</a></h1>
+	<div class="entry__content">Can I use polymorphic-static-templates to automagically wire meta-functions into a Lua allocator?
 Presently I’m using several “make—” functions to “decorate” objects after allocation and enable get/set/run meta-functions. I keep feeling the “smell” that some esoteric template thingies could be used to make these steps declarative (or maybe automatic!)</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2015-10-27T00:00:00Z">October 27, 2015</time>
+	</div>
 </article>
 				</div>
 			
@@ -155,5 +196,6 @@ Presently I’m using several “make—” functions to “decorate” objects 
 </div>
 	<div class="footer__copyright">© 2020 Peter&#39;s Notebook. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
-<script src="/js/menu.js"></script></body>
+<script src="/js/menu.js"></script>
+</body>
 </html>

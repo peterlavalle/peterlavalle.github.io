@@ -15,7 +15,7 @@
 
 <meta property="og:updated_time" content="2020-04-24T00:00:00&#43;00:00"/>
 
-	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 	<link rel="alternate" type="application/rss+xml" href="/post/index.xml" title="Peter's Notebook">
@@ -34,11 +34,6 @@ if (!doNotTrack) {
 </head>
 <body>
 	<header class="header">
-	<script type='text/javascript'>
-		
-		if ('peterlavalle.com' == window.location.hostname)
-			location.replace('https://peterlavalle.github.io' + window.location.pathname);
-	</script>
 	<a class="logo" href="/">Peter&#39;s Notebook</a>
 	
 <nav class="main-nav" role="navigation">
@@ -51,16 +46,41 @@ if (!doNotTrack) {
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/how-to/">How To</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/mortal-realms-partworks/">Mortal Realms</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/tools/">Tools</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/work-and-contibutions/">Work</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/how-to/">
+					
+					<span class="main-nav__text">How To</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/mortal-realms-partworks/">
+					
+					<span class="main-nav__text">Mortal Realms</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/tools/">
+					
+					<span class="main-nav__text">Tools</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/work-and-contibutions/">
+					
+					<span class="main-nav__text">Work</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
 	<div class="primary">
 	
 	<main class="main">
+		
 		<div class="page block">
 			<h1 class="page__title">Posts</h1>
 			
@@ -68,95 +88,125 @@ if (!doNotTrack) {
 		<div class="cards">
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/pal-pipe-sink/">Pipe Sink</a></h1>
-	<div class="post__content">I had an idea/desire for a &ldquo;simple&rdquo; template class that&rsquo;d work as my OpenGL thread. A contemporary design for multi-threaded 3D games10 seems to be pooling work and processing it in whatever threads are available. IME OpenGL/GLFW are not re-entrant; Apple2 and GLFW3 explicitly states that it won&rsquo;t work - so it seems safe to assume that I shouldn&rsquo;t call functions from different threads. So to make a super-fast 3D game (or whatever) I need to do less work on the thread which is running OpenGL while allowing other threads to send it whatever work they please.</div>
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pal-pipe-sink/">Pipe Sink</a></h1>
+	<div class="entry__content">I had an idea/desire for a &ldquo;simple&rdquo; template class that&rsquo;d work as my OpenGL thread. A contemporary design for multi-threaded 3D games10 seems to be pooling work and processing it in whatever threads are available. IME OpenGL/GLFW are not re-entrant; Apple2 and GLFW3 explicitly states that it won&rsquo;t work - so it seems safe to assume that I shouldn&rsquo;t call functions from different threads. So to make a super-fast 3D game (or whatever) I need to do less work on the thread which is running OpenGL while allowing other threads to send it whatever work they please.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-08-03T00:00:00Z">August 03, 2017</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/pi3-namecheap/">Pi3 NameCheap</a></h1>
-	<div class="post__content">This is a followup to a previous post because that one stopped working, now - this works.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-namecheap/">Pi3 NameCheap</a></h1>
+	<div class="entry__content">This is a followup to a previous post because that one stopped working, now - this works.
 There&rsquo;s not a lot of OC here, just clarity.
 NameCheap DynDNS on a Pi3 I use NameCheap (because they&rsquo;re anti-SOPA) for DNS. The client program, ddclient, can connect to NameCheap.
 I&rsquo;m using raspbian, so, first;
  run sudo apt-get install ddclient on your Pi find the dynamic DNS settings on NameCheap&rsquo;s website  Dashboard &gt;&gt;&gt; Domain List &gt;&gt;&gt; Manage &gt;&gt;&gt; Advanced DNS they do like to change these things around  halfway down the page, there should be a DYNAMIC DNS thingie  enable it (if you haven&rsquo;t already) note the blurb-what-looks-like-a-SHA  edit your /etc/ddclient.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-06-29T00:00:00Z">June 29, 2017</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/replace-samba-with-winsshfs/">Replace SaMBa with WinSSHFS!</a></h1>
-	<div class="post__content">I connected my Windows desktop to our office file server using SSHFS rather than SaMBa. I am happy about that.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/replace-samba-with-winsshfs/">Replace SaMBa with WinSSHFS!</a></h1>
+	<div class="entry__content">I connected my Windows desktop to our office file server using SSHFS rather than SaMBa. I am happy about that.
 For some reason one of our SaMBa systems got twitchy sometime last month. This is a problem since I&rsquo;ve inherited a script that;
  I don&rsquo;t yet understand runs on Windows (10?) exclusively reads data from \\foo\bar\project\user\project3\data\something paths  Since I know that SSHFS already works, I&rsquo;m setting that up as a substitue.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-06-24T00:00:00Z">June 24, 2017</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/pi3-dyndns/">Pi3 DynDNS</a></h1>
-	<div class="post__content">This has been replaced
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-dyndns/">Pi3 DynDNS</a></h1>
+	<div class="entry__content">This has been replaced
 Pi3 DynDNS I want to give my home&rsquo;s Raspberry Pi3 a DNS name so that I can access it more easily.
 DNS and Dynamic IP Addresses The Domain Naming System is how those readable textual names like example.com become the actual IP Addresses like 127.0.0.1 that web pages, email, and everything else needs to work. Various groups allow people to register a domain (or subdomain) and specify the IP address of a computer that the domain should reffer to.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-05-21T00:00:00Z">May 21, 2017</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/oth-bullet/">Single Header Bullet</a></h1>
-	<div class="post__content">https://github.com/g-pechorin/bullet2stripped
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/oth-bullet/">Single Header Bullet</a></h1>
+	<div class="entry__content">https://github.com/g-pechorin/bullet2stripped
 What? I reduced Bullet 2.83 to a single C++ header file.
 Why? Largely to see if I could &hellip; hey - SQLite saw a 5% - 10% speed boost when they did this right?
 &hellip; oh - and to ease adoption I guess &hellip; maybe &hellip;
 How? I used a slightly complicated Scala script that I&rsquo;m not interested in examining again &hellip; for now &hellip;
 Basically; I took the 2.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-01-09T00:00:00Z">January 09, 2017</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/oth-palua-core/">Peter&#39;s Awesome Lua with the Core functionality we care about</a></h1>
-	<div class="post__content">TL:DR ; results
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/oth-palua-core/">Peter&#39;s Awesome Lua with the Core functionality we care about</a></h1>
+	<div class="entry__content">TL:DR ; results
 DukTape is a C engine for executing ECMAScript 5.1ish. (&hellip; or JavaScript or whatever we&rsquo;re calling it this week) Notably, it&rsquo;s distributed as a trio of source files to ease integration.
 Lua is a C script engine (for the Lua languages) and is not distributed in such a nice way. So I spent a few hours preparing a (Python) script to repack Lua 5.3.3 into a single header.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-01-08T00:00:00Z">January 08, 2017</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/palsystem/">PAL-System</a></h1>
-	<div class="post__content">Lindenmayer Systems allow one to specify a series of replacement rules for transforming strings.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/palsystem/">PAL-System</a></h1>
+	<div class="entry__content">Lindenmayer Systems allow one to specify a series of replacement rules for transforming strings.
 If the text is used as a series of drawing commands, including saving and restoring the cursor&rsquo;s position, the technique can generate fairly interesting foliage.
 A scene graph offers the ability to save/restore by chaining segments together. I used Unity3D&rsquo;s ScriptableObject to create &ldquo;Languages&rdquo; with replacement rules. I also created &ldquo;Dictionaries&rdquo; mapping symbols to segments made from GameObject prefabs.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-11-12T00:00:00Z">November 12, 2016</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/vive-cane/">Vive Cane</a></h1>
-	<div class="post__content">I&rsquo;m still alive just &hellip; busy, not bloggy &hellip; maybe someday I&rsquo;ll be more bloggy. Here&rsquo;s something that kept me busy &hellip;
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/vive-cane/">Vive Cane</a></h1>
+	<div class="entry__content">I&rsquo;m still alive just &hellip; busy, not bloggy &hellip; maybe someday I&rsquo;ll be more bloggy. Here&rsquo;s something that kept me busy &hellip;
 Teleporting everywhere feels wrong, so my suggestion is to use the Vive wand like a cane. Two minutes feels a bit long, but here&rsquo;s a video showing it off.
   More or less; when you grip the/a wand - your avatar is planting a cane in the world from which you can push yourself.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-09-04T00:00:00Z">September 04, 2016</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/atom-macros/">Adding NotePad&#43;&#43; Macros to Atom.io</a></h1>
-	<div class="post__content">I haven&rsquo;t posted anything in awhile &hellip; so here&rsquo;s how to get Atom.io to get macros that work kind-of-like NotePad++
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/atom-macros/">Adding NotePad&#43;&#43; Macros to Atom.io</a></h1>
+	<div class="entry__content">I haven&rsquo;t posted anything in awhile &hellip; so here&rsquo;s how to get Atom.io to get macros that work kind-of-like NotePad++
  Install atom-keyboard-macros into Atom. &gt; The default keybindings did nothing for me &hellip; sorry
  open your keybindings.cson
  Hit CTRL+, &gt; click on Keybindings &gt; click on the blue text that says your keymap file  paste this wodge into the bottom of your keybindings.cson PRESERVE THE INDENTATION!</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-08-11T00:00:00Z">August 11, 2016</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/mirroring-github-to-bitbucket/">Mirroring Git/GitHub to Hg/BitBucket</a></h1>
-	<div class="post__content">This seemed a lot longer when I planned it in my notebook at lunch.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/mirroring-github-to-bitbucket/">Mirroring Git/GitHub to Hg/BitBucket</a></h1>
+	<div class="entry__content">This seemed a lot longer when I planned it in my notebook at lunch.
    GitHub user project (both sides) BitBucket user SCM Schedule     ocornut imgui g-pechorin None Periodic     Install hg-git  You&rsquo;ll have to do this on the Jenkins server You&rsquo;ll have to do it either for the Jenkins user or all I&rsquo;m using an OsX machine as my host, so I was able to use easy_install to install hg-git and dulwich  setup a project on GitHub create a Jenkins Freestyle project which runs periodically  Polling the SCM was NOT an option since there&rsquo;s no default branch on GitHub  &hellip; this is a quirk of hg-git &hellip; I think &hellip; IIRC/YRMV - so sling me a tweet or whatever if I&rsquo;m wrong   program the job to pull from git, push to hg, and ignore results of 1</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-07-22T00:00:00Z">July 22, 2016</time>
+	</div>
 </article>
 				</div>
 			
@@ -164,18 +214,12 @@ Teleporting everywhere feels wrong, so my suggestion is to use the Vive wand lik
 	</main>
 	
 <div class="pagination block">
-	<a class="pagination__item pagination__item--desktop" href="/post/">1</a>
-	
-	<a class="pagination__item pagination__item--desktop" href="/post/page/2/">2</a>
-	
-	<a class="pagination__item pagination__item--desktop" href="/post/page/3/">3</a>
-	
-	<span class="pagination__item pagination__item--active" data-total="6">4</span>
-	
-	<a class="pagination__item pagination__item--desktop" href="/post/page/5/">5</a>
-	
-	<a class="pagination__item pagination__item--desktop" href="/post/page/6/">6</a>
-	
+				<a class="pagination__item pagination__item--desktop" href="/post/">1</a>
+				<a class="pagination__item pagination__item--desktop" href="/post/page/2/">2</a>
+				<a class="pagination__item pagination__item--desktop" href="/post/page/3/">3</a>
+				<span class="pagination__item pagination__item--active" data-total="6">4</span>
+				<a class="pagination__item pagination__item--desktop" href="/post/page/5/">5</a>
+				<a class="pagination__item pagination__item--desktop" href="/post/page/6/">6</a>
 </div>
 
 	</div>
@@ -199,5 +243,6 @@ Teleporting everywhere feels wrong, so my suggestion is to use the Vive wand lik
 </div>
 	<div class="footer__copyright">© 2020 Peter&#39;s Notebook. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
-<script src="/js/menu.js"></script></body>
+<script src="/js/menu.js"></script>
+</body>
 </html>

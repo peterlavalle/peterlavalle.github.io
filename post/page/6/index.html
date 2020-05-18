@@ -15,7 +15,7 @@
 
 <meta property="og:updated_time" content="2020-04-24T00:00:00&#43;00:00"/>
 
-	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 	<link rel="alternate" type="application/rss+xml" href="/post/index.xml" title="Peter's Notebook">
@@ -34,11 +34,6 @@ if (!doNotTrack) {
 </head>
 <body>
 	<header class="header">
-	<script type='text/javascript'>
-		
-		if ('peterlavalle.com' == window.location.hostname)
-			location.replace('https://peterlavalle.github.io' + window.location.pathname);
-	</script>
 	<a class="logo" href="/">Peter&#39;s Notebook</a>
 	
 <nav class="main-nav" role="navigation">
@@ -51,16 +46,41 @@ if (!doNotTrack) {
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/how-to/">How To</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/mortal-realms-partworks/">Mortal Realms</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/tools/">Tools</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/work-and-contibutions/">Work</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/how-to/">
+					
+					<span class="main-nav__text">How To</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/mortal-realms-partworks/">
+					
+					<span class="main-nav__text">Mortal Realms</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/tools/">
+					
+					<span class="main-nav__text">Tools</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/work-and-contibutions/">
+					
+					<span class="main-nav__text">Work</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
 	<div class="primary">
 	
 	<main class="main">
+		
 		<div class="page block">
 			<h1 class="page__title">Posts</h1>
 			
@@ -68,31 +88,40 @@ if (!doNotTrack) {
 		<div class="cards">
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/swag/">Swag</a></h1>
-	<div class="post__content">You don’t need members when you’ve got SWAG!
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/swag/">Swag</a></h1>
+	<div class="entry__content">You don’t need members when you’ve got SWAG!
 Actually &hellip; you don&rsquo;t get many members with this idea. By casting this I can pass around an immutable structure of up-to sizeof(void*) bytes.
 Gist; https://gist.github.com/g-pechorin/d5eb8a1a770f783943a0
  </div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2015-11-12T00:00:00Z">November 12, 2015</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/first-post/">First Post</a></h1>
-	<div class="post__content">Can I use polymorphic-static-templates to automagically wire meta-functions into a Lua allocator?
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/first-post/">First Post</a></h1>
+	<div class="entry__content">Can I use polymorphic-static-templates to automagically wire meta-functions into a Lua allocator?
 Presently I’m using several “make—” functions to “decorate” objects after allocation and enable get/set/run meta-functions. I keep feeling the “smell” that some esoteric template thingies could be used to make these steps declarative (or maybe automatic!)</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2015-10-27T00:00:00Z">October 27, 2015</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/hello-world/">Hello World</a></h1>
-	<div class="post__content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/hello-world/">Hello World</a></h1>
+	<div class="entry__content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Quick Start Create a new post $ hexo new &#34;My New Post&#34; More info: Writing
 Run server $ hexo server More info: Server
 Generate static files $ hexo generate More info: Generating
 Deploy to remote sites $ hexo deploy More info: Deployment</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="1983-03-14T00:00:00Z">March 14, 1983</time>
+	</div>
 </article>
 				</div>
 			
@@ -100,17 +129,12 @@ Deploy to remote sites $ hexo deploy More info: Deployment</div>
 	</main>
 	
 <div class="pagination block">
-	<a class="pagination__item pagination__item--desktop" href="/post/">1</a>
-	
-	<a class="pagination__item pagination__item--desktop" href="/post/page/2/">2</a>
-	
-	<a class="pagination__item pagination__item--desktop" href="/post/page/3/">3</a>
-	
-		<span class="pagination__item pagination__item--gap">&hellip;</span>
-	<a class="pagination__item pagination__item--desktop" href="/post/page/5/">5</a>
-	
-	<span class="pagination__item pagination__item--active" data-total="6">6</span>
-	
+				<a class="pagination__item pagination__item--desktop" href="/post/">1</a>
+				<a class="pagination__item pagination__item--desktop" href="/post/page/2/">2</a>
+				<a class="pagination__item pagination__item--desktop" href="/post/page/3/">3</a>
+			<span class="pagination__item pagination__item--gap">&hellip;</span>
+				<a class="pagination__item pagination__item--desktop" href="/post/page/5/">5</a>
+				<span class="pagination__item pagination__item--active" data-total="6">6</span>
 </div>
 
 	</div>
@@ -134,5 +158,6 @@ Deploy to remote sites $ hexo deploy More info: Deployment</div>
 </div>
 	<div class="footer__copyright">© 2020 Peter&#39;s Notebook. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
-<script src="/js/menu.js"></script></body>
+<script src="/js/menu.js"></script>
+</body>
 </html>

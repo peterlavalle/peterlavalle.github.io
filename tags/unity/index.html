@@ -15,7 +15,7 @@
 
 <meta property="og:updated_time" content="2016-03-01T00:00:00&#43;00:00"/>
 
-	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 	<link rel="alternate" type="application/rss+xml" href="/tags/unity/index.xml" title="Peter's Notebook">
@@ -34,11 +34,6 @@ if (!doNotTrack) {
 </head>
 <body>
 	<header class="header">
-	<script type='text/javascript'>
-		
-		if ('peterlavalle.com' == window.location.hostname)
-			location.replace('https://peterlavalle.github.io' + window.location.pathname);
-	</script>
 	<a class="logo" href="/">Peter&#39;s Notebook</a>
 	
 <nav class="main-nav" role="navigation">
@@ -51,16 +46,41 @@ if (!doNotTrack) {
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/how-to/">How To</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/mortal-realms-partworks/">Mortal Realms</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/tools/">Tools</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/work-and-contibutions/">Work</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/how-to/">
+					
+					<span class="main-nav__text">How To</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/mortal-realms-partworks/">
+					
+					<span class="main-nav__text">Mortal Realms</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/tools/">
+					
+					<span class="main-nav__text">Tools</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/work-and-contibutions/">
+					
+					<span class="main-nav__text">Work</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
 	<div class="primary">
 	
 	<main class="main">
+		
 		<div class="page block">
 			<h1 class="page__title">Unity</h1>
 			
@@ -68,21 +88,27 @@ if (!doNotTrack) {
 		<div class="cards">
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/space-ships/">Space Ships</a></h1>
-	<div class="post__content">Awhile ago I undertook a goofy little &ldquo;game-play study&rdquo; with space ships.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/space-ships/">Space Ships</a></h1>
+	<div class="entry__content">Awhile ago I undertook a goofy little &ldquo;game-play study&rdquo; with space ships.
 It has space ships
 I&rsquo;m calling it Space-Ships.
 I wanted to see if 2D game-play (like S.P.A.Z.) could &ldquo;feel&rdquo; like traditional 3D. (like Freelancer) To study this I built a game-play prototype with a 2.5D chase-cam in (Unity) a 3D game engine. I used engine&rsquo;s existing rigid body simulator (PhysX) to provide a limited version of physics. After constraining everything to a 2D plane and fiddling with the inertia values in various ways I was happy with the flight mechanics.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-03-01T00:00:00Z">March 01, 2016</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/myspaceships/">Automated Unity WebGL Deployment</a></h1>
-	<div class="post__content">I have an old Unity project that I haven&rsquo;t looked at in awhile - this one. If memory serves; assembling a WebGL version is slow and boring - so I&rsquo;m making my eager little Jenkins server do it.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/myspaceships/">Automated Unity WebGL Deployment</a></h1>
+	<div class="entry__content">I have an old Unity project that I haven&rsquo;t looked at in awhile - this one. If memory serves; assembling a WebGL version is slow and boring - so I&rsquo;m making my eager little Jenkins server do it.
 Really I&rsquo;m a bit bored with sbt-launch malarkey and I wanted to see if I could get this rolling. Broadly the steps that I followed went like this;
  Install Unity (5.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-02-26T00:00:00Z">February 26, 2016</time>
+	</div>
 </article>
 				</div>
 			
@@ -111,5 +137,6 @@ Really I&rsquo;m a bit bored with sbt-launch malarkey and I wanted to see if I c
 </div>
 	<div class="footer__copyright">© 2020 Peter&#39;s Notebook. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
-<script src="/js/menu.js"></script></body>
+<script src="/js/menu.js"></script>
+</body>
 </html>

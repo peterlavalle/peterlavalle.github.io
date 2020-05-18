@@ -15,7 +15,7 @@
 
 <meta property="og:updated_time" content="2020-04-24T00:00:00&#43;00:00"/>
 
-	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 	<link rel="alternate" type="application/rss+xml" href="/post/index.xml" title="Peter's Notebook">
@@ -34,11 +34,6 @@ if (!doNotTrack) {
 </head>
 <body>
 	<header class="header">
-	<script type='text/javascript'>
-		
-		if ('peterlavalle.com' == window.location.hostname)
-			location.replace('https://peterlavalle.github.io' + window.location.pathname);
-	</script>
 	<a class="logo" href="/">Peter&#39;s Notebook</a>
 	
 <nav class="main-nav" role="navigation">
@@ -51,16 +46,41 @@ if (!doNotTrack) {
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/how-to/">How To</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/mortal-realms-partworks/">Mortal Realms</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/tools/">Tools</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/work-and-contibutions/">Work</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/how-to/">
+					
+					<span class="main-nav__text">How To</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/mortal-realms-partworks/">
+					
+					<span class="main-nav__text">Mortal Realms</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/tools/">
+					
+					<span class="main-nav__text">Tools</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/work-and-contibutions/">
+					
+					<span class="main-nav__text">Work</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
 	<div class="primary">
 	
 	<main class="main">
+		
 		<div class="page block">
 			<h1 class="page__title">Posts</h1>
 			
@@ -68,97 +88,127 @@ if (!doNotTrack) {
 		<div class="cards">
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/whippet/">Whippet</a></h1>
-	<div class="post__content">I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of contemporary game-engines.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/whippet/">Whippet</a></h1>
+	<div class="entry__content">I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of contemporary game-engines.
 This post is a bit crude; I keep thinking about it then adding features to Whippet instead of writing this up.
 Whippet on GitHub Google built CORGI which isn&rsquo;t (yet?) trying to act cache coherent. It also is more than trivial to build, and suffers from NIH for me. Actually; that last bit isn&rsquo;t likely to be a problem for most, but I didn&rsquo;t like their license.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-01-28T00:00:00Z">January 28, 2018</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/whippet-ecs/">Of Entity-Component-Systems</a></h1>
-	<div class="post__content">I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of modern game-engines.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/whippet-ecs/">Of Entity-Component-Systems</a></h1>
+	<div class="entry__content">I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of modern game-engines.
 This post is largely a gooey weasel opinion piece. It started as an introduction that grew out of control. So, for now, it&rsquo;s just a bit of rambling while I clean-up the documentation for my tool.
 Of Entity-Component-Systems Among other things, Jason Gregory&rsquo;s book Game Engine Architecture discusses the concept of a data-driven architecture for game software.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-01-19T00:00:00Z">January 19, 2018</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/cmder-intortoisehg/">Cmder in TortoiseHG</a></h1>
-	<div class="post__content">Have you used TortoiseHG?
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/cmder-intortoisehg/">Cmder in TortoiseHG</a></h1>
+	<div class="entry__content">Have you used TortoiseHG?
  It is lovely!
  Have you used Cmder?
  It is lovely!
  If you &hellip;
  setup cmder to launch from the command line open TortoiseHG Workbench &gt; File / Settings &gt; TortoiseHG / Shell put cmder %(root)s into the Shell field  &hellip; then you can have these two lovely tools holding hands and kicking-bugs!</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-01-15T00:00:00Z">January 15, 2018</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/macos-open-terminal-in-folder/">Open macOS Terminal in Folder</a></h1>
-	<div class="post__content">In January of 2018, you can launch macOS&rsquo;s terminal with the command /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal1
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/macos-open-terminal-in-folder/">Open macOS Terminal in Folder</a></h1>
+	<div class="entry__content">In January of 2018, you can launch macOS&rsquo;s terminal with the command /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal1
 I have (to use) a macOS computer. I choose to use TortoiseHG because it is lovely. TortoiseHG has a &ldquo;launch the terminal&rdquo; context menu entry.
 Under macOS, you need to specify the terminal command that TortoiseHG should use. You need this, in your preference, to launch the terminal in the repo;
  /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal %(root)s
   https://stackoverflow.com/questions/4404242/programmatically-launch-terminal-app-with-a-specified-command-and-custom-colors [return]   </div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-01-10T00:00:00Z">January 10, 2018</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/unity3d-moving-platform/">Moving Platforms in Unity3D</a></h1>
-	<div class="post__content">This is a short example of moving platforms in Unity3D.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/unity3d-moving-platform/">Moving Platforms in Unity3D</a></h1>
+	<div class="entry__content">This is a short example of moving platforms in Unity3D.
 Based on this tweet, I spent &hellip; 30 minutes? Maybe? putting it together.
  This writeup took longer.
  The approach uses two behaviour classes to achive the classical effect of moving platforms that follow some path.
  mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&rsquo;ve reached the Waypoint, continue with its next one   My example;</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-12-27T00:00:00Z">December 27, 2017</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/democore/">Adventures in Demo Making</a></h1>
-	<div class="post__content">I should just &ldquo;blog&rdquo; informally more often - so here goes.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/democore/">Adventures in Demo Making</a></h1>
+	<div class="entry__content">I should just &ldquo;blog&rdquo; informally more often - so here goes.
 I&rsquo;ve cobbled together a toolchain/asset-conditioning-pipeline of sorts for demoscene type stuff. My system is written in Scala on Gradle and functions by emitting C/++ and CMake files for Visual Studio. All of this produces a C/++11&frasl;14 and GLFW/GLAD/OpenGL4.3&frasl;4.5 executable that displays someone else&rsquo;s ShaderToy project. Nothing revolutionary, but I&rsquo;m after pretty-code that I can keep using rather than actual hard &ldquo;street cred&rdquo; quality demo results.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-12-03T00:00:00Z">December 03, 2017</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/delay-run/">(Scala) Delay Run</a></h1>
-	<div class="post__content">I wrote a threading primitive and I&rsquo;m very pleased with it. I plan to wrap all of my &ldquo;save file&rdquo; things in this, from now on.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/delay-run/">(Scala) Delay Run</a></h1>
+	<div class="entry__content">I wrote a threading primitive and I&rsquo;m very pleased with it. I plan to wrap all of my &ldquo;save file&rdquo; things in this, from now on.
 Delay Run This class acts as a sort of &ldquo;once inactive for X do Y&rdquo; pattern. In my design, I&rsquo;m wrapping my save actions in it and triggering schedule() after practically every edit.
 The class is passed a delay: Long value to specify how long to actually wait - I&rsquo;m using 1.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-11-08T00:00:00Z">November 08, 2017</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/gradlfy-flexdock/">Gradlification of FlexDock</a></h1>
-	<div class="post__content">Some clever clogs made a snazzy tool called SciLab as another not-MatLab.1 Flex Dock is the framework that (I think) they developed for docking frames. It&rsquo;s not in Maven Central so I&rsquo;ve forked it and deployed it to my own repository.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/gradlfy-flexdock/">Gradlification of FlexDock</a></h1>
+	<div class="entry__content">Some clever clogs made a snazzy tool called SciLab as another not-MatLab.1 Flex Dock is the framework that (I think) they developed for docking frames. It&rsquo;s not in Maven Central so I&rsquo;ve forked it and deployed it to my own repository.
 convert the build The actual conversion was embarrassingly easy since the gradle importer stuff really works for this sort of thing. As a matter of personal preference, I re-arranged the build scripts to be a single file but otherwise left them as-is.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-11-01T00:00:00Z">November 01, 2017</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/pi3-nginx/">Pi3 nGinx Reverse Proxy</a></h1>
-	<div class="post__content">So &hellip; you&rsquo;ve got a Pi3 running as a Docker host with some services that you want your buddies to have access to. You could try and get them to SSH into your home network; just like you could type all your programs with a touchscreen.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-nginx/">Pi3 nGinx Reverse Proxy</a></h1>
+	<div class="entry__content">So &hellip; you&rsquo;ve got a Pi3 running as a Docker host with some services that you want your buddies to have access to. You could try and get them to SSH into your home network; just like you could type all your programs with a touchscreen.
 I&rsquo;m going to use nGinx to setup a reverse-proxy from my real-Pi3 to various Docker containers based on URL rewriting.
 I&rsquo;m doing something else (of course) I&rsquo;m setting up (what I call) name-based-virtual-hosting.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-09-19T00:00:00Z">September 19, 2017</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/pi3-docker-gogs/">GoGS on a Pi3 (via Docker)</a></h1>
-	<div class="post__content"><p>I&rsquo;ve been assembling a &ldquo;full stack&rdquo;<sup class="footnote-ref" id="fnref:fwiw"><a href="#fn:fwiw">1</a></sup> for development that runs on my Pi3.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-docker-gogs/">GoGS on a Pi3 (via Docker)</a></h1>
+	<div class="entry__content"><p>I&rsquo;ve been assembling a &ldquo;full stack&rdquo;<sup class="footnote-ref" id="fnref:fwiw"><a href="#fn:fwiw">1</a></sup> for development that runs on my Pi3.
 This is all happening inside of <a href="https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/">Docker</a> containers which made cleanup redonkulously easy.
 Today I was looking at a source code management system; something of a &ldquo;my own GitHub&rdquo; which I can run on my own network.</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-09-07T00:00:00Z">September 07, 2017</time>
+	</div>
 </article>
 				</div>
 			
@@ -166,17 +216,12 @@ Today I was looking at a source code management system; something of a &ldquo;my
 	</main>
 	
 <div class="pagination block">
-	<a class="pagination__item pagination__item--desktop" href="/post/">1</a>
-	
-	<a class="pagination__item pagination__item--desktop" href="/post/page/2/">2</a>
-	
-	<span class="pagination__item pagination__item--active" data-total="6">3</span>
-	
-	<a class="pagination__item pagination__item--desktop" href="/post/page/4/">4</a>
-	
-		<span class="pagination__item pagination__item--gap">&hellip;</span>
-	<a class="pagination__item pagination__item--desktop" href="/post/page/6/">6</a>
-	
+				<a class="pagination__item pagination__item--desktop" href="/post/">1</a>
+				<a class="pagination__item pagination__item--desktop" href="/post/page/2/">2</a>
+				<span class="pagination__item pagination__item--active" data-total="6">3</span>
+				<a class="pagination__item pagination__item--desktop" href="/post/page/4/">4</a>
+			<span class="pagination__item pagination__item--gap">&hellip;</span>
+				<a class="pagination__item pagination__item--desktop" href="/post/page/6/">6</a>
 </div>
 
 	</div>
@@ -200,5 +245,6 @@ Today I was looking at a source code management system; something of a &ldquo;my
 </div>
 	<div class="footer__copyright">© 2020 Peter&#39;s Notebook. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
-<script src="/js/menu.js"></script></body>
+<script src="/js/menu.js"></script>
+</body>
 </html>

@@ -15,7 +15,7 @@
 
 <meta property="og:updated_time" content="2020-04-09T00:00:00&#43;00:00"/>
 
-	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 	<link rel="alternate" type="application/rss+xml" href="/tags/howto/index.xml" title="Peter's Notebook">
@@ -34,11 +34,6 @@ if (!doNotTrack) {
 </head>
 <body>
 	<header class="header">
-	<script type='text/javascript'>
-		
-		if ('peterlavalle.com' == window.location.hostname)
-			location.replace('https://peterlavalle.github.io' + window.location.pathname);
-	</script>
 	<a class="logo" href="/">Peter&#39;s Notebook</a>
 	
 <nav class="main-nav" role="navigation">
@@ -51,16 +46,41 @@ if (!doNotTrack) {
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/how-to/">How To</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/mortal-realms-partworks/">Mortal Realms</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/tools/">Tools</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/work-and-contibutions/">Work</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/how-to/">
+					
+					<span class="main-nav__text">How To</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/mortal-realms-partworks/">
+					
+					<span class="main-nav__text">Mortal Realms</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/tools/">
+					
+					<span class="main-nav__text">Tools</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/work-and-contibutions/">
+					
+					<span class="main-nav__text">Work</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
 	<div class="primary">
 	
 	<main class="main">
+		
 		<div class="page block">
 			<h1 class="page__title">HowTo</h1>
 			
@@ -68,47 +88,62 @@ if (!doNotTrack) {
 		<div class="cards">
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/atom-macros/">Adding NotePad&#43;&#43; Macros to Atom.io</a></h1>
-	<div class="post__content">I haven&rsquo;t posted anything in awhile &hellip; so here&rsquo;s how to get Atom.io to get macros that work kind-of-like NotePad++
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/atom-macros/">Adding NotePad&#43;&#43; Macros to Atom.io</a></h1>
+	<div class="entry__content">I haven&rsquo;t posted anything in awhile &hellip; so here&rsquo;s how to get Atom.io to get macros that work kind-of-like NotePad++
  Install atom-keyboard-macros into Atom. &gt; The default keybindings did nothing for me &hellip; sorry
  open your keybindings.cson
  Hit CTRL+, &gt; click on Keybindings &gt; click on the blue text that says your keymap file  paste this wodge into the bottom of your keybindings.cson PRESERVE THE INDENTATION!</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-08-11T00:00:00Z">August 11, 2016</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/mirroring-github-to-bitbucket/">Mirroring Git/GitHub to Hg/BitBucket</a></h1>
-	<div class="post__content">This seemed a lot longer when I planned it in my notebook at lunch.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/mirroring-github-to-bitbucket/">Mirroring Git/GitHub to Hg/BitBucket</a></h1>
+	<div class="entry__content">This seemed a lot longer when I planned it in my notebook at lunch.
    GitHub user project (both sides) BitBucket user SCM Schedule     ocornut imgui g-pechorin None Periodic     Install hg-git  You&rsquo;ll have to do this on the Jenkins server You&rsquo;ll have to do it either for the Jenkins user or all I&rsquo;m using an OsX machine as my host, so I was able to use easy_install to install hg-git and dulwich  setup a project on GitHub create a Jenkins Freestyle project which runs periodically  Polling the SCM was NOT an option since there&rsquo;s no default branch on GitHub  &hellip; this is a quirk of hg-git &hellip; I think &hellip; IIRC/YRMV - so sling me a tweet or whatever if I&rsquo;m wrong   program the job to pull from git, push to hg, and ignore results of 1</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-07-22T00:00:00Z">July 22, 2016</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/hg-subrepos/">Mercurial / Hg SubRepos</a></h1>
-	<div class="post__content">I&rsquo;m still trying to catch up on stuff following Develop. I&rsquo;ve decided to write a post about my experience(s) switching my work over to SubRepos.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/hg-subrepos/">Mercurial / Hg SubRepos</a></h1>
+	<div class="entry__content">I&rsquo;m still trying to catch up on stuff following Develop. I&rsquo;ve decided to write a post about my experience(s) switching my work over to SubRepos.
 I am unaware of the &ldquo;reason&rdquo; why they&rsquo;re considered &ldquo;bad.&rdquo; Perhaps it&rsquo;s a Unix thing? Maybe they don&rsquo;t work as well as people feel that they should?
 Whatever
 I have a (secret) project called &ldquo;nite-nite/&rdquo; in which I use and develop some public-domain headers. I want this public-domain stuff to be &hellip; well &hellip; public-domain and visible to all.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-07-19T19:00:00Z">July 19, 2016</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/myspaceships/">Automated Unity WebGL Deployment</a></h1>
-	<div class="post__content">I have an old Unity project that I haven&rsquo;t looked at in awhile - this one. If memory serves; assembling a WebGL version is slow and boring - so I&rsquo;m making my eager little Jenkins server do it.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/myspaceships/">Automated Unity WebGL Deployment</a></h1>
+	<div class="entry__content">I have an old Unity project that I haven&rsquo;t looked at in awhile - this one. If memory serves; assembling a WebGL version is slow and boring - so I&rsquo;m making my eager little Jenkins server do it.
 Really I&rsquo;m a bit bored with sbt-launch malarkey and I wanted to see if I could get this rolling. Broadly the steps that I followed went like this;
  Install Unity (5.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-02-26T00:00:00Z">February 26, 2016</time>
+	</div>
 </article>
 				</div>
 			
 				<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/hexo-os-x/">Hexo and Jenkins atop Os X</a></h1>
-	<div class="post__content">In which I ramble a bit about setting up CI for this very blog.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/hexo-os-x/">Hexo and Jenkins atop Os X</a></h1>
+	<div class="entry__content">In which I ramble a bit about setting up CI for this very blog.
 I have a Jenkins server running on my OsX computer. (&hellip; or &hellip; I&rsquo;m setting one up anyway) I also have (am establishing?) a blog built by Hexo &hellip; because that seems the right way to do this sort of thing. My constraints of &ldquo;MarkDown&rdquo; and &ldquo;no really - let me use MarkDown because I&rsquo;m going to have a lot of code fragments&rdquo; seem alien to most blogging software - &ldquo;Hexo delivers&rdquo; as the kids say.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-02-10T00:00:00Z">February 10, 2016</time>
+	</div>
 </article>
 				</div>
 			
@@ -116,10 +151,8 @@ I have a Jenkins server running on my OsX computer. (&hellip; or &hellip; I&rsqu
 	</main>
 	
 <div class="pagination block">
-	<a class="pagination__item pagination__item--desktop" href="/tags/howto/">1</a>
-	
-	<span class="pagination__item pagination__item--active" data-total="2">2</span>
-	
+				<a class="pagination__item pagination__item--desktop" href="/tags/howto/">1</a>
+				<span class="pagination__item pagination__item--active" data-total="2">2</span>
 </div>
 
 	</div>
@@ -143,5 +176,6 @@ I have a Jenkins server running on my OsX computer. (&hellip; or &hellip; I&rsqu
 </div>
 	<div class="footer__copyright">© 2020 Peter&#39;s Notebook. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
-<script src="/js/menu.js"></script></body>
+<script src="/js/menu.js"></script>
+</body>
 </html>

@@ -16,7 +16,7 @@
 
 <meta property="og:updated_time" content="2020-04-24T00:00:00&#43;00:00"/>
 
-	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Peter's Notebook">
@@ -35,11 +35,6 @@ if (!doNotTrack) {
 </head>
 <body>
 	<header class="header">
-	<script type='text/javascript'>
-		
-		if ('peterlavalle.com' == window.location.hostname)
-			location.replace('https://peterlavalle.github.io' + window.location.pathname);
-	</script>
 	<a class="logo" href="/">Peter&#39;s Notebook</a>
 	
 <nav class="main-nav" role="navigation">
@@ -52,10 +47,34 @@ if (!doNotTrack) {
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-		<li class="main-nav__item"><a class="main-nav__link" href="/how-to/">How To</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/mortal-realms-partworks/">Mortal Realms</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/tools/">Tools</a></li>
-		<li class="main-nav__item"><a class="main-nav__link" href="/work-and-contibutions/">Work</a></li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/how-to/">
+					
+					<span class="main-nav__text">How To</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/mortal-realms-partworks/">
+					
+					<span class="main-nav__text">Mortal Realms</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/tools/">
+					
+					<span class="main-nav__text">Tools</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/work-and-contibutions/">
+					
+					<span class="main-nav__text">Work</span>
+					
+				</a>
+			</li>
 	</ul>
 </nav>
 </header>
@@ -64,87 +83,113 @@ if (!doNotTrack) {
 	<main class="main">
 			<div class="cards">
 					<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/scala-maybe/">Scala Maybe</a></h1>
-	<div class="post__content"><p>I wrote a <a href="https://wiki.haskell.org/Maybe">Maybe</a> (a lazy <code>Option[T]</code>) that I can use in Scala.</p></div>
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/scala-maybe/">Scala Maybe</a></h1>
+	<div class="entry__content"><p>I wrote a <a href="https://wiki.haskell.org/Maybe">Maybe</a> (a lazy <code>Option[T]</code>) that I can use in Scala.</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-12-18T00:00:00Z">December 18, 2018</time>
+	</div>
 </article>
 					</div>
 					<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/gogs-push-on-push/">Pushing (from GoGS) with `post-receive` (to a mirror)</a></h1>
-	<div class="post__content"><p>I have a <a href="https://gogs.io/">GoGS</a> server for my work.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/gogs-push-on-push/">Pushing (from GoGS) with `post-receive` (to a mirror)</a></h1>
+	<div class="entry__content"><p>I have a <a href="https://gogs.io/">GoGS</a> server for my work.
 I want to back it up off-site to <a href="https://gitlab.com/gitlab-org/gitlab-ce">our GitLab instance</a>.
 According to a <a href="https://www.atlassian.com/git/tutorials/git-hooks#server-side-hooks">document I read</a> this should be possible using <code>post-receive</code> hooks.</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-09-19T00:00:00Z">September 19, 2018</time>
+	</div>
 </article>
 					</div>
 					<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/multibranch-mercurial-jenkins/">MultiBranch Mercurial JenkinsFile</a></h1>
-	<div class="post__content"><p><strong>WARNING;</strong> this configuration doesn&rsquo;t seem to delete old builds.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/multibranch-mercurial-jenkins/">MultiBranch Mercurial JenkinsFile</a></h1>
+	<div class="entry__content"><p><strong>WARNING;</strong> this configuration doesn&rsquo;t seem to delete old builds.
 Ever, see; <a href="https://issues.jenkins-ci.org/browse/JENKINS-34738">https://issues.jenkins-ci.org/browse/JENKINS-34738</a>.
 I&rsquo;ve worked around it by putting the following blurb near the top of my <code>JenkinsFile</code></p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-09-18T00:00:00Z">September 18, 2018</time>
+	</div>
 </article>
 					</div>
 					<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/aiy-voice-v1-reference/">AIY and Pi4j (Voice V1) GPIO Reference</a></h1>
-	<div class="post__content"><p>I&rsquo;m trying to use a <a href="https://aiyprojects.withgoogle.com/voice-v1/">Google AIY Voice V1</a> with <a href="http://pi4j.com/">Pi4J</a>.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/aiy-voice-v1-reference/">AIY and Pi4j (Voice V1) GPIO Reference</a></h1>
+	<div class="entry__content"><p>I&rsquo;m trying to use a <a href="https://aiyprojects.withgoogle.com/voice-v1/">Google AIY Voice V1</a> with <a href="http://pi4j.com/">Pi4J</a>.
 I had a bit of trouble finding the pins, so I&rsquo;m posting this here in case anyone else is looking.</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-09-16T00:00:00Z">September 16, 2018</time>
+	</div>
 </article>
 					</div>
 					<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/gz3doomvr/">(GZ3)Doom (1993) VR is totally worth it</a></h1>
-	<div class="post__content"><p><a href="https://github.com/Fishbiter/gz3doom">Someone has ported Doom (1993) to VR</a> and it is as vomit-inducing-awesome in VR as you would expect.</p></div>
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/gz3doomvr/">(GZ3)Doom (1993) VR is totally worth it</a></h1>
+	<div class="entry__content"><p><a href="https://github.com/Fishbiter/gz3doom">Someone has ported Doom (1993) to VR</a> and it is as vomit-inducing-awesome in VR as you would expect.</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-08-15T00:00:00Z">August 15, 2018</time>
+	</div>
 </article>
 					</div>
 					<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/pi3-wifi/">WiFi on a headless Raspberry Pi</a></h1>
-	<div class="post__content"><p>I have no idea why the other guides for this take four pages.</p></div>
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-wifi/">WiFi on a headless Raspberry Pi</a></h1>
+	<div class="entry__content"><p>I have no idea why the other guides for this take four pages.</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-08-08T00:00:00Z">August 08, 2018</time>
+	</div>
 </article>
 					</div>
 					<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/marhsalling-gits/">Marshalling Gits</a></h1>
-	<div class="post__content"><p>This is a quick post-mortem on the three methods I examined for nesting some of our Git repos.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/marhsalling-gits/">Marshalling Gits</a></h1>
+	<div class="entry__content"><p>This is a quick post-mortem on the three methods I examined for nesting some of our Git repos.
 In the end, I ran out of time and felt that the <em>diversity</em> of a CS team means that special handling would not produce a time saving benefit for me.</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-03-25T00:00:00Z">March 25, 2018</time>
+	</div>
 </article>
 					</div>
 					<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/launch-docker-daemon-mac-cli/">Launch the Docker Daemon from osMac CLI</a></h1>
-	<div class="post__content"><p>I&rsquo;m away and want to start the Docker daemon.<sup class="footnote-ref" id="fnref:suspectRestart"><a href="#fn:suspectRestart">1</a></sup></p></div>
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/launch-docker-daemon-mac-cli/">Launch the Docker Daemon from osMac CLI</a></h1>
+	<div class="entry__content"><p>I&rsquo;m away and want to start the Docker daemon.<sup class="footnote-ref" id="fnref:suspectRestart"><a href="#fn:suspectRestart">1</a></sup></p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-03-12T00:00:00Z">March 12, 2018</time>
+	</div>
 </article>
 					</div>
 					<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/git-copy-py/">Git Copy PY Script</a></h1>
-	<div class="post__content">I found a set of git tasks was taking non-trivial time to checkout and push between repositories. I couldn&rsquo;t find docs for a (working) git command sequence1 that pushed branches from one remote to another; so I wrote a python script to checkout a branch to local then push it. Once I was sure that it was running; I could reallocate my attention to something more deserving of my talents.</div>
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/git-copy-py/">Git Copy PY Script</a></h1>
+	<div class="entry__content">I found a set of git tasks was taking non-trivial time to checkout and push between repositories. I couldn&rsquo;t find docs for a (working) git command sequence1 that pushed branches from one remote to another; so I wrote a python script to checkout a branch to local then push it. Once I was sure that it was running; I could reallocate my attention to something more deserving of my talents.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-02-13T00:00:00Z">February 13, 2018</time>
+	</div>
 </article>
 					</div>
 					<div class="card card--2col">
-					<article class="post card__box block">
-	<h1 class="post__title title-excerpt"><a class="post__title-link" href="/post/scala-extractor/">Scala Extractors</a></h1>
-	<div class="post__content">Scala&rsquo;s extractors and unapply() represent a concept that I haven&rsquo;t grok&rsquo;ed until now.
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/scala-extractor/">Scala Extractors</a></h1>
+	<div class="entry__content">Scala&rsquo;s extractors and unapply() represent a concept that I haven&rsquo;t grok&rsquo;ed until now.
 Most demonstrations seem to be too long or use the same types everywhere. Here are my thoughts on the concept;
 val a: C = ??? val i: I = ??? i match { case a(f: O) =&gt; ??? }  This will try to call the below method
 class C { def unapply(i: I): Option[O] = ??? }  There&rsquo;s some more flexibility;</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-01-31T00:00:00Z">January 31, 2018</time>
+	</div>
 </article>
 					</div>
 			</div>
 	</main>
 	
 <div class="pagination block">
-	<a class="pagination__item pagination__item--desktop" href="/">1</a>
-	
-	<span class="pagination__item pagination__item--active" data-total="6">2</span>
-	
-	<a class="pagination__item pagination__item--desktop" href="/page/3/">3</a>
-	
-		<span class="pagination__item pagination__item--gap">&hellip;</span>
-	<a class="pagination__item pagination__item--desktop" href="/page/6/">6</a>
-	
+				<a class="pagination__item pagination__item--desktop" href="/">1</a>
+				<span class="pagination__item pagination__item--active" data-total="6">2</span>
+				<a class="pagination__item pagination__item--desktop" href="/page/3/">3</a>
+			<span class="pagination__item pagination__item--gap">&hellip;</span>
+				<a class="pagination__item pagination__item--desktop" href="/page/6/">6</a>
 </div>
 
 	</div>
@@ -168,5 +213,6 @@ class C { def unapply(i: I): Option[O] = ??? }  There&rsquo;s some more flexibil
 </div>
 	<div class="footer__copyright">© 2020 Peter&#39;s Notebook. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
 </footer>
-<script src="/js/menu.js"></script></body>
+<script src="/js/menu.js"></script>
+</body>
 </html>
