@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>WarHammer</title>
+      <link>https://peterlavalle.github.io/tags/warhammer/</link>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/warhammer/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>40k</title>
@@ -48,6 +57,15 @@
     </item>
     
     <item>
+      <title>Git</title>
+      <link>https://peterlavalle.github.io/tags/git/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>GitHub</title>
       <link>https://peterlavalle.github.io/tags/github/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
@@ -62,15 +80,6 @@
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/howto/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://peterlavalle.github.io/tags/git/</link>
-      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/git/</guid>
       <description></description>
     </item>
     
