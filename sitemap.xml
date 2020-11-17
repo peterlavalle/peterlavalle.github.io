@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://peterlavalle.github.io/mortal-realms-partworks/</loc>
+    <lastmod>2020-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2020-10-21T00:00:00+00:00</lastmod>
+    <lastmod>2020-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -29,11 +34,6 @@
     <loc>https://peterlavalle.github.io/tags/warhammer/</loc>
     <lastmod>2020-10-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/mortal-realms-partworks/</loc>
-    <lastmod>2020-10-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -76,6 +76,12 @@
   </url>
   
   <url>
+    <loc>https://peterlavalle.github.io/tags/git/</loc>
+    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/tags/github/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -88,12 +94,6 @@
   
   <url>
     <loc>https://peterlavalle.github.io/tags/howto/</loc>
-    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/git/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -303,14 +303,14 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
+    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
+    <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
