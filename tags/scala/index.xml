@@ -6,10 +6,19 @@
     <description>Recent content in Scala on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 18 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/scala/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Scala on Android</title>
+      <link>https://peterlavalle.github.io/post/scala-on-android/</link>
+      <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/scala-on-android/</guid>
+      <description>&lt;p&gt;Using Scala on Android (in 2020)&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Scala Maybe</title>
