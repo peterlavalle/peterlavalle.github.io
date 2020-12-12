@@ -10,7 +10,7 @@
 	<meta name="description" content="">
 		<meta property="og:title" content="Tools" />
 <meta property="og:description" content="&hellip; that I like
- Mermaid fips DukTape CoffeeScript cmder hg (aka Mercurial) Open JDK source hut GoGS Visual Code KDiff3 - it&rsquo;s in hg PanDoc   Mermaid  https://mermaidjs.github.io/ documents, but, you write them like markdown has a live editor  &hellip; which can create markdown  it encodes your work creates a markdown image ref to that wraps the image ref in a link to the editor   there are some PanDoc integrations  fips  http://floooh." />
+ Daily  cmder GitFiend hg (aka Mercurial) KDiff3 - it&rsquo;s in hg Visual Code  Build  fips sbt  Languages  CoffeeScript DukTape Open JDK  Documentation  Mermaid PanDoc  Hosting  GoGS source hut  Changelog   Daily cmder  https://cmder.net/ fixes the windows shell; use this instead of cmd get the big one with git; now you have a bunch of UNIX tools too  GitFiend  https://gitfiend." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://peterlavalle.github.io/tools/" />
 <meta property="article:published_time" content="2020-03-31T00:00:00&#43;00:00"/>
@@ -99,91 +99,59 @@ if (!doNotTrack) {
 <aside style="float: right;">
 	<nav id="TableOfContents">
 <ul>
-<li><a href="#mermaid">Mermaid</a></li>
-<li><a href="#fips">fips</a></li>
-<li><a href="#duktape">DukTape</a></li>
-<li><a href="#coffeescript">CoffeeScript</a></li>
+<li><a href="#daily">Daily</a>
+<ul>
 <li><a href="#cmder">cmder</a></li>
+<li><a href="#gitfiend">GitFiend</a></li>
 <li><a href="#hg-aka-mercurial">hg (aka Mercurial)</a></li>
-<li><a href="#open-jdk">Open JDK</a></li>
-<li><a href="#source-hut">source hut</a></li>
-<li><a href="#gogs">GoGS</a></li>
-<li><a href="#visual-code">Visual Code</a></li>
 <li><a href="#kdiff3-it-s-in-hg">KDiff3 - it&rsquo;s in hg</a></li>
+<li><a href="#visual-code">Visual Code</a></li>
+</ul></li>
+<li><a href="#build">Build</a>
+<ul>
+<li><a href="#fips">fips</a></li>
+<li><a href="#sbt">sbt</a></li>
+</ul></li>
+<li><a href="#languages">Languages</a>
+<ul>
+<li><a href="#coffeescript">CoffeeScript</a></li>
+<li><a href="#duktape">DukTape</a></li>
+<li><a href="#open-jdk">Open JDK</a></li>
+</ul></li>
+<li><a href="#documentation">Documentation</a>
+<ul>
+<li><a href="#mermaid">Mermaid</a></li>
 <li><a href="#pandoc">PanDoc</a></li>
+</ul></li>
+<li><a href="#hosting">Hosting</a>
+<ul>
+<li><a href="#gogs">GoGS</a></li>
+<li><a href="#source-hut">source hut</a></li>
+</ul></li>
+<li><a href="#changelog">Changelog</a></li>
 </ul>
 </nav>
 </aside>
 
-<h1 id="mermaid">Mermaid</h1>
+<h1 id="daily">Daily</h1>
 
-<ul>
-<li><a href="https://mermaidjs.github.io/">https://mermaidjs.github.io/</a></li>
-<li>documents, but, you write them like markdown</li>
-<li><a href="https://mermaid-js.github.io/mermaid-live-editor/">has a live editor</a>
-
-<ul>
-<li>&hellip; which can create markdown
-
-<ol>
-<li>it encodes your work</li>
-<li>creates a markdown image ref to that</li>
-<li>wraps the image ref in a link to the editor</li>
-</ol></li>
-</ul></li>
-<li>there are some <a href="https://github.com/raghur/mermaid-filter">PanDoc integrations</a></li>
-</ul>
-
-<h1 id="fips">fips</h1>
-
-<ul>
-<li><a href="http://floooh.github.io/fips/">http://floooh.github.io/fips/</a></li>
-<li>C/++ et al build automaton</li>
-<li>uses cmake/python and &ldquo;smooths the edges&rdquo; that those two leave behind</li>
-</ul>
-
-<h1 id="duktape">DukTape</h1>
-
-<ul>
-<li><a href="https://duktape.org/">https://duktape.org/</a></li>
-<li>works like a second-generation Lua</li>
-<li>it&rsquo;s a (ES5) ECMAScript engine in &ldquo;single source&rdquo; build-able</li>
-
-<li><p>it&rsquo;s C, but, there&rsquo;s no build script; just drop it into your project</p></li>
-
-<li><p>needed a CMake/<code>#define</code> tweak to get it to run in Windows 7</p></li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmake" data-lang="cmake"><span style="color:#75715e"># make it work on Windows 7
-</span><span style="color:#75715e"></span>add_definitions(<span style="color:#e6db74">-DDUK_USE_DATE_NOW_WINDOWS</span>)</code></pre></div>
-<h1 id="coffeescript">CoffeeScript</h1>
-
-<ul>
-<li><a href="https://coffeescript.org/v1/">https://coffeescript.org/v1/</a></li>
-<li>looks a bit like a less-verbose python</li>
-<li>compiles to JavaScript</li>
-<li>v1 compiles to ES5 that DukTape can use
-
-<ul>
-<li>i&rsquo;ve successfully embedded v1 in a C/++ application</li>
-<li>&hellip; have/am building a weird like-Unity3D eDSL from it</li>
-</ul></li>
-<li>can dump AST nodes
-
-<ul>
-<li>i would love to interpret those directly</li>
-<li>also; add a do-notation to the nodes</li>
-</ul></li>
-</ul>
-
-<h1 id="cmder">cmder</h1>
+<h2 id="cmder">cmder</h2>
 
 <ul>
 <li><a href="https://cmder.net/">https://cmder.net/</a></li>
 <li>fixes the windows shell; use this instead of cmd</li>
-<li>get the big one with git; now you have a bunch of unix tools too</li>
+<li>get the big one with git; now you have a bunch of UNIX tools too</li>
 </ul>
 
-<h1 id="hg-aka-mercurial">hg (aka Mercurial)</h1>
+<h2 id="gitfiend">GitFiend</h2>
+
+<ul>
+<li><a href="https://gitfiend.com/">https://gitfiend.com/</a></li>
+<li>it&rsquo;s a bit incomplete (you&rsquo;ll need the CLI)</li>
+<li>makes 70% of the/my git workflow &ldquo;not suck&rdquo;</li>
+</ul>
+
+<h2 id="hg-aka-mercurial">hg (aka Mercurial)</h2>
 
 <ul>
 <li><a href="https://www.mercurial-scm.org/">https://www.mercurial-scm.org/</a></li>
@@ -211,45 +179,24 @@ if (!doNotTrack) {
 <li>the GUI has been vaguely &ldquo;portable&rdquo; in the past
 
 <ul>
-<li>I copied the program to a pendrive and I was able to operate it at University</li>
+<li>I copied the program to a pen drive and I was able to operate it at University</li>
 </ul></li>
 </ul>
 
-<h1 id="open-jdk">Open JDK</h1>
+<h2 id="kdiff3-it-s-in-hg">KDiff3 - it&rsquo;s in hg</h2>
 
 <ul>
-<li><a href="https://adoptopenjdk.net/">https://adoptopenjdk.net/</a></li>
-<li>their 11 runs smoother than Oracle&rsquo;s</li>
-<li>no. more. warnings. no more neck-beard whinging</li>
+<li><a href="http://kdiff3.sourceforge.net/">http://kdiff3.sourceforge.net/</a></li>
+<li>it&rsquo;s a windows diff tool</li>
+<li>when writing text comparison unit tests, I;
+
+<ol>
+<li>dump mismatches to files into the build folder</li>
+<li>emit an error message with a CLI to invoke KDiff on the mismatches</li>
+</ol></li>
 </ul>
 
-<h1 id="source-hut">source hut</h1>
-
-<ul>
-<li><a href="https://sourcehut.org/">https://sourcehut.org/</a></li>
-<li>yet another me-too GitLab/GitHub
-
-<ul>
-<li>you can host your own - but i haven&rsquo;t tried</li>
-</ul></li>
-<li>smoler and lighter than the other two</li>
-<li><a href="https://hg.sr.ht/">supports mercurial</a></li>
-<li>has CI et al
-
-<ul>
-<li>&hellip; but i&rsquo;ve not had viel glück with them</li>
-</ul></li>
-</ul>
-
-<h1 id="gogs">GoGS</h1>
-
-<ul>
-<li><a href="https://gogs.io/">https://gogs.io/</a></li>
-<li>host-your-own GitHub super easily</li>
-<li>runs on Windows/Linux x86/ARM</li>
-</ul>
-
-<h1 id="visual-code">Visual Code</h1>
+<h2 id="visual-code">Visual Code</h2>
 
 <ul>
 <li><a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
@@ -257,27 +204,92 @@ if (!doNotTrack) {
 <li>has mechanisms for turning it into an IDE
 
 <ul>
-<li>you can setup build commands, but in a script</li>
+<li>you can setup build commands but in a script</li>
 <li>error matching; but from a script/regex</li>
-<li>i haven&rsquo;t used it as much as i&rsquo;d like</li>
+<li>I haven&rsquo;t used it as much as I&rsquo;d like</li>
 </ul></li>
 <li>faster than Atom :&lsquo;( but both are M$ now</li>
 </ul>
 
-<h1 id="kdiff3-it-s-in-hg">KDiff3 - it&rsquo;s in hg</h1>
+<h1 id="build">Build</h1>
+
+<h2 id="fips">fips</h2>
 
 <ul>
-<li><a href="http://kdiff3.sourceforge.net/">http://kdiff3.sourceforge.net/</a></li>
-<li>it&rsquo;s a windows diff tool</li>
-<li>when writing text comparison unit tests;
-
-<ol>
-<li>dump mis-matches to files in build folder</li>
-<li>emit an error message with a CLI to invoke KDiff on the mismatches</li>
-</ol></li>
+<li><a href="http://floooh.github.io/fips/">http://floooh.github.io/fips/</a></li>
+<li>C/++ et al build automaton</li>
+<li>uses CMake/python and &ldquo;smooths the edges&rdquo; that those two leave behind</li>
 </ul>
 
-<h1 id="pandoc">PanDoc</h1>
+<h2 id="sbt">sbt</h2>
+
+<ul>
+<li><a href="https://www.scala-sbt.org/">https://www.scala-sbt.org/</a></li>
+<li>it can be a bit byzantine to extend, but, it&rsquo;s blazingly fast</li>
+</ul>
+
+<h1 id="languages">Languages</h1>
+
+<h2 id="coffeescript">CoffeeScript</h2>
+
+<ul>
+<li><a href="https://coffeescript.org/v1/">https://coffeescript.org/v1/</a></li>
+<li>looks a bit like a less-verbose python</li>
+<li>compiles to JavaScript</li>
+<li>v1 compiles to ES5 that DukTape can use
+
+<ul>
+<li>I&rsquo;ve successfully embedded v1 in a C/++ application</li>
+<li>&hellip; have/am building a weird like-Unity3D eDSL from it</li>
+</ul></li>
+<li>can dump AST nodes
+
+<ul>
+<li>I would love to interpret those directly</li>
+<li>also; add a do-notation to the nodes</li>
+</ul></li>
+</ul>
+
+<h2 id="duktape">DukTape</h2>
+
+<ul>
+<li><a href="https://duktape.org/">https://duktape.org/</a></li>
+<li>works like a second-generation Lua</li>
+<li>it&rsquo;s an (ES5) ECMAScript engine in &ldquo;single source&rdquo; build-able</li>
+
+<li><p>it&rsquo;s C, but, there&rsquo;s no build script; just drop it into your project</p></li>
+
+<li><p>needed a CMake/<code>#define</code> tweak to get it to run in Windows 7</p></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmake" data-lang="cmake"><span style="color:#75715e"># make it work on Windows 7
+</span><span style="color:#75715e"></span>add_definitions(<span style="color:#e6db74">-DDUK_USE_DATE_NOW_WINDOWS</span>)</code></pre></div>
+<h2 id="open-jdk">Open JDK</h2>
+
+<ul>
+<li><a href="https://adoptopenjdk.net/">https://adoptopenjdk.net/</a></li>
+<li>their 11 runs smoother than Oracle&rsquo;s</li>
+<li>no. more. warnings. no more neck-beard whinging</li>
+</ul>
+
+<h1 id="documentation">Documentation</h1>
+
+<h2 id="mermaid">Mermaid</h2>
+
+<ul>
+<li><a href="https://mermaidjs.github.io/">https://mermaidjs.github.io/</a></li>
+<li>documents, but, you write them like markdown</li>
+<li><a href="https://mermaid-js.github.io/mermaid-live-editor/">has a live editor</a>
+
+<ul>
+<li>&hellip; which can create markdown</li>
+<li>it encodes your work</li>
+<li>creates a markdown image ref to that</li>
+<li>wraps the image ref in a link to the editor</li>
+</ul></li>
+<li>there are some <a href="https://github.com/raghur/mermaid-filter">PanDoc integrations</a></li>
+</ul>
+
+<h2 id="pandoc">PanDoc</h2>
 
 <ul>
 <li><a href="https://pandoc.org/">https://pandoc.org/</a></li>
@@ -294,7 +306,44 @@ if (!doNotTrack) {
 <li>&hellip; and I can <code>\cite{whatnot}</code></li>
 </ul>
 
-<p>I don&rsquo;t have a preferred git client - I dislike them all right now.</p>
+<h1 id="hosting">Hosting</h1>
+
+<h2 id="gogs">GoGS</h2>
+
+<ul>
+<li><a href="https://gogs.io/">https://gogs.io/</a></li>
+<li>host-your-own GitHub super easily</li>
+<li>runs on Windows/Linux x86/ARM</li>
+</ul>
+
+<h2 id="source-hut">source hut</h2>
+
+<ul>
+<li><a href="https://sourcehut.org/">https://sourcehut.org/</a></li>
+<li>yet another me-too GitLab/GitHub
+
+<ul>
+<li>you can host your own - but I haven&rsquo;t tried</li>
+</ul></li>
+<li>smoler and lighter than the other two</li>
+<li><a href="https://hg.sr.ht/">supports mercurial</a></li>
+<li>has CI et al
+
+<ul>
+<li>&hellip; but I&rsquo;ve not had viel glück with them</li>
+</ul></li>
+</ul>
+
+<hr />
+
+<h1 id="changelog">Changelog</h1>
+
+<dl>
+<dt>2020-12-12</dt>
+<dd>Nested things and added sbt and GitFiend sections</dd>
+<dt>2020-03-31</dt>
+<dd>Initial version</dd>
+</dl>
 </div>
 				
 				<footer class="entry__footer">
