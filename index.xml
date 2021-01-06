@@ -110,17 +110,6 @@ I started a staff-wiki-page listing development tools then decided that it shoul
     </item>
     
     <item>
-      <title>Blackstone Rule List</title>
-      <link>https://peterlavalle.github.io/blackstone-rulelist/</link>
-      <pubDate>Fri, 17 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/blackstone-rulelist/</guid>
-      <description>This is an attempt to &amp;ldquo;distill&amp;rdquo; the BlackStone Fortress rules into a more-dry form (like X-Wing or Dominion!) after several play sessions. Should make for quicker reference and play (if you&amp;rsquo;re like me) at the potential cost of being &amp;ldquo;scary&amp;rdquo; to people who like their information burried in prose.
-I may-have &amp;ldquo;introduced&amp;rdquo; some terms &amp;hellip; Chain, Precise, Injury etc.
-Reinforcements  is there a priority? smallest hostile first?</description>
-    </item>
-    
-    <item>
       <title>Git Flow</title>
       <link>https://peterlavalle.github.io/post/gitflow/</link>
       <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
@@ -767,19 +756,6 @@ big grip https://www.thingiverse.com/thing:3437755</description>
       
       <guid>https://peterlavalle.github.io/40k8th-cheat/</guid>
       <description>Weapon Stationary Moved Advanced Retreat     Charge ?  No No   Assault ?  ? ?   Pistol ? ? ? ?   Rapid Fire ? ? ? ?   Heavy ? ? ? ?   Grenade ? ? ? ?   Macro ? ? ? ?       S vs T Roll     S &amp;gt;= 2*T ?</description>
-    </item>
-    
-    <item>
-      <title>Blackstone Rulebook</title>
-      <link>https://peterlavalle.github.io/blackstone-rulebook/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/blackstone-rulebook/</guid>
-      <description>&lt;aside style=&#34;float: right;&#34;&gt;
-	
-&lt;/aside&gt;
-
-&lt;p&gt;What follows is my attempt to transcribe and annotate the various rules for &lt;a href=&#34;https://warhammer40000.com/blackstone-fortress/&#34;&gt;Blackstone Fortress&lt;/a&gt; which we/I hope to use and enjoy.&lt;/p&gt;</description>
     </item>
     
   </channel>

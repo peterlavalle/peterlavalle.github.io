@@ -167,11 +167,6 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/blackstone-rulelist/</loc>
-    <lastmod>2020-01-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/post/gitflow/</loc>
     <lastmod>2019-10-28T00:00:00+00:00</lastmod>
   </url>
@@ -355,14 +350,14 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
+    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
+    <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -832,10 +827,6 @@
   
   <url>
     <loc>https://peterlavalle.github.io/40k8th-cheat/</loc>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/blackstone-rulebook/</loc>
   </url>
   
   <url>
