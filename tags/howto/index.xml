@@ -6,10 +6,19 @@
     <description>Recent content in HowTo on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 09 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/howto/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>fips on Visual Studio 2019</title>
+      <link>https://peterlavalle.github.io/post/fips-on-vs2019/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/fips-on-vs2019/</guid>
+      <description>&lt;p&gt;Getting &lt;a href=&#34;https://floooh.github.io/fips/&#34;&gt;fips&lt;/a&gt; working today in &lt;a href=&#34;https://visualstudio.microsoft.com/vs/&#34;&gt;Visual Studio 2019&lt;/a&gt; was quite unpleasant because of &lt;a href=&#34;https://cmake.org/&#34;&gt;CMake&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>GitHub Pages Publish</title>
@@ -18,6 +27,16 @@
       
       <guid>https://peterlavalle.github.io/post/github-pages-publish/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub pages&lt;/a&gt; allows a GitHub repository to function as a static web-server thing.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OpenVPN on a Pi3</title>
+      <link>https://peterlavalle.github.io/post/pi3-openvpn/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-openvpn/</guid>
+      <description>&lt;p&gt;These are some old notes on using a Pi3 as a VPN host - I can&amp;rsquo;t remember why I un-published them.
+Might be fun to &lt;a href=&#34;https://hub.docker.com/r/raspbian/stretch&#34;&gt;stuff in a container someday.&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -70,6 +89,18 @@ I&amp;rsquo;ve worked around it by putting the following blurb near the top of m
     </item>
     
     <item>
+      <title>Scala Extractors</title>
+      <link>https://peterlavalle.github.io/post/scala-extractor/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/scala-extractor/</guid>
+      <description>Scala&amp;rsquo;s extractors and unapply() represent a concept that I haven&amp;rsquo;t grok&amp;rsquo;ed until now.
+Most demonstrations seem to be too long or use the same types everywhere. Here are my thoughts on the concept;
+val a: C = ??? val i: I = ??? i match { case a(f: O) =&amp;gt; ??? }  This will try to call the below method
+class C { def unapply(i: I): Option[O] = ??? }  There&amp;rsquo;s some more flexibility;</description>
+    </item>
+    
+    <item>
       <title>Moving Platforms in Unity3D</title>
       <link>https://peterlavalle.github.io/post/unity3d-moving-platform/</link>
       <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
@@ -80,6 +111,28 @@ Based on this tweet, I spent &amp;hellip; 30 minutes? Maybe? putting it together
  This writeup took longer.
  The approach uses two behaviour classes to achive the classical effect of moving platforms that follow some path.
  mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&amp;rsquo;ve reached the Waypoint, continue with its next one   My example;</description>
+    </item>
+    
+    <item>
+      <title>Pi3 nGinx Reverse Proxy</title>
+      <link>https://peterlavalle.github.io/post/pi3-nginx/</link>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-nginx/</guid>
+      <description>So &amp;hellip; you&amp;rsquo;ve got a Pi3 running as a Docker host with some services that you want your buddies to have access to. You could try and get them to SSH into your home network; just like you could type all your programs with a touchscreen.
+I&amp;rsquo;m going to use nGinx to setup a reverse-proxy from my real-Pi3 to various Docker containers based on URL rewriting.
+I&amp;rsquo;m doing something else (of course) I&amp;rsquo;m setting up (what I call) name-based-virtual-hosting.</description>
+    </item>
+    
+    <item>
+      <title>GoGS on a Pi3 (via Docker)</title>
+      <link>https://peterlavalle.github.io/post/pi3-docker-gogs/</link>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-docker-gogs/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been assembling a &amp;ldquo;full stack&amp;rdquo;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:fwiw&#34;&gt;&lt;a href=&#34;#fn:fwiw&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; for development that runs on my Pi3.
+This is all happening inside of &lt;a href=&#34;https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/&#34;&gt;Docker&lt;/a&gt; containers which made cleanup redonkulously easy.
+Today I was looking at a source code management system; something of a &amp;ldquo;my own GitHub&amp;rdquo; which I can run on my own network.&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -21,6 +21,12 @@
   </url>
   
   <url>
+    <loc>https://peterlavalle.github.io/tags/howto/</loc>
+    <lastmod>2020-12-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/</loc>
     <lastmod>2020-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -148,12 +154,6 @@
   <url>
     <loc>https://peterlavalle.github.io/post/github-pages-publish/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/howto/</loc>
-    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -509,11 +509,6 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/how-to/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/post/delay-run/</loc>
     <lastmod>2017-11-08T00:00:00+00:00</lastmod>
   </url>
@@ -787,6 +782,21 @@
   </url>
   
   <url>
+    <loc>https://peterlavalle.github.io/corestone/phases/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/corestone/preface/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/corestone/resource-cards/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/junk/benchmarks/qham/no-ant-virus.basic/</loc>
     <priority>0</priority>
   </url>
@@ -831,6 +841,11 @@
   
   <url>
     <loc>https://peterlavalle.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/corestone/</loc>
     <priority>0</priority>
   </url>
   

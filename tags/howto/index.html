@@ -13,7 +13,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://peterlavalle.github.io/tags/howto/" />
 
-<meta property="og:updated_time" content="2020-04-09T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2020-12-12T00:00:00&#43;00:00"/>
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -51,12 +51,12 @@ if (!doNotTrack) {
 		</div>
 	</button>
 	<ul id="menu" class="main-nav__list">
-			<li class="main-nav__item">
-				<a class="main-nav__link" href="/how-to/">
+			<li class="main-nav__item main-nav__item--active">
+				
 					
 					<span class="main-nav__text">How To</span>
 					
-				</a>
+				
 			</li>
 			<li class="main-nav__item">
 				<a class="main-nav__link" href="/mortal-realms-partworks/">
@@ -94,10 +94,31 @@ if (!doNotTrack) {
 			
 				<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/fips-on-vs2019/">fips on Visual Studio 2019</a></h1>
+	<div class="entry__content"><p>Getting <a href="https://floooh.github.io/fips/">fips</a> working today in <a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2019</a> was quite unpleasant because of <a href="https://cmake.org/">CMake</a>.</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2020-12-12T00:00:00Z">December 12, 2020</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/github-pages-publish/">GitHub Pages Publish</a></h1>
 	<div class="entry__content"><p><a href="https://pages.github.com/">GitHub pages</a> allows a GitHub repository to function as a static web-server thing.</p></div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2020-04-09T00:00:00Z">April 09, 2020</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-openvpn/">OpenVPN on a Pi3</a></h1>
+	<div class="entry__content"><p>These are some old notes on using a Pi3 as a VPN host - I can&rsquo;t remember why I un-published them.
+Might be fun to <a href="https://hub.docker.com/r/raspbian/stretch">stuff in a container someday.</a></p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2019-10-26T00:00:00Z">October 26, 2019</time>
 	</div>
 </article>
 				</div>
@@ -158,6 +179,19 @@ I&rsquo;ve worked around it by putting the following blurb near the top of my <c
 			
 				<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/scala-extractor/">Scala Extractors</a></h1>
+	<div class="entry__content">Scala&rsquo;s extractors and unapply() represent a concept that I haven&rsquo;t grok&rsquo;ed until now.
+Most demonstrations seem to be too long or use the same types everywhere. Here are my thoughts on the concept;
+val a: C = ??? val i: I = ??? i match { case a(f: O) =&gt; ??? }  This will try to call the below method
+class C { def unapply(i: I): Option[O] = ??? }  There&rsquo;s some more flexibility;</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-01-31T00:00:00Z">January 31, 2018</time>
+	</div>
+</article>
+				</div>
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/unity3d-moving-platform/">Moving Platforms in Unity3D</a></h1>
 	<div class="entry__content">This is a short example of moving platforms in Unity3D.
 Based on this tweet, I spent &hellip; 30 minutes? Maybe? putting it together.
@@ -166,44 +200,6 @@ Based on this tweet, I spent &hellip; 30 minutes? Maybe? putting it together.
  mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&rsquo;ve reached the Waypoint, continue with its next one   My example;</div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2017-12-27T00:00:00Z">December 27, 2017</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-namecheap/">Pi3 NameCheap</a></h1>
-	<div class="entry__content">This is a followup to a previous post because that one stopped working, now - this works.
-There&rsquo;s not a lot of OC here, just clarity.
-NameCheap DynDNS on a Pi3 I use NameCheap (because they&rsquo;re anti-SOPA) for DNS. The client program, ddclient, can connect to NameCheap.
-I&rsquo;m using raspbian, so, first;
- run sudo apt-get install ddclient on your Pi find the dynamic DNS settings on NameCheap&rsquo;s website  Dashboard &gt;&gt;&gt; Domain List &gt;&gt;&gt; Manage &gt;&gt;&gt; Advanced DNS they do like to change these things around  halfway down the page, there should be a DYNAMIC DNS thingie  enable it (if you haven&rsquo;t already) note the blurb-what-looks-like-a-SHA  edit your /etc/ddclient.</div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2017-06-29T00:00:00Z">June 29, 2017</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/replace-samba-with-winsshfs/">Replace SaMBa with WinSSHFS!</a></h1>
-	<div class="entry__content">I connected my Windows desktop to our office file server using SSHFS rather than SaMBa. I am happy about that.
-For some reason one of our SaMBa systems got twitchy sometime last month. This is a problem since I&rsquo;ve inherited a script that;
- I don&rsquo;t yet understand runs on Windows (10?) exclusively reads data from \\foo\bar\project\user\project3\data\something paths  Since I know that SSHFS already works, I&rsquo;m setting that up as a substitue.</div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2017-06-24T00:00:00Z">June 24, 2017</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-dyndns/">Pi3 DynDNS</a></h1>
-	<div class="entry__content">This has been replaced
-Pi3 DynDNS I want to give my home&rsquo;s Raspberry Pi3 a DNS name so that I can access it more easily.
-DNS and Dynamic IP Addresses The Domain Naming System is how those readable textual names like example.com become the actual IP Addresses like 127.0.0.1 that web pages, email, and everything else needs to work. Various groups allow people to register a domain (or subdomain) and specify the IP address of a computer that the domain should reffer to.</div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2017-05-21T00:00:00Z">May 21, 2017</time>
 	</div>
 </article>
 				</div>

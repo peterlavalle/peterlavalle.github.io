@@ -358,17 +358,6 @@ I&amp;rsquo;ve cobbled together a toolchain/asset-conditioning-pipeline of sorts
     </item>
     
     <item>
-      <title>How To</title>
-      <link>https://peterlavalle.github.io/how-to/</link>
-      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/how-to/</guid>
-      <description>This is a hand-rolled list of posts that explain how to get some weirdness running on a PC.
-In which, I explain how to &amp;hellip;
- &amp;hellip; write Scala Extractors (for pattern matching) &amp;hellip; run Jenkin MultiBranch builds from Mercurial &amp;hellip; setup an nGinx reverse proxy on a Pi3 &amp;hellip; install GOGS into a Docker container on a Pi3 &amp;hellip; setup NameCheap&amp;rsquo;s DynamicDNS on a Pi3 &amp;hellip; use WinSSH-FS as a replacement for SaMBa &amp;hellip; setup OpenVPN on a Pi3 &amp;hellip; automate deployment of a Unity WebGL App  </description>
-    </item>
-    
-    <item>
       <title>(Scala) Delay Run</title>
       <link>https://peterlavalle.github.io/post/delay-run/</link>
       <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
@@ -665,6 +654,42 @@ Quick Start Create a new post $ hexo new &amp;#34;My New Post&amp;#34; More info
 Run server $ hexo server More info: Server
 Generate static files $ hexo generate More info: Generating
 Deploy to remote sites $ hexo deploy More info: Deployment</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/corestone/phases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/corestone/phases/</guid>
+      <description>there are many steps to the game - they are called steps
+not all are relevant to each expedidtion
+phase reffers to things that happen within the combat step</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/corestone/preface/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/corestone/preface/</guid>
+      <description>lots of fan-expansions exist
+they seem to focus on adding all-the-things from 40k to the game
+this tried to be an &amp;ldquo;edit&amp;rdquo; to clean up the game and make it &amp;ldquo;click&amp;rdquo;
+&amp;hellip; so &amp;hellip; take the crunch from a &amp;ldquo;magic the gathering&amp;rdquo; state to a &amp;ldquo;dominion&amp;rdquo; one
+also; it wants to make the game smoother and faster to play in person
+all of this is/should be done with the use of terms rather than text and cards rather than charts</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/corestone/resource-cards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/corestone/resource-cards/</guid>
+      <description>all treasure and resources that player is carrying
+when explorers set out they can have a limited number of cards
+ return all discarded cards to their resource or discovery decks on the ships count all &amp;ldquo;artifacts&amp;rdquo; and put them in a resource deck for the explorer add resource and discovery cards to the pile until you have 10  the explorer can have more than 10 cards if they only have artefacts  discard all remaining cards  since discards aren&amp;rsquo;t returned right awayl there&amp;rsquo;s the chance to see newer treasures as the game progresses  shuffle the deck face-down and draw ?</description>
     </item>
     
     <item>
