@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HobbyNotebook on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/hobbynotebook/</link>
+    <description>Recent content in HobbyNotebook on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Thu, 18 Mar 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://peterlavalle.github.io/tags/hobbynotebook/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hobby Notebook 2021-03-18</title>
+      <link>https://peterlavalle.github.io/post/hobby.2021-03-18/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/hobby.2021-03-18/</guid>
+      <description>&lt;p&gt;What if I didn&amp;rsquo;t &lt;em&gt;just&lt;/em&gt; post quick pictures to Twitter?&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
