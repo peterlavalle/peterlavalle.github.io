@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3DPrinting on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/3dprinting/</link>
+    <description>Recent content in 3DPrinting on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sun, 04 Apr 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://peterlavalle.github.io/tags/3dprinting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Keep your Bowden Tube Flush with your Nozzle</title>
+      <link>https://peterlavalle.github.io/post/3dprinter-bowden-flush-nozzle/</link>
+      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/3dprinter-bowden-flush-nozzle/</guid>
+      <description>&lt;p&gt;My 3D printer was in a state where it seemed to need the nozzle unclogged after each print.
+The issue was that the PTFE tube was not flush with the nozzle, due to the hot end coupler being &amp;ldquo;worn in&amp;rdquo; and feeling like it was fully extended.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
