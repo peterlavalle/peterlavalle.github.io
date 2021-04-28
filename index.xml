@@ -24,6 +24,19 @@ ForbiddenPlanet sells the things, lets you pic-and-mix, ships internationally, s
     </item>
     
     <item>
+      <title>Setup PocketSphinx on Windows 7</title>
+      <link>https://peterlavalle.github.io/post/setup.pocket-sphinx/</link>
+      <pubDate>Wed, 28 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/setup.pocket-sphinx/</guid>
+      <description>C:\Users\Peter\Desktop\psin λ python -m venv ./ λ Scripts\activate.bat λ pip install --upgrade pip λ pip install pocketsphinx  had to do some shenanigans, but, the thing quickly seemed to work
+it looks like &amp;hellip; it could be wrapped into a shell-program?
+&amp;hellip; maybe something that uses a named pipe?
+okay - two dumb programs the tranmit to eachother across a socket can do this fine and fast
+NEXT &amp;hellip; find some way to see if I can &amp;ldquo;properly&amp;rdquo; shell PocketSphinx</description>
+    </item>
+    
+    <item>
       <title>PrinterJournal / Bowden Tube Flush with Nozzle</title>
       <link>https://peterlavalle.github.io/post/3dprinter.bowden-flush-nozzle/</link>
       <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
