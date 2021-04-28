@@ -126,6 +126,12 @@ if (!doNotTrack) {
 
 <p>&hellip; then try to create me own .raw?</p>
 
+<blockquote>
+<p>If you want to create your own version of it: it needs to be a single-channel (monaural), little-endian, unheadered 16-bit signed PCM audio file sampled at 16000 Hz.</p>
+
+<p><a href="https://cmusphinx.github.io/wiki/tutorialpocketsphinx/#decoding-a-file-stream">&hellip;</a></p>
+</blockquote>
+
 <p>&hellip; then parse the recognised stuff from Python -&gt; Scala</p>
 
 <p>THEN!!! build up a pure-gen component</p>
@@ -133,14 +139,18 @@ if (!doNotTrack) {
 <h1 id="server-waits-for-client">server (waits for client)</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/env python</span>
 
-
-
 <span style="color:#f92672">import</span> os
 <span style="color:#f92672">import</span> socket
 <span style="color:#f92672">import</span> sys
 
-<span style="color:#75715e"># https://pymotw.com/2/socket/tcp.html</span>
-<span style="color:#75715e"># simple server?</span>
+<span style="color:#e6db74">&#34;&#34;&#34; simple server
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">this is a dumb TCP server that dumps some files into a socket so that
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74"># code from https://pymotw.com/2/socket/tcp.html
+</span><span style="color:#e6db74"># data from; https://github.com/cmusphinx/pocketsphinx/tree/master/swig/python
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
 
 <span style="color:#75715e"># Create a TCP/IP socket</span>
 sock <span style="color:#f92672">=</span> socket<span style="color:#f92672">.</span>socket(socket<span style="color:#f92672">.</span>AF_INET, socket<span style="color:#f92672">.</span>SOCK_STREAM)
@@ -159,129 +169,32 @@ connection, client_address <span style="color:#f92672">=</span> sock<span style=
 <span style="color:#66d9ef">try</span>:
     <span style="color:#66d9ef">print</span> ( <span style="color:#e6db74">&#39;connection from&#39;</span>, client_address)
 
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;TODO ; start pumping the things through&#34;</span>)
     <span style="color:#f92672">from</span> os <span style="color:#f92672">import</span> environ, path
 
     <span style="color:#f92672">from</span> pocketsphinx <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
     <span style="color:#f92672">from</span> sphinxbase <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
     MODELDIR <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;target/model&#34;</span>
-    DATADIR <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;target/test.data&#34;</span>
 
-
-    file <span style="color:#f92672">=</span> open(path<span style="color:#f92672">.</span>join(DATADIR, <span style="color:#e6db74">&#39;something.raw&#39;</span>), <span style="color:#e6db74">&#39;rb&#39;</span>)
-    connection<span style="color:#f92672">.</span>sendall(file<span style="color:#f92672">.</span>read())
-
-    <span style="color:#75715e"># # Receive the data in small chunks and retransmit it</span>
-    <span style="color:#75715e"># while True:</span>
-    <span style="color:#75715e">#     data = connection.recv(16)</span>
-    <span style="color:#75715e">#     print ( &#39;received &#34;%s&#34;&#39; % data)</span>
-    <span style="color:#75715e">#     if data:</span>
-    <span style="color:#75715e">#         print ( &#39;sending data back to the client&#39;)</span>
-    <span style="color:#75715e">#         connection.sendall(data)</span>
-    <span style="color:#75715e">#     else:</span>
-    <span style="color:#75715e">#         print ( &#39;no more data from&#39;, client_address)</span>
-    <span style="color:#75715e">#         break</span>
+    <span style="color:#66d9ef">for</span> send <span style="color:#f92672">in</span> [<span style="color:#e6db74">&#39;something.raw&#39;</span>, <span style="color:#e6db74">&#39;numbers.raw&#39;</span>, <span style="color:#e6db74">&#39;goforward.raw&#39;</span>, <span style="color:#e6db74">&#39;numbers.raw&#39;</span>, <span style="color:#e6db74">&#39;numbers.raw&#39;</span>]:
+        connection<span style="color:#f92672">.</span>sendall(open(path<span style="color:#f92672">.</span>join(DATADIR, send), <span style="color:#e6db74">&#39;rb&#39;</span>)<span style="color:#f92672">.</span>read())
         
 <span style="color:#66d9ef">finally</span>:
     <span style="color:#75715e"># Clean up the connection</span>
-    connection<span style="color:#f92672">.</span>close()
-
-
-
-<span style="color:#75715e"># no pipes :(</span>
-<span style="color:#75715e"># # import os</span>
-<span style="color:#75715e"># # # pipe = os.mkfifo(&#34;target/fifooo&#34;, mode = 0o666)</span>
-<span style="color:#75715e"># # # print(&#39;wahoo&#39;)</span>
-
-
-
-<span style="color:#75715e"># from os import *</span>
-
-
-<span style="color:#75715e"># from pocketsphinx import *</span>
-<span style="color:#75715e"># from sphinxbase import *</span>
-
-<span style="color:#75715e"># MODELDIR = &#34;target/model&#34;</span>
-<span style="color:#75715e"># DATADIR = &#34;target/test.data&#34;</span>
-
-<span style="color:#75715e"># config = Decoder.default_config()</span>
-
-<span style="color:#75715e"># # TODO; do something to dump this all</span>
-
-<span style="color:#75715e"># config.set_string(&#39;-hmm&#39;, path.join(MODELDIR, &#39;en-us/en-us&#39;))</span>
-<span style="color:#75715e"># config.set_string(&#39;-lm&#39;, path.join(MODELDIR, &#39;en-us/en-us.lm.bin&#39;))</span>
-<span style="color:#75715e"># config.set_string(&#39;-dict&#39;, path.join(MODELDIR, &#39;en-us/cmudict-en-us.dict&#39;))</span>
-
-<span style="color:#75715e"># # log meee!</span>
-<span style="color:#75715e"># config.set_string(&#39;-logfn&#39;, &#39;NUL&#39;)</span>
-
-
-
-<span style="color:#75715e"># decoder = Decoder(config)</span>
-
-<span style="color:#75715e"># stream = open(path.join(DATADIR, &#39;goforward.raw&#39;), &#39;rb&#39;)</span>
-<span style="color:#75715e"># stream = open(path.join(DATADIR, &#39;numbers.raw&#39;), &#39;rb&#39;)</span>
-<span style="color:#75715e"># stream = open(path.join(DATADIR, &#39;something.raw&#39;), &#39;rb&#39;)</span>
-<span style="color:#75715e"># # stream = open(&#39;10001-90210-01803.wav&#39;, &#39;rb&#39;)</span>
-
-<span style="color:#75715e"># # stream = open(path.join(DATADIR, &#39;sense_and_sensibility_01_austen_64kb-0870.wav&#39;), &#39;rb&#39;)</span>
-<span style="color:#75715e"># # stream = open(&#39;sense_and_sensibility_01_austen_64kb-0870.wav&#39;, &#39;rb&#39;)</span>
-
-
-
-<span style="color:#75715e"># in_speech_bf = False</span>
-<span style="color:#75715e"># decoder.start_utt()</span>
-<span style="color:#75715e"># while True:</span>
-<span style="color:#75715e">#     buf = stream.read(1024)</span>
-<span style="color:#75715e">#     if buf:</span>
-<span style="color:#75715e">#         decoder.process_raw(buf, False, False)</span>
-<span style="color:#75715e">#         if decoder.get_in_speech() != in_speech_bf:</span>
-<span style="color:#75715e">#             in_speech_bf = decoder.get_in_speech()</span>
-<span style="color:#75715e">#             if not in_speech_bf:</span>
-<span style="color:#75715e">#                 decoder.end_utt()</span>
-<span style="color:#75715e">#                 print (&#39;Result:&#39;, decoder.hyp().hypstr)</span>
-<span style="color:#75715e">#                 decoder.start_utt()</span>
-<span style="color:#75715e">#     else:</span>
-<span style="color:#75715e">#         break</span>
-<span style="color:#75715e"># decoder.end_utt()</span></code></pre></div>
+    connection<span style="color:#f92672">.</span>close()</code></pre></div>
 <h1 id="client-does-asr">client (does ASR)</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/env python</span>
 
+<span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">run with &lt;model-dir&gt; &lt;host&gt; &lt;port&gt;
+</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
 
+<span style="color:#f92672">from</span> os <span style="color:#f92672">import</span>  path
+<span style="color:#f92672">from</span> sys <span style="color:#f92672">import</span> argv
+<span style="color:#f92672">from</span> pocketsphinx <span style="color:#f92672">import</span> Decoder
 
-<span style="color:#f92672">import</span> os
-<span style="color:#f92672">import</span> socket
-<span style="color:#f92672">import</span> sys
-
-<span style="color:#75715e"># https://pymotw.com/2/socket/tcp.html</span>
-<span style="color:#75715e"># simple server?</span>
-<span style="color:#f92672">import</span> socket
-<span style="color:#f92672">import</span> sys
-
-<span style="color:#75715e"># Create a TCP/IP socket</span>
-sock <span style="color:#f92672">=</span> socket<span style="color:#f92672">.</span>socket(socket<span style="color:#f92672">.</span>AF_INET, socket<span style="color:#f92672">.</span>SOCK_STREAM)
-
-<span style="color:#75715e"># Connect the socket to the port where the server is listening</span>
-server_address <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;localhost&#39;</span>, <span style="color:#ae81ff">10000</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;connecting to </span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> port </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span> server_address)
-sock<span style="color:#f92672">.</span>connect(server_address)
-
-
-<span style="color:#75715e">##</span>
-<span style="color:#75715e">#</span>
-
-<span style="color:#f92672">from</span> os <span style="color:#f92672">import</span> environ, path
-
-<span style="color:#f92672">from</span> pocketsphinx <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-<span style="color:#f92672">from</span> sphinxbase <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
-
-MODELDIR <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;target/model&#34;</span>
-DATADIR <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;target/test.data&#34;</span>
-
+<span style="color:#75715e"># configure the reader using data in a known dir</span>
+MODELDIR <span style="color:#f92672">=</span> argv[<span style="color:#ae81ff">1</span>]
 config <span style="color:#f92672">=</span> Decoder<span style="color:#f92672">.</span>default_config()
-
-<span style="color:#75715e"># TODO; do something to dump this all</span>
-
 config<span style="color:#f92672">.</span>set_string(<span style="color:#e6db74">&#39;-hmm&#39;</span>, path<span style="color:#f92672">.</span>join(MODELDIR, <span style="color:#e6db74">&#39;en-us/en-us&#39;</span>))
 config<span style="color:#f92672">.</span>set_string(<span style="color:#e6db74">&#39;-lm&#39;</span>, path<span style="color:#f92672">.</span>join(MODELDIR, <span style="color:#e6db74">&#39;en-us/en-us.lm.bin&#39;</span>))
 config<span style="color:#f92672">.</span>set_string(<span style="color:#e6db74">&#39;-dict&#39;</span>, path<span style="color:#f92672">.</span>join(MODELDIR, <span style="color:#e6db74">&#39;en-us/cmudict-en-us.dict&#39;</span>))
@@ -289,31 +202,28 @@ config<span style="color:#f92672">.</span>set_string(<span style="color:#e6db74"
 <span style="color:#75715e"># log meee!</span>
 config<span style="color:#f92672">.</span>set_string(<span style="color:#e6db74">&#39;-logfn&#39;</span>, <span style="color:#e6db74">&#39;NUL&#39;</span>)
 
-
-
+<span style="color:#75715e"># create the ASR</span>
 decoder <span style="color:#f92672">=</span> Decoder(config)
 
-<span style="color:#75715e"># stream = open(path.join(DATADIR, &#39;goforward.raw&#39;), &#39;rb&#39;)</span>
-<span style="color:#75715e"># stream = open(path.join(DATADIR, &#39;numbers.raw&#39;), &#39;rb&#39;)</span>
-<span style="color:#75715e"># stream = open(path.join(DATADIR, &#39;something.raw&#39;), &#39;rb&#39;)</span>
-<span style="color:#75715e"># # stream = open(&#39;10001-90210-01803.wav&#39;, &#39;rb&#39;)</span>
+<span style="color:#75715e"># create the socket</span>
+<span style="color:#f92672">from</span> socket <span style="color:#f92672">import</span> socket, AF_INET,SOCK_STREAM
+socket <span style="color:#f92672">=</span> socket(AF_INET, SOCK_STREAM)
+socket<span style="color:#f92672">.</span>connect((argv[<span style="color:#ae81ff">2</span>], int(argv[<span style="color:#ae81ff">3</span>])))
 
-<span style="color:#75715e"># # stream = open(path.join(DATADIR, &#39;sense_and_sensibility_01_austen_64kb-0870.wav&#39;), &#39;rb&#39;)</span>
-<span style="color:#75715e"># # stream = open(&#39;sense_and_sensibility_01_austen_64kb-0870.wav&#39;, &#39;rb&#39;)</span>
-
-
-
+<span style="color:#75715e"># loop forever!</span>
 in_speech_bf <span style="color:#f92672">=</span> False
 decoder<span style="color:#f92672">.</span>start_utt()
 <span style="color:#66d9ef">while</span> True:
-    buf <span style="color:#f92672">=</span> sock<span style="color:#f92672">.</span>recv(<span style="color:#ae81ff">1024</span>)
+    buf <span style="color:#f92672">=</span> socket<span style="color:#f92672">.</span>recv(<span style="color:#ae81ff">1024</span>)
     <span style="color:#66d9ef">if</span> buf:
         decoder<span style="color:#f92672">.</span>process_raw(buf, False, False)
         <span style="color:#66d9ef">if</span> decoder<span style="color:#f92672">.</span>get_in_speech() <span style="color:#f92672">!=</span> in_speech_bf:
             in_speech_bf <span style="color:#f92672">=</span> decoder<span style="color:#f92672">.</span>get_in_speech()
             <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> in_speech_bf:
                 decoder<span style="color:#f92672">.</span>end_utt()
-                <span style="color:#66d9ef">print</span> (<span style="color:#e6db74">&#39;Result:&#39;</span>, decoder<span style="color:#f92672">.</span>hyp()<span style="color:#f92672">.</span>hypstr)
+                result <span style="color:#f92672">=</span> decoder<span style="color:#f92672">.</span>hyp()
+                <span style="color:#66d9ef">print</span> (<span style="color:#e6db74">&#39;dir = &#39;</span> <span style="color:#f92672">+</span> str(dir(result)))
+                <span style="color:#66d9ef">print</span> (<span style="color:#e6db74">&#39;Result:&#39;</span>, result<span style="color:#f92672">.</span>hypstr)
                 decoder<span style="color:#f92672">.</span>start_utt()
     <span style="color:#66d9ef">else</span>:
         <span style="color:#66d9ef">break</span>
