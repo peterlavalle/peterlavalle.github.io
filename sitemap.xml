@@ -3,41 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/howto/</loc>
-    <lastmod>2021-04-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/mortal-realms-partworks/</loc>
     <lastmod>2021-04-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2021-04-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/post/</loc>
-    <lastmod>2021-04-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/scala/</loc>
-    <lastmod>2021-04-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/post/setup.pocket-sphinx/</loc>
-    <lastmod>2021-04-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
     <lastmod>2021-04-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -55,6 +26,12 @@
   </url>
   
   <url>
+    <loc>https://peterlavalle.github.io/post/</loc>
+    <lastmod>2021-04-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/tags/printerjournal/</loc>
     <lastmod>2021-04-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -63,6 +40,12 @@
   <url>
     <loc>https://peterlavalle.github.io/post/3dprinter.bowden-flush-nozzle/</loc>
     <lastmod>2021-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2021-04-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -95,6 +78,12 @@
   </url>
   
   <url>
+    <loc>https://peterlavalle.github.io/tags/howto/</loc>
+    <lastmod>2020-12-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/tags/visualstudio/</loc>
     <lastmod>2020-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -119,6 +108,12 @@
   
   <url>
     <loc>https://peterlavalle.github.io/tags/android/</loc>
+    <lastmod>2020-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/scala/</loc>
     <lastmod>2020-12-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
