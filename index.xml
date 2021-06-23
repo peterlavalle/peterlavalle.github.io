@@ -6,10 +6,19 @@
     <description>Recent content on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 28 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jun 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HobbyNotebook / Shame Golf</title>
+      <link>https://peterlavalle.github.io/post/shame-golf/</link>
+      <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/shame-golf/</guid>
+      <description>&lt;p&gt;Miniature Shame Golf is a game of painting your minis and models.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Mortal Realms</title>
