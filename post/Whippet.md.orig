@@ -1,0 +1,75 @@
+---
+title: Whippet
+date: 2017-12-27
+tags:
+ - Whippet
+ - C++
+#thumbnail: _whatnot
+draft: true
+---
+
+I made an ECS container for a game-engine.
+
+		{{.TableOfContents}}
+
+## Explanation
+
+Google's Corgi is/was a generic C++ like-Unity container for use when implementing a game-engine.
+It follows the Entity-Component-System pattern where;
+
+- Entities are created to represent *things* in the game
+- Components are attached to entities to let these things do stuff
+
+This pattern was a reaction against the classical "god-object" where a strict tree of inheritance was used to build behavious.
+Google's approach (AFAIK) has a few warts;
+
+- it's not-pretty to build
+  - there were weird quirky CMake bits that meant a developer was locked into using CMake
+  - ... and it also needs its own git-submodules
+- components are not (at all) contiguous
+  - they can/wopuld/could cause cache-misses since they aren't going to be located near eachother in RAM
+
+I felt that the first problem would be easy to overcome, while attacking the second.
+In theory; a quirky STL-like container could allocate lists of (Tower-of-Hanoi) increasing size.
+When large numbers of components are present, the large lists should reduce the number of cache-misses.
+
+First though, I need a base system to works from; so that's what I'm posting about.
+
+## Goals
+
+- super portable; drop in the files and hit "build"
+- clean, *hard* C/++ classes
+  - there's one way to do it; the way I meant to
+  - harsh, but, helps with the next goal
+- tiny compiled footprint
+  - this is (kind of) a vanity goal; I want something that fits onto a 1.47MB floppy
+	- I'm "hard crashing" for most errors that shouldn't be possible without mis-use
+    - ... so if you try to access components that don't exist; the system will DIE in release
+- fast speed
+  - ... not that this goal is contradicted by the above ones
+
+## Status
+
+- 2 headers, 4 source
+	- ... plus my one "mega-util-header" which I'll hide from releases
+	- could be 1,1, but ... it's easier tot hink about these things in non-fused builds
+- create entities/components within a world
+- pile of unit tests written with GoogleTest 1.8.0
+	- it passes them all
+
+## Future
+
+- (semi) contiguous component allocation
+	- i have a plan for a template container to achieve this
+- scripted component(s)
+- threading and some sort of message queueing system
+	- when I know how
+	- ... really; I need a **use** before I can design **re-use**
+
+## Source
+
+While I intend to continue development in a private (Mercurial) repository, I'm posting the source to a GitHub mirror for the time being.
+
+[Whippet on GitHub](https://github.org:g-pechorin/Whippet/)
+
+I use a lot of weirdness in my C++ templates, but, it *should* all work.

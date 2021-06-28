@@ -1,0 +1,72 @@
+---
+title: Replace SaMBa with WinSSHFS!
+date: 2017-06-24
+tags:
+ - Windows10
+ - SSHFS
+ - HowTo
+thumbnail: img/win-sshfs-icon.png
+---
+
+I connected my Windows desktop to our office file server using [SSHFS][sshfs] rather than [SaMBa][smba].
+I am happy about that.
+
+------
+
+For [some reason][wc] one of our [SaMBa][smba] systems got twitchy sometime last month.
+This is a problem since I've inherited a script that;
+
+- I don't yet understand
+- runs on Windows (10?) exclusively
+- reads data from `\\foo\bar\project\user\project3\data\something` paths
+
+Since I know that SSHFS already works, I'm setting that up as a substitue.
+
+Maybe this'll be useful to someone else in a similar scenario.
+
+## Server (I did nothing)
+
+SSHFS's server works across an SSH connection.
+A "normal" SSH connection allows the execution of programs on that computer.
+Most computer programs read/write files to filesystem.
+SSHFS (and sFTP) build upon this by read/write files to the server's file system as needed by the client program.
+
+## Client (I installed two programs)
+
+The client component is some sort of file system implemented in user space [FUSE][fuse].
+Here, the concept is used to provide the functionality of extra drive (`M:`) on the client computer, with contents matching the server.
+
+There are several clients, I chose the one that I was familiar with.
+The client that I'm using calls itself `win-sshfs` and seems to be free/libre/gratis and working.
+
+> https://github.com/Foreveryone-cz/win-sshfs/releases/tag/1.5.12.8
+
+It needs Dokan (0.7.?) installed (with a reboot) to work.
+
+> https://github.com/dokan-dev/dokany/wiki/Installation.
+
+## Setup (I ran the program)
+
+I extracted the WinSSHFS program to an appropriate folder and lanched it.
+WinSSHFS produces this cute little manager screen.
+
+![Screen Shot of the Manager](img/win-sshfs-manager.png)
+
+> Sometimes when I've run WinSSHFS there's a harmless sounding error message about a drive being in use.
+> If I run the program again - the error is gone.
+
+Most of this should be self-explanatory; if you've used FTP or sFTP it should be obvious.
+Of note, the `Directory` field will be where the mapped drive roots itself in the file system.
+
+- if you leave it blank; the mapped drive roots in your user's home directory
+- if you specify an absolute path; the mapped drive roots in that folder
+
+... so (in my case) the files that I want are in `/foo/bar/project/user/project3/data/something/` and I chose `/foo/bar/` as my directory.
+
+Python programs can (transparently) read paths, so I'm good to go!
+
+
+[wc]: https://en.wikipedia.org/wiki/WannaCry_ransomware_attack
+[smba]: https://en.wikipedia.org/wiki/Samba_(software)
+[sshfs]: https://en.wikipedia.org/wiki/SSHFS
+[fuse]: https://en.wikipedia.org/wiki/Filesystem_in_Userspace

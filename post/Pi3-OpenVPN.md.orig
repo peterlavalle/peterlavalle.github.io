@@ -1,0 +1,98 @@
+---
+title: OpenVPN on a Pi3
+date: 2017-03-14
+tags:
+ - raspberry-pi
+ - Pi3
+ - OpenVPN
+thumbnail: img/OpenVPN-on-a-Pi3.png
+draft: true
+---
+
+> These instructions won't help with `[H.J.Res.86](https://www.congress.gov/bill/115th-congress/house-joint-resolution/86)`.
+> These instructions show you how to browse from your home, when you're somewhere else.
+> Unless your home is outside of the USA, this does nothing to help defend you against `H.J.Res.86`.
+
+Have I mentioned that I own a Pi3?
+Well ... this is how I use the Pi3 as an OpenVPN server to remotely work on my home network.
+This (anecdotal) post comprises
+
+* a background summary of what OpenVPN does
+* details of how I ran-the-script
+* notes on what I had to do to connect
+* speculation on when I'd want this
+
+## Background
+
+Virtual Private Networks (hereafter VPNs) refer to a client-server system where a client uses an existing network to route all of its traffic through a server.
+The advantage is that, if the client is in an insecure location (Bar!) they can access resources (build servers!) that no sane person would expose to the public internet.
+
+Also; if the client is in a country with draconian laws, (or a poor NetFlix catalog) but the server is in a more enlightened region; the setup allows someone to masquerade as being in the other location.
+
+My chief interest is in being able to access BitBucket/Jenkins/GitLab/GitHub/Kallithea et al when I'm in a coffee shop.
+There's a mountain of tweaks and voodoo that you can setup as well for this - but it's beyond my interest in this case.
+
+## VPN on the Pi3
+
+I have a Raspberry Pi3 with Jesse-Lite installed - so [I was all set for these instructions.](http://www.pivpn.io/)
+
+> `curl -L https://install.pivpn.io | bash`[^noJustRun]
+
+[^noJustRun]:
+    I didn't actually *just* run a script fromt he interent.
+    That'd be stupid.
+    In the real world, you should never ever run a script from the internet without checking it.
+
+The script worked as described, my only deviation was sending the traffic through TCP port 443.
+I'm trying to use this in cafes with restrictive internet - so I need to fake being a webpage.[^thatsOkayRight]
+
+There was a long period of generating my 2k keys; don't use 4k keys since it takes forever.
+I also don't understand "upstream provider" so I chose Google - seems to all work fine now.
+
+[^thatsOkayRight]:
+    I don't actually *know* what I'm doing.
+    I want this running over/across the `https://` ports to try and trick snoopy routers.
+    UDP didn't work - so I used TCP ... right?
+
+
+
+Following the setup of the server software, I logged into my (podunk) router and directed the FireWall to assign port 443 to my Pi3, and to use a static IP for the Pi3.
+Pretty standard router stuff which never follows a standard UI - so I'm not posting mine here.
+
+## VPN Client on my Ubuntu laptop
+
+I have a (pokey) Ubuntu-Mate laptop; go me!
+On my Pi3 - I used the new `pivpn add` command to create a new VPN ... account?
+This popped out a single config file - very nice - which I copied to my laptop.
+Installing the OpenVPN Client software was a matter of `sudo apt-get install openvpn` to get it.
+The final step was to actually connect.
+Based on [this StackOverflow post](http://askubuntu.com/questions/508250/openvpn-gui-client-for-udp-tcp#508296) the command is ``sudo openvpn --config ~/ovpn/ppeters-shiny-pi3-vpn.ovpn` with **`~/ovpn/ppeters-shiny-pi3-vpn.ovpn`** being the path to the config file which I copied to my laptop.
+I was able to test this by accessing my Jenkins server after tethering my laptop to my cellular phone, but your local Wetherspoon's would be a better place to check.
+
+## VPN Client on my Windows laptop
+
+Client; https://github.com/OpenVPN/openvpn-gui
+
+I've noticed a lot of public WiFi networks muck around with `http://` traffic ... likely to insert their own adds.
+Not sure if this is legal ... so let's see if I can get around it with my VPN!
+
+On my Pi3 - I used the new `pivpn add` command to create a new VPN ... account?
+This popped out a single config file - very nice - which I copied to my laptop.
+
+I used the official OpenVPN Client.
+I added the `.ovpn` config file to `$(HOME)/OpenVPN/config/` and was able to connect and view my own servers fine.
+
+YaY! ... but ... I need to do something to see hosts outside of my home network.
+(Like Google ... or this website)
+seems to match this problem https://forums.openvpn.net/viewtopic.php?t=23261
+
+... just rebooted my home-server and it didn't like it ...
+
+
+## Do Again
+
+If you're from a dystopian future - [I've dumped a copy of the setup script to accompany this post.](/raw/install.pivpn.io)
+If I find myself in a small group with a need for a VPN again - I'd advocate this approach; the £35 Pi3 with a £10 microSD is a very quick solution for this work.
+There are probably other roles that a Pi server can fulfill for a small shop that needs their tools to be on-site.
+
+Anyway ... [Happy Birthday to me](https://www.google.co.uk/search?q=albert+einstein+birthday) I guess ...
