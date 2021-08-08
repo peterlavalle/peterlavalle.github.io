@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sun, 04 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Aug 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Unified Exploration Mod</title>
+      <link>https://peterlavalle.github.io/post/blackstone.mod.unified/</link>
+      <pubDate>Sun, 08 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/blackstone.mod.unified/</guid>
+      <description>&lt;p&gt;This is a simple &amp;ldquo;trick&amp;rdquo; to speed up the setup and play of Blackstone Fortress.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>PrinterJournal / Bowden Tube Flush with Nozzle</title>
