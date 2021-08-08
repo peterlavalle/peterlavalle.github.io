@@ -1,0 +1,49 @@
+---
+title: Mirroring Git/GitHub to Hg/BitBucket
+date: 2016-07-22
+tags:
+ - mercurial
+ - git
+ - HowTo
+---
+
+This seemed a lot longer when I planned it in my notebook at lunch.
+
+| GitHub user | project (both sides) | BitBucket user | SCM  | Schedule |
+| ----------- | -------------------- | -------------- | ---- | -------- |
+| ocornut     | imgui                | g-pechorin     | None | Periodic |
+
+1. Install [hg-git](http://hg-git.github.io/)
+	* You'll have to do this on the Jenkins server
+	* You'll have to do it either for the Jenkins user or all
+	* I'm using an OsX machine as my host, so I was able to use `easy_install` to install `hg-git` and `dulwich`
+1. setup a project on GitHub
+1. create a Jenkins **Freestyle project** which runs periodically
+	* Polling the SCM was **NOT** an option since there's no `default` branch on GitHub
+		* ... this is a quirk of `hg-git` ... I think
+		* ... IIRC/YRMV - so sling me a tweet or whatever if I'm wrong
+1. program the job to pull from git, push to hg, and ignore results of `1`
+	* this was only elaborate because I needed it to not fail when there were no changes
+		```
+		#!/bin/bash
+
+		if [ -d "imgui" ]; then
+			echo "Re-Using ImGUI"
+			cd imgui
+			hg pull git+ssh://git@github.com:ocornut/imgui.git
+		else
+			echo "Cloning ImGUI"
+			hg clone git+ssh://git@github.com:ocornut/imgui.git
+			cd imgui
+		fi
+
+		hg push -f ssh://hg@bitbucket.org/g-pechorin/imgui
+
+		retcode=$?
+
+		if [ $retcode -eq 0 ] || [ $retcode -eq 1 ]; then
+			exit 0
+		else
+			exit $retcode
+		fi
+		```
