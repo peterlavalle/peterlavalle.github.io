@@ -3,25 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://peterlavalle.github.io/printing/</loc>
-    <lastmod>2021-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/hobbynotebook/</loc>
-    <lastmod>2021-08-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2021-08-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
-    <lastmod>2021-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -31,7 +14,19 @@
   </url>
   
   <url>
+    <loc>https://peterlavalle.github.io/</loc>
+    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/tags/shamegolf/</loc>
+    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
     <lastmod>2021-08-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -903,6 +898,15 @@
   <url>
     <loc>https://peterlavalle.github.io/kit-list/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/notebooks/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/40k8th-cheat/</loc>
   </url>
   
   <url>

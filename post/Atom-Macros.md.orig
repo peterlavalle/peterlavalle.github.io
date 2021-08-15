@@ -1,0 +1,28 @@
+---
+title: Adding NotePad++ Macros to Atom.io
+date: 2016-08-11
+tags:
+ - HowTo
+---
+
+I haven't posted anything in awhile ... so here's how to get [Atom.io](https://atom.io/) to get macros that work kind-of-like NotePad++
+
+----
+
+1. Install [atom-keyboard-macros](https://github.com/JunSuzukiJapan/atom-keyboard-macros) into Atom.
+	> The default keybindings did nothing for me ... sorry
+
+1. open your `keybindings.cson`
+	* Hit `CTRL+,` > click on `Keybindings` > click on the blue text that says `your keymap file`
+
+1. paste this wodge into the bottom of your `keybindings.cson`
+	**PRESERVE THE INDENTATION!**
+	```
+	# almost NotePad++ macros for Atom.io!
+	# based on https://github.com/JunSuzukiJapan/atom-keyboard-macros
+	'atom-text-editor':
+		'ctrl-shift-r': 'atom-keyboard-macros:start_kbd_macro'
+		'ctrl-alt-r': 'atom-keyboard-macros:end_kbd_macro'
+		'ctrl-shift-p': 'atom-keyboard-macros:call_last_kbd_macro'
+	```
+1. there is no step 4
