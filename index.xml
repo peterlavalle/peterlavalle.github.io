@@ -6,10 +6,22 @@
     <description>Recent content on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Aug 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>3D Printing Log</title>
+      <link>https://peterlavalle.github.io/printing/</link>
+      <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/printing/</guid>
+      <description>&lt;p&gt;This is a rough (and uneditied) log of my 3D printing attempts.
+I&amp;rsquo;m posting it mainly as I see no harm in that, rather than a believe that my poorly written scribbling with be of greate sorcial benefit.&lt;/p&gt;
+
+&lt;p&gt;(The spelling mistakes above are as intentional here as they are in 419 scams)&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>HobbyNotebook / Shame Golf (&#43;77)</title>
@@ -30,13 +42,13 @@
     </item>
     
     <item>
-      <title>Hobby Painting</title>
+      <title>Hobby</title>
       <link>https://peterlavalle.github.io/painting/</link>
       <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/painting/</guid>
       <description>I paint small plastic monsters and soldiers for fun.
- Shame Golf Finished Models Realms List TTG Mods  I use a specific Instagram tag for the finished ones. I started calling them &amp;ldquo;band shots&amp;rdquo; since it was usually a group who had been painted at once all posed together.
+ Shame Golf Finished Models Realms List TTG Mods 3D Printing Notes  I use a specific Instagram tag for the finished ones. I started calling them &amp;ldquo;band shots&amp;rdquo; since it was usually a group who had been painted at once all posed together.
 I&amp;rsquo;m also tracking my &amp;ldquo;shame golf&amp;rdquo; score and I&amp;rsquo;m doing &amp;hellip; well?
 I tried to build a &amp;ldquo;better&amp;rdquo; list of the Mortal Realms Magazine contents, but, FauxHammer beat me to it &amp;hellip; mostly &amp;hellip; Mine doesn&amp;rsquo;t have the screaming advertisments jammed in there, and, might eventually have links to rules for the minis.</description>
     </item>
@@ -793,24 +805,6 @@ why aren&amp;rsquo;t variables being set?
       <guid>https://peterlavalle.github.io/kit-list/</guid>
       <description>My &amp;ldquo;arsenal&amp;rdquo; - this isn&amp;rsquo;t meant to be public, but I see no harm to making it such.
    GPU OpenGL OpenCL GLES     HD 6770 4.4 1.2 ??   HD 7340 (Laptop) 4.3 ?? ??   Adreno 330 (Nexus 5)  1.1ep 3.0   PNY K620 4.5 1.2 ??   GTX 970 (Desktop) 4.5 1.2 ??   Tegra 3 T33 (Ouya)   +2.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://peterlavalle.github.io/notebooks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/notebooks/</guid>
-      <description>Notebooks  2019-10-29 / Paint  tried some mixes of what not to make a poor contrast  tried VJ thinner and lahmian  &amp;ldquo;lahmian:2&amp;rdquo; with &amp;ldquo;alien purple:1&amp;rdquo; looks good for what I want next step is to test it with reds/browns/blacks for the traitor guard  2019-10-29 / Cooking    Count Ingridient     25g double cream   50g chocolate   75g soft cheese     nuked chocolate whipped all else spread over biscuit in Yorkie tin set in freezer</description>
-    </item>
-    
-    <item>
-      <title>40k 8th CheatSheet</title>
-      <link>https://peterlavalle.github.io/40k8th-cheat/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/40k8th-cheat/</guid>
-      <description>Weapon Stationary Moved Advanced Retreat     Charge ?  No No   Assault ?  ? ?   Pistol ? ? ? ?   Rapid Fire ? ? ? ?   Heavy ? ? ? ?   Grenade ? ? ? ?   Macro ? ? ? ?       S vs T Roll     S &amp;gt;= 2*T ?</description>
     </item>
     
   </channel>
