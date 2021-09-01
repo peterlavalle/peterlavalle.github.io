@@ -6,15 +6,24 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 28 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Aug 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>3DPrinting</title>
+      <link>https://peterlavalle.github.io/tags/3dprinting/</link>
+      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/3dprinting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>HobbyNotebook</title>
       <link>https://peterlavalle.github.io/tags/hobbynotebook/</link>
-      <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/hobbynotebook/</guid>
       <description></description>
@@ -26,15 +35,6 @@
       <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/shamegolf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>3DPrinting</title>
-      <link>https://peterlavalle.github.io/tags/3dprinting/</link>
-      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/3dprinting/</guid>
       <description></description>
     </item>
     
@@ -444,7 +444,7 @@
     </item>
     
     <item>
-      <title>Mercurial</title>
+      <title>mercurial</title>
       <link>https://peterlavalle.github.io/tags/mercurial/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
       
