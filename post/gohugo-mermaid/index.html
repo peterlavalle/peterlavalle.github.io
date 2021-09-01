@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-GB">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>goHugo Mermaid | Peter&#39;s Notebook</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="goHugo Mermaid" />
+<meta property="og:description" content="I did some tinkering with Mermaid and settled on a shortcode that I&rsquo;m happy with for my Hugo blog.
+
+I&rsquo;ve switched from the Mainroad theme to the Binario theme initally as a (failed) workaround.
+I found that the syntax highlighing for Binario theme worked better so I&rsquo;ve kept it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://peterlavalle.github.io/post/gohugo-mermaid/" />
+<meta property="article:published_time" content="2019-07-10T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-07-10T00:00:00&#43;00:00"/>
+
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-92917039-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+	<script data-ad-client="ca-pub-8101356904122802" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+	<header class="header">
+	<script type='text/javascript'>
+		
+		if ('peterlavalle.com' == window.location.hostname)
+			location.replace('https://peterlavalle.github.io' + window.location.pathname);
+	</script>
+	<a class="logo" href="/">Peter&#39;s Notebook</a>
+	
+<nav class="main-nav" role="navigation">
+	<button id="toggle" class="main-nav__btn" aria-label="Menu toggle" aria-expanded="false" tabindex="0">
+		<div class="main-nav__btn-box" tabindex="-1">
+			<svg class="main-nav__icon icon-menu" width="18" height="18" viewBox="0 0 18 18">
+				<path class="icon-menu__burger" d="M18 0v3.6H0V0h18zM0 10.8h18V7.2H0v3.6zM0 18h18v-3.6H0V18z"/>
+				<path class="icon-menu__x" d="M11.55 9L18 15.45 15.45 18 9 11.55 2.55 18 0 15.45 6.45 9 0 2.55 2.55 0 9 6.45 15.45 0 18 2.55 11.55 9z"/>
+			</svg>
+		</div>
+	</button>
+	<ul id="menu" class="main-nav__list">
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/painting/">
+					
+					<span class="main-nav__text">Hobby</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/tags/howto/">
+					
+					<span class="main-nav__text">How To</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/tools/">
+					
+					<span class="main-nav__text">Tools</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/work-and-contibutions/">
+					
+					<span class="main-nav__text">Work</span>
+					
+				</a>
+			</li>
+	</ul>
+</nav>
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		
+		<div class="single block">
+			<article class="entry">
+	<div class="entry__meta meta mb">
+	<time class="entry__meta-published meta-published" datetime="2019-07-10T00:00:00Z">July 10, 2019</time>
+	</div>
+				<h1 class="entry__title">goHugo Mermaid</h1>
+				<div class="entry__content"><p>I did some tinkering with <a href="https://mermaidjs.github.io/">Mermaid</a> and settled on a shortcode that I&rsquo;m happy with for my <a href="https://gohugo.io/">Hugo</a> blog.</p>
+
+<p>I&rsquo;ve switched from the <a href="https://themes.gohugo.io/mainroad/">Mainroad theme</a> to the <a href="https://themes.gohugo.io/binario/">Binario theme</a> initally as a (failed) workaround.
+I found that the <a href="https://gohugo.io/content-management/syntax-highlighting/">syntax highlighing</a> for <a href="https://themes.gohugo.io/binario/">Binario theme</a> worked better so I&rsquo;ve kept it.</p>
+
+<hr />
+
+<aside style="float: right;">
+	<nav id="TableOfContents">
+<ul>
+<li><a href="#via-pandoc-nope">via Pandoc? (Nope!)</a></li>
+<li><a href="#shortcodes-yass">Shortcodes (Yass!)</a></li>
+<li><a href="#examples">Examples</a>
+<ul>
+<li><a href="#graph-lr"><code>graph LR</code></a></li>
+<li><a href="#sequencediagram"><code>sequenceDiagram</code></a></li>
+<li><a href="#gantt"><code>gantt</code></a></li>
+<li><a href="#classdiagram"><code>classDiagram</code></a></li>
+<li><a href="#gitgraph"><code>gitGraph</code></a></li>
+</ul></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+</nav>
+</aside>
+
+<h1 id="via-pandoc-nope">via Pandoc? (Nope!)</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
+    Alice-&gt;&gt;John: Hello John, how are you?
+    John--&gt;&gt;Alice: Great!</code></pre></div>
+<p>I&rsquo;d had bad experiences with <a href="https://mermaidjs.github.io/">Mermaid</a> and <a href="https://gohugo.io/">Hugo</a> solutions previously.
+I&rsquo;ve had good general expeirences with <a href="https://pandoc.org/">Pandoc</a>.
+So, my first idea was to use <a href="https://pandoc.org/">Pandoc</a> to translate embedded <a href="https://mermaidjs.github.io/">Mermaid</a> diagrams into &hellip; whatever Pandoc did.
+Turns out that it embeds a <code>.png</code> image into the <code>.md</code> as base64, which is adorable!</p>
+
+<p>I tried installing a <a href="https://github.com/raghur/mermaid-filter">Mermaid filter for Pandoc</a> globally &hellip;</p>
+
+<blockquote>
+<p><code>&gt; npm install --global mermaid-filter</code></p>
+</blockquote>
+
+<p>&hellip; then invoking it from the shell &hellip;</p>
+
+<blockquote>
+<p><code>&gt; pandoc -t html -F mermaid-filter.cmd -o something.html trymermaid.md</code></p>
+</blockquote>
+
+<p>&hellip; but that didn&rsquo;t work because &hellip;</p>
+
+<pre><code>λ typedoc.bat
+module.js:540
+    throw err;
+    ^
+
+Error: Cannot find module 'C:\Users\Peter\Desktop\portfolio\portfolio-pxmlam\fud07-types.tex\node_modules\mermaid-filter\index.js'
+    at Function.Module._resolveFilename (module.js:538:15)
+    at Function.Module._load (module.js:468:25)
+    at Function.Module.runMain (module.js:684:10)
+    at startup (bootstrap_node.js:187:16)
+    at bootstrap_node.js:608:3
+Error running filter mermaid-filter.cmd:
+Filter returned error status 1
+</code></pre>
+
+<p>&hellip; i.e; it wasn&rsquo;t being picked up?</p>
+
+<p>Erhmm &hellip; what?</p>
+
+<p>I&rsquo;d rather run it from a local project anyway, so my next idea was to install it &ldquo;locally&rdquo; in the project/folder.
+(This makes my folder into a Node.JS project &hellip;)</p>
+
+<pre><code>&gt; npm install mermaid-filter
+&gt; pandoc -t markdown -f markdown -F mermaid-filter.cmd -o target/something.md trymermaid.md
+</code></pre>
+
+<p>&hellip; and that works.
+Hilariously; it worked by embedding the generated image data into the markdown.</p>
+
+<p>I want to try a more-sane approach &hellip; which looks nicer with CSS.</p>
+
+<h1 id="shortcodes-yass">Shortcodes (Yass!)</h1>
+
+<p>I tried copying the <a href="https://learn.netlify.com/en/shortcodes/mermaid/">Learn theme&rsquo;s shortcodes</a> but that scrambled my CSS.
+I (for no reason) switched to <a href="https://themes.gohugo.io/binario/">the Binario theme</a> and decided to try and &ldquo;roll my own&rdquo; <a href="https://gohugo.io/content-management/shortcodes/">shortcode</a> for <a href="https://mermaidjs.github.io/">Mermaid</a>.
+The home made <a href="https://gohugo.io/content-management/shortcodes/">shortcode</a> worked out pretty well; I knew which file to put it in and another user&rsquo;s blog post showed the <code>.js</code> and <code>.html</code> needed to kick it all off.
+The result, below, needs to be in a theme&rsquo;s <code>layouts/shortcodes/mermaid.html</code> and then allows <code>{{</code><code>&lt;mermaid&gt;</code><code>}}...{{</code><code>&lt;/mermaid&gt;</code><code>}}</code> <a href="https://gohugo.io/content-management/shortcodes/">shortcodes</a> to embed diagrams in your/my blog posts.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ $_hugo_config := `{ &#34;version&#34;: 1 }` }}
+<span style="color:#75715e">&lt;!--
+</span><span style="color:#75715e">    file name and path from; https://github.com/matcornic/hugo-theme-learn/blob/master/layouts/shortcodes/mermaid.html
+</span><span style="color:#75715e">    shortcode js/html from; https://liveaverage.com/projects/integration-mermaid/
+</span><span style="color:#75715e">--&gt;</span>
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/mermaid@8.1.0/dist/mermaid.min.js&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
+    <span style="color:#a6e22e">mermaid</span>.<span style="color:#a6e22e">initialize</span>({ 
+        <span style="color:#a6e22e">theme</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;dark&#39;</span>,
+        <span style="color:#a6e22e">themeCSS</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
+        <span style="color:#a6e22e">cloneCssStyles</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+        <span style="color:#a6e22e">useMaxWidth</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+        <span style="color:#a6e22e">htmlLabels</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+        <span style="color:#a6e22e">flowchart</span><span style="color:#f92672">:</span> { 
+                <span style="color:#a6e22e">curve</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;basis&#39;</span> 
+        }
+    });
+&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;<span style="color:#f92672">pre</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mermaid&#34;</span> <span style="color:#a6e22e">align</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ if .Get &#34;</span><span style="color:#a6e22e">align</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}{{</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Get</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">align</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}{{</span> <span style="color:#a6e22e">else</span> <span style="color:#960050;background-color:#1e0010">}}</span><span style="color:#a6e22e">center</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;{{ safeHTML .Inner }}&lt;/<span style="color:#f92672">pre</span>&gt;</code></pre></div>
+<h1 id="examples">Examples</h1>
+
+<p>Here are some example diagrams from the <a href="https://learn.netlify.com/en/shortcodes/mermaid/">Learn theme.</a></p>
+
+<h2 id="graph-lr"><code>graph LR</code></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mermaid" data-lang="mermaid">graph LR;
+    A[Hard edge] --&gt;|Link text| B(Round edge)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result one]
+    C --&gt;|Two| E[Result two]</code></pre></div>
+
+
+<script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	mermaid.initialize({ 
+		theme: 'dark',
+		
+		themeCSS: '',
+		cloneCssStyles: false,
+		useMaxWidth: true,
+		htmlLabels: false,
+		flowchart: { 
+				curve: 'basis' 
+		}		
+	});
+</script>
+<pre class="mermaid" align="center">
+graph LR;
+	A[Hard edge] -->|Link text| B(Round edge)
+	B --> C{Decision}
+	C -->|One| D[Result one]
+	C -->|Two| E[Result two]
+</pre>
+
+
+<h2 id="sequencediagram"><code>sequenceDiagram</code></h2>
+
+<p>The <code>[ Healthcheck ]</code> loop text can&rsquo;t be (easily) seen below &hellip;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail...
+    John--&gt;Alice: Great!
+    John-&gt;Bob: How about you?
+    Bob--&gt;John: Jolly good!</code></pre></div>
+
+
+<script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	mermaid.initialize({ 
+		theme: 'dark',
+		
+		themeCSS: '',
+		cloneCssStyles: false,
+		useMaxWidth: true,
+		htmlLabels: false,
+		flowchart: { 
+				curve: 'basis' 
+		}		
+	});
+</script>
+<pre class="mermaid" align="center">
+sequenceDiagram
+	participant Alice
+	participant Bob
+	Alice->>John: Hello John, how are you?
+	loop Healthcheck
+		John->John: Fight against hypochondria
+	end
+	Note right of John: Rational thoughts <br/>prevail...
+	John-->Alice: Great!
+	John->Bob: How about you?
+	Bob-->John: Jolly good!
+</pre>
+
+
+<h2 id="gantt"><code>gantt</code></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mermaid" data-lang="mermaid">gantt
+    dateFormat  YYYY-MM-DD
+    title Adding GANTT diagram functionality to mermaid
+    section A section
+    Completed task            :done,    des1, 2014-01-06,2014-01-08
+    Active task               :active,  des2, 2014-01-09, 3d
+    Future task               :         des3, after des2, 5d
+    Future task2               :         des4, after des3, 5d
+    section Critical tasks
+    Completed task in the critical line :crit, done, 2014-01-06,24h
+    Implement parser and jison          :crit, done, after des1, 2d
+    Create tests for parser             :crit, active, 3d
+    Future task in critical line        :crit, 5d
+    Create tests for renderer           :2d
+    Add to mermaid                      :1d</code></pre></div>
+
+
+<script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	mermaid.initialize({ 
+		theme: 'dark',
+		
+		themeCSS: '',
+		cloneCssStyles: false,
+		useMaxWidth: true,
+		htmlLabels: false,
+		flowchart: { 
+				curve: 'basis' 
+		}		
+	});
+</script>
+<pre class="mermaid" align="center">
+gantt
+	dateFormat  YYYY-MM-DD
+	title Adding GANTT diagram functionality to mermaid
+	section A section
+	Completed task            :done,    des1, 2014-01-06,2014-01-08
+	Active task               :active,  des2, 2014-01-09, 3d
+	Future task               :         des3, after des2, 5d
+	Future task2               :         des4, after des3, 5d
+	section Critical tasks
+	Completed task in the critical line :crit, done, 2014-01-06,24h
+	Implement parser and jison          :crit, done, after des1, 2d
+	Create tests for parser             :crit, active, 3d
+	Future task in critical line        :crit, 5d
+	Create tests for renderer           :2d
+	Add to mermaid                      :1d
+</pre>
+
+
+<h2 id="classdiagram"><code>classDiagram</code></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mermaid" data-lang="mermaid">classDiagram
+    Class01 &lt;|-- AveryLongClass : Cool
+    Class03 *-- Class04
+    Class05 o-- Class06
+    Class07 .. Class08
+    Class09 --&gt; C2 : Where am i?
+    Class09 --* C3
+    Class09 --|&gt; Class07
+    Class07 : equals()
+    Class07 : Object[] elementData
+    Class01 : size()
+    Class01 : int chimp
+    Class01 : int gorilla
+    Class08 &lt;--&gt; C2: Cool label</code></pre></div>
+
+
+<script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	mermaid.initialize({ 
+		theme: 'dark',
+		
+		themeCSS: '',
+		cloneCssStyles: false,
+		useMaxWidth: true,
+		htmlLabels: false,
+		flowchart: { 
+				curve: 'basis' 
+		}		
+	});
+</script>
+<pre class="mermaid" align="center">
+classDiagram
+	Class01 <|-- AveryLongClass : Cool
+	Class03 *-- Class04
+	Class05 o-- Class06
+	Class07 .. Class08
+	Class09 --> C2 : Where am i?
+	Class09 --* C3
+	Class09 --|> Class07
+	Class07 : equals()
+	Class07 : Object[] elementData
+	Class01 : size()
+	Class01 : int chimp
+	Class01 : int gorilla
+	Class08 <--> C2: Cool label
+</pre>
+
+
+<p>This git one doesn&rsquo;t look quite right to me.</p>
+
+<h2 id="gitgraph"><code>gitGraph</code></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mermaid" data-lang="mermaid">gitGraph:
+options
+{
+    &#34;nodeSpacing&#34;: 64,
+    &#34;nodeRadius&#34;: 8
+}
+end
+    commit
+    branch newbranch
+    checkout newbranch
+    commit
+    commit
+    checkout master
+    commit
+    commit
+    merge newbranch</code></pre></div>
+
+
+<script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	mermaid.initialize({ 
+		theme: 'dark',
+		
+		themeCSS: '',
+		cloneCssStyles: false,
+		useMaxWidth: true,
+		htmlLabels: false,
+		flowchart: { 
+				curve: 'basis' 
+		}		
+	});
+</script>
+<pre class="mermaid" align="center">
+gitGraph:
+options
+{
+	"nodeSpacing": 64,
+	"nodeRadius": 8
+}
+end
+	commit
+	branch newbranch
+	checkout newbranch
+	commit
+	commit
+	checkout master
+	commit
+	commit
+	merge newbranch
+</pre>
+
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>I (finally) have a good way to drop charts into my blog posts.
+I was surprised how easy it was to develop the Shortcodes.
+At some point, it would seem polite to submit pull requests to the theme &hellip; if/when the snags noted above can be resolved.</p></div>
+				
+				<footer class="entry__footer">
+					
+<div class="entry__tags">
+			<a class="entry__tag btn" href="/tags/mermaid/">Mermaid</a>
+			<a class="entry__tag btn" href="/tags/mermaid.js/">Mermaid.JS</a>
+			<a class="entry__tag btn" href="/tags/hugo/">Hugo</a>
+			<a class="entry__tag btn" href="/tags/pandoc/">Pandoc</a>
+</div>
+					
+<div class="entry__share share">
+	<a class="share__link btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpeterlavalle.github.io%2fpost%2fgohugo-mermaid%2f" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Facebook', 'width=800,height=600,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Facebook" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M330 512V322h64l9-74h-73v-47c0-22 6-36 37-36h39V99c-7-1-30-3-57-3-57 0-95 34-95 98v54h-64v74h64v190z"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fpeterlavalle.github.io%2fpost%2fgohugo-mermaid%2f&amp;text=goHugo%20Mermaid" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fpeterlavalle.github.io%2fpost%2fgohugo-mermaid%2f&amp;title=goHugo%20Mermaid" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Telegram" href="https://t.me/share/url?url=https%3a%2f%2fpeterlavalle.github.io%2fpost%2fgohugo-mermaid%2f&amp;title=goHugo%20Mermaid" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Telegram', 'width=800,height=600,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Telegram" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M199 404c-11 0-10-4-13-14l-32-105 245-144"/><path d="M199 404c7 0 11-4 16-8l45-43-56-34"/><path d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fpeterlavalle.github.io%2fpost%2fgohugo-mermaid%2f&title=goHugo%20Mermaid" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on LinkedIn', 'width=640,height=480,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on VK" href="https://vk.com/share.php?url=https%3a%2f%2fpeterlavalle.github.io%2fpost%2fgohugo-mermaid%2f" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on VK', 'width=640,height=480,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="VK" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M274 363c5-1 14-3 14-15 0 0-1-30 13-34s32 29 51 42c14 9 25 8 25 8l51-1s26-2 14-23c-1-2-9-15-39-42-31-30-26-25 11-76 23-31 33-50 30-57-4-7-20-6-20-6h-57c-6 0-9 1-12 6 0 0-9 25-21 45-25 43-35 45-40 42-9-5-7-24-7-37 0-45 7-61-13-65-13-2-59-4-73 3-7 4-11 11-8 12 3 0 12 1 17 7 8 13 9 75-2 81-15 11-53-62-62-86-2-6-5-7-12-9H79c-6 0-15 1-11 13 27 56 83 193 184 192z"/></svg>
+	</a>
+	<a class="share__link btn" title="Save to Pocket" href="https://getpocket.com/edit?url=https%3a%2f%2fpeterlavalle.github.io%2fpost%2fgohugo-mermaid%2f&amp;title=goHugo%20Mermaid" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Save to Pocket', 'width=480,height=320,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Pocket" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M388.8 88.9H123.2A47.4 47.4 0 0 0 76 136.5v131.9c0 2.4.2 4.8.5 7.2a101.8 101.8 0 0 0-.5 10.6c0 75.6 80.6 137 180 137s180-61.4 180-137c0-3.6-.2-7.1-.5-10.6.3-2.4.5-4.8.5-7.2v-132A47.4 47.4 0 0 0 388.8 89zm-22.4 132.6l-93 93c-4.7 4.6-11 7-17.1 7a23.8 23.8 0 0 1-17.7-7l-93-93a24 24 0 0 1 33.8-33.8l76.6 76.5 76.6-76.5a24 24 0 0 1 33.8 33.8z"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "peterlavalle" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+			</article>
+		</div>
+	</main>
+	
+<div class="authorbox block">
+	<div class="author">
+		<figure class="author__avatar">
+			<img class="author__img" alt="Peter LaValle avatar" src="https://avatars2.githubusercontent.com/u/956075?v=3&amp;s=460" height="90" width="90">
+		</figure>
+		<div class="author__body">
+			<div class="author__name">
+				Peter LaValle
+			</div>
+			<div class="author__bio">		Any links probably include affiliate ids for that sweet sweet kickback - and some programs require that I tell you.
+		Peter&#39;s day work involves applying functional programming to problems with artificial intelligence.
+		The contents of this blog are likely unrelated - as they include games, paints, and build tools.
+	</div>
+		</div>
+	</div>
+</div>
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="mailto:peter.lavalle@gmail.com">
+			<svg class="social__icon" aria-label="Email" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M299 268l124 106c-4 4-10 7-17 7H106c-7 0-13-3-17-7l124-106 43 38 43-38zm-43 13L89 138c4-4 10-7 17-7h300c7 0 13 3 17 7L256 281zm54-23l121-105v208L310 258zM81 153l121 105L81 361V153z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/g_pechorin">
+			<svg class="social__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/gpechorin">
+			<svg class="social__icon" aria-label="Instagram" role="img" width="32" height="32" viewBox="0 0 512 512"><g fill="none" stroke-width="29"><rect height="296" rx="78" width="296" x="108" y="108"/><circle cx="256" cy="256" r="69"/></g><circle cx="343" cy="169" r="19"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/plavalle">
+			<svg class="social__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/peterlavalle">
+			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://gitlab.com/g-pechorin">
+			<svg class="social__icon" aria-label="Gitlab" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M450 282l-22-67-43-133c-2-7-12-7-14 0l-43.3 133H184.3L141 82c-2-7-12-7-14 0L84 215l-22 67c-2 6 0 13 6 16l188 137 188-137c6-3 8-10 6-16z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/482808">
+			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2021 Peter&#39;s Notebook. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+<script src="/js/menu.js"></script>
+</body>
+</html>

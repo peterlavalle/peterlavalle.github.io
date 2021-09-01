@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-GB">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1b1b1b">
+	<title>Gradlification of FlexDock | Peter&#39;s Notebook</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Gradlification of FlexDock" />
+<meta property="og:description" content="Some clever clogs made a snazzy tool called SciLab as another not-MatLab.1 Flex Dock is the framework that (I think) they developed for docking frames. It&rsquo;s not in Maven Central so I&rsquo;ve forked it and deployed it to my own repository.
+convert the build The actual conversion was embarrassingly easy since the gradle importer stuff really works for this sort of thing. As a matter of personal preference, I re-arranged the build scripts to be a single file but otherwise left them as-is." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://peterlavalle.github.io/post/gradlfy-flexdock/" />
+<meta property="article:published_time" content="2017-11-01T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-11-01T00:00:00&#43;00:00"/>
+
+	<link rel="stylesheet" href="/css/bundle.css">
+	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/icons/32.png" sizes="32x32" type="image/png">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-92917039-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+	<script data-ad-client="ca-pub-8101356904122802" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+	<header class="header">
+	<script type='text/javascript'>
+		
+		if ('peterlavalle.com' == window.location.hostname)
+			location.replace('https://peterlavalle.github.io' + window.location.pathname);
+	</script>
+	<a class="logo" href="/">Peter&#39;s Notebook</a>
+	
+<nav class="main-nav" role="navigation">
+	<button id="toggle" class="main-nav__btn" aria-label="Menu toggle" aria-expanded="false" tabindex="0">
+		<div class="main-nav__btn-box" tabindex="-1">
+			<svg class="main-nav__icon icon-menu" width="18" height="18" viewBox="0 0 18 18">
+				<path class="icon-menu__burger" d="M18 0v3.6H0V0h18zM0 10.8h18V7.2H0v3.6zM0 18h18v-3.6H0V18z"/>
+				<path class="icon-menu__x" d="M11.55 9L18 15.45 15.45 18 9 11.55 2.55 18 0 15.45 6.45 9 0 2.55 2.55 0 9 6.45 15.45 0 18 2.55 11.55 9z"/>
+			</svg>
+		</div>
+	</button>
+	<ul id="menu" class="main-nav__list">
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/painting/">
+					
+					<span class="main-nav__text">Hobby</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/tags/howto/">
+					
+					<span class="main-nav__text">How To</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/tools/">
+					
+					<span class="main-nav__text">Tools</span>
+					
+				</a>
+			</li>
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="/work-and-contibutions/">
+					
+					<span class="main-nav__text">Work</span>
+					
+				</a>
+			</li>
+	</ul>
+</nav>
+</header>
+	<div class="primary">
+	
+	<main class="main">
+		
+		<div class="single block">
+			<article class="entry">
+	<div class="entry__meta meta mb">
+	<time class="entry__meta-published meta-published" datetime="2017-11-01T00:00:00Z">November 01, 2017</time>
+	</div>
+				<h1 class="entry__title">Gradlification of FlexDock</h1>
+				<div class="entry__content">
+
+<p>Some clever clogs made a snazzy tool called <a href="https://www.scilab.org/">SciLab</a> as another not-MatLab.<sup class="footnote-ref" id="fnref:unfair"><a href="#fn:unfair">1</a></sup>
+<a href="https://github.com/opencollab/flexdock">Flex Dock</a> is the framework that (I think) they developed for docking frames.
+It&rsquo;s not in <a href="http://mvnrepository.com/search?q=flexdock">Maven Central</a> so I&rsquo;ve forked it and deployed it to <a href="https://github.com/g-pechorin/m2-repo">my own repository.</a></p>
+
+<h1 id="convert-the-build">convert the build</h1>
+
+<p>The actual conversion was embarrassingly easy since <a href="https://docs.gradle.org/4.0/userguide/build_init_plugin.html#sec:pom_maven_conversion_">the gradle importer stuff really works</a> for this sort of thing.
+As a matter of personal preference, I re-arranged the build scripts to be a <a href="https://github.com/g-pechorin/flexdock/blob/3c4746051f657b495237215082b20e7d15101805/build.gradle">single file</a> but otherwise left them as-is.
+I did set the demos to assemble a <a href="https://github.com/g-pechorin/flexdock/blob/3c4746051f657b495237215082b20e7d15101805/build.gradle#L57">single fat-jar</a> when they&rsquo;re built.
+This means that there&rsquo;s a <a href="https://github.com/g-pechorin/m2-repo/blob/gh-pages/com/peterlavalle/flexdock-demo/1.3/flexdock-demo-1.3.jar">downloadable .jar somewhere</a> for anyone so inclined.</p>
+
+<h1 id="publish">publish</h1>
+
+<p>Getting the project to publish was predictably tricky, the <a href="https://github.com/g-pechorin/flexdock/blob/3c4746051f657b495237215082b20e7d15101805/build.gradle#L27">maven and gradle bits were finickier than I remember</a> but basically work.<sup class="footnote-ref" id="fnref:finicky"><a href="#fn:finicky">2</a></sup>
+With that out of the way; it&rsquo;s all over except for the crying.
+I have a functioning <a href="https://github.com/g-pechorin/rpi-docker/tree/master/palpi-jenkins">Jenkins instance</a> which I&rsquo;m deploying from happily these days.
+Shockingly, <a href="https://github.com/g-pechorin/flexdock/blob/3c4746051f657b495237215082b20e7d15101805/Jenkinsfile">my JenkinsFile worked on the first try</a> and the remaining &ldquo;problems&rdquo; were quickly resolved.</p>
+
+<h1 id="result">result</h1>
+
+<p>So &hellip; yeah; pretty good for a night in.
+Now &hellip; I need to figure out how to use and persist it.
+I like the <a href="https://github.com/g-pechorin/flexdock/blob/3c4746051f657b495237215082b20e7d15101805/flexdock-demo/src/main/java/org/flexdock/demos/view/ViewDemo.java">pinnable and closable ViewDemo</a> and will likely be working from that.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:unfair">Not-MatLab is a bit <em>harsh</em> but it is an accurate &ldquo;short answer&rdquo;
+ <a class="footnote-return" href="#fnref:unfair"><sup>[return]</sup></a></li>
+<li id="fn:finicky">At the time of writing, I was on my third attempt to proerly build it.
+ <a class="footnote-return" href="#fnref:finicky"><sup>[return]</sup></a></li>
+</ol>
+</div>
+</div>
+				
+				<footer class="entry__footer">
+					
+<div class="entry__tags">
+			<a class="entry__tag btn" href="/tags/jenkins/">Jenkins</a>
+			<a class="entry__tag btn" href="/tags/java/">Java</a>
+			<a class="entry__tag btn" href="/tags/gradle/">Gradle</a>
+			<a class="entry__tag btn" href="/tags/flexdock/">FlexDock</a>
+</div>
+					
+<div class="entry__share share">
+	<a class="share__link btn" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpeterlavalle.github.io%2fpost%2fgradlfy-flexdock%2f" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Facebook', 'width=800,height=600,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Facebook" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M330 512V322h64l9-74h-73v-47c0-22 6-36 37-36h39V99c-7-1-30-3-57-3-57 0-95 34-95 98v54h-64v74h64v190z"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Twitter" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fpeterlavalle.github.io%2fpost%2fgradlfy-flexdock%2f&amp;text=Gradlification%20of%20FlexDock" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Reddit" href="https://www.reddit.com/submit?url=https%3a%2f%2fpeterlavalle.github.io%2fpost%2fgradlfy-flexdock%2f&amp;title=Gradlification%20of%20FlexDock" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Reddit" role="img" width="32" height="32" viewBox="0 0 512 512"><path fill-rule="evenodd" d="M375 146a32 32 0 1 0-29-46l-65-13c-5-1-9 2-10 6l-22 97c-45 1-85 15-113 36a42 42 0 1 0-45 69l-1 12c0 65 74 117 166 117s166-52 166-117l-1-11a42 42 0 1 0-44-69c-28-21-67-35-111-37l19-86 58 13a32 32 0 0 0 32 29zM190 353c2-1 4 0 5 1 15 11 38 18 61 18s46-6 61-18a7 7 0 0 1 8 10c-18 14-44 21-69 21-25-1-51-7-69-21a6 6 0 0 1 3-11zm23-44a31 31 0 1 1-44-44 31 31 0 0 1 44 44zm130 0a31 31 0 1 0-44-44 31 31 0 0 0 44 44z"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on Telegram" href="https://t.me/share/url?url=https%3a%2f%2fpeterlavalle.github.io%2fpost%2fgradlfy-flexdock%2f&amp;title=Gradlification%20of%20FlexDock" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on Telegram', 'width=800,height=600,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Telegram" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M199 404c-11 0-10-4-13-14l-32-105 245-144"/><path d="M199 404c7 0 11-4 16-8l45-43-56-34"/><path d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fpeterlavalle.github.io%2fpost%2fgradlfy-flexdock%2f&title=Gradlification%20of%20FlexDock" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on LinkedIn', 'width=640,height=480,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+	</a>
+	<a class="share__link btn" title="Share on VK" href="https://vk.com/share.php?url=https%3a%2f%2fpeterlavalle.github.io%2fpost%2fgradlfy-flexdock%2f" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Share on VK', 'width=640,height=480,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="VK" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M274 363c5-1 14-3 14-15 0 0-1-30 13-34s32 29 51 42c14 9 25 8 25 8l51-1s26-2 14-23c-1-2-9-15-39-42-31-30-26-25 11-76 23-31 33-50 30-57-4-7-20-6-20-6h-57c-6 0-9 1-12 6 0 0-9 25-21 45-25 43-35 45-40 42-9-5-7-24-7-37 0-45 7-61-13-65-13-2-59-4-73 3-7 4-11 11-8 12 3 0 12 1 17 7 8 13 9 75-2 81-15 11-53-62-62-86-2-6-5-7-12-9H79c-6 0-15 1-11 13 27 56 83 193 184 192z"/></svg>
+	</a>
+	<a class="share__link btn" title="Save to Pocket" href="https://getpocket.com/edit?url=https%3a%2f%2fpeterlavalle.github.io%2fpost%2fgradlfy-flexdock%2f&amp;title=Gradlification%20of%20FlexDock" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'Save to Pocket', 'width=480,height=320,toolbar=0,status=0'); return false">
+		<svg class="share__icon" aria-label="Pocket" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M388.8 88.9H123.2A47.4 47.4 0 0 0 76 136.5v131.9c0 2.4.2 4.8.5 7.2a101.8 101.8 0 0 0-.5 10.6c0 75.6 80.6 137 180 137s180-61.4 180-137c0-3.6-.2-7.1-.5-10.6.3-2.4.5-4.8.5-7.2v-132A47.4 47.4 0 0 0 388.8 89zm-22.4 132.6l-93 93c-4.7 4.6-11 7-17.1 7a23.8 23.8 0 0 1-17.7-7l-93-93a24 24 0 0 1 33.8-33.8l76.6 76.5 76.6-76.5a24 24 0 0 1 33.8 33.8z"/></svg>
+	</a>
+</div>
+				</footer>
+				
+			<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "peterlavalle" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+			</article>
+		</div>
+	</main>
+	
+<div class="authorbox block">
+	<div class="author">
+		<figure class="author__avatar">
+			<img class="author__img" alt="Peter LaValle avatar" src="https://avatars2.githubusercontent.com/u/956075?v=3&amp;s=460" height="90" width="90">
+		</figure>
+		<div class="author__body">
+			<div class="author__name">
+				Peter LaValle
+			</div>
+			<div class="author__bio">		Any links probably include affiliate ids for that sweet sweet kickback - and some programs require that I tell you.
+		Peter&#39;s day work involves applying functional programming to problems with artificial intelligence.
+		The contents of this blog are likely unrelated - as they include games, paints, and build tools.
+	</div>
+		</div>
+	</div>
+</div>
+	
+
+
+
+	
+
+	</div>
+	<footer class="footer">
+<div class="footer__social social">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="mailto:peter.lavalle@gmail.com">
+			<svg class="social__icon" aria-label="Email" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M299 268l124 106c-4 4-10 7-17 7H106c-7 0-13-3-17-7l124-106 43 38 43-38zm-43 13L89 138c4-4 10-7 17-7h300c7 0 13 3 17 7L256 281zm54-23l121-105v208L310 258zM81 153l121 105L81 361V153z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/g_pechorin">
+			<svg class="social__icon" aria-label="Twitter" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M437 152a72 72 0 0 1-40 12 72 72 0 0 0 32-40 72 72 0 0 1-45 17 72 72 0 0 0-122 65 200 200 0 0 1-145-74 72 72 0 0 0 22 94 72 72 0 0 1-32-7 72 72 0 0 0 56 69 72 72 0 0 1-32 1 72 72 0 0 0 67 50 200 200 0 0 1-105 29 200 200 0 0 0 309-179 200 200 0 0 0 35-37"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/gpechorin">
+			<svg class="social__icon" aria-label="Instagram" role="img" width="32" height="32" viewBox="0 0 512 512"><g fill="none" stroke-width="29"><rect height="296" rx="78" width="296" x="108" y="108"/><circle cx="256" cy="256" r="69"/></g><circle cx="343" cy="169" r="19"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/plavalle">
+			<svg class="social__icon" aria-label="LinkedIn" role="img" width="32" height="32" viewBox="0 0 512 512"><circle cx="142" cy="138" r="37"/><path stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/peterlavalle">
+			<svg class="social__icon" aria-label="Github" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-50c-71 16-86-28-86-28-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://gitlab.com/g-pechorin">
+			<svg class="social__icon" aria-label="Gitlab" role="img" width="32" height="32" viewBox="0 0 512 512"><path d="M450 282l-22-67-43-133c-2-7-12-7-14 0l-43.3 133H184.3L141 82c-2-7-12-7-14 0L84 215l-22 67c-2 6 0 13 6 16l188 137 188-137c6-3 8-10 6-16z"/></svg>
+		</a>
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/482808">
+			<svg class="social__icon" aria-label="Stack Overflow" role="img" width="32" height="32" viewBox="0 0 512 512"><g stroke-width="30"><path fill="none" d="M125 297v105h241V297"/><path d="M170 341h150m-144-68l148 31M199 204l136 64m-95-129l115 97M293 89l90 120"/></g></svg>
+		</a>
+</div>
+	<div class="footer__copyright">© 2021 Peter&#39;s Notebook. <span class="footer__copyright-credits">Powered by <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/vimux/binario" rel="nofollow noopener" target="_blank">Binario</a> theme.</span></div>
+</footer>
+<script src="/js/menu.js"></script>
+</body>
+</html>
