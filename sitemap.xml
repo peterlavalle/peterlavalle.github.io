@@ -14,6 +14,11 @@
   </url>
   
   <url>
+    <loc>https://peterlavalle.github.io/imperium-partworks/</loc>
+    <lastmod>2021-09-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/</loc>
     <lastmod>2021-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -29,11 +34,6 @@
     <loc>https://peterlavalle.github.io/tags/</loc>
     <lastmod>2021-09-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/imperium-partworks/</loc>
-    <lastmod>2021-09-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -439,14 +439,14 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
-    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
+    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
