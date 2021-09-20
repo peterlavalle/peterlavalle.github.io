@@ -3,8 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://peterlavalle.github.io/printing/</loc>
+    <lastmod>2021-09-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/3dprinting/</loc>
+    <lastmod>2021-09-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/tags/hobbynotebook/</loc>
-    <lastmod>2021-09-19T00:00:00+00:00</lastmod>
+    <lastmod>2021-09-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/</loc>
+    <lastmod>2021-09-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2021-09-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -14,31 +37,8 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2021-09-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/shamegolf/</loc>
     <lastmod>2021-09-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
-    <lastmod>2021-09-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/printing/</loc>
-    <lastmod>2021-09-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/3dprinting/</loc>
-    <lastmod>2021-09-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -444,14 +444,14 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
-    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
+    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
