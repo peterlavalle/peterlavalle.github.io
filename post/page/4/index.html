@@ -13,7 +13,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://peterlavalle.github.io/post/" />
 
-<meta property="og:updated_time" content="2021-09-17T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2021-10-11T00:00:00&#43;00:00"/>
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -92,6 +92,18 @@ if (!doNotTrack) {
 			
 		</div>
 		<div class="cards">
+			
+				<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/whippet-ecs/">Of Entity-Component-Systems</a></h1>
+	<div class="entry__content">I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of modern game-engines.
+This post is largely a gooey weasel opinion piece. It started as an introduction that grew out of control. So, for now, it&rsquo;s just a bit of rambling while I clean-up the documentation for my tool.
+Of Entity-Component-Systems Among other things, Jason Gregory&rsquo;s book Game Engine Architecture discusses the concept of a data-driven architecture for game software.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-01-19T00:00:00Z">January 19, 2018</time>
+	</div>
+</article>
+				</div>
 			
 				<div class="card card--2col">
 					<article class="entry card__box block">
@@ -200,20 +212,6 @@ Today I was looking at a source code management system; something of a &ldquo;my
 	<div class="entry__content">I had an idea/desire for a &ldquo;simple&rdquo; template class that&rsquo;d work as my OpenGL thread. A contemporary design for multi-threaded 3D games10 seems to be pooling work and processing it in whatever threads are available. IME OpenGL/GLFW are not re-entrant; Apple2 and GLFW3 explicitly states that it won&rsquo;t work - so it seems safe to assume that I shouldn&rsquo;t call functions from different threads. So to make a super-fast 3D game (or whatever) I need to do less work on the thread which is running OpenGL while allowing other threads to send it whatever work they please.</div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2017-08-03T00:00:00Z">August 03, 2017</time>
-	</div>
-</article>
-				</div>
-			
-				<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-namecheap/">Pi3 NameCheap</a></h1>
-	<div class="entry__content">This is a followup to a previous post because that one stopped working, now - this works.
-There&rsquo;s not a lot of OC here, just clarity.
-NameCheap DynDNS on a Pi3 I use NameCheap (because they&rsquo;re anti-SOPA) for DNS. The client program, ddclient, can connect to NameCheap.
-I&rsquo;m using raspbian, so, first;
- run sudo apt-get install ddclient on your Pi find the dynamic DNS settings on NameCheap&rsquo;s website  Dashboard &gt;&gt;&gt; Domain List &gt;&gt;&gt; Manage &gt;&gt;&gt; Advanced DNS they do like to change these things around  halfway down the page, there should be a DYNAMIC DNS thingie  enable it (if you haven&rsquo;t already) note the blurb-what-looks-like-a-SHA  edit your /etc/ddclient.</div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2017-06-29T00:00:00Z">June 29, 2017</time>
 	</div>
 </article>
 				</div>
