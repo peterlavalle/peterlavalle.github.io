@@ -6,7 +6,7 @@
     <description>Recent content on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 16 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Oct 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,13 +14,22 @@
     <item>
       <title>3D Printing Log</title>
       <link>https://peterlavalle.github.io/printing/</link>
-      <pubDate>Sat, 16 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/printing/</guid>
       <description>&lt;p&gt;This is a rough (and uneditied) log of my 3D printing attempts.
 I&amp;rsquo;m posting it mainly as I see no harm in that, rather than a believe that my poorly written scribbling with be of greate sorcial benefit.&lt;/p&gt;
 
 &lt;p&gt;(The spelling mistakes above and below should be considered as intentional here as they are in 419 scams)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fun With Scribus</title>
+      <link>https://peterlavalle.github.io/post/scribus-settext/</link>
+      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/scribus-settext/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m trying to replace text in a &lt;a href=&#34;https://www.scribus.net/&#34;&gt;Scribus&lt;/a&gt; document.&lt;/p&gt;</description>
     </item>
     
     <item>

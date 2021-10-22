@@ -14,7 +14,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://peterlavalle.github.io/" />
 
-<meta property="og:updated_time" content="2021-10-16T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2021-10-22T00:00:00&#43;00:00"/>
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -88,6 +88,18 @@ if (!doNotTrack) {
 	
 	<main class="main">
 			<div class="cards">
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/scala-extractor/">Scala Extractors</a></h1>
+	<div class="entry__content">Scala&rsquo;s extractors and unapply() represent a concept that I haven&rsquo;t grok&rsquo;ed until now.
+Most demonstrations seem to be too long or use the same types everywhere. Here are my thoughts on the concept;
+val a: C = ??? val i: I = ??? i match { case a(f: O) =&gt; ??? }  This will try to call the below method
+class C { def unapply(i: I): Option[O] = ??? }  There&rsquo;s some more flexibility;</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2018-01-31T00:00:00Z">January 31, 2018</time>
+	</div>
+</article>
+					</div>
 					<div class="card card--2col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/whippet/">Whippet</a></h1>
@@ -189,17 +201,6 @@ I&rsquo;m going to use nGinx to setup a reverse-proxy from my real-Pi3 to variou
 I&rsquo;m doing something else (of course) I&rsquo;m setting up (what I call) name-based-virtual-hosting.</div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2017-09-19T00:00:00Z">September 19, 2017</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-docker-gogs/">GoGS on a Pi3 (via Docker)</a></h1>
-	<div class="entry__content"><p>I&rsquo;ve been assembling a &ldquo;full stack&rdquo;<sup class="footnote-ref" id="fnref:fwiw"><a href="#fn:fwiw">1</a></sup> for development that runs on my Pi3.
-This is all happening inside of <a href="https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/">Docker</a> containers which made cleanup redonkulously easy.
-Today I was looking at a source code management system; something of a &ldquo;my own GitHub&rdquo; which I can run on my own network.</p></div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2017-09-07T00:00:00Z">September 07, 2017</time>
 	</div>
 </article>
 					</div>
