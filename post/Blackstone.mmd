@@ -1,0 +1,119 @@
+graph TD
+	
+
+	subgraph exploration
+		stepExplore{Explore R11}
+		stepRecovery[Recovery R11]
+		stepLeader[Leader R11]
+	end
+
+	Expedition>explorers depart]
+	
+	Precipice>explorers return]
+
+
+	subgraph challenge
+		challenge
+	end
+
+	subgraph combat
+		combat
+
+		destiny
+		subgraph initiative
+			rolls
+			initiative
+			covering
+			gambits
+		end
+		activation
+		subgraph hostile activation
+			reinforcement[reinforcement roll P13]
+
+			behaviour[behaviour roll for each]
+
+			advance
+			aimH[aim and attack]
+			charge[charge and attack]
+			fall[fall back]
+			hold
+			onslaught
+			sneak
+
+			activation --> reinforcement
+			reinforcement --> behaviour 
+
+			aimH --> target
+			onslaught --> target
+			onslaught --> target
+
+
+			behaviour -.- advance
+			behaviour -.- aimH
+			behaviour -.- charge
+			behaviour -.- fall
+			behaviour -.- hold
+			behaviour -.- onslaught
+			behaviour -.- sneak
+
+		end
+
+		subgraph explorer activation
+			move[move 1+, C9]
+			recuperate[recuperate 1+ C9, R14]
+			search[search 4+, C9]
+			summon[summon 4+, C10]
+			aim[aim 1+, C10]
+			weapon[weapon ?, C10]
+
+			activation -.- move
+			activation -.- recuperate
+			activation -.- search
+			activation -.- summon
+			activation -.- aim
+			activation -.- weapon
+
+			aim --> weapon
+
+			weapon --> target
+
+			subgraph attack
+				target
+				range
+				attack[attack roll / cover C12]
+				defend[explorer defend C14]
+				wound[wound C12 C14]
+
+				target --> range
+				range --> attack
+				attack --> defend
+				defend --> wound
+			end
+		end
+
+		event
+	end
+
+	combat --> destiny
+	destiny --> rolls
+	rolls --> initiative 
+	initiative --> covering
+	covering --> gambits
+	gambits --> activation
+	activation --> event
+	event --> destiny
+	event --> stepRecovery
+
+	Expedition --> stepExplore
+
+	stepExplore --> combat
+	stepExplore --> challenge
+	combat --> stepRecovery
+	challenge --> stepRecovery
+	
+	stepRecovery --> stepLeader
+	stepLeader --> stepExplore
+	stepLeader --> Precipice
+
+
+	
