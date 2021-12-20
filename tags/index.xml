@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 16 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HowTo</title>
+      <link>https://peterlavalle.github.io/tags/howto/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/howto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java3D</title>
+      <link>https://peterlavalle.github.io/tags/java3d/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/java3d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sbt</title>
+      <link>https://peterlavalle.github.io/tags/sbt/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/sbt/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>HobbyNotebook</title>
@@ -44,15 +71,6 @@
       <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/dungeonsanddragons/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>HowTo</title>
-      <link>https://peterlavalle.github.io/tags/howto/</link>
-      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/howto/</guid>
       <description></description>
     </item>
     
@@ -462,7 +480,7 @@
     </item>
     
     <item>
-      <title>mercurial</title>
+      <title>Mercurial</title>
       <link>https://peterlavalle.github.io/tags/mercurial/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
       

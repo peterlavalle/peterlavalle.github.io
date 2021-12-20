@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Fri, 22 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java3D v 1.7.0 in SBT</title>
+      <link>https://peterlavalle.github.io/post/java3d-sbt-2021/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/java3d-sbt-2021/</guid>
+      <description>&lt;p&gt;Just a quick note of what sbt things I needed to get Java3D running on the classpath.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Fun With Scribus</title>
@@ -683,24 +692,6 @@ Quick Start Create a new post $ hexo new &amp;#34;My New Post&amp;#34; More info
 Run server $ hexo server More info: Server
 Generate static files $ hexo generate More info: Generating
 Deploy to remote sites $ hexo deploy More info: Deployment</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://peterlavalle.github.io/post/knight-of-the-imperium/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/post/knight-of-the-imperium/</guid>
-      <description>awaken in wheelchair
-choose uniform to get pronouns
-&amp;ldquo;coronation&amp;rdquo; player is bonded with throne
-dispatched to fight-kill and put down rebelion
-branch-choose next fight to rout the remainder
-intriguie encounter/s based onplaygame
-sent afar - more fight
-more intriguie
-follow campbell&amp;rsquo;s heroic cycle
-return home to nunsplotation conclusion begging question; does anyone believe in these ideals?</description>
     </item>
     
   </channel>

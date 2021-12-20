@@ -6,10 +6,19 @@
     <description>Recent content on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 16 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java3D v 1.7.0 in SBT</title>
+      <link>https://peterlavalle.github.io/post/java3d-sbt-2021/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/java3d-sbt-2021/</guid>
+      <description>&lt;p&gt;Just a quick note of what sbt things I needed to get Java3D running on the classpath.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>HobbyNotebook / Shame Golf (&#43;33)</title>
@@ -836,24 +845,6 @@ why aren&amp;rsquo;t variables being set?
       <guid>https://peterlavalle.github.io/kit-list/</guid>
       <description>My &amp;ldquo;arsenal&amp;rdquo; - this isn&amp;rsquo;t meant to be public, but I see no harm to making it such.
    GPU OpenGL OpenCL GLES     HD 6770 4.4 1.2 ??   HD 7340 (Laptop) 4.3 ?? ??   Adreno 330 (Nexus 5)  1.1ep 3.0   PNY K620 4.5 1.2 ??   GTX 970 (Desktop) 4.5 1.2 ??   Tegra 3 T33 (Ouya)   +2.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://peterlavalle.github.io/post/knight-of-the-imperium/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/post/knight-of-the-imperium/</guid>
-      <description>awaken in wheelchair
-choose uniform to get pronouns
-&amp;ldquo;coronation&amp;rdquo; player is bonded with throne
-dispatched to fight-kill and put down rebelion
-branch-choose next fight to rout the remainder
-intriguie encounter/s based onplaygame
-sent afar - more fight
-more intriguie
-follow campbell&amp;rsquo;s heroic cycle
-return home to nunsplotation conclusion begging question; does anyone believe in these ideals?</description>
     </item>
     
   </channel>

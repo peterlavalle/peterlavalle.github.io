@@ -6,10 +6,19 @@
     <description>Recent content in HowTo on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Fri, 22 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/howto/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java3D v 1.7.0 in SBT</title>
+      <link>https://peterlavalle.github.io/post/java3d-sbt-2021/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/java3d-sbt-2021/</guid>
+      <description>&lt;p&gt;Just a quick note of what sbt things I needed to get Java3D running on the classpath.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Fun With Scribus</title>
