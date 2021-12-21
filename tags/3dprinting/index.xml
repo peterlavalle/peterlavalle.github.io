@@ -6,10 +6,19 @@
     <description>Recent content in 3DPrinting on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Dec 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/3dprinting/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>3DPrinting `.unity3d` Web Archives</title>
+      <link>https://peterlavalle.github.io/post/3dprinting-unity3d/</link>
+      <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/3dprinting-unity3d/</guid>
+      <description>&lt;p&gt;How to convert the &lt;code&gt;.unity3d&lt;/code&gt; web archives to &lt;code&gt;.stl&lt;/code&gt; files for 3D Printing.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>3D Printing Log</title>
