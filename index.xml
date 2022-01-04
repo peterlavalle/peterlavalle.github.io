@@ -6,10 +6,21 @@
     <description>Recent content on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sun, 02 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Jan 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mortal Realms</title>
+      <link>https://peterlavalle.github.io/mortal-realms-partworks/</link>
+      <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/mortal-realms-partworks/</guid>
+      <description>The Mortal Realms is a partwork magazine run by Hatchette for Games Workshop. Here, I&amp;rsquo;m collecting an list of the contents, rules and links to the individual items.
+ForbiddenPlanet sells the things, lets you pic-and-mix, ships internationally, ships sooner and can be cheaper than the producer &amp;hellip; when you purchase at least 11 issues at once.1
+   symbol meaning     - i have the issue   / i have painted or otherwise digested the issue into my collection   ; it&amp;rsquo;s a Stormcast issue and i&amp;rsquo;ve stupidly assembled the minis with no real plan    Delivered Issue 01 /; The Age of Sigmar The Age of Sigmar</description>
+    </item>
     
     <item>
       <title>HobbyNotebook / Shame Golf (&#43;22)</title>
@@ -58,17 +69,6 @@ So far 9x12ml and 1x24ml pots have been confirmed in upcoming issues. Another 7x
       
       <guid>https://peterlavalle.github.io/post/java3d-sbt-2021/</guid>
       <description>&lt;p&gt;Just a quick note of what sbt things I needed to get Java3D running on the classpath.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Mortal Realms</title>
-      <link>https://peterlavalle.github.io/mortal-realms-partworks/</link>
-      <pubDate>Sat, 04 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/mortal-realms-partworks/</guid>
-      <description>The Mortal Realms is a partwork magazine run by Hatchette for Games Workshop. Here, I&amp;rsquo;m collecting an list of the contents, rules and links to the individual items.
-ForbiddenPlanet sells the things, lets you pic-and-mix, ships internationally, ships sooner and can be cheaper than the producer &amp;hellip; when you purchase at least 11 issues at once.1
-   symbol meaning     - i have the issue   / i have painted or otherwise digested the issue into my collection   ; it&amp;rsquo;s a Stormcast issue and i&amp;rsquo;ve stupidly assembled the minis with no real plan    Delivered Issue 01 /; The Age of Sigmar The Age of Sigmar</description>
     </item>
     
     <item>
