@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Mon, 24 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Feb 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>HobbyNotebook</title>
       <link>https://peterlavalle.github.io/tags/hobbynotebook/</link>
-      <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/hobbynotebook/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>ShameGolf</title>
       <link>https://peterlavalle.github.io/tags/shamegolf/</link>
-      <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/shamegolf/</guid>
       <description></description>
@@ -264,20 +264,20 @@
     </item>
     
     <item>
-      <title>Git</title>
-      <link>https://peterlavalle.github.io/tags/git/</link>
-      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>GitHub</title>
       <link>https://peterlavalle.github.io/tags/github/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://peterlavalle.github.io/tags/git/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/git/</guid>
       <description></description>
     </item>
     
@@ -489,7 +489,7 @@
     </item>
     
     <item>
-      <title>mercurial</title>
+      <title>Mercurial</title>
       <link>https://peterlavalle.github.io/tags/mercurial/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -624,7 +624,7 @@
     </item>
     
     <item>
-      <title>multi-threading</title>
+      <title>Multi-Threading</title>
       <link>https://peterlavalle.github.io/tags/multi-threading/</link>
       <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
       
