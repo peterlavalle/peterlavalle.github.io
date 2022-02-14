@@ -3,7 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://peterlavalle.github.io/imperium-partworks/</loc>
+    <loc>https://peterlavalle.github.io/partworks.imperium/</loc>
+    <lastmod>2022-02-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/partworks.mortal-realms/</loc>
     <lastmod>2022-02-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -34,11 +39,6 @@
     <loc>https://peterlavalle.github.io/tags/</loc>
     <lastmod>2022-02-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/mortal-realms-partworks/</loc>
-    <lastmod>2022-01-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
