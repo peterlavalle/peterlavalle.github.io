@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Mon, 14 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Feb 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A `require()` for DukTape and C&#43;&#43;</title>
+      <link>https://peterlavalle.github.io/post/duk-cpp-require/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/duk-cpp-require/</guid>
+      <description>&lt;p&gt;A very concise function for globals-stashing.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>YouTube and Special Miniatures</title>

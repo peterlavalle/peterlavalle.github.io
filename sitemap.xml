@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://peterlavalle.github.io/post/duk-cpp-require/</loc>
+    <lastmod>2022-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/c&#43;&#43;/</loc>
+    <lastmod>2022-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/</loc>
+    <lastmod>2022-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/</loc>
+    <lastmod>2022-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2022-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/printing/</loc>
+    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/3dprinting/</loc>
+    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/tags/gamesworkshop/</loc>
     <lastmod>2022-02-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -20,26 +60,8 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/shamegolf/</loc>
     <lastmod>2022-02-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
-    <lastmod>2022-02-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/post/</loc>
-    <lastmod>2022-02-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -64,23 +86,12 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/printing/</loc>
-    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/3dprinting/</loc>
-    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/post/3dprinting-unity3d/</loc>
     <lastmod>2021-12-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/unit3d/</loc>
+    <loc>https://peterlavalle.github.io/tags/unity3d/</loc>
     <lastmod>2021-12-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -208,12 +219,6 @@
   
   <url>
     <loc>https://peterlavalle.github.io/tags/c/</loc>
-    <lastmod>2020-12-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/c&#43;&#43;/</loc>
     <lastmod>2020-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -668,12 +673,6 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/unity3d/</loc>
-    <lastmod>2017-12-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/post/democore/</loc>
     <lastmod>2017-12-03T00:00:00+00:00</lastmod>
   </url>
@@ -813,12 +812,6 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/madewithunity/</loc>
-    <lastmod>2016-11-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/post/palsystem/</loc>
     <lastmod>2016-11-12T00:00:00+00:00</lastmod>
   </url>
@@ -899,12 +892,6 @@
   
   <url>
     <loc>https://peterlavalle.github.io/tags/spaceships/</loc>
-    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/unity/</loc>
     <lastmod>2016-03-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
