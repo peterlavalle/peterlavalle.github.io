@@ -4,36 +4,82 @@
   
   <url>
     <loc>https://peterlavalle.github.io/tags/gamesworkshop/</loc>
-    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/tags/hobbynotebook/</loc>
-    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/shame-golf/</loc>
-    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/howto/</loc>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/java/</loc>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/partworks.mortal-realms/</loc>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/</loc>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/scala/</loc>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/tags/shamegolf/</loc>
-    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/tags/</loc>
-    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/libgdx/</loc>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/notes.libgdx/</loc>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/sbt/</loc>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -60,12 +106,6 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/post/</loc>
-    <lastmod>2022-02-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/special-miniatures/</loc>
     <lastmod>2022-02-14T00:00:00+00:00</lastmod>
   </url>
@@ -81,11 +121,6 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/partworks.mortal-realms/</loc>
-    <lastmod>2022-02-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/post/3dprinting-unity3d/</loc>
     <lastmod>2021-12-21T00:00:00+00:00</lastmod>
   </url>
@@ -93,12 +128,6 @@
   <url>
     <loc>https://peterlavalle.github.io/tags/unity3d/</loc>
     <lastmod>2021-12-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/howto/</loc>
-    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -111,12 +140,6 @@
   <url>
     <loc>https://peterlavalle.github.io/post/java3d-sbt-2021/</loc>
     <lastmod>2021-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/sbt/</loc>
-    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -254,12 +277,6 @@
   
   <url>
     <loc>https://peterlavalle.github.io/tags/android/</loc>
-    <lastmod>2020-12-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/scala/</loc>
     <lastmod>2020-12-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -709,12 +726,6 @@
   <url>
     <loc>https://peterlavalle.github.io/post/gradlfy-flexdock/</loc>
     <lastmod>2017-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/java/</loc>
-    <lastmod>2017-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
