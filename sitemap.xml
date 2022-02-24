@@ -9,6 +9,11 @@
   </url>
   
   <url>
+    <loc>https://peterlavalle.github.io/hobby/</loc>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/tags/hobbynotebook/</loc>
     <lastmod>2022-02-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -23,6 +28,11 @@
     <loc>https://peterlavalle.github.io/tags/howto/</loc>
     <lastmod>2022-02-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/partworks.imperium/</loc>
+    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -116,11 +126,6 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/partworks.imperium/</loc>
-    <lastmod>2022-02-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/post/3dprinting-unity3d/</loc>
     <lastmod>2021-12-21T00:00:00+00:00</lastmod>
   </url>
@@ -183,11 +188,6 @@
   <url>
     <loc>https://peterlavalle.github.io/incompedex/</loc>
     <lastmod>2021-08-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/hobby/</loc>
-    <lastmod>2021-08-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
