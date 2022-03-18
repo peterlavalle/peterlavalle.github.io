@@ -6,10 +6,42 @@
     <description>Recent content on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 02 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Mar 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>3D Printing Log</title>
+      <link>https://peterlavalle.github.io/printing/</link>
+      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/printing/</guid>
+      <description>&lt;p&gt;This is a rough (and uneditied) log of my 3D printing attempts.
+I&amp;rsquo;m posting it mainly as I see no harm in that, rather than a believe that my poorly written scribbling with be of greate sorcial benefit.&lt;/p&gt;
+
+&lt;p&gt;(The spelling mistakes above and below should be considered as intentional here as they are in 419 scams)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HobbyNotebook / Shame Golf (&#43;82)</title>
+      <link>https://peterlavalle.github.io/shame-golf/</link>
+      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/shame-golf/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/Po3u5ukzbpU&#34;&gt;Miniature Shame Golf is a game of painting your miniatures.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mortal Realms</title>
+      <link>https://peterlavalle.github.io/partworks.mortal-realms/</link>
+      <pubDate>Mon, 07 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/partworks.mortal-realms/</guid>
+      <description>The Mortal Realms is a partwork magazine run by Hatchette for Games Workshop. Here, I&amp;rsquo;m collecting an list of the contents, rules and links to the individual items.
+ForbiddenPlanet sells the things, lets you pic-and-mix, ships internationally, ships sooner and can be cheaper than the producer &amp;hellip; when you purchase at least 11 issues at once.1
+   symbol meaning     - i have the issue   / i have painted or otherwise digested the issue into my collection   ; i&amp;rsquo;ve started it    Delivered Issue 01 ; The Age of Sigmar The Age of Sigmar</description>
+    </item>
     
     <item>
       <title>Wavefront .Obj</title>
@@ -18,15 +50,6 @@
       
       <guid>https://peterlavalle.github.io/post/notes.wobj/</guid>
       <description>&lt;p&gt;Notes from adding (WaveFront) &lt;code&gt;.obj&lt;/code&gt; export to a &lt;a href=&#34;https://unity.com/&#34;&gt;Unity3D plugin&lt;/a&gt; I&amp;rsquo;m working on.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>HobbyNotebook / Shame Golf (&#43;77)</title>
-      <link>https://peterlavalle.github.io/shame-golf/</link>
-      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/shame-golf/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/Po3u5ukzbpU&#34;&gt;Miniature Shame Golf is a game of painting your miniatures.&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -50,35 +73,12 @@ So far 9x12ml and 1x24ml pots have been confirmed in upcoming issues. Another 7x
     </item>
     
     <item>
-      <title>Mortal Realms</title>
-      <link>https://peterlavalle.github.io/partworks.mortal-realms/</link>
-      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/partworks.mortal-realms/</guid>
-      <description>The Mortal Realms is a partwork magazine run by Hatchette for Games Workshop. Here, I&amp;rsquo;m collecting an list of the contents, rules and links to the individual items.
-ForbiddenPlanet sells the things, lets you pic-and-mix, ships internationally, ships sooner and can be cheaper than the producer &amp;hellip; when you purchase at least 11 issues at once.1
-   symbol meaning     - i have the issue   / i have painted or otherwise digested the issue into my collection   ; i&amp;rsquo;ve started it    Delivered Issue 01 ; The Age of Sigmar The Age of Sigmar</description>
-    </item>
-    
-    <item>
       <title>libGDX in sbt (2021)</title>
       <link>https://peterlavalle.github.io/post/notes.libgdx/</link>
       <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/notes.libgdx/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://libgdx.com/&#34;&gt;libGDX&lt;/a&gt; is/was the bestest way to do OpenGL in Java/Scala on Desktop/Android.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>3D Printing Log</title>
-      <link>https://peterlavalle.github.io/printing/</link>
-      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/printing/</guid>
-      <description>&lt;p&gt;This is a rough (and uneditied) log of my 3D printing attempts.
-I&amp;rsquo;m posting it mainly as I see no harm in that, rather than a believe that my poorly written scribbling with be of greate sorcial benefit.&lt;/p&gt;
-
-&lt;p&gt;(The spelling mistakes above and below should be considered as intentional here as they are in 419 scams)&lt;/p&gt;</description>
     </item>
     
     <item>
