@@ -901,5 +901,14 @@ why aren&amp;rsquo;t variables being set?
    GPU OpenGL OpenCL GLES     HD 6770 4.4 1.2 ??   HD 7340 (Laptop) 4.3 ?? ??   Adreno 330 (Nexus 5)  1.1ep 3.0   PNY K620 4.5 1.2 ??   GTX 970 (Desktop) 4.5 1.2 ??   Tegra 3 T33 (Ouya)   +2.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/shelf.orks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/shelf.orks/</guid>
+      <description>   type group config count want     boyz tinheads choppa 9    boyz tinheads shoota 5    boyz tinheads boss nob 0    boyz tinheads bit shoota 1    boyz tinheads rokkit 1    boyz scalps choppa 10    boyz scalps shoota 2    boyz scalps boss nob 1    boyz scalps bit shoota 2    boyz scalps rokkit 0     </description>
+    </item>
+    
   </channel>
 </rss>
