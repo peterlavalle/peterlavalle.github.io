@@ -17,7 +17,7 @@
       <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/notes.roblox/</guid>
-      <description>&lt;p&gt;I made a maze with Roblox.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I made a maze with Roblox - &lt;a href=&#34;https://www.roblox.com/games/9397399366/demo-maze-1&#34;&gt;https://www.roblox.com/games/9397399366/demo-maze-1&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -36,15 +36,6 @@
       
       <guid>https://peterlavalle.github.io/post/notes.libgdx/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://libgdx.com/&#34;&gt;libGDX&lt;/a&gt; is/was the bestest way to do OpenGL in Java/Scala on Desktop/Android.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>A `require()` for DukTape and C&#43;&#43;</title>
-      <link>https://peterlavalle.github.io/post/duk-cpp-require/</link>
-      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/post/duk-cpp-require/</guid>
-      <description>&lt;p&gt;A very concise function for globals-stashing.&lt;/p&gt;</description>
     </item>
     
     <item>

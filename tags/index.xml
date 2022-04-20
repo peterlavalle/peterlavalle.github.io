@@ -156,15 +156,6 @@
     </item>
     
     <item>
-      <title>C&#43;&#43;</title>
-      <link>https://peterlavalle.github.io/tags/c&#43;&#43;/</link>
-      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/c&#43;&#43;/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Java3D</title>
       <link>https://peterlavalle.github.io/tags/java3d/</link>
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
@@ -251,6 +242,15 @@
       <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://peterlavalle.github.io/tags/c&#43;&#43;/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     
@@ -534,7 +534,7 @@
     </item>
     
     <item>
-      <title>Mercurial</title>
+      <title>mercurial</title>
       <link>https://peterlavalle.github.io/tags/mercurial/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
       
