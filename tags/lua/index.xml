@@ -6,10 +6,19 @@
     <description>Recent content in Lua on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sun, 08 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/lua/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Maze Ed in Roblox</title>
+      <link>https://peterlavalle.github.io/post/notes.roblox/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/notes.roblox/</guid>
+      <description>&lt;p&gt;I made a maze with Roblox.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Peter&#39;s Awesome Lua with the Core functionality we care about</title>

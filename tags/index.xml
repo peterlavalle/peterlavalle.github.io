@@ -6,15 +6,60 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 26 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Article</title>
+      <link>https://peterlavalle.github.io/tags/article/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/article/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GamePlay</title>
+      <link>https://peterlavalle.github.io/tags/gameplay/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/gameplay/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HowTo</title>
+      <link>https://peterlavalle.github.io/tags/howto/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/howto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lua</title>
+      <link>https://peterlavalle.github.io/tags/lua/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/lua/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Roblox</title>
+      <link>https://peterlavalle.github.io/tags/roblox/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/roblox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>GamesWorkshop</title>
       <link>https://peterlavalle.github.io/tags/gamesworkshop/</link>
-      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/gamesworkshop/</guid>
       <description></description>
@@ -23,7 +68,7 @@
     <item>
       <title>HobbyNotebook</title>
       <link>https://peterlavalle.github.io/tags/hobbynotebook/</link>
-      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/hobbynotebook/</guid>
       <description></description>
@@ -32,7 +77,7 @@
     <item>
       <title>ShameGolf</title>
       <link>https://peterlavalle.github.io/tags/shamegolf/</link>
-      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/shamegolf/</guid>
       <description></description>
@@ -71,15 +116,6 @@
       <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/unity3d/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>HowTo</title>
-      <link>https://peterlavalle.github.io/tags/howto/</link>
-      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/howto/</guid>
       <description></description>
     </item>
     
@@ -453,47 +489,11 @@
     </item>
     
     <item>
-      <title>DSA</title>
-      <link>https://peterlavalle.github.io/tags/dsa/</link>
-      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/dsa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GL4</title>
-      <link>https://peterlavalle.github.io/tags/gl4/</link>
-      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/gl4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>OpenGL</title>
       <link>https://peterlavalle.github.io/tags/opengl/</link>
       <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/opengl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VAO</title>
-      <link>https://peterlavalle.github.io/tags/vao/</link>
-      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/vao/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VBO</title>
-      <link>https://peterlavalle.github.io/tags/vbo/</link>
-      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/vbo/</guid>
       <description></description>
     </item>
     
@@ -606,15 +606,6 @@
     </item>
     
     <item>
-      <title>Article</title>
-      <link>https://peterlavalle.github.io/tags/article/</link>
-      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/article/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ECS</title>
       <link>https://peterlavalle.github.io/tags/ecs/</link>
       <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
@@ -660,7 +651,7 @@
     </item>
     
     <item>
-      <title>multi-threading</title>
+      <title>Multi-Threading</title>
       <link>https://peterlavalle.github.io/tags/multi-threading/</link>
       <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
       
@@ -759,15 +750,6 @@
     </item>
     
     <item>
-      <title>Lua</title>
-      <link>https://peterlavalle.github.io/tags/lua/</link>
-      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/lua/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Procedural Generation</title>
       <link>https://peterlavalle.github.io/tags/procedural-generation/</link>
       <pubDate>Sat, 12 Nov 2016 00:00:00 +0000</pubDate>
@@ -791,15 +773,6 @@
       <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/humor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GamePlay</title>
-      <link>https://peterlavalle.github.io/tags/gameplay/</link>
-      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/gameplay/</guid>
       <description></description>
     </item>
     
