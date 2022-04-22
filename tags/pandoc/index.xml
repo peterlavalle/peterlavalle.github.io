@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pandoc on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/pandoc/</link>
+    <description>Recent content in Pandoc on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Wed, 10 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://peterlavalle.github.io/tags/pandoc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>goHugo Mermaid</title>
+      <link>https://peterlavalle.github.io/post/gohugo-mermaid/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/gohugo-mermaid/</guid>
+      <description>&lt;p&gt;I did some tinkering with &lt;a href=&#34;https://mermaidjs.github.io/&#34;&gt;Mermaid&lt;/a&gt; and settled on a shortcode that I&amp;rsquo;m happy with for my &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; blog.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve switched from the &lt;a href=&#34;https://themes.gohugo.io/mainroad/&#34;&gt;Mainroad theme&lt;/a&gt; to the &lt;a href=&#34;https://themes.gohugo.io/binario/&#34;&gt;Binario theme&lt;/a&gt; initally as a (failed) workaround.
+I found that the &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34;&gt;syntax highlighing&lt;/a&gt; for &lt;a href=&#34;https://themes.gohugo.io/binario/&#34;&gt;Binario theme&lt;/a&gt; worked better so I&amp;rsquo;ve kept it.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
