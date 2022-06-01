@@ -3,13 +3,60 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/gamesworkshop/</loc>
-    <lastmod>2022-05-28T00:00:00+00:00</lastmod>
+    <loc>https://peterlavalle.github.io/tags/article/</loc>
+    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/tags/hobbynotebook/</loc>
+    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/howto/</loc>
+    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/</loc>
+    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/</loc>
+    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/windows/</loc>
+    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/youtube/</loc>
+    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/notes.chrome-portable/</loc>
+    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/gamesworkshop/</loc>
     <lastmod>2022-05-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -17,18 +64,6 @@
   <url>
     <loc>https://peterlavalle.github.io/partworks.imperium/</loc>
     <lastmod>2022-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2022-05-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
-    <lastmod>2022-05-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -60,12 +95,6 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/post/</loc>
-    <lastmod>2022-04-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/minipainting/</loc>
     <lastmod>2022-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -77,19 +106,7 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/article/</loc>
-    <lastmod>2022-04-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/gameplay/</loc>
-    <lastmod>2022-04-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/howto/</loc>
     <lastmod>2022-04-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -323,12 +340,6 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/windows/</loc>
-    <lastmod>2020-12-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/fips/</loc>
     <lastmod>2020-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -372,18 +383,6 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/youtube/</loc>
-    <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/git/</loc>
-    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/github/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -392,6 +391,12 @@
   <url>
     <loc>https://peterlavalle.github.io/post/github-pages-publish/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/git/</loc>
+    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
