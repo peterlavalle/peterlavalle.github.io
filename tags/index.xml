@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 23 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Jul 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>GamesWorkshop</title>
       <link>https://peterlavalle.github.io/tags/gamesworkshop/</link>
-      <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/gamesworkshop/</guid>
       <description></description>
@@ -23,9 +23,18 @@
     <item>
       <title>HobbyNotebook</title>
       <link>https://peterlavalle.github.io/tags/hobbynotebook/</link>
-      <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/hobbynotebook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3DPrinting</title>
+      <link>https://peterlavalle.github.io/tags/3dprinting/</link>
+      <pubDate>Sat, 25 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/3dprinting/</guid>
       <description></description>
     </item>
     
@@ -125,15 +134,6 @@
       <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/roblox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>3DPrinting</title>
-      <link>https://peterlavalle.github.io/tags/3dprinting/</link>
-      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/3dprinting/</guid>
       <description></description>
     </item>
     
@@ -534,7 +534,7 @@
     </item>
     
     <item>
-      <title>Mercurial</title>
+      <title>mercurial</title>
       <link>https://peterlavalle.github.io/tags/mercurial/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
       
