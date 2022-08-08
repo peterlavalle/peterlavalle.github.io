@@ -3,13 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/gamesworkshop/</loc>
-    <lastmod>2022-08-04T00:00:00+00:00</lastmod>
+    <loc>https://peterlavalle.github.io/printing/</loc>
+    <lastmod>2022-08-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/3dprinting/</loc>
+    <lastmod>2022-08-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/tags/hobbynotebook/</loc>
+    <lastmod>2022-08-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/</loc>
+    <lastmod>2022-08-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2022-08-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/gamesworkshop/</loc>
     <lastmod>2022-08-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -17,18 +40,6 @@
   <url>
     <loc>https://peterlavalle.github.io/partworks.imperium/</loc>
     <lastmod>2022-08-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2022-08-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
-    <lastmod>2022-08-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -45,17 +56,6 @@
   <url>
     <loc>https://peterlavalle.github.io/wikipete7.skelecron/</loc>
     <lastmod>2022-07-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/printing/</loc>
-    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/3dprinting/</loc>
-    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -569,14 +569,14 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
-    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
+    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
