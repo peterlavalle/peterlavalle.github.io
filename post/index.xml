@@ -757,5 +757,14 @@ Generate static files $ hexo generate More info: Generating
 Deploy to remote sites $ hexo deploy More info: Deployment</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://peterlavalle.github.io/post/notes.nanocast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/notes.nanocast/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
