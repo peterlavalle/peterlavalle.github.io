@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 14 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Sep 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>GamesWorkshop</title>
       <link>https://peterlavalle.github.io/tags/gamesworkshop/</link>
-      <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/gamesworkshop/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>HobbyNotebook</title>
       <link>https://peterlavalle.github.io/tags/hobbynotebook/</link>
-      <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/hobbynotebook/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>ShameGolf</title>
       <link>https://peterlavalle.github.io/tags/shamegolf/</link>
-      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/shamegolf/</guid>
       <description></description>
@@ -534,7 +534,7 @@
     </item>
     
     <item>
-      <title>mercurial</title>
+      <title>Mercurial</title>
       <link>https://peterlavalle.github.io/tags/mercurial/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -651,7 +651,7 @@
     </item>
     
     <item>
-      <title>multi-threading</title>
+      <title>Multi-Threading</title>
       <link>https://peterlavalle.github.io/tags/multi-threading/</link>
       <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
       

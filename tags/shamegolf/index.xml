@@ -6,18 +6,26 @@
     <description>Recent content in ShameGolf on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Mon, 12 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Sep 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/shamegolf/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>HobbyNotebook / Shame Golf (&#43;88)</title>
+      <title>HobbyNotebook / Shame Golf (&#43;96)</title>
       <link>https://peterlavalle.github.io/paint.shame-golf/</link>
-      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/paint.shame-golf/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/Po3u5ukzbpU&#34;&gt;Miniature Shame Golf is a game of painting your miniatures.&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;script&gt;
+    CHART_MAX = 80;
+    CHART_MIN = -30;
+    CHART_COUNT = 50;
+    // do SOMETHING to fill in the missing days
+
+&lt;/script&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://youtu.be/Po3u5ukzbpU&#34;&gt;Miniature Shame Golf is a game of painting your miniatures.&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
