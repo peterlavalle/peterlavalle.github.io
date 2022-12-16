@@ -4,31 +4,36 @@
   
   <url>
     <loc>https://peterlavalle.github.io/tags/gamesworkshop/</loc>
-    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/tags/hobbynotebook/</loc>
-    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/partworks.mortal-realms/</loc>
+    <lastmod>2022-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/</loc>
+    <lastmod>2022-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2022-12-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/partworks.imperium/</loc>
     <lastmod>2022-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
-    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -51,11 +56,6 @@
     <loc>https://peterlavalle.github.io/tags/shamegolf/</loc>
     <lastmod>2022-11-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/partworks.mortal-realms/</loc>
-    <lastmod>2022-10-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -383,12 +383,6 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/git/</loc>
-    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/github/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -397,6 +391,12 @@
   <url>
     <loc>https://peterlavalle.github.io/post/github-pages-publish/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/git/</loc>
+    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -569,14 +569,14 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
+    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
+    <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
