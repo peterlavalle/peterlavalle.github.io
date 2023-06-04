@@ -6,15 +6,42 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 06 May 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>3DPrinting</title>
+      <link>https://peterlavalle.github.io/tags/3dprinting/</link>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/3dprinting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://peterlavalle.github.io/tags/docker/</link>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ender3</title>
+      <link>https://peterlavalle.github.io/tags/ender3/</link>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/ender3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>GamesWorkshop</title>
       <link>https://peterlavalle.github.io/tags/gamesworkshop/</link>
-      <pubDate>Sat, 06 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/gamesworkshop/</guid>
       <description></description>
@@ -23,27 +50,36 @@
     <item>
       <title>HobbyNotebook</title>
       <link>https://peterlavalle.github.io/tags/hobbynotebook/</link>
-      <pubDate>Sat, 06 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/hobbynotebook/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>ShameGolf</title>
-      <link>https://peterlavalle.github.io/tags/shamegolf/</link>
-      <pubDate>Sat, 06 May 2023 00:00:00 +0000</pubDate>
+      <title>HowTo</title>
+      <link>https://peterlavalle.github.io/tags/howto/</link>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://peterlavalle.github.io/tags/shamegolf/</guid>
+      <guid>https://peterlavalle.github.io/tags/howto/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>3DPrinting</title>
-      <link>https://peterlavalle.github.io/tags/3dprinting/</link>
-      <pubDate>Sun, 06 Nov 2022 00:00:00 +0000</pubDate>
+      <title>Pi3</title>
+      <link>https://peterlavalle.github.io/tags/pi3/</link>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://peterlavalle.github.io/tags/3dprinting/</guid>
+      <guid>https://peterlavalle.github.io/tags/pi3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ShameGolf</title>
+      <link>https://peterlavalle.github.io/tags/shamegolf/</link>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/shamegolf/</guid>
       <description></description>
     </item>
     
@@ -71,15 +107,6 @@
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/article/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>HowTo</title>
-      <link>https://peterlavalle.github.io/tags/howto/</link>
-      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/howto/</guid>
       <description></description>
     </item>
     
@@ -264,15 +291,6 @@
     </item>
     
     <item>
-      <title>Ender3</title>
-      <link>https://peterlavalle.github.io/tags/ender3/</link>
-      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/ender3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>PrinterJournal</title>
       <link>https://peterlavalle.github.io/tags/printerjournal/</link>
       <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
@@ -372,15 +390,6 @@
     </item>
     
     <item>
-      <title>Pi3</title>
-      <link>https://peterlavalle.github.io/tags/pi3/</link>
-      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/pi3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>raspberry-pi</title>
       <link>https://peterlavalle.github.io/tags/raspberry-pi/</link>
       <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
@@ -404,15 +413,6 @@
       <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/cuda/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://peterlavalle.github.io/tags/docker/</link>
-      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/docker/</guid>
       <description></description>
     </item>
     

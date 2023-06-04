@@ -6,10 +6,19 @@
     <description>Recent content in Pi3 on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 26 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/pi3/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OctoPrint Container</title>
+      <link>https://peterlavalle.github.io/post/ocotoprint-container/</link>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/ocotoprint-container/</guid>
+      <description>&lt;p&gt;I keep forgetting how I setup octoprint.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>OpenVPN on a Pi3</title>
