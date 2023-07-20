@@ -3,37 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/gamesworkshop/</loc>
-    <lastmod>2023-06-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/hobbynotebook/</loc>
-    <lastmod>2023-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/hobby.shame-golf/</loc>
-    <lastmod>2023-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2023-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/shamegolf/</loc>
-    <lastmod>2023-06-09T00:00:00+00:00</lastmod>
+    <loc>https://peterlavalle.github.io/tags/streaming/</loc>
+    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/streaming/2023-07-20/</loc>
+    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/streaming/</loc>
+    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/tags/</loc>
-    <lastmod>2023-06-09T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/gamesworkshop/</loc>
+    <lastmod>2023-06-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/hobby.shame-golf/</loc>
+    <lastmod>2023-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/shamegolf/</loc>
+    <lastmod>2023-06-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
