@@ -18,8 +18,8 @@
       
       <guid>https://peterlavalle.github.io/streaming/2023-07-20/</guid>
       <description>Soundtrack
-I&amp;rsquo;m making an effort (for some values of &amp;ldquo;effort&amp;rdquo;) to line up my &amp;ldquo;evening painting&amp;rdquo; with 2000 UK Time and a camera. I&amp;rsquo;m doing the Twitch Streaming thing - I guess.
-Tonight I&amp;rsquo;m preparing this description along with the good old affiliate links! I&amp;rsquo;m planning to do the whole Balthasar Gold coat tonight. If that works out - I&amp;rsquo;d hope to get some of the washes done too. As I procrastinate setup, I made a list of all the things I intend to use;</description>
+  new Twitch.Player(&#34;twitch-embed&#34;, { video: &#34;1877130621&#34; });  I&amp;rsquo;m making an effort (for some values of &amp;ldquo;effort&amp;rdquo;) to line up my &amp;ldquo;evening painting&amp;rdquo; with 2000 UK Time and a camera. I&amp;rsquo;m doing the Twitch Streaming thing - I guess.
+Tonight I&amp;rsquo;m preparing this description along with the good old affiliate links! I&amp;rsquo;m planning to do the whole Balthasar Gold coat tonight. If that works out - I&amp;rsquo;d hope to get some of the washes done too.</description>
     </item>
     
   </channel>
