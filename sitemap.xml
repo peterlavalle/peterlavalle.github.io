@@ -4,37 +4,42 @@
   
   <url>
     <loc>https://peterlavalle.github.io/tags/hobbynotebook/</loc>
-    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/tags/streaming/</loc>
-    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/streaming/2023-07-21/</loc>
+    <lastmod>2023-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/streaming/</loc>
+    <lastmod>2023-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2023-07-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/streaming/2023-07-20/</loc>
     <lastmod>2023-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/streaming/</loc>
-    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
-    <lastmod>2023-07-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -591,14 +596,14 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
-    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
+    <lastmod>2018-09-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
