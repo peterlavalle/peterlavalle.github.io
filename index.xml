@@ -6,15 +6,26 @@
     <description>Recent content on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Mon, 21 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Sep 2023 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>HobbyNotebook / Shame Golf (&#43;199)</title>
+      <title>Return of the Mac</title>
+      <link>https://peterlavalle.github.io/post/return-of-the-mac/</link>
+      <pubDate>Sun, 10 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/return-of-the-mac/</guid>
+      <description>Both of my pi3 are broken! One (physically and literally) melts any pen drive connected to it - and - the other &amp;hellip; is &amp;hellip; dead?
+Fine - I have a MacMini from Mid-2011 so here&amp;rsquo;s what happened when I reformatted it to be my new Debian host.
+I haven&amp;rsquo;t been &amp;ldquo;with this&amp;rdquo; for a while so it took me a few tries to get the Mac running headless. I still can&amp;rsquo;t get WiFi up (IDK) but I can live with my mains networking kit &amp;hellip; but okay!</description>
+    </item>
+    
+    <item>
+      <title>HobbyNotebook / Shame Golf (&#43;198)</title>
       <link>https://peterlavalle.github.io/hobby.shame-golf/</link>
-      <pubDate>Mon, 21 Aug 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 29 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/hobby.shame-golf/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/Po3u5ukzbpU&#34;&gt;Miniature Shame Golf is a game of painting your miniatures.&lt;/a&gt;&lt;/p&gt;</description>
