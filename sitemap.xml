@@ -3,8 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://peterlavalle.github.io/tags/gamesworkshop/</loc>
+    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/hobbynotebook/</loc>
+    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2023-09-10T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/hobby.stormbringer/</loc>
+    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2023-09-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -20,30 +43,12 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/gamesworkshop/</loc>
-    <lastmod>2023-08-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/hobbynotebook/</loc>
-    <lastmod>2023-08-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/hobby.shame-golf/</loc>
     <lastmod>2023-08-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/tags/shamegolf/</loc>
-    <lastmod>2023-08-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
     <lastmod>2023-08-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -427,12 +432,6 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/git/</loc>
-    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/github/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -441,6 +440,12 @@
   <url>
     <loc>https://peterlavalle.github.io/post/github-pages-publish/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/git/</loc>
+    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
