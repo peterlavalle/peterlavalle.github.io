@@ -38,34 +38,14 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/post/</loc>
-    <lastmod>2023-10-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/post/nju.2023-10-14/</loc>
-    <lastmod>2023-10-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/post/nju.2023-10-13/</loc>
-    <lastmod>2023-10-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/post/nju.2023-10-12/</loc>
-    <lastmod>2023-10-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/post/nju.2023-10-11/</loc>
-    <lastmod>2023-10-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/hobby.stormbringer/</loc>
     <lastmod>2023-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/</loc>
+    <lastmod>2023-09-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -626,14 +606,14 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
+    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
+    <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>

@@ -90,48 +90,6 @@ if (!doNotTrack) {
 			<div class="cards">
 					<div class="card card--2col">
 					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/democore/">Adventures in Demo Making</a></h1>
-	<div class="entry__content">I should just &ldquo;blog&rdquo; informally more often - so here goes.
-I&rsquo;ve cobbled together a toolchain/asset-conditioning-pipeline of sorts for demoscene type stuff. My system is written in Scala on Gradle and functions by emitting C/++ and CMake files for Visual Studio. All of this produces a C/++11&frasl;14 and GLFW/GLAD/OpenGL4.3&frasl;4.5 executable that displays someone else&rsquo;s ShaderToy project. Nothing revolutionary, but I&rsquo;m after pretty-code that I can keep using rather than actual hard &ldquo;street cred&rdquo; quality demo results.</div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2017-12-03T00:00:00Z">December 03, 2017</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/delay-run/">(Scala) Delay Run</a></h1>
-	<div class="entry__content">I wrote a threading primitive and I&rsquo;m very pleased with it. I plan to wrap all of my &ldquo;save file&rdquo; things in this, from now on.
-Delay Run This class acts as a sort of &ldquo;once inactive for X do Y&rdquo; pattern. In my design, I&rsquo;m wrapping my save actions in it and triggering schedule() after practically every edit.
-The class is passed a delay: Long value to specify how long to actually wait - I&rsquo;m using 1.</div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2017-11-08T00:00:00Z">November 08, 2017</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/gradlfy-flexdock/">Gradlification of FlexDock</a></h1>
-	<div class="entry__content">Some clever clogs made a snazzy tool called SciLab as another not-MatLab.1 Flex Dock is the framework that (I think) they developed for docking frames. It&rsquo;s not in Maven Central so I&rsquo;ve forked it and deployed it to my own repository.
-convert the build The actual conversion was embarrassingly easy since the gradle importer stuff really works for this sort of thing. As a matter of personal preference, I re-arranged the build scripts to be a single file but otherwise left them as-is.</div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2017-11-01T00:00:00Z">November 01, 2017</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-nginx/">Pi3 nGinx Reverse Proxy</a></h1>
-	<div class="entry__content">So &hellip; you&rsquo;ve got a Pi3 running as a Docker host with some services that you want your buddies to have access to. You could try and get them to SSH into your home network; just like you could type all your programs with a touchscreen.
-I&rsquo;m going to use nGinx to setup a reverse-proxy from my real-Pi3 to various Docker containers based on URL rewriting.
-I&rsquo;m doing something else (of course) I&rsquo;m setting up (what I call) name-based-virtual-hosting.</div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2017-09-19T00:00:00Z">September 19, 2017</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-docker-gogs/">GoGS on a Pi3 (via Docker)</a></h1>
 	<div class="entry__content"><p>I&rsquo;ve been assembling a &ldquo;full stack&rdquo;<sup class="footnote-ref" id="fnref:fwiw"><a href="#fn:fwiw">1</a></sup> for development that runs on my Pi3.
 This is all happening inside of <a href="https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/">Docker</a> containers which made cleanup redonkulously easy.
@@ -196,6 +154,51 @@ How? I used a slightly complicated Scala script that I&rsquo;m not interested in
 Basically; I took the 2.</div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2017-01-09T00:00:00Z">January 09, 2017</time>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/oth-palua-core/">Peter&#39;s Awesome Lua with the Core functionality we care about</a></h1>
+	<div class="entry__content">TL:DR ; results
+DukTape is a C engine for executing ECMAScript 5.1ish. (&hellip; or JavaScript or whatever we&rsquo;re calling it this week) Notably, it&rsquo;s distributed as a trio of source files to ease integration.
+Lua is a C script engine (for the Lua languages) and is not distributed in such a nice way. So I spent a few hours preparing a (Python) script to repack Lua 5.3.3 into a single header.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-01-08T00:00:00Z">January 08, 2017</time>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/palsystem/">PAL-System</a></h1>
+	<div class="entry__content">Lindenmayer Systems allow one to specify a series of replacement rules for transforming strings.
+If the text is used as a series of drawing commands, including saving and restoring the cursor&rsquo;s position, the technique can generate fairly interesting foliage.
+A scene graph offers the ability to save/restore by chaining segments together. I used Unity3D&rsquo;s ScriptableObject to create &ldquo;Languages&rdquo; with replacement rules. I also created &ldquo;Dictionaries&rdquo; mapping symbols to segments made from GameObject prefabs.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-11-12T00:00:00Z">November 12, 2016</time>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/vive-cane/">Vive Cane</a></h1>
+	<div class="entry__content">I&rsquo;m still alive just &hellip; busy, not bloggy &hellip; maybe someday I&rsquo;ll be more bloggy. Here&rsquo;s something that kept me busy &hellip;
+Teleporting everywhere feels wrong, so my suggestion is to use the Vive wand like a cane. Two minutes feels a bit long, but here&rsquo;s a video showing it off.
+  More or less; when you grip the/a wand - your avatar is planting a cane in the world from which you can push yourself.</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-09-04T00:00:00Z">September 04, 2016</time>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/atom-macros/">Adding NotePad&#43;&#43; Macros to Atom.io</a></h1>
+	<div class="entry__content">I haven&rsquo;t posted anything in awhile &hellip; so here&rsquo;s how to get Atom.io to get macros that work kind-of-like NotePad++
+ Install atom-keyboard-macros into Atom. &gt; The default keybindings did nothing for me &hellip; sorry
+ open your keybindings.cson
+ Hit CTRL+, &gt; click on Keybindings &gt; click on the blue text that says your keymap file  paste this wodge into the bottom of your keybindings.cson PRESERVE THE INDENTATION!</div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2016-08-11T00:00:00Z">August 11, 2016</time>
 	</div>
 </article>
 					</div>
