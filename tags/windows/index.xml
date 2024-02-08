@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/windows/</link>
+    <description>Recent content in Windows on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://peterlavalle.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>YouTube from Portable Chrome</title>
+      <link>https://peterlavalle.github.io/post/notes.chrome-portable/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/notes.chrome-portable/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s like a YouTube Desktop App &amp;hellip; almost &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>fips on Visual Studio 2019</title>
+      <link>https://peterlavalle.github.io/post/fips-on-vs2019/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/fips-on-vs2019/</guid>
+      <description>&lt;p&gt;Getting &lt;a href=&#34;https://floooh.github.io/fips/&#34;&gt;fips&lt;/a&gt; working today in &lt;a href=&#34;https://visualstudio.microsoft.com/vs/&#34;&gt;Visual Studio 2019&lt;/a&gt; was quite unpleasant because of &lt;a href=&#34;https://cmake.org/&#34;&gt;CMake&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
