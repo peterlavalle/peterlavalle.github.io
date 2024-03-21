@@ -3,8 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://peterlavalle.github.io/tags/gamesworkshop/</loc>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/hobby/</loc>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/hobbynotebook/</loc>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/hobby.shame-golf/</loc>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2024-02-08T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/shamegolf/</loc>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/hobby.stormbringer/</loc>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2024-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -22,40 +61,6 @@
   <url>
     <loc>https://peterlavalle.github.io/post/36-sermons/</loc>
     <lastmod>2024-02-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/gamesworkshop/</loc>
-    <lastmod>2024-01-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/hobbynotebook/</loc>
-    <lastmod>2024-01-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/hobby.shame-golf/</loc>
-    <lastmod>2024-01-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/shamegolf/</loc>
-    <lastmod>2024-01-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
-    <lastmod>2024-01-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/hobby.stormbringer/</loc>
-    <lastmod>2023-09-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -230,11 +235,6 @@
   <url>
     <loc>https://peterlavalle.github.io/post/notes.wobj/</loc>
     <lastmod>2022-03-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/hobby/</loc>
-    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -616,14 +616,14 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
+    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</loc>
+    <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
