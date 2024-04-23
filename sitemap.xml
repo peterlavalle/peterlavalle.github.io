@@ -20,6 +20,11 @@
   </url>
   
   <url>
+    <loc>https://peterlavalle.github.io/hobby.shame-golf/</loc>
+    <lastmod>2024-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/</loc>
     <lastmod>2024-04-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -32,19 +37,14 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
+    <loc>https://peterlavalle.github.io/tags/shamegolf/</loc>
     <lastmod>2024-04-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/hobby.shame-golf/</loc>
-    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/shamegolf/</loc>
-    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2024-04-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
