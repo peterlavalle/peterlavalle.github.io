@@ -6,33 +6,51 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 23 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 May 2024 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>GamesWorkshop</title>
-      <link>https://peterlavalle.github.io/tags/gamesworkshop/</link>
-      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
+      <title>3DPrinting</title>
+      <link>https://peterlavalle.github.io/tags/3dprinting/</link>
+      <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://peterlavalle.github.io/tags/gamesworkshop/</guid>
+      <guid>https://peterlavalle.github.io/tags/3dprinting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>HobbyNotebook</title>
       <link>https://peterlavalle.github.io/tags/hobbynotebook/</link>
-      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/hobbynotebook/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>miniPainting</title>
+      <link>https://peterlavalle.github.io/tags/minipainting/</link>
+      <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/minipainting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GamesWorkshop</title>
+      <link>https://peterlavalle.github.io/tags/gamesworkshop/</link>
+      <pubDate>Mon, 06 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/gamesworkshop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ShameGolf</title>
       <link>https://peterlavalle.github.io/tags/shamegolf/</link>
-      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/shamegolf/</guid>
       <description></description>
@@ -44,24 +62,6 @@
       <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/streaming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>minipainting</title>
-      <link>https://peterlavalle.github.io/tags/minipainting/</link>
-      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/minipainting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>3DPrinting</title>
-      <link>https://peterlavalle.github.io/tags/3dprinting/</link>
-      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/3dprinting/</guid>
       <description></description>
     </item>
     

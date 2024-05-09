@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>minipainting on Peter&#39;s Notebook</title>
+    <title>miniPainting on Peter&#39;s Notebook</title>
     <link>https://peterlavalle.github.io/tags/minipainting/</link>
-    <description>Recent content in minipainting on Peter&#39;s Notebook</description>
+    <description>Recent content in miniPainting on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 May 2024 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/minipainting/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bracken Court; Portal to The Gloaming</title>
+      <link>https://peterlavalle.github.io/post/hobby.bracken-court/</link>
+      <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/hobby.bracken-court/</guid>
+      <description>&lt;p&gt;This is a blog entry discussing the printing and painting of a piece of 3D printed terrain scenery.
+Hey there! So, let&amp;rsquo;s dive into this blog post about sprucing up some 3D-printed terrain.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Streaming / 2023-07-20</title>
