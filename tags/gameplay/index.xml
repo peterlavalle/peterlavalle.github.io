@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GamePlay on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/gameplay/</link>
+    <description>Recent content in GamePlay on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://peterlavalle.github.io/tags/gameplay/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Maze Ed in Roblox</title>
+      <link>https://peterlavalle.github.io/post/notes.roblox/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/notes.roblox/</guid>
+      <description>&lt;p&gt;I made a maze with Roblox - &lt;a href=&#34;https://www.roblox.com/games/9397399366/demo-maze-1&#34;&gt;https://www.roblox.com/games/9397399366/demo-maze-1&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Space Ships</title>
+      <link>https://peterlavalle.github.io/post/space-ships/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/space-ships/</guid>
+      <description>Awhile ago I undertook a goofy little &amp;ldquo;game-play study&amp;rdquo; with space ships.
+It has space ships
+I&amp;rsquo;m calling it Space-Ships.
+I wanted to see if 2D game-play (like S.P.A.Z.) could &amp;ldquo;feel&amp;rdquo; like traditional 3D. (like Freelancer) To study this I built a game-play prototype with a 2.5D chase-cam in (Unity) a 3D game engine. I used engine&amp;rsquo;s existing rigid body simulator (PhysX) to provide a limited version of physics. After constraining everything to a 2D plane and fiddling with the inertia values in various ways I was happy with the flight mechanics.</description>
+    </item>
+    
+  </channel>
+</rss>

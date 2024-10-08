@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scala on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/scala/</link>
+    <description>Recent content in Scala on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Thu, 24 Feb 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://peterlavalle.github.io/tags/scala/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>libGDX in sbt (2021)</title>
+      <link>https://peterlavalle.github.io/post/notes.libgdx/</link>
+      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/notes.libgdx/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://libgdx.com/&#34;&gt;libGDX&lt;/a&gt; is/was the bestest way to do OpenGL in Java/Scala on Desktop/Android.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scala on Android</title>
+      <link>https://peterlavalle.github.io/post/scala-on-android/</link>
+      <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/scala-on-android/</guid>
+      <description>&lt;p&gt;Using Scala on Android (in 2020)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scala Maybe</title>
+      <link>https://peterlavalle.github.io/post/scala-maybe/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/scala-maybe/</guid>
+      <description>&lt;p&gt;I wrote a &lt;a href=&#34;https://wiki.haskell.org/Maybe&#34;&gt;Maybe&lt;/a&gt; (a lazy &lt;code&gt;Option[T]&lt;/code&gt;) that I can use in Scala.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Scala Extractors</title>
+      <link>https://peterlavalle.github.io/post/scala-extractor/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/scala-extractor/</guid>
+      <description>Scala&amp;rsquo;s extractors and unapply() represent a concept that I haven&amp;rsquo;t grok&amp;rsquo;ed until now.
+Most demonstrations seem to be too long or use the same types everywhere. Here are my thoughts on the concept;
+val a: C = ??? val i: I = ??? i match { case a(f: O) =&amp;gt; ??? }  This will try to call the below method
+class C { def unapply(i: I): Option[O] = ??? }  There&amp;rsquo;s some more flexibility;</description>
+    </item>
+    
+    <item>
+      <title>(Scala) Delay Run</title>
+      <link>https://peterlavalle.github.io/post/delay-run/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/delay-run/</guid>
+      <description>I wrote a threading primitive and I&amp;rsquo;m very pleased with it. I plan to wrap all of my &amp;ldquo;save file&amp;rdquo; things in this, from now on.
+Delay Run This class acts as a sort of &amp;ldquo;once inactive for X do Y&amp;rdquo; pattern. In my design, I&amp;rsquo;m wrapping my save actions in it and triggering schedule() after practically every edit.
+The class is passed a delay: Long value to specify how long to actually wait - I&amp;rsquo;m using 1.</description>
+    </item>
+    
+  </channel>
+</rss>
