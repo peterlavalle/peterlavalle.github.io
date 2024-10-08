@@ -17,8 +17,8 @@
       <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/pal-pool/</guid>
-      <description>&lt;p&gt;My 3D printer was in a state where it seemed to need the nozzle unclogged after each print.
-The issue was that the PTFE tube was not flush with the nozzle, due to the hot end coupler being &amp;ldquo;worn in&amp;rdquo; and feeling like it was fully extended.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I developed a C++ string pooling class as a single-header utility.
+This was part of an effort to create a JVM &amp;hellip; for &lt;code&gt;$reasons&lt;/code&gt; &amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
