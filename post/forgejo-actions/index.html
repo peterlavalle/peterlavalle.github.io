@@ -9,7 +9,8 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="forgejo Actions (for Shugits)" />
-<meta property="og:description" content="This is a test to see how my CI jobs are working." />
+<meta property="og:description" content="I have been using forgejo with Mercurial (hg) - the two pair well together when using my tool &ldquo;shugits&rdquo; to connect them.
+This post is a rambling discussion of how I enabled CI for this Hugo blog." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://peterlavalle.github.io/post/forgejo-actions/" />
 <meta property="article:published_time" content="2024-11-09T00:00:00&#43;00:00"/>
@@ -92,11 +93,41 @@ if (!doNotTrack) {
 	<time class="entry__meta-published meta-published" datetime="2024-11-09T00:00:00Z">November 09, 2024</time>
 	</div>
 				<h1 class="entry__title">forgejo Actions (for Shugits)</h1>
-				<div class="entry__content"><p>This is a test to see how my CI jobs are working.</p>
+				<div class="entry__content"><p>I have been using <a href="https://forgejo.org/">forgejo</a> with <a href="https://www.mercurial-scm.org/">Mercurial (hg)</a> - the two pair well together when using <a href="https://codeberg.org/paintgoblin/shugits">my tool &ldquo;shugits&rdquo; to connect them.</a>
+This post is a rambling discussion of how I enabled CI for this <a href="https://gohugo.io/">Hugo</a> blog.</p>
 
 <hr />
 
-<p>&hellip; and of course; I&rsquo;ll (eventually) rewrite this post when I&rsquo;m happy with it.</p></div>
+<p>Using a &ldquo;like-Hub&rdquo; server eases certain intellectual burdens, making development (and project management) simpler.
+Being able to spin up a new repo on a whim, and <a href="https://codeberg.org/paintgoblin/shugits/src/branch/default/shugits.sbt/composed/bakup-hg.sh">knowing that there&rsquo;s a backup for the whole thing</a>, makes fragmenting projects into smaller things less tedious.</p>
+
+<p>The next goal would be a simple-to-use <a href="https://en.wikipedia.org/wiki/Continuous_integration">continuous integration</a> system for projects - which never was Jenkins&rsquo; (or Hudson&rsquo;s) strength.</p>
+
+<p>I started with Woodpecker but struggled with some permission and connection issues.
+Despite my best efforts, I couldn&rsquo;t get Woodpecker&rsquo;s agents to connect to the Woodpecker server via <code>http://</code> across my local network.
+Some tedious suggestion on ChatGPT involved using forgejo&rsquo;s built-in CI to solve the problem.</p>
+
+<p>I was not aware that forgejo had a built-in CI - why are we all excited about Woodpecker and Drone if there&rsquo;s a built-in one?</p>
+
+<p>The system uses one&rsquo;s server as the CI server but requires the conventional approach of setting up agents and connecting them to the server.
+I&rsquo;m running <a href="https://codeberg.org/paintgoblin/shugits/src/branch/default/shugits.sbt/composed/compose.yaml#L3">an old forgejo image</a> but found that the latest GitTea Windows client worked fine.
+I used a simple setup and got a trivial pipeline going with my Windows 10 PC as the agent.
+Once this ran, I deleted it and celebrated a PoC.</p>
+
+<p>Getting a docker container on the Pi3 (thanks again, Sam!) running was rather simple - I needed to set a docker image and double-check my labels, but it worked as expected.</p>
+
+<p>The long and tedious process was adapting my <code>.bat</code> files to run on Linux hosts.
+Iterating on the CI script required re-committing with more logging in the script; a dull process.
+<a href="https://sourcehut.org/">Source Hut&rsquo;s System</a> keeps failed CI jobs around so one can connect to them via SSH and explore - I missed this feature here.
+Eventually, I used Python scripts for the more tedious parts of the pipeline - this solved the problem I was having.
+Specifically, I wanted to clone an unrelated git repo, delete the contents of the repo, and replace those contents - shell and CI scripts seemed to constantly do something a little bit wrong.</p>
+
+<p>So.</p>
+
+<p><a href="https://forgejo.org/2023-02-27-forgejo-actions/">Forgejo has had a CI system as of 2023-02-27</a> which uses distributed worker agents.
+The agents need &ldquo;docker access,&rdquo; but the newer clients can run with older servers.
+The jobs themselves are run in Docker containers, which makes debugging them tedious - I found the easiest solution was to use Python scripts in the project tree rather than elaborate workflow pipelines.
+The next steps (for me) would be to automate my testing and pushing to public hosts like GitHub as a precursor to working with something like <a href="https://www.sonarsource.com/products/sonarqube/">SonarQube.</a></p></div>
 				
 				<footer class="entry__footer">
 					

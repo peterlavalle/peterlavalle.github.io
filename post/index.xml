@@ -17,7 +17,8 @@
       <pubDate>Sat, 09 Nov 2024 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/forgejo-actions/</guid>
-      <description>&lt;p&gt;This is a test to see how my CI jobs are working.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I have been using &lt;a href=&#34;https://forgejo.org/&#34;&gt;forgejo&lt;/a&gt; with &lt;a href=&#34;https://www.mercurial-scm.org/&#34;&gt;Mercurial (hg)&lt;/a&gt; - the two pair well together when using &lt;a href=&#34;https://codeberg.org/paintgoblin/shugits&#34;&gt;my tool &amp;ldquo;shugits&amp;rdquo; to connect them.&lt;/a&gt;
+This post is a rambling discussion of how I enabled CI for this &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; blog.&lt;/p&gt;</description>
     </item>
     
     <item>
