@@ -57,7 +57,7 @@
     </item>
     
     <item>
-      <title>miniPainting</title>
+      <title>minipainting</title>
       <link>https://peterlavalle.github.io/tags/minipainting/</link>
       <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
       
@@ -372,20 +372,20 @@
     </item>
     
     <item>
-      <title>Git</title>
-      <link>https://peterlavalle.github.io/tags/git/</link>
-      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>GitHub</title>
       <link>https://peterlavalle.github.io/tags/github/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://peterlavalle.github.io/tags/git/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/git/</guid>
       <description></description>
     </item>
     
@@ -516,7 +516,7 @@
     </item>
     
     <item>
-      <title>GoGS</title>
+      <title>Gogs</title>
       <link>https://peterlavalle.github.io/tags/gogs/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -543,7 +543,7 @@
     </item>
     
     <item>
-      <title>Mercurial</title>
+      <title>mercurial</title>
       <link>https://peterlavalle.github.io/tags/mercurial/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -660,7 +660,7 @@
     </item>
     
     <item>
-      <title>Multi-Threading</title>
+      <title>multi-threading</title>
       <link>https://peterlavalle.github.io/tags/multi-threading/</link>
       <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
       
