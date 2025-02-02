@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 08 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Article</title>
+      <link>https://peterlavalle.github.io/tags/article/</link>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/article/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sorrynotsorry</title>
+      <link>https://peterlavalle.github.io/tags/sorrynotsorry/</link>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/sorrynotsorry/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>C&#43;&#43;</title>
@@ -116,15 +134,6 @@
       <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/youtube/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Article</title>
-      <link>https://peterlavalle.github.io/tags/article/</link>
-      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/article/</guid>
       <description></description>
     </item>
     
@@ -746,15 +755,6 @@
       <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/one-true-header/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sorrynotsorry</title>
-      <link>https://peterlavalle.github.io/tags/sorrynotsorry/</link>
-      <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/sorrynotsorry/</guid>
       <description></description>
     </item>
     

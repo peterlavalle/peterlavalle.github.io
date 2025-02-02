@@ -3,6 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://peterlavalle.github.io/tags/article/</loc>
+    <lastmod>2025-02-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -15,8 +21,20 @@
   </url>
   
   <url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2025-02-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/post/podcasts/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/sorrynotsorry/</loc>
+    <lastmod>2025-02-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -26,12 +44,6 @@
   
   <url>
     <loc>https://peterlavalle.github.io/tags/c&#43;&#43;/</loc>
-    <lastmod>2024-10-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
     <lastmod>2024-10-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -185,12 +197,6 @@
   <url>
     <loc>https://peterlavalle.github.io/tags/youtube/</loc>
     <lastmod>2022-07-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/article/</loc>
-    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -894,12 +900,6 @@
   
   <url>
     <loc>https://peterlavalle.github.io/tags/one-true-header/</loc>
-    <lastmod>2017-01-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/sorrynotsorry/</loc>
     <lastmod>2017-01-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

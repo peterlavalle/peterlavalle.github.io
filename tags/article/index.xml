@@ -6,10 +6,20 @@
     <description>Recent content in Article on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/article/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>of Podcasts</title>
+      <link>https://peterlavalle.github.io/post/podcasts/</link>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/podcasts/</guid>
+      <description>&lt;p&gt;I hate podcasts-except for the ones I really like.&lt;br /&gt;
+They&amp;rsquo;re &amp;ldquo;not like podcasts,&amp;rdquo; though.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>YouTube from Portable Chrome</title>
