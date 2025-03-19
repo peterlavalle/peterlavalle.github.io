@@ -3,25 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/article/</loc>
-    <lastmod>2025-02-02T00:00:00+00:00</lastmod>
+    <loc>https://peterlavalle.github.io/tags/docker/</loc>
+    <lastmod>2025-03-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/post/docker-clean/</loc>
+    <lastmod>2025-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/howto/</loc>
+    <lastmod>2025-03-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2025-02-02T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/post/</loc>
-    <lastmod>2025-02-02T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2025-03-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/article/</loc>
     <lastmod>2025-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -151,19 +168,7 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/docker/</loc>
-    <lastmod>2023-06-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/tags/ender3/</loc>
-    <lastmod>2023-06-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/howto/</loc>
     <lastmod>2023-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

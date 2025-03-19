@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Mar 2025 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker</title>
+      <link>https://peterlavalle.github.io/tags/docker/</link>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HowTo</title>
+      <link>https://peterlavalle.github.io/tags/howto/</link>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/howto/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Article</title>
@@ -93,29 +111,11 @@
     </item>
     
     <item>
-      <title>Docker</title>
-      <link>https://peterlavalle.github.io/tags/docker/</link>
-      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Ender3</title>
       <link>https://peterlavalle.github.io/tags/ender3/</link>
       <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/ender3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>HowTo</title>
-      <link>https://peterlavalle.github.io/tags/howto/</link>
-      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/howto/</guid>
       <description></description>
     </item>
     
