@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mercurial on Peter&#39;s Notebook</title>
+    <title>Mercurial on Peter&#39;s Notebook</title>
     <link>https://peterlavalle.github.io/tags/mercurial/</link>
-    <description>Recent content in mercurial on Peter&#39;s Notebook</description>
+    <description>Recent content in Mercurial on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 18 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Jul 2025 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/mercurial/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>forgejo Actions (again)</title>
+      <link>https://peterlavalle.github.io/post/forgejo-actions2/</link>
+      <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/forgejo-actions2/</guid>
+      <description>&lt;p&gt;Re&amp;rsquo;dorked my CI stuff.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>forgejo Actions (for Shugits)</title>
+      <link>https://peterlavalle.github.io/post/forgejo-actions/</link>
+      <pubDate>Sat, 09 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/forgejo-actions/</guid>
+      <description>&lt;p&gt;I have been using &lt;a href=&#34;https://forgejo.org/&#34;&gt;forgejo&lt;/a&gt; with &lt;a href=&#34;https://www.mercurial-scm.org/&#34;&gt;Mercurial (hg)&lt;/a&gt; - the two pair well together when using &lt;a href=&#34;https://codeberg.org/paintgoblin/shugits&#34;&gt;my tool &amp;ldquo;shugits&amp;rdquo; to connect them.&lt;/a&gt;
+This post is a rambling discussion of how I enabled CI for this &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; blog.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>MultiBranch Mercurial JenkinsFile</title>
