@@ -3,25 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
-    <lastmod>2025-07-27T00:00:00+00:00</lastmod>
+    <loc>https://peterlavalle.github.io/tags/c&#43;&#43;/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://peterlavalle.github.io/post/2025-nifty-fips/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2025-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/post/</loc>
-    <lastmod>2025-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/fips/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
     <lastmod>2025-07-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -74,12 +91,6 @@
   <url>
     <loc>https://peterlavalle.github.io/post/forgejo-actions/</loc>
     <lastmod>2024-11-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/c&#43;&#43;/</loc>
-    <lastmod>2024-10-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -452,12 +463,6 @@
   </url>
   
   <url>
-    <loc>https://peterlavalle.github.io/tags/fips/</loc>
-    <lastmod>2020-12-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://peterlavalle.github.io/post/fips-on-vs2019/</loc>
     <lastmod>2020-12-12T00:00:00+00:00</lastmod>
   </url>
@@ -495,6 +500,12 @@
   </url>
   
   <url>
+    <loc>https://peterlavalle.github.io/tags/git/</loc>
+    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://peterlavalle.github.io/tags/github/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -503,12 +514,6 @@
   <url>
     <loc>https://peterlavalle.github.io/post/github-pages-publish/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peterlavalle.github.io/tags/git/</loc>
-    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

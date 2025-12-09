@@ -6,10 +6,19 @@
     <description>Recent content on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sun, 27 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Nov 2025 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nifty Fips</title>
+      <link>https://peterlavalle.github.io/post/2025-nifty-fips/</link>
+      <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/2025-nifty-fips/</guid>
+      <description>&lt;p&gt;Fips is a good tool.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>forgejo Actions (again)</title>
