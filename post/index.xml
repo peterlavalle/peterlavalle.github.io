@@ -17,13 +17,7 @@
       <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/jupyter-homelab/</guid>
-      <description>I setup JupyterLab within a [uv]() project &amp;hellip; it worked just fine &amp;hellip;
-Did Python win the language wars because the tooling is easy to use?
-λ uv init λ uv add jupyterlab λ uv run jupyter lab  That works and runs locally. It&amp;rsquo;s fine.
-What&amp;rsquo;s even better?
-The Codium/Code extensions to just run/use .ipynb files in your editor.
-So.
-So &amp;hellip; in editor this seems like a nice thing.</description>
+      <description>&lt;p&gt;JupyterLab works fine - I don&amp;rsquo;t know what else to do with it.&lt;/p&gt;</description>
     </item>
     
     <item>
