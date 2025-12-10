@@ -96,6 +96,10 @@ if (!doNotTrack) {
 
 <hr />
 
+<blockquote>
+<p>2025-12-09; i&rsquo;ve updated this but it&rsquo;s still &hellip; in flux &hellip;</p>
+</blockquote>
+
 <aside style="float: right;">
 	<nav id="TableOfContents">
 <ul>
@@ -114,12 +118,8 @@ if (!doNotTrack) {
 <p><a href="http://floooh.github.io/fips/">Fips is a tool</a> that I like.
 Fips is to CMake what CMake is to Visual Studio &hellip; almost/kinda/maybe.</p>
 
-<p>Use it — I use it with [uv]() instead of Python and it&rsquo;s fine!</p>
-
-<p><code>bat
-uv run python ./fips help
-</code>`</p>
-
+<p>Use it — I use it with <a href="https://docs.astral.sh/uv/">uv</a> instead of Python and it&rsquo;s fine!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bat" data-lang="bat">uv run python ./fips help</code></pre></div>
 <h2 id="ready">Ready</h2>
 
 <p>Here are some “Awesome Libraries to use when working with Flooh’s Fips”</p>
@@ -182,9 +182,15 @@ commit: 90d2b92
     git: https://github.com/fips-libs/fips-utils
     commit: 9bd7403
 </code></pre></li>
-</ul>
 
-<h2 id="active">Active</h2>
+<li><p>fips zlib <a href="https://github.com/floooh/fips-zlib">so you can do your zips!</a></p>
+
+<pre><code>fips__zlib:
+    git: https://github.com/floooh/fips-zlib
+</code></pre>
+
+<h2 id="active">Active</h2></li>
+</ul>
 
 <p>I also have some unpublished verbs:</p>
 
@@ -192,6 +198,7 @@ commit: 90d2b92
 <li><a href="https://gitlab.com/g-pechorin/sd/-/tree/pent-edit/sd.fips/fips-files/verbs?ref_type=heads">link to WIP repo</a></li>
 <li><a href="https://gitlab.com/g-pechorin/sd/-/blob/pent-edit/sd.fips/fips-files/verbs/autest.py?ref_type=heads">autest</a> — run all the <code>???.test</code> targets in your Fips project</li>
 <li><a href="https://gitlab.com/g-pechorin/sd/-/blob/pent-edit/sd.fips/fips-files/verbs/autpro.py?ref_type=heads">autpro</a> — regenerate the CMake files assuming you&rsquo;re doing what I do</li>
+<li><a href="https://gitlab.com/g-pechorin/sd/-/blob/pent-edit/sd.fips/fips-files/verbs/zembed.py?ref_type=heads">zembed</a> - possibly &ldquo;better&rdquo; than fips&rsquo; embed because it DEFLATEs the data</li>
 </ul>
 
 <h2 id="future">Future</h2>
@@ -199,15 +206,11 @@ commit: 90d2b92
 <p>There are some others I want to work with &hellip;</p>
 
 <ul>
+<li><a href="https://gitlab.com/g-pechorin/sd/-/blob/pent-edit/sd.fips/clx.py?ref_type=heads">clx.py</a> is a script. i wish it was a verb.</li>
 <li><a href="https://github.com/fips-libs/fips-lz4">fips lz4</a>
 
 <ul>
-<li>this is 7zip</li>
-<li>I think it’d be preferable to <a href="https://github.com/floooh/fips-zlib">zlib, but that&rsquo;s also an option</a>
-
-<ul>
-<li>isn&rsquo;t 7z better for binaries?</li>
-</ul></li>
+<li>AFAIK; 7zip is better for speed (I want better compression so I use DEFALTE/zlib)</li>
 </ul></li>
 <li><a href="https://github.com/fips-libs/fips-nuklear">nuklear</a>
 
@@ -217,7 +220,11 @@ commit: 90d2b92
 <li>there&rsquo;s also a <a href="https://github.com/memononen/nanovg">NanoVG one</a></li>
 </ul></li>
 <li><a href="https://github.com/fips-libs/fips-ozz-animation">Ozz Animation</a></li>
-<li><a href="https://github.com/fips-libs/fips-assimp">AssImp</a></li>
+<li><a href="https://github.com/fips-libs/fips-assimp">AssImp</a>
+
+<ul>
+<li>it reads all the formats. all. of. them.</li>
+</ul></li>
 <li><a href="https://github.com/fips-libs/fips-bullet">Bullet 3D</a>
 
 <ul>
@@ -230,7 +237,12 @@ commit: 90d2b92
 <ul>
 <li>for reasons I can&rsquo;t recall, I want to migrate to GoogleTest</li>
 </ul></li>
-<li>Dr Petter&rsquo;s stuff
+</ul>
+
+<p>&hellip; and if I had all the time in the world &hellip;</p>
+
+<ul>
+<li>Dr Petter&rsquo;s stuff (not available)
 
 <ul>
 <li>old smol procedural-generation music/sound is neat!</li>
@@ -238,11 +250,17 @@ commit: 90d2b92
 <li><a href="http://www.drpetter.se/project_musagi.html">http://www.drpetter.se/project_musagi.html</a></li>
 <li><a href="http://drpetter.se/project_sfxr.html">http://drpetter.se/project_sfxr.html</a></li>
 </ul></li>
-<li>werkkzeug3
+<li>werkkzeug3 (not available)
 
 <ul>
 <li>would need to be repacked for Fips and ImGui</li>
 <li><a href="https://github.com/jaromil/kkrieger-werkkzeug3">https://github.com/jaromil/kkrieger-werkkzeug3</a></li>
+</ul></li>
+<li>nf-interpreter (not available)
+
+<ul>
+<li><a href="https://github.com/nanoframework/nf-interpreter">https://github.com/nanoframework/nf-interpreter</a></li>
+<li>ugghhh &hellip; i guess a semi-up-to-date DotNet would be cool &hellip;</li>
 </ul></li>
 </ul></div>
 				

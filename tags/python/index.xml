@@ -6,10 +6,25 @@
     <description>Recent content in Python on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 13 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peterlavalle.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JupyterLab at Home</title>
+      <link>https://peterlavalle.github.io/post/jupyter-homelab/</link>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/jupyter-homelab/</guid>
+      <description>I setup JupyterLab within a [uv]() project &amp;hellip; it worked just fine &amp;hellip;
+Did Python win the language wars because the tooling is easy to use?
+λ uv init λ uv add jupyterlab λ uv run jupyter lab  That works and runs locally. It&amp;rsquo;s fine.
+What&amp;rsquo;s even better?
+The Codium/Code extensions to just run/use .ipynb files in your editor.
+So.
+So &amp;hellip; in editor this seems like a nice thing.</description>
+    </item>
     
     <item>
       <title>Git Copy PY Script</title>
