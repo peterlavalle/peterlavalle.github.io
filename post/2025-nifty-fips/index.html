@@ -11,9 +11,10 @@
 		<meta property="og:title" content="Nifty Fips" />
 <meta property="og:description" content="Fips is a good tool." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/2025-nifty-fips/" />
-<meta property="article:published_time" content="2025-11-20T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2025-11-20T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/2025-nifty-fips/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2025-11-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-11-20T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -93,175 +94,137 @@ if (!doNotTrack) {
 	</div>
 				<h1 class="entry__title">Nifty Fips</h1>
 				<div class="entry__content"><p>Fips is a good tool.</p>
-
-<hr />
-
+<hr>
 <blockquote>
 <p>2025-12-09; i&rsquo;ve updated this but it&rsquo;s still &hellip; in flux &hellip;</p>
 </blockquote>
-
 <aside style="float: right;">
 	<nav id="TableOfContents">
-<ul>
-<li><a href="#awesome-fips-a-pre-cmake-tool">Awesome Fips (a pre-CMake tool)</a>
-<ul>
-<li><a href="#ready">Ready</a></li>
-<li><a href="#active">Active</a></li>
-<li><a href="#future">Future</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#ready">Ready</a></li>
+    <li><a href="#active">Active</a></li>
+    <li><a href="#future">Future</a></li>
+  </ul>
 </nav>
 </aside>
-
 <h1 id="awesome-fips-a-pre-cmake-tool">Awesome Fips (a pre-CMake tool)</h1>
-
 <p><a href="http://floooh.github.io/fips/">Fips is a tool</a> that I like.
 Fips is to CMake what CMake is to Visual Studio &hellip; almost/kinda/maybe.</p>
-
 <p>Use it — I use it with <a href="https://docs.astral.sh/uv/">uv</a> instead of Python and it&rsquo;s fine!</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bat" data-lang="bat">uv run python ./fips help</code></pre></div>
-<h2 id="ready">Ready</h2>
-
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bat" data-lang="bat">uv run python ./fips help
+</code></pre></div><h2 id="ready">Ready</h2>
 <p>Here are some “Awesome Libraries to use when working with Flooh’s Fips”</p>
-
 <ul>
-<li><p>libYAML / it&rsquo;s <em>real YAML</em> as a pseudo single-header build</p>
-
+<li>libYAML / it&rsquo;s <em>real YAML</em> as a pseudo single-header build
 <pre><code>fips__libyaml:
-    git: https://gitlab.com/g-pechorin/libyaml.git 
-    branch: fips-libyaml
-</code></pre></li>
-
-<li><p>entt / an obnoxiously modern ;) C++ ECS system</p>
-
+	git: https://gitlab.com/g-pechorin/libyaml.git 
+	branch: fips-libyaml
+</code></pre><pre><code></code></pre></li>
+<li>entt / an obnoxiously modern ;) C++ ECS system
 <pre><code>fips__entt:
-    git: https://gitlab.com/g-pechorin/fips-entt.git
-</code></pre></li>
-
-<li><p>catch2 / unit testing for C++</p>
-
+	git: https://gitlab.com/g-pechorin/fips-entt.git
+</code></pre><pre><code></code></pre></li>
+<li>catch2 / unit testing for C++
 <pre><code>fips__catch:
-    git: https://gitlab.com/g-pechorin/fips_catch.git
-</code></pre></li>
-
-<li><p>sokol</p>
-
+	git: https://gitlab.com/g-pechorin/fips_catch.git
+</code></pre><pre><code></code></pre></li>
+<li>sokol
 <ul>
-<li><p>world’s smol’est (AFAIK) “DKDC-grade” library for operating 3D programs</p>
-
-<pre><code>fips__sokol:
-git: https://github.com/floooh/sokol.git
-commit: edbb47a
-</code></pre></li>
-
-<li><p>&hellip; there are also some binary tools &hellip;</p>
-
-<pre><code>fips__sokol-tools-bin:
-git: https://github.com/floooh/sokol-tools-bin
-commit: 90d2b92
-</code></pre></li>
-</ul></li>
-
-<li><p>sokol/fips ImGui / Dear ImGui that works with Sokol</p>
-
-<pre><code>fips__dcimgui:
-    git: https://github.com/floooh/dcimgui
-    commit: 716dae9
-</code></pre></li>
-
-<li><p>glm / glm is the C++ linear math / 3D math library</p>
-
-<pre><code>fips__glm:
-    git: https://github.com/g-pechorin/fips-glm.git
-    commit: 78dffff
-</code></pre></li>
-
-<li><p>fips utils / includes a <em>good</em> tool to embed real files in your project(s) as source</p>
-
-<pre><code>fips__utils:
-    git: https://github.com/fips-libs/fips-utils
-    commit: 9bd7403
-</code></pre></li>
-
-<li><p>fips zlib <a href="https://github.com/floooh/fips-zlib">so you can do your zips!</a></p>
-
-<pre><code>fips__zlib:
-    git: https://github.com/floooh/fips-zlib
-</code></pre>
-
-<h2 id="active">Active</h2></li>
+<li>world’s smol’est (AFAIK) “DKDC-grade” library for operating 3D programs</li>
 </ul>
-
+<pre><code>fips__sokol:
+	git: https://github.com/floooh/sokol.git
+	commit: edbb47a
+</code></pre><pre><code> - ... there are also some binary tools ...
+</code></pre><pre><code> fips__sokol-tools-bin:
+     git: https://github.com/floooh/sokol-tools-bin
+     commit: 90d2b92
+</code></pre><pre><code></code></pre></li>
+<li>sokol/fips ImGui / Dear ImGui that works with Sokol
+<pre><code>fips__dcimgui:
+	git: https://github.com/floooh/dcimgui
+	commit: 716dae9
+</code></pre><pre><code></code></pre></li>
+<li>glm / glm is the C++ linear math / 3D math library
+<pre><code>fips__glm:
+	git: https://github.com/g-pechorin/fips-glm.git
+	commit: 78dffff
+</code></pre><pre><code></code></pre></li>
+<li>fips utils / includes a <em>good</em> tool to embed real files in your project(s) as source
+<pre><code>fips__utils:
+	git: https://github.com/fips-libs/fips-utils
+	commit: 9bd7403
+</code></pre><pre><code></code></pre></li>
+<li>fips zlib <a href="https://github.com/floooh/fips-zlib">so you can do your zips!</a>
+<pre><code>fips__zlib:
+	git: https://github.com/floooh/fips-zlib
+</code></pre><pre><code></code></pre></li>
+</ul>
+<h2 id="active">Active</h2>
 <p>I also have some unpublished verbs:</p>
-
 <ul>
 <li><a href="https://gitlab.com/g-pechorin/sd/-/tree/pent-edit/sd.fips/fips-files/verbs?ref_type=heads">link to WIP repo</a></li>
 <li><a href="https://gitlab.com/g-pechorin/sd/-/blob/pent-edit/sd.fips/fips-files/verbs/autest.py?ref_type=heads">autest</a> — run all the <code>???.test</code> targets in your Fips project</li>
 <li><a href="https://gitlab.com/g-pechorin/sd/-/blob/pent-edit/sd.fips/fips-files/verbs/autpro.py?ref_type=heads">autpro</a> — regenerate the CMake files assuming you&rsquo;re doing what I do</li>
-<li><a href="https://gitlab.com/g-pechorin/sd/-/blob/pent-edit/sd.fips/fips-files/verbs/zembed.py?ref_type=heads">zembed</a> - possibly &ldquo;better&rdquo; than fips&rsquo; embed because it DEFLATEs the data</li>
+<li><a href="https://gitlab.com/g-pechorin/sd/-/blob/pent-edit/sd.fips/fips-files/verbs/zembed.py?ref_type=heads">zembed</a> - possibly &ldquo;better&rdquo; than fips' embed because it DEFLATEs the data</li>
 </ul>
-
 <h2 id="future">Future</h2>
-
 <p>There are some others I want to work with &hellip;</p>
-
 <ul>
 <li><a href="https://gitlab.com/g-pechorin/sd/-/blob/pent-edit/sd.fips/clx.py?ref_type=heads">clx.py</a> is a script. i wish it was a verb.</li>
 <li><a href="https://github.com/fips-libs/fips-lz4">fips lz4</a>
-
 <ul>
 <li>AFAIK; 7zip is better for speed (I want better compression so I use DEFALTE/zlib)</li>
-</ul></li>
+</ul>
+</li>
 <li><a href="https://github.com/fips-libs/fips-nuklear">nuklear</a>
-
 <ul>
 <li>it&rsquo;s a 2D vector graphics system</li>
 <li>it&rsquo;s out of date but probably fine</li>
 <li>there&rsquo;s also a <a href="https://github.com/memononen/nanovg">NanoVG one</a></li>
-</ul></li>
+</ul>
+</li>
 <li><a href="https://github.com/fips-libs/fips-ozz-animation">Ozz Animation</a></li>
 <li><a href="https://github.com/fips-libs/fips-assimp">AssImp</a>
-
 <ul>
 <li>it reads all the formats. all. of. them.</li>
-</ul></li>
+</ul>
+</li>
 <li><a href="https://github.com/fips-libs/fips-bullet">Bullet 3D</a>
-
 <ul>
 <li>idk how portable it is &hellip;</li>
 <li><a href="https://peterlavalle.github.io/post/oth-bullet/">IME; Bullet can be reconfigured to be single-header</a> but I haven&rsquo;t checked</li>
 <li>someday, I&rsquo;d like to use it or <a href="https://jrouwe.github.io/JoltPhysics/">Jolt Physics</a> to make a Morrowind de-make</li>
-</ul></li>
+</ul>
+</li>
 <li><a href="https://github.com/fips-libs/fips-googletest">Google Test</a>
-
 <ul>
 <li>for reasons I can&rsquo;t recall, I want to migrate to GoogleTest</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p>&hellip; and if I had all the time in the world &hellip;</p>
-
 <ul>
 <li>Dr Petter&rsquo;s stuff (not available)
-
 <ul>
 <li>old smol procedural-generation music/sound is neat!</li>
 <li>would need to be repacked for Fips and ImGui</li>
 <li><a href="http://www.drpetter.se/project_musagi.html">http://www.drpetter.se/project_musagi.html</a></li>
 <li><a href="http://drpetter.se/project_sfxr.html">http://drpetter.se/project_sfxr.html</a></li>
-</ul></li>
+</ul>
+</li>
 <li>werkkzeug3 (not available)
-
 <ul>
 <li>would need to be repacked for Fips and ImGui</li>
 <li><a href="https://github.com/jaromil/kkrieger-werkkzeug3">https://github.com/jaromil/kkrieger-werkkzeug3</a></li>
-</ul></li>
+</ul>
+</li>
 <li>nf-interpreter (not available)
-
 <ul>
 <li><a href="https://github.com/nanoframework/nf-interpreter">https://github.com/nanoframework/nf-interpreter</a></li>
 <li>ugghhh &hellip; i guess a semi-up-to-date DotNet would be cool &hellip;</li>
-</ul></li>
+</ul>
+</li>
 </ul></div>
 				
 				<footer class="entry__footer">

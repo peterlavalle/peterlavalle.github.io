@@ -11,9 +11,10 @@
 		<meta property="og:title" content="Implementing an Idris Monad from &#34;Scratch&#34;" />
 <meta property="og:description" content="I implemented the Idris Monad Interface by hand because I didn&rsquo;t see a better way." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/idris-monad-mine/" />
-<meta property="article:published_time" content="2019-09-19T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-09-19T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/idris-monad-mine/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-09-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-09-19T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -93,86 +94,79 @@ if (!doNotTrack) {
 	</div>
 				<h1 class="entry__title">Implementing an Idris Monad from &#34;Scratch&#34;</h1>
 				<div class="entry__content"><p>I implemented the <a href="http://docs.idris-lang.org/en/latest/tutorial/interfaces.html#monads-and-do-notation">Idris Monad Interface</a> by hand because I didn&rsquo;t see a better way.</p>
-
-<hr />
-
-<p><img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/69458634_10157122310700528_8446322056831696896_n.jpg?_nc_cat=101&amp;_nc_oc=AQnRsldbhg2hfjoyyYCCnH175qh8CQlWkDSlbamfZdAPkNhPdbESX1dm9TW9pcspSJ-YimsUf3-VoN6VCeXyfWCT&amp;_nc_ht=scontent-lht6-1.xx&amp;oh=bcd6a45178e1b795df4f2fd7c536bfc8&amp;oe=5DF90BE3" alt="img" /></p>
-
+<hr>
+<p><img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/69458634_10157122310700528_8446322056831696896_n.jpg?_nc_cat=101&amp;_nc_oc=AQnRsldbhg2hfjoyyYCCnH175qh8CQlWkDSlbamfZdAPkNhPdbESX1dm9TW9pcspSJ-YimsUf3-VoN6VCeXyfWCT&amp;_nc_ht=scontent-lht6-1.xx&amp;oh=bcd6a45178e1b795df4f2fd7c536bfc8&amp;oe=5DF90BE3" alt="img"></p>
 <p>First one needs a &ldquo;type&rdquo; to hold our data.
 This just needs to be generic, so I&rsquo;m using <code>Mo a</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-idris" data-lang="idris"><span style="color:#66d9ef">data</span> <span style="color:#a6e22e">Mo</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">Type</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Type</span> <span style="color:#66d9ef">where</span>
-    <span style="color:#a6e22e">Free</span><span style="color:#f92672">:</span> a <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Mo</span> a</code></pre></div>
-<p>This isn&rsquo;t very interesting - I&rsquo;m reluctant to say it, but, it&rsquo;s just a &ldquo;box&rdquo; for a piece of data.</p>
-
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-idris" data-lang="idris"><span style="color:#66d9ef">data</span> <span style="color:#66d9ef">Mo</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">Type</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Type</span> <span style="color:#66d9ef">where</span>
+	<span style="color:#a6e22e">Free</span><span style="color:#f92672">:</span> a <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Mo</span> a
+</code></pre></div><p>This isn&rsquo;t very interesting - I&rsquo;m reluctant to say it, but, it&rsquo;s just a &ldquo;box&rdquo; for a piece of data.</p>
 <p>To me a <code>Monad</code> one must implement &ldquo;bind&rdquo; with is done via the <code>&gt;&gt;=</code> operator.
 The <code>&gt;&gt;=</code> operator takes a &ldquo;chunk&rdquo; of logic that computes a (new) box&rsquo;ed value (<code>Mo b</code>) from the existing value (<code>a</code> in <code>Mo a</code>) and returns a <code>Mo b</code> that will be that value.
 This is also useful for representing effects in <a href="https://en.wikipedia.org/wiki/Purely_functional_programming">purely functional programs</a>.
 I care because it&rsquo;s needed for the <a href="http://docs.idris-lang.org/en/latest/tutorial/interfaces.html#monads-and-do-notation"><code>do</code>-notation</a> which implicitly uses it to separate stuff around the <code>a &lt;- b</code>.</p>
-
-<p>To make <code>Mo a</code> an implementation of`<code>Monad</code> we can implement it like this &hellip;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-idris" data-lang="idris"><span style="color:#66d9ef">Monad</span> <span style="color:#66d9ef">Mo</span> <span style="color:#66d9ef">where</span>
-    <span style="color:#75715e">-- (&gt;&gt;=): Mo a -&gt; (f: a -&gt; Mo b) -&gt; Mo b</span>
-    <span style="color:#f92672">(&gt;&gt;=)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> f <span style="color:#f92672">=</span> f a</code></pre></div>
-<p>&hellip; where <code>a</code> is a value, and <code>f</code> would be <code>f: a -&gt; Mo b</code>.</p>
-
+<p>To make <code>Mo a</code> an implementation of``Monad` we can implement it like this &hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-idris" data-lang="idris"><span style="color:#66d9ef">Monad</span> <span style="color:#66d9ef">Mo</span> <span style="color:#66d9ef">where</span>
+	<span style="color:#75715e">-- (&gt;&gt;=): Mo a -&gt; (f: a -&gt; Mo b) -&gt; Mo b</span>
+	<span style="color:#f92672">(&gt;&gt;=)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> f <span style="color:#f92672">=</span> f a
+</code></pre></div><p>&hellip; where <code>a</code> is a value, and <code>f</code> would be <code>f: a -&gt; Mo b</code>.</p>
 <p>You&rsquo;ll get an error stating that &hellip;</p>
-
 <blockquote>
 <p>Can&rsquo;t find implementation for <strong>Applicative Mo</strong></p>
 </blockquote>
-
 <p>&hellip; because <code>Monad</code> extends <code>Applicative</code> and one needs an implementation of <code>Applicative</code>.</p>
-
 <p>&hellip; and <code>Functor</code> but that just looks like this &hellip;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-idris" data-lang="idris"><span style="color:#66d9ef">Functor</span> <span style="color:#66d9ef">Mo</span> <span style="color:#66d9ef">where</span>
-    <span style="color:#75715e">-- map: (a -&gt; b) -&gt; Mo a -&gt; Mo b</span>
-    map f <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> <span style="color:#f92672">$</span> f a</code></pre></div>
-<p>&hellip; and gives you another way to bind.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-idris" data-lang="idris"><span style="color:#66d9ef">Functor</span> <span style="color:#66d9ef">Mo</span> <span style="color:#66d9ef">where</span>
+	<span style="color:#75715e">-- map: (a -&gt; b) -&gt; Mo a -&gt; Mo b</span>
+	map f <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> <span style="color:#f92672">$</span> f a
+</code></pre></div><p>&hellip; and gives you another way to bind.
 <code>Applicative</code> needs <code>pure</code> to create an instance and <code>&lt;*&gt;</code> to invoke a function in one instance on a value from another instance.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-idris" data-lang="idris"><span style="color:#66d9ef">Applicative</span> <span style="color:#66d9ef">Mo</span> <span style="color:#66d9ef">where</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-idris" data-lang="idris"><span style="color:#66d9ef">Applicative</span> <span style="color:#66d9ef">Mo</span> <span style="color:#66d9ef">where</span>
 
-    <span style="color:#75715e">-- pure: a -&gt; Mo a</span>
-    pure a <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> a
+	<span style="color:#75715e">-- pure: a -&gt; Mo a</span>
+	pure a <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> a
 
-    <span style="color:#75715e">-- (&lt;*&gt;): Mo (a -&gt; b) -&gt; Mo a -&gt; Mo b</span>
-    <span style="color:#f92672">(&lt;*&gt;)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> f<span style="color:#f92672">)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> <span style="color:#f92672">(</span>f a<span style="color:#f92672">)</span></code></pre></div>
-<p>The <code>implementation</code>s need to be in the specific order <code>Functor</code>, <code>Applicative</code>, <code>Monad</code>.</p>
-
+	<span style="color:#75715e">-- (&lt;*&gt;): Mo (a -&gt; b) -&gt; Mo a -&gt; Mo b</span>
+	<span style="color:#f92672">(&lt;*&gt;)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> f<span style="color:#f92672">)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> <span style="color:#f92672">(</span>f a<span style="color:#f92672">)</span>
+</code></pre></div><p>The <code>implementation</code>s need to be in the specific order <code>Functor</code>, <code>Applicative</code>, <code>Monad</code>.</p>
 <h1 id="finished">Finished</h1>
-
 <p>We now have something that looks like this &hellip;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-idris" data-lang="idris"><span style="color:#66d9ef">data</span> <span style="color:#a6e22e">Mo</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">Type</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Type</span> <span style="color:#66d9ef">where</span>
-    <span style="color:#a6e22e">Free</span><span style="color:#f92672">:</span> a <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Mo</span> a
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-idris" data-lang="idris">
+<span style="color:#66d9ef">data</span> <span style="color:#66d9ef">Mo</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">Type</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Type</span> <span style="color:#66d9ef">where</span>
+	<span style="color:#a6e22e">Free</span><span style="color:#f92672">:</span> a <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Mo</span> a
 
 <span style="color:#66d9ef">Functor</span> <span style="color:#66d9ef">Mo</span> <span style="color:#66d9ef">where</span>
-    <span style="color:#75715e">-- map: (a -&gt; b) -&gt; Mo a -&gt; Mo b</span>
-    map f <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> <span style="color:#f92672">$</span> f a
+	<span style="color:#75715e">-- map: (a -&gt; b) -&gt; Mo a -&gt; Mo b</span>
+	map f <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> <span style="color:#f92672">$</span> f a
 
 <span style="color:#66d9ef">Applicative</span> <span style="color:#66d9ef">Mo</span> <span style="color:#66d9ef">where</span>
 
-    <span style="color:#75715e">-- pure: a -&gt; Mo a</span>
-    pure a <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> a
+	<span style="color:#75715e">-- pure: a -&gt; Mo a</span>
+	pure a <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> a
 
-    <span style="color:#75715e">-- (&lt;*&gt;): Mo (a -&gt; b) -&gt; Mo a -&gt; Mo b</span>
-    <span style="color:#f92672">(&lt;*&gt;)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> f<span style="color:#f92672">)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> <span style="color:#f92672">(</span>f a<span style="color:#f92672">)</span>
+	<span style="color:#75715e">-- (&lt;*&gt;): Mo (a -&gt; b) -&gt; Mo a -&gt; Mo b</span>
+	<span style="color:#f92672">(&lt;*&gt;)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> f<span style="color:#f92672">)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> <span style="color:#f92672">(</span>f a<span style="color:#f92672">)</span>
 
 <span style="color:#66d9ef">Monad</span> <span style="color:#66d9ef">Mo</span> <span style="color:#66d9ef">where</span>
-    <span style="color:#75715e">-- (&gt;&gt;=): Mo a -&gt; (f: a -&gt; Mo b) -&gt; Mo b</span>
-    <span style="color:#f92672">(&gt;&gt;=)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> f <span style="color:#f92672">=</span> f a</code></pre></div>
-<p>&hellip; and we can simplify it &hellip;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-idris" data-lang="idris"><span style="color:#66d9ef">data</span> <span style="color:#a6e22e">Mo</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">Type</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Type</span> <span style="color:#66d9ef">where</span>
-    <span style="color:#a6e22e">Free</span><span style="color:#f92672">:</span> a <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Mo</span> a
+	<span style="color:#75715e">-- (&gt;&gt;=): Mo a -&gt; (f: a -&gt; Mo b) -&gt; Mo b</span>
+	<span style="color:#f92672">(&gt;&gt;=)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> f <span style="color:#f92672">=</span> f a
+
+</code></pre></div><p>&hellip; and we can simplify it &hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-idris" data-lang="idris">
+<span style="color:#66d9ef">data</span> <span style="color:#66d9ef">Mo</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">Type</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Type</span> <span style="color:#66d9ef">where</span>
+	<span style="color:#a6e22e">Free</span><span style="color:#f92672">:</span> a <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Mo</span> a
 
 <span style="color:#66d9ef">Functor</span> <span style="color:#66d9ef">Mo</span> <span style="color:#66d9ef">where</span>
-    map f <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> <span style="color:#f92672">$</span> f a
+	map f <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> <span style="color:#f92672">$</span> f a
 
 <span style="color:#66d9ef">Applicative</span> <span style="color:#66d9ef">Mo</span> <span style="color:#66d9ef">where</span>
-    pure <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span>
-    <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> f<span style="color:#f92672">)</span> <span style="color:#f92672">&lt;*&gt;</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> <span style="color:#f92672">$</span> f a
+	pure <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span>
+	<span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> f<span style="color:#f92672">)</span> <span style="color:#f92672">&lt;*&gt;</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">Free</span> <span style="color:#f92672">$</span> f a
 
 <span style="color:#66d9ef">Monad</span> <span style="color:#66d9ef">Mo</span> <span style="color:#66d9ef">where</span>
-    <span style="color:#f92672">(&gt;&gt;=)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> f <span style="color:#f92672">=</span> f a</code></pre></div>
-<p>&hellip; and that&rsquo;s all I feel like saying for now.</p></div>
+	<span style="color:#f92672">(&gt;&gt;=)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">Free</span> a<span style="color:#f92672">)</span> f <span style="color:#f92672">=</span> f a
+
+</code></pre></div><p>&hellip; and that&rsquo;s all I feel like saying for now.</p></div>
 				
 				<footer class="entry__footer">
 					

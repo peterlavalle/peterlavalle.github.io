@@ -13,9 +13,10 @@
 Delay Run This class acts as a sort of &ldquo;once inactive for X do Y&rdquo; pattern. In my design, I&rsquo;m wrapping my save actions in it and triggering schedule() after practically every edit.
 The class is passed a delay: Long value to specify how long to actually wait - I&rsquo;m using 1." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/delay-run/" />
-<meta property="article:published_time" content="2017-11-08T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-11-08T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/delay-run/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2017-11-08T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-11-08T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -94,21 +95,15 @@ if (!doNotTrack) {
 	<time class="entry__meta-published meta-published" datetime="2017-11-08T00:00:00Z">November 08, 2017</time>
 	</div>
 				<h1 class="entry__title">(Scala) Delay Run</h1>
-				<div class="entry__content">
-
-<p>I wrote a threading primitive and I&rsquo;m very pleased with it.
+				<div class="entry__content"><p>I wrote a threading primitive and I&rsquo;m very pleased with it.
 I plan to wrap all of my &ldquo;save file&rdquo; things in this, from now on.</p>
-
 <h1 id="delay-run">Delay Run</h1>
-
 <p>This class acts as a sort of &ldquo;once inactive for X do Y&rdquo; pattern.
 In my design, I&rsquo;m wrapping my <em>save actions</em> in it and triggering <code>schedule()</code> after practically every edit.</p>
-
-<p>The class is passed a <code>delay: Long</code> value to specify how long to actually wait - I&rsquo;m using 1.983<sup class="footnote-ref" id="fnref:prolly314"><a href="#fn:prolly314">1</a></sup> seconds because it amuses me.
+<p>The class is passed a <code>delay: Long</code> value to specify how long to actually wait - I&rsquo;m using 1.983<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> seconds because it amuses me.
 If, during this delay, I tell it to &ldquo;save&rdquo; again; then the save is further delayed.
 When I really-really want the save to happen - there&rsquo;s the <code>joinwait()</code> method which should work, but, it is kind of irrelevant for the time being.
 The full source is below for the interested.</p>
-
 <pre><code>/*
 Peter LaValle / gmail com
 2017-11-09
@@ -141,89 +136,87 @@ For more information, please refer to &lt;http://unlicense.org/&gt;
 package peterlavalle
 
 /**
-    * creates a &quot;thing&quot; which can be &quot;scheduled&quot; to run after a delay.
-    * if it is &quot;scheduled&quot; while waiting for the delay to expire, it will extend the delay.
-    *
-    * @param delay how long to wait
-    * @return a runnable that can be run again and again
-    */
+	* creates a &quot;thing&quot; which can be &quot;scheduled&quot; to run after a delay.
+	* if it is &quot;scheduled&quot; while waiting for the delay to expire, it will extend the delay.
+	*
+	* @param delay how long to wait
+	* @return a runnable that can be run again and again
+	*/
 abstract class DelayedRun(delay: Long) {
-    private val pivotLock: Object = this
-    private var nextEvent: Long = 0
-    private var thread: Thread = null
+	private val pivotLock: Object = this
+	private var nextEvent: Long = 0
+	private var thread: Thread = null
 
-    /**
-        * do something
-        */
-    def action(): Unit
+	/**
+		* do something
+		*/
+	def action(): Unit
 
-    def schedule(): Unit = {
+	def schedule(): Unit = {
 
-        pivotLock.synchronized {
+		pivotLock.synchronized {
 
-            // put the delay forward
-            nextEvent = Math.max(nextEvent, System.currentTimeMillis() + delay)
+			// put the delay forward
+			nextEvent = Math.max(nextEvent, System.currentTimeMillis() + delay)
 
-            def self: DelayedRun = this
+			def self: DelayedRun = this
 
-            // schedule a thread
-            if (null == thread)
-                thread = new Thread(s&quot;DelayedRun(${System.identityHashCode(self)}) @ $action&quot;) {
+			// schedule a thread
+			if (null == thread)
+				thread = new Thread(s&quot;DelayedRun(${System.identityHashCode(self)}) @ $action&quot;) {
 
-                    override def run(): Unit = {
+					override def run(): Unit = {
 
-                        def wait: Long =
-                            pivotLock synchronized {
-                                nextEvent - System.currentTimeMillis()
-                            }
+						def wait: Long =
+							pivotLock synchronized {
+								nextEvent - System.currentTimeMillis()
+							}
 
-                        while (0 &lt; wait) {
-                            // just wait a bunch
-                            Thread.sleep(delay)
-                        }
+						while (0 &lt; wait) {
+							// just wait a bunch
+							Thread.sleep(delay)
+						}
 
-                        pivotLock synchronized {
-                            if (null != thread) {
-                                thread = null
-                                action()
-                            }
-                        }
-                    }
+						pivotLock synchronized {
+							if (null != thread) {
+								thread = null
+								action()
+							}
+						}
+					}
 
-                    start()
-                }
-        }
-    }
+					start()
+				}
+		}
+	}
 
-    def joinWait(): Unit = {
+	def joinWait(): Unit = {
 
-        def waitMore: Thread =
-            pivotLock synchronized {
-                thread
-            }
+		def waitMore: Thread =
+			pivotLock synchronized {
+				thread
+			}
 
-        while (null != waitMore)
-            waitMore.join(delay)
+		while (null != waitMore)
+			waitMore.join(delay)
 
-    }
+	}
 }
-</code></pre>
-<div class="footnotes">
-
-<hr />
-
+</code></pre><section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:prolly314">I&rsquo;ll probably switch to 0.314 for documents, at the moment all my IDE has is a config file.
- <a class="footnote-return" href="#fnref:prolly314"><sup>[return]</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p>I&rsquo;ll probably switch to 0.314 for documents, at the moment all my IDE has is a config file.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div>
+</section>
 </div>
 				
 				<footer class="entry__footer">
 					
 <div class="entry__tags">
 			<a class="entry__tag btn" href="/tags/scala/">Scala</a>
-			<a class="entry__tag btn" href="/tags/multi-threading/">multi-threading</a>
+			<a class="entry__tag btn" href="/tags/multi-threading/">Multi-Threading</a>
 			<a class="entry__tag btn" href="/tags/concurrency/">Concurrency</a>
 </div>
 					

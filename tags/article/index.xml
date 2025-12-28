@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Article on Peter&#39;s Notebook</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Article on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://peterlavalle.github.io/tags/article/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/article/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>of Podcasts</title>
       <link>https://peterlavalle.github.io/post/podcasts/</link>
@@ -45,9 +41,9 @@ They&amp;rsquo;re &amp;ldquo;not like podcasts,&amp;rdquo; though.&lt;/p&gt;</de
       <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/whippet-ecs/</guid>
-      <description>I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of modern game-engines.
+      <description>I [made a semi-cache coherent container][ghWhippet] which provides an [Entity-Component-System][wikiECS]. These are the bones of [modern game-engines][wikiECSGame].
 This post is largely a gooey weasel opinion piece. It started as an introduction that grew out of control. So, for now, it&amp;rsquo;s just a bit of rambling while I clean-up the documentation for my tool.
-Of Entity-Component-Systems Among other things, Jason Gregory&amp;rsquo;s book Game Engine Architecture discusses the concept of a data-driven architecture for game software.</description>
+Of Entity-Component-Systems Among other things, Jason Gregory&amp;rsquo;s book [Game Engine Architecture][bookGAE] discusses the concept of a data-driven architecture for game software.</description>
     </item>
     
   </channel>

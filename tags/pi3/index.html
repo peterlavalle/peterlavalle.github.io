@@ -13,7 +13,6 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://peterlavalle.github.io/tags/pi3/" />
 
-<meta property="og:updated_time" content="2023-06-04T00:00:00&#43;00:00"/>
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -150,8 +149,8 @@ I&rsquo;m doing something else (of course) I&rsquo;m setting up (what I call) na
 				<div class="card card--2col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-docker-gogs/">GoGS on a Pi3 (via Docker)</a></h1>
-	<div class="entry__content"><p>I&rsquo;ve been assembling a &ldquo;full stack&rdquo;<sup class="footnote-ref" id="fnref:fwiw"><a href="#fn:fwiw">1</a></sup> for development that runs on my Pi3.
-This is all happening inside of <a href="https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/">Docker</a> containers which made cleanup redonkulously easy.
+	<div class="entry__content"><p>I&rsquo;ve been assembling a &ldquo;full stack&rdquo;<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> for development that runs on my Pi3.
+This is all happening inside of [Docker][piDocker] containers which made cleanup redonkulously easy.
 Today I was looking at a source code management system; something of a &ldquo;my own GitHub&rdquo; which I can run on my own network.</p></div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2017-09-07T00:00:00Z">September 07, 2017</time>
@@ -166,7 +165,8 @@ Today I was looking at a source code management system; something of a &ldquo;my
 There&rsquo;s not a lot of OC here, just clarity.
 NameCheap DynDNS on a Pi3 I use NameCheap (because they&rsquo;re anti-SOPA) for DNS. The client program, ddclient, can connect to NameCheap.
 I&rsquo;m using raspbian, so, first;
- run sudo apt-get install ddclient on your Pi find the dynamic DNS settings on NameCheap&rsquo;s website  Dashboard &gt;&gt;&gt; Domain List &gt;&gt;&gt; Manage &gt;&gt;&gt; Advanced DNS they do like to change these things around  halfway down the page, there should be a DYNAMIC DNS thingie  enable it (if you haven&rsquo;t already) note the blurb-what-looks-like-a-SHA  edit your /etc/ddclient.</div>
+  run sudo apt-get install ddclient on your Pi
+  find the dynamic DNS settings on NameCheap&rsquo;s website</div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2017-06-29T00:00:00Z">June 29, 2017</time>
 	</div>

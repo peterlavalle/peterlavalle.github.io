@@ -13,9 +13,10 @@
 I&rsquo;m going to use nGinx to setup a reverse-proxy from my real-Pi3 to various Docker containers based on URL rewriting.
 I&rsquo;m doing something else (of course) I&rsquo;m setting up (what I call) name-based-virtual-hosting." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/pi3-nginx/" />
-<meta property="article:published_time" content="2017-09-19T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-09-19T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/pi3-nginx/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2017-09-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-09-19T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -94,25 +95,16 @@ if (!doNotTrack) {
 	<time class="entry__meta-published meta-published" datetime="2017-09-19T00:00:00Z">September 19, 2017</time>
 	</div>
 				<h1 class="entry__title">Pi3 nGinx Reverse Proxy</h1>
-				<div class="entry__content">
-
-<p>So &hellip; you&rsquo;ve got a <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Pi3</a> running as a <a href="https://www.docker.com/">Docker</a> host with some services that you want your buddies to have access to.
+				<div class="entry__content"><p>So &hellip; you&rsquo;ve got a <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Pi3</a> running as a <a href="https://www.docker.com/">Docker</a> host with some services that you want your buddies to have access to.
 You <em>could</em> try and get them to SSH into your home network; just like you <em>could</em> type all your programs with a touchscreen.</p>
-
 <p>I&rsquo;m going to use <a href="https://nginx.org/en/">nGinx</a> to setup a reverse-proxy from my real-<a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Pi3</a> to various <a href="https://www.docker.com/">Docker</a> containers based on URL rewriting.</p>
-
 <p>I&rsquo;m doing something else (of course) I&rsquo;m setting up (what I call) name-based-virtual-hosting.</p>
-
-<h1 id="name-based-virtual-hosting-proxy-pass">Name-Based Virtual Hosting / Proxy Pass</h1>
-
+<h1 id="name-based-virtual-hosting--proxy-pass">Name-Based Virtual Hosting / Proxy Pass</h1>
 <p>Most web-server programs support a trick to check the URL and do something with it based on a matching expression.
 Most also support some method of &ldquo;proxying&rdquo; passing the web page request off to another server somewhere else.</p>
-
 <p>Traditionally, proxies were developed so that everyone could access the web through them and the servers could cache things to avoid &ldquo;dialling out&rdquo; excessively.
 Later on, &ldquo;reverse proxies&rdquo; became a common way to use a single front-facing web-server handle requests and pass them off to different internal services.</p>
-
 <p>So, I (am now|will be|do want) using <a href="https://www.docker.com/">Docker</a> to run;</p>
-
 <ul>
 <li><a href="/post/pi3-gogs-docker/">Gogs</a></li>
 <li>Jenkins</li>
@@ -122,30 +114,19 @@ Later on, &ldquo;reverse proxies&rdquo; became a common way to use a single fron
 <li>SeaFiles</li>
 <li>Nexus</li>
 </ul>
-
 <p>Likely; these will all want to play their own way, so <a href="https://nginx.org/en/">nGinx</a> to the rescue!</p>
-
-<h1 id="nginx-nginxen-installation"><a href="https://nginx.org/en/">nGinx</a> Installation</h1>
-
+<h1 id="nginxnginxen-installation"><a href="https://nginx.org/en/">nGinx</a> Installation</h1>
 <p>I installed <a href="https://nginx.org/en/">nGinx</a> on the &ldquo;real host&rdquo; rather than in a <a href="https://www.docker.com/">Docker</a> container.</p>
-
 <p><code>peter@superpi3:~$ sudo apt-get install nginx</code></p>
-
 <p>I &hellip; actually, can&rsquo;t remember why.
 Next time; I&rsquo;ll try a container &hellip; maybe &hellip;</p>
-
 <p>If you&rsquo;re following these instructions, then check that it works by browsing to <a href="http://localhost/"><code>http://localhost/</code></a></p>
-
-<h1 id="nginx-nginxen-setup"><a href="https://nginx.org/en/">nGinx</a> Setup</h1>
-
+<h1 id="nginxnginxen-setup"><a href="https://nginx.org/en/">nGinx</a> Setup</h1>
 <p><a href="https://nginx.org/en/">nGinx</a> (like Apache before them) stores website configurations in <code>/etc/nginx/sites-available/</code> and creates symlinks in <code>/etc/nginx/sites-enabled/</code> to activate them,.
 To disable the &ldquo;default&rdquo; site you can &hellip;</p>
-
 <p><code>peter@superpi3:~$ sudo rm /etc/nginx/sites-enabled/default</code></p>
-
 <p>&hellip; and the original will remain behind if you want to check on it.
 We/I am going to use a brand new site <code>doki-full-stak</code> so (for now) create the site configuration like this;</p>
-
 <pre><code>peter@superpi3:~$ sudo su
 root@superpi3:~$ cat &gt; /etc/nginx/sites-available/doki-full-stak &lt;&lt;HEREEOF
 server {
@@ -162,60 +143,39 @@ server {
 HEREEOF
 root@superpi3:~$ exit
 peter@superpi3:~$
-</code></pre>
-
-<p>&hellip; then, enable an empty site configuration with &hellip;</p>
-
+</code></pre><p>&hellip; then, enable an empty site configuration with &hellip;</p>
 <pre><code>peter@superpi3:~$ sudo su
 root@superpi3:~$ ln /etc/nginx/sites-available/doki-full-stak /etc/nginx/sites-enabled/doki-full-stak
 root@superpi3:~$ exit
 peter@superpi3:~$
-</code></pre>
-
-<p>&hellip; and we&rsquo;re ready to setup bits for specific web-apps!</p>
-
+</code></pre><p>&hellip; and we&rsquo;re ready to setup bits for specific web-apps!</p>
 <blockquote>
 <p>Every time that you change this file, you&rsquo;ll need to tell <a href="https://nginx.org/en/">nGinx</a> to reload <code>peter@superpi3:~$ sudo service nginx reload</code></p>
 </blockquote>
-
-<h1 id="nginx-nginxen-gogs-iogogs"><a href="https://nginx.org/en/">nGinx</a> <a href="https://gogs.io">Gogs</a></h1>
-
+<h1 id="nginxnginxen-gogsiogogs"><a href="https://nginx.org/en/">nGinx</a> <a href="https://gogs.io">Gogs</a></h1>
 <p>Okay &hellip; so the fast answer is to read the <a href="https://gogs.io/docs/intro/faqs#how-do-i-use-nginx-with-reverse-proxy%3F">Gogs FAQ</a> but that&rsquo;s probably not why you&rsquo;re here.</p>
-
 <p><a href="https://gogs.io">Gogs</a> is actually pretty simple to setup, there are two concerns;</p>
-
 <ul>
 <li><a href="https://gogs.io">Gogs</a> expects the URLs to be &ldquo;rewritten&rdquo;</li>
 <li><a href="https://gogs.io">Gogs</a> needs to be configured with the root_url</li>
 </ul>
-
 <p>The first concern is dealt with by using the <code>proxy_pass</code> option in the site configuration, so add this to the middle of <code>/etc/nginx/sites-available/doki-full-stak</code> and move on.</p>
-
 <pre><code>    location /doki/gogs/ {
         proxy_pass http://localhost:3000/;
     }
-</code></pre>
-
-<p>The second concern dictates that one must update <code>gogs/conf/app.ini</code> (wherever that is) and set &hellip;</p>
-
+</code></pre><p>The second concern dictates that one must update <code>gogs/conf/app.ini</code> (wherever that is) and set &hellip;</p>
 <pre><code>...
 ROOT_URL = http://superpi3.gpechorin.x64/doki/gogs/   
 ...
-</code></pre>
-
-<p>&hellip; or whatnot to get the intended result.</p>
-
+</code></pre><p>&hellip; or whatnot to get the intended result.</p>
 <p>Finally; tell <a href="https://nginx.org/en/">nGinx</a> to reload <code>peter@superpi3:~$ sudo service nginx reload</code> and you should be able to browse to your <a href="https://gogs.io">Gogs</a> instance.
 I needed to tell <a href="https://gogs.io">Gogs</a> what the new URL was BEFORE I could use it.
 I had <em>assumed</em> that the URL was only used for interface things, BUT, looks like it&rsquo;s used for determining which path is being whatnot&rsquo;ed under the hood.</p>
-
 <p>Sweet; so you/I now have a functioning <a href="https://nginx.org/en/">nGinx</a> reverse proxy to reach <a href="https://gogs.io">Gogs</a>!
 It doesn&rsquo;t seem to like super-big <code>git+http://</code> with lots of binary files &hellip; <a href="https://gogs.io/docs/intro/faqs#why-am-i-getting-errors-when-uploading-large-files%3F">there&rsquo;s an FAQ fix</a>.
 I set it to <code>client_max_body_size 4096m;</code> and placed it outside of any <code>location{...}</code> block - worked fine.
 I&rsquo;d preffer one of these &ldquo;SSH-Gateway&rdquo; solutions but they seem beyond me at the moment.</p>
-
 <h1 id="result">Result</h1>
-
 <p>I now have my tools being served from a real-boy webserver who hides my byzantine <a href="https://www.docker.com/">Docker</a> setup.
 This works quite well for me.
 I&rsquo;m going to re-post this post when/if I get more stuff installed and working.</p>
@@ -226,7 +186,7 @@ I&rsquo;m going to re-post this post when/if I get more stuff installed and work
 <div class="entry__tags">
 			<a class="entry__tag btn" href="/tags/pi3/">Pi3</a>
 			<a class="entry__tag btn" href="/tags/nginx/">nGinx</a>
-			<a class="entry__tag btn" href="/tags/gogs/">Gogs</a>
+			<a class="entry__tag btn" href="/tags/gogs/">GoGS</a>
 			<a class="entry__tag btn" href="/tags/docker/">Docker</a>
 			<a class="entry__tag btn" href="/tags/howto/">HowTo</a>
 </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en-GB">
 <head>
-	<meta name="generator" content="Hugo 0.55.6" />
+	<meta name="generator" content="Hugo 0.86.0" />
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,6 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://peterlavalle.github.io/" />
 
-<meta property="og:updated_time" content="2025-12-10T00:00:00&#43;00:00"/>
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -102,8 +101,8 @@ I&rsquo;m doing something else (of course) I&rsquo;m setting up (what I call) na
 					<div class="card card--2col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-docker-gogs/">GoGS on a Pi3 (via Docker)</a></h1>
-	<div class="entry__content"><p>I&rsquo;ve been assembling a &ldquo;full stack&rdquo;<sup class="footnote-ref" id="fnref:fwiw"><a href="#fn:fwiw">1</a></sup> for development that runs on my Pi3.
-This is all happening inside of <a href="https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/">Docker</a> containers which made cleanup redonkulously easy.
+	<div class="entry__content"><p>I&rsquo;ve been assembling a &ldquo;full stack&rdquo;<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> for development that runs on my Pi3.
+This is all happening inside of [Docker][piDocker] containers which made cleanup redonkulously easy.
 Today I was looking at a source code management system; something of a &ldquo;my own GitHub&rdquo; which I can run on my own network.</p></div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2017-09-07T00:00:00Z">September 07, 2017</time>
@@ -113,7 +112,7 @@ Today I was looking at a source code management system; something of a &ldquo;my
 					<div class="card card--2col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pal-pipe-sink/">Pipe Sink</a></h1>
-	<div class="entry__content">I had an idea/desire for a &ldquo;simple&rdquo; template class that&rsquo;d work as my OpenGL thread. A contemporary design for multi-threaded 3D games10 seems to be pooling work and processing it in whatever threads are available. IME OpenGL/GLFW are not re-entrant; Apple2 and GLFW3 explicitly states that it won&rsquo;t work - so it seems safe to assume that I shouldn&rsquo;t call functions from different threads. So to make a super-fast 3D game (or whatever) I need to do less work on the thread which is running OpenGL while allowing other threads to send it whatever work they please.</div>
+	<div class="entry__content">I had an idea/desire for a &ldquo;simple&rdquo; template class that&rsquo;d work as my OpenGL thread. A contemporary design for multi-threaded 3D games12 (or whatever) seems to be pooling work and processing it in whatever threads are available. IME OpenGL/GLFW are not re-entrant; Apple3 and GLFW4 explicitly states that it won&rsquo;t work - so it seems safe to assume that I shouldn&rsquo;t call functions from different threads. So to make a super-fast 3D game (or whatever) I need to do less work on the thread which is running OpenGL while allowing other threads to send it whatever work they please.</div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2017-08-03T00:00:00Z">August 03, 2017</time>
 	</div>
@@ -126,7 +125,8 @@ Today I was looking at a source code management system; something of a &ldquo;my
 There&rsquo;s not a lot of OC here, just clarity.
 NameCheap DynDNS on a Pi3 I use NameCheap (because they&rsquo;re anti-SOPA) for DNS. The client program, ddclient, can connect to NameCheap.
 I&rsquo;m using raspbian, so, first;
- run sudo apt-get install ddclient on your Pi find the dynamic DNS settings on NameCheap&rsquo;s website  Dashboard &gt;&gt;&gt; Domain List &gt;&gt;&gt; Manage &gt;&gt;&gt; Advanced DNS they do like to change these things around  halfway down the page, there should be a DYNAMIC DNS thingie  enable it (if you haven&rsquo;t already) note the blurb-what-looks-like-a-SHA  edit your /etc/ddclient.</div>
+  run sudo apt-get install ddclient on your Pi
+  find the dynamic DNS settings on NameCheap&rsquo;s website</div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2017-06-29T00:00:00Z">June 29, 2017</time>
 	</div>
@@ -136,7 +136,7 @@ I&rsquo;m using raspbian, so, first;
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/replace-samba-with-winsshfs/">Replace SaMBa with WinSSHFS!</a></h1>
 	<div class="entry__content">I connected my Windows desktop to our office file server using SSHFS rather than SaMBa. I am happy about that.
-For some reason one of our SaMBa systems got twitchy sometime last month. This is a problem since I&rsquo;ve inherited a script that;
+ For some reason one of our SaMBa systems got twitchy sometime last month. This is a problem since I&rsquo;ve inherited a script that;
  I don&rsquo;t yet understand runs on Windows (10?) exclusively reads data from \\foo\bar\project\user\project3\data\something paths  Since I know that SSHFS already works, I&rsquo;m setting that up as a substitue.</div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2017-06-24T00:00:00Z">June 24, 2017</time>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Peter&#39;s Notebook</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Posts on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://peterlavalle.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JupyterLab at Home</title>
       <link>https://peterlavalle.github.io/post/jupyter-homelab/</link>
@@ -122,7 +118,6 @@ Hey there! So, let&amp;rsquo;s dive into this blog post about sprucing up some 3
       <guid>https://peterlavalle.github.io/post/return-of-the-mac/</guid>
       <description>&lt;p&gt;Both of my pi3 are broken!
 One (physically and literally) melts any pen drive connected to it - and - the other &amp;hellip; is &amp;hellip; dead?&lt;/p&gt;
-
 &lt;p&gt;I have a MacMini from Mid-2011 so here&amp;rsquo;s what happened when I reformatted it to be my new Debian host.&lt;/p&gt;</description>
     </item>
     
@@ -242,7 +237,6 @@ These are my observations about them, posted here because (again) this blog has 
       
       <guid>https://peterlavalle.github.io/post/hobby.2021-09-17/</guid>
       <description>&lt;p&gt;I really should do these more often.&lt;/p&gt;
-
 &lt;p&gt;Leave a comment to encourage me to do these more often!&lt;/p&gt;</description>
     </item>
     
@@ -299,7 +293,6 @@ The issue was that the PTFE tube was not flush with the nozzle, due to the hot e
       
       <guid>https://peterlavalle.github.io/post/vampirates/</guid>
       <description>&lt;p&gt;Is Games-Workshop teasing a Vampire-Pirates army?&lt;/p&gt;
-
 &lt;p&gt;No - it&amp;rsquo;s &lt;em&gt;just&lt;/em&gt; &lt;a href=&#34;https://youtu.be/eXkxMYjzdbs&#34;&gt;Vampires&lt;/a&gt; and &lt;a href=&#34;https://ageofsigmar.com/cursed-city/&#34;&gt;Vampire Blackstone Fortress&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -310,7 +303,6 @@ The issue was that the PTFE tube was not flush with the nozzle, due to the hot e
       
       <guid>https://peterlavalle.github.io/post/paint-one-day-brass-nmm/</guid>
       <description>&lt;p&gt;Months ago (April) I spent (a fraction of) a Saturday trying to develop a Non-Metallic Metal approach.&lt;/p&gt;
-
 &lt;p&gt;Bad things happened, so, I sat on the post for awhile &amp;hellip; here it is now.&lt;/p&gt;</description>
     </item>
     
@@ -396,7 +388,6 @@ Might be fun to &lt;a href=&#34;https://hub.docker.com/r/raspbian/stretch&#34;&g
       
       <guid>https://peterlavalle.github.io/post/gohugo-mermaid/</guid>
       <description>&lt;p&gt;I did some tinkering with &lt;a href=&#34;https://mermaidjs.github.io/&#34;&gt;Mermaid&lt;/a&gt; and settled on a shortcode that I&amp;rsquo;m happy with for my &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; blog.&lt;/p&gt;
-
 &lt;p&gt;I&amp;rsquo;ve switched from the &lt;a href=&#34;https://themes.gohugo.io/mainroad/&#34;&gt;Mainroad theme&lt;/a&gt; to the &lt;a href=&#34;https://themes.gohugo.io/binario/&#34;&gt;Binario theme&lt;/a&gt; initally as a (failed) workaround.
 I found that the &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34;&gt;syntax highlighing&lt;/a&gt; for &lt;a href=&#34;https://themes.gohugo.io/binario/&#34;&gt;Binario theme&lt;/a&gt; worked better so I&amp;rsquo;ve kept it.&lt;/p&gt;</description>
     </item>
@@ -486,7 +477,7 @@ In the end, I ran out of time and felt that the &lt;em&gt;diversity&lt;/em&gt; o
       <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/launch-docker-daemon-mac-cli/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m away and want to start the Docker daemon.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:suspectRestart&#34;&gt;&lt;a href=&#34;#fn:suspectRestart&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&amp;rsquo;m away and want to start the Docker daemon.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -506,8 +497,8 @@ In the end, I ran out of time and felt that the &lt;em&gt;diversity&lt;/em&gt; o
       <guid>https://peterlavalle.github.io/post/scala-extractor/</guid>
       <description>Scala&amp;rsquo;s extractors and unapply() represent a concept that I haven&amp;rsquo;t grok&amp;rsquo;ed until now.
 Most demonstrations seem to be too long or use the same types everywhere. Here are my thoughts on the concept;
-val a: C = ??? val i: I = ??? i match { case a(f: O) =&amp;gt; ??? }  This will try to call the below method
-class C { def unapply(i: I): Option[O] = ??? }  There&amp;rsquo;s some more flexibility;</description>
+val a: C = ???val i: I = ???i match {case a(f: O) =&amp;gt;???} This will try to call the below method
+class C {def unapply(i: I): Option[O] =???} There&amp;rsquo;s some more flexibility;</description>
     </item>
     
     <item>
@@ -516,9 +507,9 @@ class C { def unapply(i: I): Option[O] = ??? }  There&amp;rsquo;s some more flex
       <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/whippet/</guid>
-      <description>I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of contemporary game-engines.
+      <description>I [made a semi-cache coherent container][ghWhippet] which provides an [Entity-Component-System][wikiECS]. These are the bones of [contemporary game-engines][wikiECSGame].
 This post is a bit crude; I keep thinking about it then adding features to Whippet instead of writing this up.
-Whippet on GitHub Google built CORGI which isn&amp;rsquo;t (yet?) trying to act cache coherent. It also is more than trivial to build, and suffers from NIH for me. Actually; that last bit isn&amp;rsquo;t likely to be a problem for most, but I didn&amp;rsquo;t like their license.</description>
+[Whippet on GitHub][ghWhippet] [Google built CORGI][googleCorgi] which isn&amp;rsquo;t (yet?) [trying to act cache coherent][corgiCache]. It also is [more than trivial][corgiBuild] to build, and suffers from [NIH][wikiNIH] for me. Actually; that last bit isn&amp;rsquo;t likely to be a problem for most, but I didn&amp;rsquo;t like their license.</description>
     </item>
     
     <item>
@@ -527,9 +518,9 @@ Whippet on GitHub Google built CORGI which isn&amp;rsquo;t (yet?) trying to act 
       <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/whippet-ecs/</guid>
-      <description>I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of modern game-engines.
+      <description>I [made a semi-cache coherent container][ghWhippet] which provides an [Entity-Component-System][wikiECS]. These are the bones of [modern game-engines][wikiECSGame].
 This post is largely a gooey weasel opinion piece. It started as an introduction that grew out of control. So, for now, it&amp;rsquo;s just a bit of rambling while I clean-up the documentation for my tool.
-Of Entity-Component-Systems Among other things, Jason Gregory&amp;rsquo;s book Game Engine Architecture discusses the concept of a data-driven architecture for game software.</description>
+Of Entity-Component-Systems Among other things, Jason Gregory&amp;rsquo;s book [Game Engine Architecture][bookGAE] discusses the concept of a data-driven architecture for game software.</description>
     </item>
     
     <item>
@@ -556,7 +547,7 @@ Of Entity-Component-Systems Among other things, Jason Gregory&amp;rsquo;s book G
 I have (to use) a macOS computer. I choose to use TortoiseHG because it is lovely. TortoiseHG has a &amp;ldquo;launch the terminal&amp;rdquo; context menu entry.
 Under macOS, you need to specify the terminal command that TortoiseHG should use. You need this, in your preference, to launch the terminal in the repo;
  /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal %(root)s
-  https://stackoverflow.com/questions/4404242/programmatically-launch-terminal-app-with-a-specified-command-and-custom-colors [return]   </description>
+   https://stackoverflow.</description>
     </item>
     
     <item>
@@ -569,7 +560,7 @@ Under macOS, you need to specify the terminal command that TortoiseHG should use
 Based on this tweet, I spent &amp;hellip; 30 minutes? Maybe? putting it together.
  This writeup took longer.
  The approach uses two behaviour classes to achive the classical effect of moving platforms that follow some path.
- mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&amp;rsquo;ve reached the Waypoint, continue with its next one   My example;</description>
+ mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&amp;rsquo;ve reached the Waypoint, continue with its next one    My example;</description>
     </item>
     
     <item>
@@ -579,7 +570,7 @@ Based on this tweet, I spent &amp;hellip; 30 minutes? Maybe? putting it together
       
       <guid>https://peterlavalle.github.io/post/democore/</guid>
       <description>I should just &amp;ldquo;blog&amp;rdquo; informally more often - so here goes.
-I&amp;rsquo;ve cobbled together a toolchain/asset-conditioning-pipeline of sorts for demoscene type stuff. My system is written in Scala on Gradle and functions by emitting C/++ and CMake files for Visual Studio. All of this produces a C/++11&amp;frasl;14 and GLFW/GLAD/OpenGL4.3&amp;frasl;4.5 executable that displays someone else&amp;rsquo;s ShaderToy project. Nothing revolutionary, but I&amp;rsquo;m after pretty-code that I can keep using rather than actual hard &amp;ldquo;street cred&amp;rdquo; quality demo results.</description>
+I&amp;rsquo;ve cobbled together a toolchain/asset-conditioning-pipeline of sorts for demoscene type stuff. My system is written in Scala on Gradle and functions by emitting C/++ and CMake files for Visual Studio. All of this produces a C/++11/14 and GLFW/GLAD/OpenGL4.3/4.5 executable that displays someone else&amp;rsquo;s ShaderToy project. Nothing revolutionary, but I&amp;rsquo;m after pretty-code that I can keep using rather than actual hard &amp;ldquo;street cred&amp;rdquo; quality demo results.</description>
     </item>
     
     <item>
@@ -620,8 +611,8 @@ I&amp;rsquo;m doing something else (of course) I&amp;rsquo;m setting up (what I 
       <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/pi3-docker-gogs/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been assembling a &amp;ldquo;full stack&amp;rdquo;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:fwiw&#34;&gt;&lt;a href=&#34;#fn:fwiw&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; for development that runs on my Pi3.
-This is all happening inside of &lt;a href=&#34;https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/&#34;&gt;Docker&lt;/a&gt; containers which made cleanup redonkulously easy.
+      <description>&lt;p&gt;I&amp;rsquo;ve been assembling a &amp;ldquo;full stack&amp;rdquo;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; for development that runs on my Pi3.
+This is all happening inside of [Docker][piDocker] containers which made cleanup redonkulously easy.
 Today I was looking at a source code management system; something of a &amp;ldquo;my own GitHub&amp;rdquo; which I can run on my own network.&lt;/p&gt;</description>
     </item>
     
@@ -631,7 +622,7 @@ Today I was looking at a source code management system; something of a &amp;ldqu
       <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/pal-pipe-sink/</guid>
-      <description>I had an idea/desire for a &amp;ldquo;simple&amp;rdquo; template class that&amp;rsquo;d work as my OpenGL thread. A contemporary design for multi-threaded 3D games10 seems to be pooling work and processing it in whatever threads are available. IME OpenGL/GLFW are not re-entrant; Apple2 and GLFW3 explicitly states that it won&amp;rsquo;t work - so it seems safe to assume that I shouldn&amp;rsquo;t call functions from different threads. So to make a super-fast 3D game (or whatever) I need to do less work on the thread which is running OpenGL while allowing other threads to send it whatever work they please.</description>
+      <description>I had an idea/desire for a &amp;ldquo;simple&amp;rdquo; template class that&amp;rsquo;d work as my OpenGL thread. A contemporary design for multi-threaded 3D games12 (or whatever) seems to be pooling work and processing it in whatever threads are available. IME OpenGL/GLFW are not re-entrant; Apple3 and GLFW4 explicitly states that it won&amp;rsquo;t work - so it seems safe to assume that I shouldn&amp;rsquo;t call functions from different threads. So to make a super-fast 3D game (or whatever) I need to do less work on the thread which is running OpenGL while allowing other threads to send it whatever work they please.</description>
     </item>
     
     <item>
@@ -644,7 +635,8 @@ Today I was looking at a source code management system; something of a &amp;ldqu
 There&amp;rsquo;s not a lot of OC here, just clarity.
 NameCheap DynDNS on a Pi3 I use NameCheap (because they&amp;rsquo;re anti-SOPA) for DNS. The client program, ddclient, can connect to NameCheap.
 I&amp;rsquo;m using raspbian, so, first;
- run sudo apt-get install ddclient on your Pi find the dynamic DNS settings on NameCheap&amp;rsquo;s website  Dashboard &amp;gt;&amp;gt;&amp;gt; Domain List &amp;gt;&amp;gt;&amp;gt; Manage &amp;gt;&amp;gt;&amp;gt; Advanced DNS they do like to change these things around  halfway down the page, there should be a DYNAMIC DNS thingie  enable it (if you haven&amp;rsquo;t already) note the blurb-what-looks-like-a-SHA  edit your /etc/ddclient.</description>
+  run sudo apt-get install ddclient on your Pi
+  find the dynamic DNS settings on NameCheap&amp;rsquo;s website</description>
     </item>
     
     <item>
@@ -654,7 +646,7 @@ I&amp;rsquo;m using raspbian, so, first;
       
       <guid>https://peterlavalle.github.io/post/replace-samba-with-winsshfs/</guid>
       <description>I connected my Windows desktop to our office file server using SSHFS rather than SaMBa. I am happy about that.
-For some reason one of our SaMBa systems got twitchy sometime last month. This is a problem since I&amp;rsquo;ve inherited a script that;
+ For some reason one of our SaMBa systems got twitchy sometime last month. This is a problem since I&amp;rsquo;ve inherited a script that;
  I don&amp;rsquo;t yet understand runs on Windows (10?) exclusively reads data from \\foo\bar\project\user\project3\data\something paths  Since I know that SSHFS already works, I&amp;rsquo;m setting that up as a substitue.</description>
     </item>
     
@@ -723,9 +715,10 @@ Teleporting everywhere feels wrong, so my suggestion is to use the Vive wand lik
       
       <guid>https://peterlavalle.github.io/post/atom-macros/</guid>
       <description>I haven&amp;rsquo;t posted anything in awhile &amp;hellip; so here&amp;rsquo;s how to get Atom.io to get macros that work kind-of-like NotePad++
- Install atom-keyboard-macros into Atom. &amp;gt; The default keybindings did nothing for me &amp;hellip; sorry
- open your keybindings.cson
- Hit CTRL+, &amp;gt; click on Keybindings &amp;gt; click on the blue text that says your keymap file  paste this wodge into the bottom of your keybindings.cson PRESERVE THE INDENTATION!</description>
+   Install atom-keyboard-macros into Atom.
+ The default keybindings did nothing for me &amp;hellip; sorry
+   open your keybindings.cson
+ Hit CTRL+, &amp;gt; click on Keybindings &amp;gt; click on the blue text that says your keymap file    paste this wodge into the bottom of your keybindings.</description>
     </item>
     
     <item>
@@ -735,7 +728,7 @@ Teleporting everywhere feels wrong, so my suggestion is to use the Vive wand lik
       
       <guid>https://peterlavalle.github.io/post/mirroring-github-to-bitbucket/</guid>
       <description>This seemed a lot longer when I planned it in my notebook at lunch.
-   GitHub user project (both sides) BitBucket user SCM Schedule     ocornut imgui g-pechorin None Periodic     Install hg-git  You&amp;rsquo;ll have to do this on the Jenkins server You&amp;rsquo;ll have to do it either for the Jenkins user or all I&amp;rsquo;m using an OsX machine as my host, so I was able to use easy_install to install hg-git and dulwich  setup a project on GitHub create a Jenkins Freestyle project which runs periodically  Polling the SCM was NOT an option since there&amp;rsquo;s no default branch on GitHub  &amp;hellip; this is a quirk of hg-git &amp;hellip; I think &amp;hellip; IIRC/YRMV - so sling me a tweet or whatever if I&amp;rsquo;m wrong   program the job to pull from git, push to hg, and ignore results of 1</description>
+   GitHub user project (both sides) BitBucket user SCM Schedule     ocornut imgui g-pechorin None Periodic     Install hg-git  You&amp;rsquo;ll have to do this on the Jenkins server You&amp;rsquo;ll have to do it either for the Jenkins user or all I&amp;rsquo;m using an OsX machine as my host, so I was able to use easy_install to install hg-git and dulwich   setup a project on GitHub create a Jenkins Freestyle project which runs periodically  Polling the SCM was NOT an option since there&amp;rsquo;s no default branch on GitHub  &amp;hellip; this is a quirk of hg-git &amp;hellip; I think &amp;hellip; IIRC/YRMV - so sling me a tweet or whatever if I&amp;rsquo;m wrong     program the job to pull from git, push to hg, and ignore results of 1  this was only elaborate because I needed it to not fail when there were no changes #!</description>
     </item>
     
     <item>
@@ -799,7 +792,7 @@ Example on GitHub</description>
       
       <guid>https://peterlavalle.github.io/post/hungarian-notation/</guid>
       <description>In which I pontificate on the subject of Hungarian Notation
-Hungarian Notation is a contentious topic It boils down to an ambiguity for the word &amp;ldquo;type&amp;rdquo; within English / C++. MicroSfot&amp;rsquo;s modern style-guide says not to use &amp;ldquo;Abbreviations and Acronyms&amp;rdquo; or &amp;ldquo;Hungarian Notation&amp;rdquo; - originally Hungarian Notation was a style of abbreviation. I&amp;rsquo;m going to paraphrase a long blog post by Joel on Software and summarize my thoughts at the end.</description>
+ Hungarian Notation is a contentious topic It boils down to an ambiguity for the word &amp;ldquo;type&amp;rdquo; within English / C++. MicroSfot&amp;rsquo;s modern style-guide says not to use &amp;ldquo;Abbreviations and Acronyms&amp;rdquo; or &amp;ldquo;Hungarian Notation&amp;rdquo; - originally Hungarian Notation was a style of abbreviation. I&amp;rsquo;m going to paraphrase a long blog post by Joel on Software and summarize my thoughts at the end.</description>
     </item>
     
     <item>
@@ -811,7 +804,7 @@ Hungarian Notation is a contentious topic It boils down to an ambiguity for the 
       <description>Awhile ago I undertook a goofy little &amp;ldquo;game-play study&amp;rdquo; with space ships.
 It has space ships
 I&amp;rsquo;m calling it Space-Ships.
-I wanted to see if 2D game-play (like S.P.A.Z.) could &amp;ldquo;feel&amp;rdquo; like traditional 3D. (like Freelancer) To study this I built a game-play prototype with a 2.5D chase-cam in (Unity) a 3D game engine. I used engine&amp;rsquo;s existing rigid body simulator (PhysX) to provide a limited version of physics. After constraining everything to a 2D plane and fiddling with the inertia values in various ways I was happy with the flight mechanics.</description>
+ I wanted to see if 2D game-play (like S.P.A.Z.) could &amp;ldquo;feel&amp;rdquo; like traditional 3D. (like Freelancer) To study this I built a game-play prototype with a 2.5D chase-cam in (Unity) a 3D game engine. I used engine&amp;rsquo;s existing rigid body simulator (PhysX) to provide a limited version of physics. After constraining everything to a 2D plane and fiddling with the inertia values in various ways I was happy with the flight mechanics.</description>
     </item>
     
     <item>
@@ -822,7 +815,7 @@ I wanted to see if 2D game-play (like S.P.A.Z.) could &amp;ldquo;feel&amp;rdquo;
       <guid>https://peterlavalle.github.io/post/myspaceships/</guid>
       <description>I have an old Unity project that I haven&amp;rsquo;t looked at in awhile - this one. If memory serves; assembling a WebGL version is slow and boring - so I&amp;rsquo;m making my eager little Jenkins server do it.
 Really I&amp;rsquo;m a bit bored with sbt-launch malarkey and I wanted to see if I could get this rolling. Broadly the steps that I followed went like this;
- Install Unity (5.</description>
+ Install Unity (5.3.3) with WebGL modules  5.</description>
     </item>
     
     <item>

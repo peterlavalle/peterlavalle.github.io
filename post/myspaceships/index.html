@@ -11,11 +11,12 @@
 		<meta property="og:title" content="Automated Unity WebGL Deployment" />
 <meta property="og:description" content="I have an old Unity project that I haven&rsquo;t looked at in awhile - this one. If memory serves; assembling a WebGL version is slow and boring - so I&rsquo;m making my eager little Jenkins server do it.
 Really I&rsquo;m a bit bored with sbt-launch malarkey and I wanted to see if I could get this rolling. Broadly the steps that I followed went like this;
- Install Unity (5." />
+ Install Unity (5.3.3) with WebGL modules  5." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/myspaceships/" />
-<meta property="article:published_time" content="2016-02-26T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2016-02-26T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/myspaceships/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2016-02-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-02-26T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -94,58 +95,54 @@ if (!doNotTrack) {
 	<time class="entry__meta-published meta-published" datetime="2016-02-26T00:00:00Z">February 26, 2016</time>
 	</div>
 				<h1 class="entry__title">Automated Unity WebGL Deployment</h1>
-				<div class="entry__content">
-
-<p>I have an old Unity project that I haven&rsquo;t looked at in awhile - <a href="http://peterlavalle.com/game-SpaceShips/">this one</a>.
+				<div class="entry__content"><p>I have an old Unity project that I haven&rsquo;t looked at in awhile - <a href="http://peterlavalle.com/game-SpaceShips/">this one</a>.
 If memory serves; assembling a WebGL version is slow and boring - so I&rsquo;m making my eager little Jenkins server do it.</p>
-
 <p>Really I&rsquo;m a bit bored with <code>sbt-launch</code> malarkey and I wanted to see if I could get this rolling.
 Broadly the steps that I followed went like this;</p>
-
 <ol>
 <li>Install Unity (5.3.3) with WebGL modules
-
 <ul>
 <li>5.3.3&rsquo;s WebGL stuff has improved since I last checked</li>
-</ul></li>
+</ul>
+</li>
 <li>Build the whole tootin thing by hand (on your workstation)
-
 <ul>
 <li>This never works on the first try - better to do it locally</li>
 <li>A custom build script was involved but many snags later <strong>it lives!</strong></li>
-</ul></li>
+</ul>
+</li>
 <li>Validate WebGL player
-
 <ul>
 <li><code>file://</code> isn&rsquo;t enough boyo; you need <code>http://</code> to play your game</li>
 <li>&hellip; actually ; <a href="http://nwjs.io/">NW.js</a> can open the local page as if it&rsquo;s <a href="https://youtu.be/uEB45OAnixU">a real-boy</a>
-
 <ul>
 <li>&hellip; y&rsquo;know, this suggests some interesting options with desktop applications and Unity</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Build by hand (again) on the CI server
-
 <ul>
 <li>I needed to reinstall Unity5.3.3 to get the trimmings I wanted</li>
 <li>I also needed to make a build script <code>BB8ild</code> (script is below)</li>
 <li>my CI server is slow so I wanted to iron out slow problems before I started picking at it here</li>
 <li>still need to set it up for CI stuff</li>
-</ul></li>
-<li>Configure Jenkins to assemble and post the project
-
+</ul>
+</li>
+<li>Configure Jenkins to assemble and post the project</li>
+</ol>
 <ul>
 <li>This was more complex than I had anticipated</li>
 <li>I needed to <code>cd</code> around and run a variety of tasks (script is below)</li>
-<li>In the end - I cloned and pushed the whole site</li>
+<li>In the end - I cloned and pushed the whole site
+<ul>
 <li>&hellip; and hoped for the best</li>
-</ul></li>
-</ol>
-
+</ul>
+</li>
+</ul>
 <h1 id="jenkins-task">Jenkins Task</h1>
-
 <p>Some paths were changed for security-via-obscurity; this won&rsquo;t literally work but if run line-by-line and changed as you go you&rsquo;ll get there.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd mySpaceShips
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd mySpaceShips
 /Applications/Unity/Unity.app/Contents/MacOS/Unity -batchmode -nographics -quit -executeMethod BB8ild.PerformBuild
 cd build/
 rm -dfr peter-lavalle.github.io/
@@ -162,23 +159,22 @@ rm -dfr peter-lavalle.github.io/
 rm -dfr web-gl/
 cd ..
 rm -dfr build/
-rm -dfr Library/</code></pre></div>
-<h1 id="unity-bb8ild-build-script">Unity <code>BB8ild</code> build script</h1>
-
+rm -dfr Library/
+</code></pre></div><h1 id="unity-bb8ild-build-script">Unity <code>BB8ild</code> build script</h1>
 <p>This&rsquo;ll work as-is</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs"><span style="color:#66d9ef">using</span> UnityEditor;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs"><span style="color:#66d9ef">using</span> UnityEditor;
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BB8ild</span>
-{<span style="color:#a6e22e">
-</span><span style="color:#a6e22e">	[MenuItem(&#34;Build/Build WebGL&#34;)]</span>
+{
+<span style="color:#a6e22e">	[MenuItem(&#34;Build/Build WebGL&#34;)]</span>
 	<span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> PerformBuild()
 	{
 		<span style="color:#66d9ef">var</span> sceneSettings = EditorBuildSettings.scenes;
-		<span style="color:#66d9ef">string</span><span style="color:#a6e22e">[]</span> scenePaths = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">string</span><span style="color:#a6e22e">[sceneSettings.Length]</span>;
+		<span style="color:#66d9ef">string</span>[] scenePaths = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">string</span>[sceneSettings.Length];
 
 		<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i = <span style="color:#ae81ff">0</span>; i &lt; scenePaths.Length; ++i)
 		{
-			scenePaths<span style="color:#a6e22e">[i]</span> = sceneSettings<span style="color:#a6e22e">[i]</span>.path;
+			scenePaths[i] = sceneSettings[i].path;
 		}
 		BuildPipeline.BuildPlayer(scenePaths, <span style="color:#e6db74">&#34;build/web-gl&#34;</span>, BuildTarget.WebGL, BuildOptions.None);
 	}

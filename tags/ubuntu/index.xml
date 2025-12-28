@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ubuntu on Peter&#39;s Notebook</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Ubuntu on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sat, 20 Jul 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://peterlavalle.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 20 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker with nVidia&#39;s CUDA Support</title>
       <link>https://peterlavalle.github.io/post/docker-with-cuda/</link>

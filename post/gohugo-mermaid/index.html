@@ -10,13 +10,13 @@
 	<meta name="description" content="">
 		<meta property="og:title" content="goHugo Mermaid" />
 <meta property="og:description" content="I did some tinkering with Mermaid and settled on a shortcode that I&rsquo;m happy with for my Hugo blog.
-
 I&rsquo;ve switched from the Mainroad theme to the Binario theme initally as a (failed) workaround.
 I found that the syntax highlighing for Binario theme worked better so I&rsquo;ve kept it." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/gohugo-mermaid/" />
-<meta property="article:published_time" content="2019-07-10T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-07-10T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/gohugo-mermaid/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-07-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-07-10T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -96,120 +96,92 @@ if (!doNotTrack) {
 	</div>
 				<h1 class="entry__title">goHugo Mermaid</h1>
 				<div class="entry__content"><p>I did some tinkering with <a href="https://mermaidjs.github.io/">Mermaid</a> and settled on a shortcode that I&rsquo;m happy with for my <a href="https://gohugo.io/">Hugo</a> blog.</p>
-
 <p>I&rsquo;ve switched from the <a href="https://themes.gohugo.io/mainroad/">Mainroad theme</a> to the <a href="https://themes.gohugo.io/binario/">Binario theme</a> initally as a (failed) workaround.
 I found that the <a href="https://gohugo.io/content-management/syntax-highlighting/">syntax highlighing</a> for <a href="https://themes.gohugo.io/binario/">Binario theme</a> worked better so I&rsquo;ve kept it.</p>
-
-<hr />
-
+<hr>
 <aside style="float: right;">
 	<nav id="TableOfContents">
-<ul>
-<li><a href="#via-pandoc-nope">via Pandoc? (Nope!)</a></li>
-<li><a href="#shortcodes-yass">Shortcodes (Yass!)</a></li>
-<li><a href="#examples">Examples</a>
-<ul>
-<li><a href="#graph-lr"><code>graph LR</code></a></li>
-<li><a href="#sequencediagram"><code>sequenceDiagram</code></a></li>
-<li><a href="#gantt"><code>gantt</code></a></li>
-<li><a href="#classdiagram"><code>classDiagram</code></a></li>
-<li><a href="#gitgraph"><code>gitGraph</code></a></li>
-</ul></li>
-<li><a href="#conclusion">Conclusion</a></li>
-</ul>
+  <ul>
+    <li><a href="#graph-lr"><code>graph LR</code></a></li>
+    <li><a href="#sequencediagram"><code>sequenceDiagram</code></a></li>
+    <li><a href="#gantt"><code>gantt</code></a></li>
+    <li><a href="#classdiagram"><code>classDiagram</code></a></li>
+    <li><a href="#gitgraph"><code>gitGraph</code></a></li>
+  </ul>
 </nav>
 </aside>
-
 <h1 id="via-pandoc-nope">via Pandoc? (Nope!)</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
-    Alice-&gt;&gt;John: Hello John, how are you?
-    John--&gt;&gt;Alice: Great!</code></pre></div>
-<p>I&rsquo;d had bad experiences with <a href="https://mermaidjs.github.io/">Mermaid</a> and <a href="https://gohugo.io/">Hugo</a> solutions previously.
+<pre><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
+	Alice-&gt;&gt;John: Hello John, how are you?
+	John--&gt;&gt;Alice: Great!
+</code></pre><p>I&rsquo;d had bad experiences with <a href="https://mermaidjs.github.io/">Mermaid</a> and <a href="https://gohugo.io/">Hugo</a> solutions previously.
 I&rsquo;ve had good general expeirences with <a href="https://pandoc.org/">Pandoc</a>.
 So, my first idea was to use <a href="https://pandoc.org/">Pandoc</a> to translate embedded <a href="https://mermaidjs.github.io/">Mermaid</a> diagrams into &hellip; whatever Pandoc did.
 Turns out that it embeds a <code>.png</code> image into the <code>.md</code> as base64, which is adorable!</p>
-
 <p>I tried installing a <a href="https://github.com/raghur/mermaid-filter">Mermaid filter for Pandoc</a> globally &hellip;</p>
-
 <blockquote>
 <p><code>&gt; npm install --global mermaid-filter</code></p>
 </blockquote>
-
 <p>&hellip; then invoking it from the shell &hellip;</p>
-
 <blockquote>
 <p><code>&gt; pandoc -t html -F mermaid-filter.cmd -o something.html trymermaid.md</code></p>
 </blockquote>
-
 <p>&hellip; but that didn&rsquo;t work because &hellip;</p>
-
 <pre><code>λ typedoc.bat
 module.js:540
-    throw err;
-    ^
+	throw err;
+	^
 
 Error: Cannot find module 'C:\Users\Peter\Desktop\portfolio\portfolio-pxmlam\fud07-types.tex\node_modules\mermaid-filter\index.js'
-    at Function.Module._resolveFilename (module.js:538:15)
-    at Function.Module._load (module.js:468:25)
-    at Function.Module.runMain (module.js:684:10)
-    at startup (bootstrap_node.js:187:16)
-    at bootstrap_node.js:608:3
+	at Function.Module._resolveFilename (module.js:538:15)
+	at Function.Module._load (module.js:468:25)
+	at Function.Module.runMain (module.js:684:10)
+	at startup (bootstrap_node.js:187:16)
+	at bootstrap_node.js:608:3
 Error running filter mermaid-filter.cmd:
 Filter returned error status 1
-</code></pre>
-
-<p>&hellip; i.e; it wasn&rsquo;t being picked up?</p>
-
+</code></pre><p>&hellip; i.e; it wasn&rsquo;t being picked up?</p>
 <p>Erhmm &hellip; what?</p>
-
 <p>I&rsquo;d rather run it from a local project anyway, so my next idea was to install it &ldquo;locally&rdquo; in the project/folder.
 (This makes my folder into a Node.JS project &hellip;)</p>
-
 <pre><code>&gt; npm install mermaid-filter
 &gt; pandoc -t markdown -f markdown -F mermaid-filter.cmd -o target/something.md trymermaid.md
-</code></pre>
-
-<p>&hellip; and that works.
+</code></pre><p>&hellip; and that works.
 Hilariously; it worked by embedding the generated image data into the markdown.</p>
-
 <p>I want to try a more-sane approach &hellip; which looks nicer with CSS.</p>
-
 <h1 id="shortcodes-yass">Shortcodes (Yass!)</h1>
-
 <p>I tried copying the <a href="https://learn.netlify.com/en/shortcodes/mermaid/">Learn theme&rsquo;s shortcodes</a> but that scrambled my CSS.
 I (for no reason) switched to <a href="https://themes.gohugo.io/binario/">the Binario theme</a> and decided to try and &ldquo;roll my own&rdquo; <a href="https://gohugo.io/content-management/shortcodes/">shortcode</a> for <a href="https://mermaidjs.github.io/">Mermaid</a>.
 The home made <a href="https://gohugo.io/content-management/shortcodes/">shortcode</a> worked out pretty well; I knew which file to put it in and another user&rsquo;s blog post showed the <code>.js</code> and <code>.html</code> needed to kick it all off.
-The result, below, needs to be in a theme&rsquo;s <code>layouts/shortcodes/mermaid.html</code> and then allows <code>{{</code><code>&lt;mermaid&gt;</code><code>}}...{{</code><code>&lt;/mermaid&gt;</code><code>}}</code> <a href="https://gohugo.io/content-management/shortcodes/">shortcodes</a> to embed diagrams in your/my blog posts.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ $_hugo_config := `{ &#34;version&#34;: 1 }` }}
+The result, below, needs to be in a theme&rsquo;s <code>layouts/shortcodes/mermaid.html</code> and then allows <code>{{``&lt;mermaid&gt;``}}...{{``&lt;/mermaid&gt;``}}</code> <a href="https://gohugo.io/content-management/shortcodes/">shortcodes</a> to embed diagrams in your/my blog posts.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ $_hugo_config := `{ &#34;version&#34;: 1 }` }}
 <span style="color:#75715e">&lt;!--
-</span><span style="color:#75715e">    file name and path from; https://github.com/matcornic/hugo-theme-learn/blob/master/layouts/shortcodes/mermaid.html
-</span><span style="color:#75715e">    shortcode js/html from; https://liveaverage.com/projects/integration-mermaid/
+</span><span style="color:#75715e">	file name and path from; https://github.com/matcornic/hugo-theme-learn/blob/master/layouts/shortcodes/mermaid.html
+</span><span style="color:#75715e">	shortcode js/html from; https://liveaverage.com/projects/integration-mermaid/
 </span><span style="color:#75715e">--&gt;</span>
 &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/mermaid@8.1.0/dist/mermaid.min.js&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
 &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
-    <span style="color:#a6e22e">mermaid</span>.<span style="color:#a6e22e">initialize</span>({ 
-        <span style="color:#a6e22e">theme</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;dark&#39;</span>,
-        <span style="color:#a6e22e">themeCSS</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
-        <span style="color:#a6e22e">cloneCssStyles</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
-        <span style="color:#a6e22e">useMaxWidth</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
-        <span style="color:#a6e22e">htmlLabels</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
-        <span style="color:#a6e22e">flowchart</span><span style="color:#f92672">:</span> { 
-                <span style="color:#a6e22e">curve</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;basis&#39;</span> 
-        }
-    });
+	<span style="color:#a6e22e">mermaid</span>.<span style="color:#a6e22e">initialize</span>({ 
+		<span style="color:#a6e22e">theme</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;dark&#39;</span>,
+		<span style="color:#a6e22e">themeCSS</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
+		<span style="color:#a6e22e">cloneCssStyles</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+		<span style="color:#a6e22e">useMaxWidth</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+		<span style="color:#a6e22e">htmlLabels</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+		<span style="color:#a6e22e">flowchart</span><span style="color:#f92672">:</span> { 
+				<span style="color:#a6e22e">curve</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;basis&#39;</span> 
+		}
+	});
 &lt;/<span style="color:#f92672">script</span>&gt;
-&lt;<span style="color:#f92672">pre</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mermaid&#34;</span> <span style="color:#a6e22e">align</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ if .Get &#34;</span><span style="color:#a6e22e">align</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}{{</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Get</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">align</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}{{</span> <span style="color:#a6e22e">else</span> <span style="color:#960050;background-color:#1e0010">}}</span><span style="color:#a6e22e">center</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;{{ safeHTML .Inner }}&lt;/<span style="color:#f92672">pre</span>&gt;</code></pre></div>
-<h1 id="examples">Examples</h1>
-
+&lt;<span style="color:#f92672">pre</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mermaid&#34;</span> <span style="color:#a6e22e">align</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ if .Get &#34;</span><span style="color:#a6e22e">align</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}{{</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Get</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">align</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}{{</span> <span style="color:#a6e22e">else</span> <span style="color:#960050;background-color:#1e0010">}}</span><span style="color:#a6e22e">center</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;{{ safeHTML .Inner }}&lt;/<span style="color:#f92672">pre</span>&gt;
+</code></pre></div><h1 id="examples">Examples</h1>
 <p>Here are some example diagrams from the <a href="https://learn.netlify.com/en/shortcodes/mermaid/">Learn theme.</a></p>
-
 <h2 id="graph-lr"><code>graph LR</code></h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mermaid" data-lang="mermaid">graph LR;
-    A[Hard edge] --&gt;|Link text| B(Round edge)
-    B --&gt; C{Decision}
-    C --&gt;|One| D[Result one]
-    C --&gt;|Two| E[Result two]</code></pre></div>
-
+<pre><code class="language-mermaid" data-lang="mermaid">graph LR;
+	A[Hard edge] --&gt;|Link text| B(Round edge)
+	B --&gt; C{Decision}
+	C --&gt;|One| D[Result one]
+	C --&gt;|Two| E[Result two]
+</code></pre>
 
 <script src="https://unpkg.com/mermaid@8.13.2/dist/mermaid.min.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -233,22 +205,20 @@ graph LR;
 	C -->|Two| E[Result two]
 </pre>
 
-
 <h2 id="sequencediagram"><code>sequenceDiagram</code></h2>
-
 <p>The <code>[ Healthcheck ]</code> loop text can&rsquo;t be (easily) seen below &hellip;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice-&gt;&gt;John: Hello John, how are you?
-    loop Healthcheck
-        John-&gt;John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts &lt;br/&gt;prevail...
-    John--&gt;Alice: Great!
-    John-&gt;Bob: How about you?
-    Bob--&gt;John: Jolly good!</code></pre></div>
-
+<pre><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
+	participant Alice
+	participant Bob
+	Alice-&gt;&gt;John: Hello John, how are you?
+	loop Healthcheck
+		John-&gt;John: Fight against hypochondria
+	end
+	Note right of John: Rational thoughts &lt;br/&gt;prevail...
+	John--&gt;Alice: Great!
+	John-&gt;Bob: How about you?
+	Bob--&gt;John: Jolly good!
+</code></pre>
 
 <script src="https://unpkg.com/mermaid@8.13.2/dist/mermaid.min.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -278,24 +248,23 @@ sequenceDiagram
 	Bob-->John: Jolly good!
 </pre>
 
-
 <h2 id="gantt"><code>gantt</code></h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mermaid" data-lang="mermaid">gantt
-    dateFormat  YYYY-MM-DD
-    title Adding GANTT diagram functionality to mermaid
-    section A section
-    Completed task            :done,    des1, 2014-01-06,2014-01-08
-    Active task               :active,  des2, 2014-01-09, 3d
-    Future task               :         des3, after des2, 5d
-    Future task2               :         des4, after des3, 5d
-    section Critical tasks
-    Completed task in the critical line :crit, done, 2014-01-06,24h
-    Implement parser and jison          :crit, done, after des1, 2d
-    Create tests for parser             :crit, active, 3d
-    Future task in critical line        :crit, 5d
-    Create tests for renderer           :2d
-    Add to mermaid                      :1d</code></pre></div>
-
+<pre><code class="language-mermaid" data-lang="mermaid">gantt
+	dateFormat  YYYY-MM-DD
+	title Adding GANTT diagram functionality to mermaid
+	section A section
+	Completed task            :done,    des1, 2014-01-06,2014-01-08
+	Active task               :active,  des2, 2014-01-09, 3d
+	Future task               :         des3, after des2, 5d
+	Future task2               :         des4, after des3, 5d
+	section Critical tasks
+	Completed task in the critical line :crit, done, 2014-01-06,24h
+	Implement parser and jison          :crit, done, after des1, 2d
+	Create tests for parser             :crit, active, 3d
+	Future task in critical line        :crit, 5d
+	Create tests for renderer           :2d
+	Add to mermaid                      :1d
+</code></pre>
 
 <script src="https://unpkg.com/mermaid@8.13.2/dist/mermaid.min.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -329,23 +298,22 @@ gantt
 	Add to mermaid                      :1d
 </pre>
 
-
 <h2 id="classdiagram"><code>classDiagram</code></h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mermaid" data-lang="mermaid">classDiagram
-    Class01 &lt;|-- AveryLongClass : Cool
-    Class03 *-- Class04
-    Class05 o-- Class06
-    Class07 .. Class08
-    Class09 --&gt; C2 : Where am i?
-    Class09 --* C3
-    Class09 --|&gt; Class07
-    Class07 : equals()
-    Class07 : Object[] elementData
-    Class01 : size()
-    Class01 : int chimp
-    Class01 : int gorilla
-    Class08 &lt;--&gt; C2: Cool label</code></pre></div>
-
+<pre><code class="language-mermaid" data-lang="mermaid">classDiagram
+	Class01 &lt;|-- AveryLongClass : Cool
+	Class03 *-- Class04
+	Class05 o-- Class06
+	Class07 .. Class08
+	Class09 --&gt; C2 : Where am i?
+	Class09 --* C3
+	Class09 --|&gt; Class07
+	Class07 : equals()
+	Class07 : Object[] elementData
+	Class01 : size()
+	Class01 : int chimp
+	Class01 : int gorilla
+	Class08 &lt;--&gt; C2: Cool label
+</code></pre>
 
 <script src="https://unpkg.com/mermaid@8.13.2/dist/mermaid.min.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -378,27 +346,25 @@ classDiagram
 	Class08 <--> C2: Cool label
 </pre>
 
-
 <p>This git one doesn&rsquo;t look quite right to me.</p>
-
 <h2 id="gitgraph"><code>gitGraph</code></h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mermaid" data-lang="mermaid">gitGraph:
+<pre><code class="language-mermaid" data-lang="mermaid">gitGraph:
 options
 {
-    &#34;nodeSpacing&#34;: 64,
-    &#34;nodeRadius&#34;: 8
+	&quot;nodeSpacing&quot;: 64,
+	&quot;nodeRadius&quot;: 8
 }
 end
-    commit
-    branch newbranch
-    checkout newbranch
-    commit
-    commit
-    checkout master
-    commit
-    commit
-    merge newbranch</code></pre></div>
-
+	commit
+	branch newbranch
+	checkout newbranch
+	commit
+	commit
+	checkout master
+	commit
+	commit
+	merge newbranch
+</code></pre>
 
 <script src="https://unpkg.com/mermaid@8.13.2/dist/mermaid.min.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -433,9 +399,7 @@ end
 	merge newbranch
 </pre>
 
-
 <h1 id="conclusion">Conclusion</h1>
-
 <p>I (finally) have a good way to drop charts into my blog posts.
 I was surprised how easy it was to develop the Shortcodes.
 At some point, it would seem polite to submit pull requests to the theme &hellip; if/when the snags noted above can be resolved.</p></div>

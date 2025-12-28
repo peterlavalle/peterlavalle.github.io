@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HowTo on Peter&#39;s Notebook</title>
@@ -6,11 +6,7 @@
     <description>Recent content in HowTo on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 19 Mar 2025 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://peterlavalle.github.io/tags/howto/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 19 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/howto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker Cleaning</title>
       <link>https://peterlavalle.github.io/post/docker-clean/</link>
@@ -148,7 +144,7 @@ I&amp;rsquo;ve worked around it by putting the following blurb near the top of m
       <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/launch-docker-daemon-mac-cli/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m away and want to start the Docker daemon.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:suspectRestart&#34;&gt;&lt;a href=&#34;#fn:suspectRestart&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&amp;rsquo;m away and want to start the Docker daemon.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -159,8 +155,8 @@ I&amp;rsquo;ve worked around it by putting the following blurb near the top of m
       <guid>https://peterlavalle.github.io/post/scala-extractor/</guid>
       <description>Scala&amp;rsquo;s extractors and unapply() represent a concept that I haven&amp;rsquo;t grok&amp;rsquo;ed until now.
 Most demonstrations seem to be too long or use the same types everywhere. Here are my thoughts on the concept;
-val a: C = ??? val i: I = ??? i match { case a(f: O) =&amp;gt; ??? }  This will try to call the below method
-class C { def unapply(i: I): Option[O] = ??? }  There&amp;rsquo;s some more flexibility;</description>
+val a: C = ???val i: I = ???i match {case a(f: O) =&amp;gt;???} This will try to call the below method
+class C {def unapply(i: I): Option[O] =???} There&amp;rsquo;s some more flexibility;</description>
     </item>
     
     <item>
@@ -173,7 +169,7 @@ class C { def unapply(i: I): Option[O] = ??? }  There&amp;rsquo;s some more flex
 Based on this tweet, I spent &amp;hellip; 30 minutes? Maybe? putting it together.
  This writeup took longer.
  The approach uses two behaviour classes to achive the classical effect of moving platforms that follow some path.
- mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&amp;rsquo;ve reached the Waypoint, continue with its next one   My example;</description>
+ mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&amp;rsquo;ve reached the Waypoint, continue with its next one    My example;</description>
     </item>
     
     <item>
@@ -193,8 +189,8 @@ I&amp;rsquo;m doing something else (of course) I&amp;rsquo;m setting up (what I 
       <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/pi3-docker-gogs/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been assembling a &amp;ldquo;full stack&amp;rdquo;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:fwiw&#34;&gt;&lt;a href=&#34;#fn:fwiw&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; for development that runs on my Pi3.
-This is all happening inside of &lt;a href=&#34;https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/&#34;&gt;Docker&lt;/a&gt; containers which made cleanup redonkulously easy.
+      <description>&lt;p&gt;I&amp;rsquo;ve been assembling a &amp;ldquo;full stack&amp;rdquo;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; for development that runs on my Pi3.
+This is all happening inside of [Docker][piDocker] containers which made cleanup redonkulously easy.
 Today I was looking at a source code management system; something of a &amp;ldquo;my own GitHub&amp;rdquo; which I can run on my own network.&lt;/p&gt;</description>
     </item>
     
@@ -208,7 +204,8 @@ Today I was looking at a source code management system; something of a &amp;ldqu
 There&amp;rsquo;s not a lot of OC here, just clarity.
 NameCheap DynDNS on a Pi3 I use NameCheap (because they&amp;rsquo;re anti-SOPA) for DNS. The client program, ddclient, can connect to NameCheap.
 I&amp;rsquo;m using raspbian, so, first;
- run sudo apt-get install ddclient on your Pi find the dynamic DNS settings on NameCheap&amp;rsquo;s website  Dashboard &amp;gt;&amp;gt;&amp;gt; Domain List &amp;gt;&amp;gt;&amp;gt; Manage &amp;gt;&amp;gt;&amp;gt; Advanced DNS they do like to change these things around  halfway down the page, there should be a DYNAMIC DNS thingie  enable it (if you haven&amp;rsquo;t already) note the blurb-what-looks-like-a-SHA  edit your /etc/ddclient.</description>
+  run sudo apt-get install ddclient on your Pi
+  find the dynamic DNS settings on NameCheap&amp;rsquo;s website</description>
     </item>
     
     <item>
@@ -218,7 +215,7 @@ I&amp;rsquo;m using raspbian, so, first;
       
       <guid>https://peterlavalle.github.io/post/replace-samba-with-winsshfs/</guid>
       <description>I connected my Windows desktop to our office file server using SSHFS rather than SaMBa. I am happy about that.
-For some reason one of our SaMBa systems got twitchy sometime last month. This is a problem since I&amp;rsquo;ve inherited a script that;
+ For some reason one of our SaMBa systems got twitchy sometime last month. This is a problem since I&amp;rsquo;ve inherited a script that;
  I don&amp;rsquo;t yet understand runs on Windows (10?) exclusively reads data from \\foo\bar\project\user\project3\data\something paths  Since I know that SSHFS already works, I&amp;rsquo;m setting that up as a substitue.</description>
     </item>
     
@@ -240,9 +237,10 @@ DNS and Dynamic IP Addresses The Domain Naming System is how those readable text
       
       <guid>https://peterlavalle.github.io/post/atom-macros/</guid>
       <description>I haven&amp;rsquo;t posted anything in awhile &amp;hellip; so here&amp;rsquo;s how to get Atom.io to get macros that work kind-of-like NotePad++
- Install atom-keyboard-macros into Atom. &amp;gt; The default keybindings did nothing for me &amp;hellip; sorry
- open your keybindings.cson
- Hit CTRL+, &amp;gt; click on Keybindings &amp;gt; click on the blue text that says your keymap file  paste this wodge into the bottom of your keybindings.cson PRESERVE THE INDENTATION!</description>
+   Install atom-keyboard-macros into Atom.
+ The default keybindings did nothing for me &amp;hellip; sorry
+   open your keybindings.cson
+ Hit CTRL+, &amp;gt; click on Keybindings &amp;gt; click on the blue text that says your keymap file    paste this wodge into the bottom of your keybindings.</description>
     </item>
     
     <item>
@@ -252,7 +250,7 @@ DNS and Dynamic IP Addresses The Domain Naming System is how those readable text
       
       <guid>https://peterlavalle.github.io/post/mirroring-github-to-bitbucket/</guid>
       <description>This seemed a lot longer when I planned it in my notebook at lunch.
-   GitHub user project (both sides) BitBucket user SCM Schedule     ocornut imgui g-pechorin None Periodic     Install hg-git  You&amp;rsquo;ll have to do this on the Jenkins server You&amp;rsquo;ll have to do it either for the Jenkins user or all I&amp;rsquo;m using an OsX machine as my host, so I was able to use easy_install to install hg-git and dulwich  setup a project on GitHub create a Jenkins Freestyle project which runs periodically  Polling the SCM was NOT an option since there&amp;rsquo;s no default branch on GitHub  &amp;hellip; this is a quirk of hg-git &amp;hellip; I think &amp;hellip; IIRC/YRMV - so sling me a tweet or whatever if I&amp;rsquo;m wrong   program the job to pull from git, push to hg, and ignore results of 1</description>
+   GitHub user project (both sides) BitBucket user SCM Schedule     ocornut imgui g-pechorin None Periodic     Install hg-git  You&amp;rsquo;ll have to do this on the Jenkins server You&amp;rsquo;ll have to do it either for the Jenkins user or all I&amp;rsquo;m using an OsX machine as my host, so I was able to use easy_install to install hg-git and dulwich   setup a project on GitHub create a Jenkins Freestyle project which runs periodically  Polling the SCM was NOT an option since there&amp;rsquo;s no default branch on GitHub  &amp;hellip; this is a quirk of hg-git &amp;hellip; I think &amp;hellip; IIRC/YRMV - so sling me a tweet or whatever if I&amp;rsquo;m wrong     program the job to pull from git, push to hg, and ignore results of 1  this was only elaborate because I needed it to not fail when there were no changes #!</description>
     </item>
     
     <item>
@@ -275,7 +273,7 @@ I have a (secret) project called &amp;ldquo;nite-nite/&amp;rdquo; in which I use
       <guid>https://peterlavalle.github.io/post/myspaceships/</guid>
       <description>I have an old Unity project that I haven&amp;rsquo;t looked at in awhile - this one. If memory serves; assembling a WebGL version is slow and boring - so I&amp;rsquo;m making my eager little Jenkins server do it.
 Really I&amp;rsquo;m a bit bored with sbt-launch malarkey and I wanted to see if I could get this rolling. Broadly the steps that I followed went like this;
- Install Unity (5.</description>
+ Install Unity (5.3.3) with WebGL modules  5.</description>
     </item>
     
     <item>

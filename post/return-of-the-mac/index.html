@@ -11,12 +11,12 @@
 		<meta property="og:title" content="Return of the Mac" />
 <meta property="og:description" content="Both of my pi3 are broken!
 One (physically and literally) melts any pen drive connected to it - and - the other &hellip; is &hellip; dead?
-
 I have a MacMini from Mid-2011 so here&rsquo;s what happened when I reformatted it to be my new Debian host." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/return-of-the-mac/" />
-<meta property="article:published_time" content="2023-09-10T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2023-09-10T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/return-of-the-mac/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-09-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-09-10T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -97,69 +97,67 @@ if (!doNotTrack) {
 				<h1 class="entry__title">Return of the Mac</h1>
 				<div class="entry__content"><p>Both of my pi3 are broken!
 One (physically and literally) melts any pen drive connected to it - and - the other &hellip; is &hellip; dead?</p>
-
 <p>I have a MacMini from Mid-2011 so here&rsquo;s what happened when I reformatted it to be my new Debian host.</p>
-
-<hr />
-
+<hr>
 <p>I haven&rsquo;t been &ldquo;with this&rdquo; for a while so it took me a few tries to get the Mac running headless.
 I still can&rsquo;t get WiFi up (IDK) but I can live with my mains networking kit &hellip; but okay!</p>
-
 <p>I&rsquo;m also giving up on OctoPrint &hellip; but &hellip; that&rsquo;s fine &hellip;</p>
-
 <h2 id="finding-an-image">Finding an Image</h2>
-
 <p>Pulling together whatnot I found the following table of data &hellip; which &hellip; fine; I have a 5.1 Mac Mini</p>
-
-<p>|Intro. |July 20, 2011  |Disc.  October 23, 2012|
-|&ndash;|&ndash;|&ndash;|
-|Order  |MC815LL/A  |Model  A1347 (EMC 2442)
-|Family |Mid-2011   |ID Macmini5,1
-|RAM    |2 GB   |VRAM   288 MB*
-|Storage|   500 GB HDD| Optical None*</p>
-
+<table>
+<thead>
+<tr>
+<th>Intro.</th>
+<th>July 20, 2011</th>
+<th>Disc.  October 23, 2012</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Order</td>
+<td>MC815LL/A</td>
+<td>Model  A1347 (EMC 2442)</td>
+</tr>
+<tr>
+<td>Family</td>
+<td>Mid-2011</td>
+<td>ID Macmini5,1</td>
+</tr>
+<tr>
+<td>RAM</td>
+<td>2 GB</td>
+<td>VRAM   288 MB*</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>500 GB HDD</td>
+<td>Optical None*</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
-<p>It&rsquo;s still Super Tedious &trade; that Apple won&rsquo;t make this obvious &hellip; but okay!</p>
+<p>It&rsquo;s still Super Tedious (TM) that Apple won&rsquo;t make this obvious &hellip; but okay!</p>
 </blockquote>
-
 <p>Debian&rsquo;s website had an <code>.iso</code> that seemed fine &hellip; I guess; weird that the &ldquo;network install&rdquo; images are now the size of a CD &hellip; but okay!</p>
-
 <h2 id="writign-the-image">Writign the Image</h2>
-
 <p>I have a day job in development; I use a Windows desktop.</p>
-
 <p>So, I need a Windows tool to write this image as a Bootable pen drive.</p>
-
 <p>PenDrive Linux &hellip; doesn&rsquo;t do that anymore.</p>
-
 <p>Rufus does - so I&rsquo;m using that going forward.</p>
-
 <h2 id="partitions">Partitions</h2>
-
 <p>I tried to keep the Mac recovery partitions, but, wasn&rsquo;t able to do that &hellip; but okay!</p>
-
 <p>I deleted everything and let the partition manager go wild with it - seems fine.</p>
-
 <h2 id="package-selection">Package Selection</h2>
-
 <p>The setup was simple.</p>
-
 <p>I skipped all of the GUI stuff and added SSHd and the other basics.
 Once reformatting was done, I SSH&rsquo;ed in and added Docker from apt - no problem.</p>
-
 <h2 id="next-time">Next Time</h2>
-
 <p>The missing WiFi package seems to be <code>b43/ucode29_mimo.fw</code> which (I guess) comes from <code>b43-fwcutter</code> and/or <code>firmware-b43-installer</code>.
 I messed around with it for a while, but, it didn&rsquo;t seem to &ldquo;kick in&rdquo; which made it a bit of a bust.</p>
-
-<p>In a PerfectWorld &trade; I&rsquo;d be able to add WiFi and hide this little plate downstairs or something - but - I&rsquo;ll probably put it in the network cabinet connected to the router by a physical cable &hellip; once my electrical problems here are &ldquo;sorted&rdquo;</p>
-
+<p>In a PerfectWorld (TM) I&rsquo;d be able to add WiFi and hide this little plate downstairs or something - but - I&rsquo;ll probably put it in the network cabinet connected to the router by a physical cable &hellip; once my electrical problems here are &ldquo;sorted&rdquo;</p>
 <p>&hellip; I have unrelated electrical issues at home &hellip; I should go deal with those today; but okay!</p>
-
 <h2 id="links">Links</h2>
-
 <p>If you&rsquo;re coming here from the future - you may find some of these useful &hellip; or not; stuff changes, and, I wasn&rsquo;t 100% successful.</p>
-
 <ul>
 <li><a href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/">https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/</a></li>
 <li><a href="https://neilzone.co.uk/2021/07/wi-fi-on-a-2012-mac-mini-running-debian-11">https://neilzone.co.uk/2021/07/wi-fi-on-a-2012-mac-mini-running-debian-11</a></li>

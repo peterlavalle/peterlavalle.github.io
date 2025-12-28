@@ -17,7 +17,9 @@ the functions are being save just fine, but, the variables aren&rsquo;t?
 why aren&rsquo;t variables being set?
 2017-03-20 Had a &ldquo;sick weekend&rdquo; where I &hellip; think that I got &ldquo;a lot&rdquo; done &hellip; maybe &hellip;" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/junk/dukrow/" />
+<meta property="og:url" content="https://peterlavalle.github.io/junk/dukrow/" /><meta property="article:section" content="junk" />
+
+
 
 
 	<link rel="stylesheet" href="/css/bundle.css">
@@ -96,103 +98,65 @@ if (!doNotTrack) {
 	<div class="entry__meta meta mb">
 	</div>
 				<h1 class="entry__title"></h1>
-				<div class="entry__content">
-
-<h1 id="dukrow">DukRow</h1>
-
+				<div class="entry__content"><h1 id="dukrow">DukRow</h1>
 <h2 id="2017-03-21">2017-03-21</h2>
-
 <p>I seem to be missing some of the fields?
 The &ldquo;each&rdquo; method isn&rsquo;t working for <code>behaviour_test.row.js</code></p>
-
 <p>(started using GitLab to organise issues)</p>
-
 <p><a href="https://gitlab.com/g-pechorin/dukrow/issues/1">https://gitlab.com/g-pechorin/dukrow/issues/1</a></p>
-
 <p>the variables being set by the script aren&rsquo;t being saved &hellip; because &hellip; of &hellip; what?</p>
-
 <p>the functions are being save just fine, but, the variables aren&rsquo;t?</p>
-
 <p>why aren&rsquo;t variables being set?</p>
-
 <h2 id="2017-03-20">2017-03-20</h2>
-
 <p>Had a &ldquo;sick weekend&rdquo; where I &hellip; think that I got &ldquo;a lot&rdquo; done &hellip; maybe &hellip;</p>
-
 <p>Much progress implementing, very little written planning, now (sort of) stuck on pushing through encoding with the new system.
 If I didn&rsquo;t have unit tests - this would be a nightmare.</p>
-
 <ul>
 <li>Seems to be saving most-of the first unit test - yay!</li>
 <li>Not sure why it&rsquo;s skipping</li>
 </ul>
-
 <h3 id="suboxone-closure-pushing">Suboxone &ldquo;closure&rdquo; pushing</h3>
-
 <p>N pre-args are pushed on the stack;</p>
-
 <pre><code>	sub.push&lt;const char*&gt;(&quot;arg0-n&quot;)
 	...
 	sub.push&lt;const char*&gt;(&quot;arg0-2&quot;)
 	sub.push&lt;const char*&gt;(&quot;arg0-1&quot;)
-</code></pre>
-
-<p>The &ldquo;push closure&rdquo; method is prototype</p>
-
+</code></pre><p>The &ldquo;push closure&rdquo; method is prototype</p>
 <pre><code>	template&lt;nUpVals: uint16, argC: uint16, returns: bool&gt;
 	def suboxone::push_closure(code:(suboxone&amp;) =&gt; void)
-</code></pre>
-
-<p>Before the code is executed, the pre-args will be pre-pended to the natural args
+</code></pre><p>Before the code is executed, the pre-args will be pre-pended to the natural args
 After the code completes - the top arg will be the result, unless, &ldquo;FALSE&rdquo; was passed as the return type</p>
-
 <p>The templates are &hellip; sort of &hellip; a bad idea for code-size</p>
-
 <p>Defo take advantage of 0-arg stuff;</p>
-
 <p>There will/should be a (shell based?) method pushing thing</p>
-
 <pre><code>	template&lt;T: typename, nUpVals: uint16, argC: uint16, returns: bool&gt;
 	def suboxone::shell&lt;T&gt;::push_method(code:(T&amp;, suboxone&amp;) =&gt; void)
-</code></pre>
-
-<p>This one will wrap the above (I expect) but examine &ldquo;this&rdquo;</p>
-
+</code></pre><p>This one will wrap the above (I expect) but examine &ldquo;this&rdquo;</p>
 <h2 id="2017-03-17">2017-03-17</h2>
-
 <p>It looks like it just needs more work to carry on.</p>
-
 <ul>
 <li>I copied in scriptie/require() ; seems fine</li>
 <li>I added extra warnings to the prototype code</li>
 <li>I changed subspace to be &hellip; lighter &hellip; am calling it <code>suboxone::subenv(std::function&lt;void(void)&gt;)</code></li>
 </ul>
-
 <p>= I&rsquo;m up to needing adaptations to the &ldquo;inhume&rdquo; module now
 = I think that I need an inheritance mechanism for vtables</p>
-
 <ul>
 <li>so I added an extends function to do extensions and an &ldquo;extends&rdquo; function to lookup extensions</li>
 <li>&hellip; maybe there&rsquo;s something interesting here &hellip;</li>
 </ul>
-
 <h2 id="2017-03-16">2017-03-16</h2>
-
 <p>My present troubles are associated with most recent rewriting of everything - I need a stable build soon.
 Ivan discussed &ldquo;something&rdquo; and I think that this framework might make an attractive way to run Haskell-as-a-scripting language or Haskell-as-embeddable; not sure.
 Both sound like relegating Haskell to a lesser role &hellip; which worries me.</p>
-
 <p>I like the documentation that I wrote.</p>
-
 <p>After creation of <code>scriptie</code> instances - it looks like the registered object &hellip; isn&rsquo;t what I thought?</p>
-
 <ul>
 <li>I moved the source code to the new home in a <code>??/??.cpp.??.hpp</code> file</li>
 <li>I&rsquo;m going to try printing kv-pairs and see what&rsquo;s in the table</li>
 <li>&hellip;</li>
 <li>looks like the tables are identical in both places &hellip; almost like the vtable functions aren&rsquo;t being added in?</li>
 </ul>
-
 <p>= I was using <code>sub.setshell(-1);</code> instead of <code>sub.setshell(-2);</code> - I was assigning the prototype as its own prototype</p>
 </div>
 				

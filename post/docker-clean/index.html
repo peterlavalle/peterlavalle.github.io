@@ -11,9 +11,10 @@
 		<meta property="og:title" content="Docker Cleaning" />
 <meta property="og:description" content="How I clean out old Docker data." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/docker-clean/" />
-<meta property="article:published_time" content="2025-03-19T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2025-03-19T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/docker-clean/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2025-03-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-03-19T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -93,54 +94,41 @@ if (!doNotTrack) {
 	</div>
 				<h1 class="entry__title">Docker Cleaning</h1>
 				<div class="entry__content"><p>How I clean out old Docker data.</p>
-
-<hr />
-
+<hr>
 <aside style="float: right;">
-	<nav id="TableOfContents">
-<ul>
-<li><a href="#cleaning-up-docker">Cleaning up Docker</a></li>
-</ul>
-</nav>
+	<nav id="TableOfContents"></nav>
 </aside>
-
 <h1 id="cleaning-up-docker">Cleaning up Docker</h1>
-
 <p>I&rsquo;ve been recreating Docker images a lot for work.
 This seems to slowly balloon the Docker disk image, so I&rsquo;ve had to work out how to clean everything out.</p>
-
 <blockquote>
 <p>&hellip; since I obviously don&rsquo;t deploy on my workstation there&rsquo;s nothing that needs to be kept &hellip;</p>
 </blockquote>
-
 <p>This might not work with Hyper-V Docker on Windows; I don&rsquo;t have access to Hyper-V flavour.</p>
-
 <ul>
 <li>stop/remove all docker containers
-
 <ul>
 <li><code>docker stop $(docker ps -aq)</code></li>
 <li><code>docker rm -f $(docker ps -aq)</code></li>
 <li>if you don&rsquo;t have &ldquo;bash stuff&rdquo; you can run <code>docker ps -aq</code> and then copy/paste the ids for docker stop / docker rm -f</li>
 <li>&hellip; i don&rsquo;t have bash stuff &hellip;</li>
-</ul></li>
+</ul>
+</li>
 <li>run the prune thing
-
 <ul>
 <li><code>docker system prune -a --volumes</code></li>
-</ul></li>
+</ul>
+</li>
 <li>defragment the virtual disk (this is probably the important part)
-
 <ul>
 <li>open power shell as admin</li>
 <li><code>wsl --shutdown</code>
-
 <ul>
 <li>docker dekstop will pop up an error message (ignore it until you&rsquo;re done)</li>
-</ul></li>
+</ul>
+</li>
 <li>open diskpart with the <code>diskpart</code> command</li>
 <li>run the following steps
-
 <ul>
 <li>&hellip; adjust the file command to match where youh <code>.vhdx</code> is - it should be big</li>
 <li><code>select vdisk file=&quot;C:\Users\peter\AppData\Local\Docker\wsl\disk\docker_data.vhdx&quot;</code></li>
@@ -148,14 +136,16 @@ This seems to slowly balloon the Docker disk image, so I&rsquo;ve had to work ou
 <li><code>compact vdisk</code></li>
 <li><code>detach vdisk</code></li>
 <li><code>exit</code></li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>if there&rsquo;s still a shortage of disk space &hellip; idk &hellip;
-
 <ul>
 <li>Diskitude (or whatever) visualises disk usage <a href="https://madebyevan.com/diskitude/">https://madebyevan.com/diskitude/</a></li>
 <li>&hellip; so i&rsquo;ve been using that to locate large things i don&rsquo;t need</li>
-</ul></li>
+</ul>
+</li>
 <li>when done, restarting Docker Desktop (or clicking the &ldquo;Restart&rdquo; button on that error message) gets everything rolling again</li>
 </ul></div>
 				

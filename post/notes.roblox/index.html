@@ -11,9 +11,10 @@
 		<meta property="og:title" content="A Maze Ed in Roblox" />
 <meta property="og:description" content="I made a maze with Roblox - https://www.roblox.com/games/9397399366/demo-maze-1" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/notes.roblox/" />
-<meta property="article:published_time" content="2022-04-20T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2022-04-20T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/notes.roblox/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-04-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-04-20T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -93,89 +94,57 @@ if (!doNotTrack) {
 	</div>
 				<h1 class="entry__title">A Maze Ed in Roblox</h1>
 				<div class="entry__content"><p>I made a maze with Roblox - <a href="https://www.roblox.com/games/9397399366/demo-maze-1">https://www.roblox.com/games/9397399366/demo-maze-1</a></p>
-
-<hr />
-
+<hr>
 <aside style="float: right;">
-	<nav id="TableOfContents">
-<ul>
-<li><a href="#setup">Setup</a></li>
-<li><a href="#background">Background</a></li>
-<li><a href="#attempt">Attempt</a></li>
-<li><a href="#results">Results</a></li>
-<li><a href="#future">Future</a></li>
-</ul>
-</nav>
+	<nav id="TableOfContents"></nav>
 </aside>
-
 <h1 id="setup">Setup</h1>
-
 <p>For &hellip; <em>reasons</em> &hellip; I wanted to know more about <a href="https://en.wikipedia.org/wiki/Roblox">Roblox</a> and how to make games in it.</p>
-
 <p>Up until this point, my perception had been that this was another like-Minecraft with some LEGO aesthetics.
 The motivating incident imparted the wisdom to me that this was <strong>wrong</strong> but I remain confident that the visuals strongly contribute to this perception.</p>
-
 <p>In reality, Roblox the product would be better described as an SDK and platform for user-created games.
 Typically, Minecraft is viewed as a game that focuses on building a world, city, castle, whatever with peers.
 Roblox&rsquo;s base &ldquo;software&rdquo; doesn&rsquo;t have this (or any) functionality itself, and, requires user-created content to launch.
 Roblox the product places much closer on the spectrum to Unity3D than Minecraft - a detail I hadn&rsquo;t realised.</p>
-
 <h1 id="background">Background</h1>
-
 <p>Roblox the platform works building &ldquo;places?&rdquo; or &ldquo;experiences?&rdquo; in contemporary parlance.
 This is the sort of design I think VR vendors and slobbering over but can&rsquo;t quite bear to implement as it&rsquo;d mean they lost some amount of proprietary control over their revenue.</p>
-
 <p>The platform aggregates a whole project into a single file (in one of two formats) that is either stored/built/exported locally or &ldquo;in the cloud&rdquo; provided by Roblox Corporation.
 The thing is an XML tree with various sections including map/scene definition and Lua source code embedded as <code>&lt;![CDATA[</code> section.
 It seems that there is some amount of collaboration functionality, titled &ldquo;Team Create&rdquo; available - however, I struggle to believe that this aspect isn&rsquo;t a glass ceiling for project development.
 3rd Party tools seem to be capable of detecting and updating the files, and AFAIK, the platform itself seems indifferent to this.</p>
-
 <p>The whole thing is sandboxed - places and their scripts cannot access stuff on or from the user&rsquo;s PC.</p>
-
 <p>There is some amount of HTTP request functionality, which makes the concept of ideas like crypto miners or other dark web batch processors translated into Lua and read/.wrting from servers via that.
 I could be mistaken; there were notes about allowed domains for the HTTP requests, so, perhaps there&rsquo;s some amount of server-side monitoring that Roblox Corporation can snuff this out.
 This would not (however) threaten a user&rsquo;s PC, just annoy them.</p>
-
 <p>The produced places will remain &ldquo;safe&rdquo; to download and play, at the cost of some quirky constraints on creativity.</p>
-
 <h1 id="attempt">Attempt</h1>
-
 <p>Feeling that the structure of the places wasn&rsquo;t conducive to anything serious, I started by trying to learn more elaborate toolsets.
-The tools of interest that I found were <a href="https://rojo.space/">Rojo</a> a build tool and <a href="https://roblox-ts.com/">Roblox-TS</a> a <a href="https://www.typescriptlang.org/">TypeScript to Lua</a> compiler.<sup class="footnote-ref" id="fnref:LuaU"><a href="#fn:LuaU">1</a></sup>
+The tools of interest that I found were <a href="https://rojo.space/">Rojo</a> a build tool and <a href="https://roblox-ts.com/">Roblox-TS</a> a <a href="https://www.typescriptlang.org/">TypeScript to Lua</a> compiler.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
 In the end, for this exercise, I found the &ldquo;onboarding effort&rdquo; to be an obstacle - this is however my problem (not theirs) and if I continue to work with this platform, I expect to use these tools.</p>
-
 <p>For this project, I used my resulting place file (after abandoning Rojo and Roblox-TS) to build a random maze.
 Starting with a &ldquo;Classic Baseplate&rdquo; project I constructed a static starting environment, three &ldquo;prefabs&rdquo; then a script that <a href="https://github.com/g-pechorin/roblox-mazes/blob/21d54ffb5d118f25522f302df3977e06ff9657fe/just-maze.rbxlx#L17573">cloned and deleted elements</a> until a maze had been built.</p>
-
 <h1 id="results">Results</h1>
-
 <p>The resulting project could be improved with more functionality or minimalism, but, serves the purpose of demonstrating that I can implement stuff in the platform.
 A lot of &ldquo;legacy code&rdquo; is in the final place file - most seem to be Roblox-TS boilerplate.
 I ran into a peculiar goof where I began to see the files reach <code>O(N!)</code> complexity - an aspect of my diagnosis is that a small delay is present in the script and the maze is spawned as the player watches.</p>
-
 <p>Writing it &ldquo;as Roblox Corporation intended&rdquo; was largely a result of being short on time, but, I would argue to anyone learning this tool that&rsquo;s exactly what they should do first.</p>
-
 <p>I can only compare this to Unity3D, and, the differences in scripting the two platforms are subtly different &hellip; and a delight.
 Roblox&rsquo;s scripts can pause/resume whereas that&rsquo;s less of an option for Unity.
 Scripts in Unity are invoked through &ldquo;magical reflection&rdquo; from the engine, something that infuriates new programmers.,
-Roblox&rsquo;s scripts are normal Lua<sup class="footnote-ref" id="fnref:LuaU"><a href="#fn:LuaU">1</a></sup> programs with no real &ldquo;magic&rdquo; which is interesting.
+Roblox&rsquo;s scripts are normal Lua<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> programs with no real &ldquo;magic&rdquo; which is interesting.
 This requires explicitly attaching event handlers, but, means stuff is intentional I guess.
 This does (however) require scripts to be invoked automatically somehow - something that could need getting used to.
 I prefer this approach (to Unity) as it feels less <em>weird</em> than the event processing system - though that may be from my neurological compulsion to reverse engineer everything.</p>
-
 <h1 id="future">Future</h1>
-
 <p>This experience has not put me off from doing more work with Roblox.</p>
-
 <p>I really would like to use Rojo.
 Installation of the tool (aside from a snag related to Windows and <code>^</code>) was so flawless &hellip; it made me want to explore <a href="https://en.wikipedia.org/wiki/Rust_(programming_language)">Rust</a> that it was written in.
 Coordinating the compilers, plugin, and (Roblox Platform) editor &hellip; was mildly tedious; the sort of thing that screams 3rd Party.
 It worked - it&rsquo;s just an aspect that less intelligent critics will get hung upon.</p>
-
 <p>While TypeScript itself doesn&rsquo;t impress me (sorry) the chance to use ECMAScript stuff is interesting.
-<a href="https://coffeescript.org/">CoffeeScript</a><sup class="footnote-ref" id="fnref:deadCoffee"><a href="#fn:deadCoffee">2</a></sup> is a lovely little language that compiles to JavaScript - so could be used with this.
+<a href="https://coffeescript.org/">CoffeeScript</a><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> is a lovely little language that compiles to JavaScript - so could be used with this.
 My graduate work focussed on <a href="https://www.purescript.org/">PureScript</a> and <a href="https://en.wikipedia.org/wiki/Functional_reactive_programming">Functional Reactive Programming</a> and it&rsquo;d be interesting to introduce these concepts to a deceptively simple platform.</p>
-
 <p>All of this would require more study and work with the platform.
 Various forms of data persistence exist for the platform.
 The instructional materials I followed introduced a leaderboard mechanism that I would like to explore.
@@ -183,24 +152,22 @@ Likely this will touch on interactions between multiple users - a feature that I
 It&rsquo;s worth remembering that the Roblox Platform is very much geared towards MMOs.
 I don&rsquo;t have specific questions per se, rather I have enough experience to know what those questions would be.
 During this maze project, I regularly &ldquo;Google&rsquo;ed It&rdquo; and quickly progressed; I need practice, not instruction.</p>
-
 <p>Overall, I think the experience has been inspiring enough that it&rsquo;s worth my time.
 I realise that CS curriculums are generally bogged down with tedious details, but, would still advocate pushing students to try something like this as a way to broaden their understanding of programming.</p>
-<div class="footnotes">
-
-<hr />
-
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:LuaU"><p>In hindsight, this was a bit more silly than I&rsquo;d realised.
+<li id="fn:1" role="doc-endnote">
+<p>In hindsight, this was a bit more silly than I&rsquo;d realised.
 Roblox uses <a href="https://luau-lang.org/">LuaU</a> which is a superset of Lua adding gradual type checking to the language.
-In effect - LuaU is to Lua as TypeScript is to ECMAScript - I gain minimal &ldquo;real&rdquo; advantages by using TypeScript.</p>
- <a class="footnote-return" href="#fnref:LuaU"><sup>[return]</sup></a></li>
-
-<li id="fn:deadCoffee"><p>CoffeeScript was declared &ldquo;DEAD&rdquo; in 2017 with ES2016 by the shouty Twitter community.
-Despite this, the project is regularly updated and seems to put out two or so versions a year.</p>
- <a class="footnote-return" href="#fnref:deadCoffee"><sup>[return]</sup></a></li>
+In effect - LuaU is to Lua as TypeScript is to ECMAScript - I gain minimal &ldquo;real&rdquo; advantages by using TypeScript.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>CoffeeScript was declared &ldquo;DEAD&rdquo; in 2017 with ES2016 by the shouty Twitter community.
+Despite this, the project is regularly updated and seems to put out two or so versions a year.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div></div>
+</section></div>
 				
 				<footer class="entry__footer">
 					

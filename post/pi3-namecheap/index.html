@@ -13,11 +13,13 @@
 There&rsquo;s not a lot of OC here, just clarity.
 NameCheap DynDNS on a Pi3 I use NameCheap (because they&rsquo;re anti-SOPA) for DNS. The client program, ddclient, can connect to NameCheap.
 I&rsquo;m using raspbian, so, first;
- run sudo apt-get install ddclient on your Pi find the dynamic DNS settings on NameCheap&rsquo;s website  Dashboard &gt;&gt;&gt; Domain List &gt;&gt;&gt; Manage &gt;&gt;&gt; Advanced DNS they do like to change these things around  halfway down the page, there should be a DYNAMIC DNS thingie  enable it (if you haven&rsquo;t already) note the blurb-what-looks-like-a-SHA  edit your /etc/ddclient." />
+  run sudo apt-get install ddclient on your Pi
+  find the dynamic DNS settings on NameCheap&rsquo;s website" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/pi3-namecheap/" />
-<meta property="article:published_time" content="2017-06-29T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-06-29T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/pi3-namecheap/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2017-06-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-06-29T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -96,51 +98,46 @@ if (!doNotTrack) {
 	<time class="entry__meta-published meta-published" datetime="2017-06-29T00:00:00Z">June 29, 2017</time>
 	</div>
 				<h1 class="entry__title">Pi3 NameCheap</h1>
-				<div class="entry__content">
-
-<p>This is a followup to a <a href="/post/pi3-dyndns/">previous post</a> because that one stopped working, now - this works.</p>
-
+				<div class="entry__content"><p>This is a followup to a <a href="/post/pi3-dyndns/">previous post</a> because that one stopped working, now - this works.</p>
 <p>There&rsquo;s not a lot of OC here, just clarity.</p>
-
 <h1 id="namecheap-dyndns-on-a-pi3">NameCheap DynDNS on a Pi3</h1>
-
 <p>I use <a href="https://www.namecheap.com/">NameCheap</a> (because they&rsquo;re anti-SOPA) for DNS.
 The client program, <a href="https://sourceforge.net/p/ddclient/wiki/Home/">ddclient</a>, can connect to <a href="https://www.namecheap.com/">NameCheap</a>.</p>
-
 <p>I&rsquo;m using raspbian, so, first;</p>
-
 <ol>
-<li>run <code>sudo apt-get install ddclient</code> on your Pi</li>
-<li>find the dynamic DNS settings on NameCheap&rsquo;s website
-
+<li>
+<p>run <code>sudo apt-get install ddclient</code> on your Pi</p>
+</li>
+<li>
+<p>find the dynamic DNS settings on NameCheap&rsquo;s website</p>
 <ul>
 <li><strong>Dashboard</strong> <code>&gt;&gt;&gt;</code> <strong>Domain List</strong> <code>&gt;&gt;&gt;</code> <strong>Manage</strong> <code>&gt;&gt;&gt;</code> <strong>Advanced DNS</strong></li>
 <li>they do like to change these things around</li>
-</ul></li>
-<li>halfway down the page, there should be a <strong>DYNAMIC DNS</strong> thingie
-
+</ul>
+</li>
+<li>
+<p>halfway down the page, there should be a <strong>DYNAMIC DNS</strong> thingie</p>
 <ul>
 <li>enable it (if you haven&rsquo;t already)</li>
 <li>note the blurb-what-looks-like-a-SHA</li>
-</ul></li>
-
-<li><p>edit your <code>/etc/ddclient.conf</code>to look like this</p>
-
-<pre><code>    ################
-    # namecheap ddclient.conf
-    # from https://blog.dembowski.net/2013/namecheap-dynamic-dns-setup-with-ddclient/
-    ################
-    use=web, web=checkip.dyndns.com/, web-skip='IP Address'
-    protocol=namecheap
-    server=dynamicdns.park-your-domain.com
-    login=your-domain-at-namecheap.whatnot
-    password='blurb-what-looks-like-a-SHA'
-    your-subdomain
-</code></pre></li>
+</ul>
+</li>
+<li>
+<p>edit your <code>/etc/ddclient.conf</code>to look like this</p>
+<pre><code>	################
+	# namecheap ddclient.conf
+	# from https://blog.dembowski.net/2013/namecheap-dynamic-dns-setup-with-ddclient/
+	################
+	use=web, web=checkip.dyndns.com/, web-skip='IP Address'
+	protocol=namecheap
+	server=dynamicdns.park-your-domain.com
+	login=your-domain-at-namecheap.whatnot
+	password='blurb-what-looks-like-a-SHA'
+	your-subdomain
+</code></pre><p>`</p>
+</li>
 </ol>
-
 <p>After rebooting my Pi (and giving any DNS caches time to flush) I could phone-home!</p>
-
 <p>&hellip; but you can also see if the DNS records on <a href="https://www.namecheap.com/">NameCheap</a>&rsquo;s website have updated.</p>
 </div>
 				

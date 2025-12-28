@@ -12,9 +12,10 @@
 <meta property="og:description" content="In which I ramble a bit about setting up CI for this very blog.
 I have a Jenkins server running on my OsX computer. (&hellip; or &hellip; I&rsquo;m setting one up anyway) I also have (am establishing?) a blog built by Hexo &hellip; because that seems the right way to do this sort of thing. My constraints of &ldquo;MarkDown&rdquo; and &ldquo;no really - let me use MarkDown because I&rsquo;m going to have a lot of code fragments&rdquo; seem alien to most blogging software - &ldquo;Hexo delivers&rdquo; as the kids say." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/hexo-os-x/" />
-<meta property="article:published_time" content="2016-02-10T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2016-02-10T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/hexo-os-x/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2016-02-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-02-10T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -93,73 +94,63 @@ if (!doNotTrack) {
 	<time class="entry__meta-published meta-published" datetime="2016-02-10T00:00:00Z">February 10, 2016</time>
 	</div>
 				<h1 class="entry__title">Hexo and Jenkins atop Os X</h1>
-				<div class="entry__content">
-
-<p>In which I ramble a bit about setting up CI for this very blog.</p>
-
+				<div class="entry__content"><p>In which I ramble a bit about setting up CI for this very blog.</p>
 <p>I have a <a href="https://jenkins-ci.org/">Jenkins</a> server running on my OsX computer.
 (&hellip; or &hellip; I&rsquo;m setting one up anyway)
 I also have (am establishing?) a blog built by <a href="https://hexo.io/">Hexo</a> &hellip; because that seems the right way to do this sort of thing.
 My constraints of &ldquo;<a href="https://daringfireball.net/projects/markdown/">MarkDown</a>&rdquo; and &ldquo;no really - let me use <a href="https://daringfireball.net/projects/markdown/">MarkDown</a> because I&rsquo;m going to have a lot of code fragments&rdquo; seem alien to most blogging software - &ldquo;<a href="https://hexo.io/">Hexo</a> delivers&rdquo; as the kids say.</p>
-
 <p>I knew that this would all work from a command line on the computer and a command line on my Windows 7 PC.
 After a bunch of chewing - I&rsquo;ve scrawled this post in victory as a sort of test.</p>
-
 <h1 id="npm-setup">NPM setup</h1>
-
 <p>Hexo is built in Node.JS.
 I installed it and played about with it as I was instructed.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install hexo
-npm install hexo-generator-sitemap --save</code></pre></div>
-<p>After installing Node.JS I encountered various errors and I switching to a stable version of NPM.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install hexo
+npm install hexo-generator-sitemap --save
+</code></pre></div><p>After installing Node.JS I encountered various errors and I switching to a stable version of NPM.
 (&hellip; which I thought I had already used but &hellip; I guess not)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm -g install npm</code></pre></div>
-<p>This was <a href="https://github.com/npm/npm/issues/7555">discussed here</a> but may be irrelevant.</p>
-
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm -g install npm
+</code></pre></div><p>This was <a href="https://github.com/npm/npm/issues/7555">discussed here</a> but may be irrelevant.</p>
 <h1 id="the-build">The Build</h1>
-
 <p>I setup <a href="https://jenkins-ci.org/">Jenkins</a> to poll (and pull) my repository at <code>H/15 * * * *</code>.
 I had already setup a <a href="https://hexo.io/">Hexo</a> site and configured it to deploy to GitHub pages.
 (&hellip; which incidentally don&rsquo;t seem to do anything interesting for you with Jekyll AFAIK)</p>
-
 <p>The &ldquo;secret&rdquo; to this recipe seemed to be that the <a href="https://jenkins-ci.org/">Jenkins</a> build seems to require installing  <a href="https://hexo.io/">Hexo</a> itself to work.
 Not <em>just</em> <code>npm install</code> in the folder but full-on <code>npm install hexo</code> et al.
 This seems odd to me but it&rsquo;s what worked &hellip; but this is a CI server so longish builds are fine with me.</p>
-
 <p>I used four steps, each a shell command, to perform the generation and <strong>deploy</strong> the site.</p>
-
 <p>The first command installs <a href="https://hexo.io/">Hexo</a>.
 I tried to install it (globally?) with <code>-g</code> but encountered a security exception.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install hexo</code></pre></div>
-<p>The second command installs a sitemap plugin that should make my site reachable from Google-like crawlers</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install hexo-generator-sitemap --save</code></pre></div>
-<p>The third command &hellip; installs &hellip; the site?
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install hexo
+</code></pre></div><p>The second command installs a sitemap plugin that should make my site reachable from Google-like crawlers</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install hexo-generator-sitemap --save
+</code></pre></div><p>The third command &hellip; installs &hellip; the site?
 This may be redundant but I&rsquo;m not interested in going through a <em>&ldquo;change&rdquo; &gt; &ldquo;reboot&rdquo; &gt; &ldquo;check&rdquo;</em> cycle to learn that I&rsquo;ve broken my configuration.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install</code></pre></div>
-<p>The fourth command actually generates the site and uploads the generated site.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install
+</code></pre></div><p>The fourth command actually generates the site and uploads the generated site.
 It seems odd to me <code>deploy</code> doesn&rsquo;t implicitly generate the site - but I can take advantage of that, see the Addendum!</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hexo deploy --generate</code></pre></div>
-<h1 id="conclusion">Conclusion</h1>
-
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hexo deploy --generate
+</code></pre></div><h1 id="conclusion">Conclusion</h1>
 <p>So &hellip; yeah &hellip; that&rsquo;s that.
 This post was the first one that I set to push out through this system.</p>
-
 <h1 id="addendum">Addendum</h1>
-
 <p>So it&rsquo;s been a few weeks/months and I want to stick generated HTML from somewhere else onto my site.
 But &hellip; Hexo tries to &ldquo;fill in the blanks&rdquo; which keeps a consistent CSS and <code>&lt;title&gt;</code> stuff &hellip; but breaks <a href="mySpaceShips">my Unity WebGL game</a>.
-To work around this, I&rsquo;ve
-* generated the WebGL to an <code>assets/</code> folder and committed it to the blog&rsquo;s repository
-    * an explanation of this is beyond the scope of this post &hellip; I&rsquo;ll write it up another time
-* split generation and deployment into two steps
-* copied the <code>assets/</code> folder into the blog&rsquo;s <code>public/</code> folder
-* deployed everything as normal</p>
-
+To work around this, I&rsquo;ve</p>
+<ul>
+<li>generated the WebGL to an <code>assets/</code> folder and committed it to the blog&rsquo;s repository
+<ul>
+<li>an explanation of this is beyond the scope of this post &hellip; I&rsquo;ll write it up another time</li>
+</ul>
+</li>
+<li>split generation and deployment into two steps</li>
+<li>copied the <code>assets/</code> folder into the blog&rsquo;s <code>public/</code> folder</li>
+<li>deployed everything as normal</li>
+</ul>
 <p>The fourth step above is replaced with these three commands;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hexo generate
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hexo generate
 cp -r assets/* public/
-hexo deploy</code></pre></div>
-<p>&hellip; and it works!</p>
+hexo deploy
+</code></pre></div><p>&hellip; and it works!</p>
 </div>
 				
 				<footer class="entry__footer">

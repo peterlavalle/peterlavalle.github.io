@@ -13,9 +13,10 @@
 DukTape is a C engine for executing ECMAScript 5.1ish. (&hellip; or JavaScript or whatever we&rsquo;re calling it this week) Notably, it&rsquo;s distributed as a trio of source files to ease integration.
 Lua is a C script engine (for the Lua languages) and is not distributed in such a nice way. So I spent a few hours preparing a (Python) script to repack Lua 5.3.3 into a single header." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/oth-palua-core/" />
-<meta property="article:published_time" content="2017-01-08T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-01-08T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/oth-palua-core/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2017-01-08T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-01-08T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -94,42 +95,30 @@ if (!doNotTrack) {
 	<time class="entry__meta-published meta-published" datetime="2017-01-08T00:00:00Z">January 08, 2017</time>
 	</div>
 				<h1 class="entry__title">Peter&#39;s Awesome Lua with the Core functionality we care about</h1>
-				<div class="entry__content">
-
-<p><a href="PALua-Core/out/palua-core.h">TL:DR ; results</a></p>
-
+				<div class="entry__content"><p><a href="PALua-Core/out/palua-core.h">TL:DR ; results</a></p>
 <p><a href="duktape.org/">DukTape</a> is a C engine for executing <a href="https://en.wikipedia.org/wiki/ECMAScript">ECMAScript 5.1ish</a>.
 (&hellip; or JavaScript or whatever we&rsquo;re calling it this week)
 Notably, it&rsquo;s distributed as a trio of source files to ease integration.</p>
-
 <p><a href="https://www.lua.org/">Lua</a> is a C script engine (for the <a href="https://www.lua.org/cgi-bin/demo?hello">Lua languages</a>) and is not distributed in such a nice way.
 So I spent a few hours preparing a (Python) script to <a href="PALua-Core/out/palua-core.h">repack Lua 5.3.3 into a single header</a>.
 (By the time I fix my blog posting stuff <a href="https://www.lua.org/work/#5.3.4">5.3.4 will probably be out</a>)</p>
-
 <p>Merry (belated) Christmas!</p>
-
 <h1 id="why-would-you-do-this">Why would you do this?</h1>
-
-<p>Mostly to conform to [Sean Nothings Barret&rsquo;s]() constraints.</p>
-
+<p>Mostly to conform to <a href="">Sean Nothings Barret&rsquo;s</a> constraints.</p>
 <h1 id="who-would-care">Who would care?</h1>
-
 <p>Anyone who wants to slap (somewhat) minimal Lua into a project and see what happens.</p>
-
 <h1 id="how-did-you-do-this">How did you do this?</h1>
-
 <p>I used a <a href="PALua-Core/palua-core.py">python 3.5.1 script</a> to crack open the <code>.tar.gz</code> file, scan the Makefile, then concatenate sources as needed</p>
-
 <ul>
 <li>I scan for some test cases that you (obviously) won&rsquo;t have - sorry</li>
 <li>You&rsquo;ll need a <code>.c</code> (not <code>.cpp</code> &hellip; sorrynotsorry) file for Lua to actually compile &hellip; so there&rsquo;s that.</li>
 <li>&hellip; my tests are written in <code>.cpp</code> though &hellip; as is the <a href="https://github.com/philsquared/Catch">Catch unit testing framework</a> &hellip;</li>
 <li>I used a regex and POSIX line endings to get the whole thing under 1MB
-
 <ul>
 <li>so that KDiff likes it</li>
 <li>&hellip; hopefully, future updates won&rsquo;t break this</li>
-</ul></li>
+</ul>
+</li>
 </ul>
 </div>
 				

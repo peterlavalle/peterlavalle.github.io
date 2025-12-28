@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Peter&#39;s Notebook</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python</title>
       <link>https://peterlavalle.github.io/tags/python/</link>
@@ -39,20 +35,20 @@
     </item>
     
     <item>
-      <title>Mercurial</title>
-      <link>https://peterlavalle.github.io/tags/mercurial/</link>
-      <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/mercurial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>forgejo</title>
       <link>https://peterlavalle.github.io/tags/forgejo/</link>
       <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/forgejo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mercurial</title>
+      <link>https://peterlavalle.github.io/tags/mercurial/</link>
+      <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/mercurial/</guid>
       <description></description>
     </item>
     
@@ -264,15 +260,6 @@
     </item>
     
     <item>
-      <title>Scala</title>
-      <link>https://peterlavalle.github.io/tags/scala/</link>
-      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/scala/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>libGDX</title>
       <link>https://peterlavalle.github.io/tags/libgdx/</link>
       <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
@@ -287,6 +274,15 @@
       <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/sbt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala</title>
+      <link>https://peterlavalle.github.io/tags/scala/</link>
+      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/scala/</guid>
       <description></description>
     </item>
     
@@ -372,15 +368,6 @@
     </item>
     
     <item>
-      <title>C/&#43;&#43;</title>
-      <link>https://peterlavalle.github.io/tags/c/&#43;&#43;/</link>
-      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/c/&#43;&#43;/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>VisualStudio</title>
       <link>https://peterlavalle.github.io/tags/visualstudio/</link>
       <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
@@ -408,20 +395,20 @@
     </item>
     
     <item>
+      <title>Git</title>
+      <link>https://peterlavalle.github.io/tags/git/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>GitHub</title>
       <link>https://peterlavalle.github.io/tags/github/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://peterlavalle.github.io/tags/git/</link>
-      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/git/</guid>
       <description></description>
     </item>
     
@@ -480,20 +467,20 @@
     </item>
     
     <item>
-      <title>Ubuntu</title>
-      <link>https://peterlavalle.github.io/tags/ubuntu/</link>
-      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/ubuntu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>nVidia</title>
       <link>https://peterlavalle.github.io/tags/nvidia/</link>
       <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/nvidia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>https://peterlavalle.github.io/tags/ubuntu/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/ubuntu/</guid>
       <description></description>
     </item>
     
@@ -543,6 +530,15 @@
     </item>
     
     <item>
+      <title>bash</title>
+      <link>https://peterlavalle.github.io/tags/bash/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>GitLab</title>
       <link>https://peterlavalle.github.io/tags/gitlab/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
@@ -552,20 +548,11 @@
     </item>
     
     <item>
-      <title>Gogs</title>
+      <title>GoGS</title>
       <link>https://peterlavalle.github.io/tags/gogs/</link>
       <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/gogs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bash</title>
-      <link>https://peterlavalle.github.io/tags/bash/</link>
-      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/bash/</guid>
       <description></description>
     </item>
     
@@ -588,20 +575,20 @@
     </item>
     
     <item>
-      <title>VR</title>
-      <link>https://peterlavalle.github.io/tags/vr/</link>
-      <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/vr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Vive</title>
       <link>https://peterlavalle.github.io/tags/vive/</link>
       <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/vive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VR</title>
+      <link>https://peterlavalle.github.io/tags/vr/</link>
+      <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/vr/</guid>
       <description></description>
     </item>
     
@@ -678,7 +665,7 @@
     </item>
     
     <item>
-      <title>multi-threading</title>
+      <title>Multi-Threading</title>
       <link>https://peterlavalle.github.io/tags/multi-threading/</link>
       <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
       
@@ -818,6 +805,15 @@
       <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/template-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C/&#43;&#43;</title>
+      <link>https://peterlavalle.github.io/tags/c/&#43;&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/c/&#43;&#43;/</guid>
       <description></description>
     </item>
     

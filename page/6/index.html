@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en-GB">
 <head>
-	<meta name="generator" content="Hugo 0.55.6" />
+	<meta name="generator" content="Hugo 0.86.0" />
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,6 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://peterlavalle.github.io/" />
 
-<meta property="og:updated_time" content="2025-12-10T00:00:00&#43;00:00"/>
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -102,8 +101,8 @@ if (!doNotTrack) {
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/scala-extractor/">Scala Extractors</a></h1>
 	<div class="entry__content">Scala&rsquo;s extractors and unapply() represent a concept that I haven&rsquo;t grok&rsquo;ed until now.
 Most demonstrations seem to be too long or use the same types everywhere. Here are my thoughts on the concept;
-val a: C = ??? val i: I = ??? i match { case a(f: O) =&gt; ??? }  This will try to call the below method
-class C { def unapply(i: I): Option[O] = ??? }  There&rsquo;s some more flexibility;</div>
+val a: C = ???val i: I = ???i match {case a(f: O) =&gt;???} This will try to call the below method
+class C {def unapply(i: I): Option[O] =???} There&rsquo;s some more flexibility;</div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2018-01-31T00:00:00Z">January 31, 2018</time>
 	</div>
@@ -112,9 +111,9 @@ class C { def unapply(i: I): Option[O] = ??? }  There&rsquo;s some more flexibil
 					<div class="card card--2col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/whippet/">Whippet</a></h1>
-	<div class="entry__content">I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of contemporary game-engines.
+	<div class="entry__content">I [made a semi-cache coherent container][ghWhippet] which provides an [Entity-Component-System][wikiECS]. These are the bones of [contemporary game-engines][wikiECSGame].
 This post is a bit crude; I keep thinking about it then adding features to Whippet instead of writing this up.
-Whippet on GitHub Google built CORGI which isn&rsquo;t (yet?) trying to act cache coherent. It also is more than trivial to build, and suffers from NIH for me. Actually; that last bit isn&rsquo;t likely to be a problem for most, but I didn&rsquo;t like their license.</div>
+[Whippet on GitHub][ghWhippet] [Google built CORGI][googleCorgi] which isn&rsquo;t (yet?) [trying to act cache coherent][corgiCache]. It also is [more than trivial][corgiBuild] to build, and suffers from [NIH][wikiNIH] for me. Actually; that last bit isn&rsquo;t likely to be a problem for most, but I didn&rsquo;t like their license.</div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2018-01-28T00:00:00Z">January 28, 2018</time>
 	</div>
@@ -123,9 +122,9 @@ Whippet on GitHub Google built CORGI which isn&rsquo;t (yet?) trying to act cach
 					<div class="card card--2col">
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/whippet-ecs/">Of Entity-Component-Systems</a></h1>
-	<div class="entry__content">I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of modern game-engines.
+	<div class="entry__content">I [made a semi-cache coherent container][ghWhippet] which provides an [Entity-Component-System][wikiECS]. These are the bones of [modern game-engines][wikiECSGame].
 This post is largely a gooey weasel opinion piece. It started as an introduction that grew out of control. So, for now, it&rsquo;s just a bit of rambling while I clean-up the documentation for my tool.
-Of Entity-Component-Systems Among other things, Jason Gregory&rsquo;s book Game Engine Architecture discusses the concept of a data-driven architecture for game software.</div>
+Of Entity-Component-Systems Among other things, Jason Gregory&rsquo;s book [Game Engine Architecture][bookGAE] discusses the concept of a data-driven architecture for game software.</div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2018-01-19T00:00:00Z">January 19, 2018</time>
 	</div>
@@ -152,7 +151,7 @@ Of Entity-Component-Systems Among other things, Jason Gregory&rsquo;s book Game 
 I have (to use) a macOS computer. I choose to use TortoiseHG because it is lovely. TortoiseHG has a &ldquo;launch the terminal&rdquo; context menu entry.
 Under macOS, you need to specify the terminal command that TortoiseHG should use. You need this, in your preference, to launch the terminal in the repo;
  /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal %(root)s
-  https://stackoverflow.com/questions/4404242/programmatically-launch-terminal-app-with-a-specified-command-and-custom-colors [return]   </div>
+   https://stackoverflow.</div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2018-01-10T00:00:00Z">January 10, 2018</time>
 	</div>
@@ -165,7 +164,7 @@ Under macOS, you need to specify the terminal command that TortoiseHG should use
 Based on this tweet, I spent &hellip; 30 minutes? Maybe? putting it together.
  This writeup took longer.
  The approach uses two behaviour classes to achive the classical effect of moving platforms that follow some path.
- mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&rsquo;ve reached the Waypoint, continue with its next one   My example;</div>
+ mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&rsquo;ve reached the Waypoint, continue with its next one    My example;</div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2017-12-27T00:00:00Z">December 27, 2017</time>
 	</div>
@@ -175,7 +174,7 @@ Based on this tweet, I spent &hellip; 30 minutes? Maybe? putting it together.
 					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/democore/">Adventures in Demo Making</a></h1>
 	<div class="entry__content">I should just &ldquo;blog&rdquo; informally more often - so here goes.
-I&rsquo;ve cobbled together a toolchain/asset-conditioning-pipeline of sorts for demoscene type stuff. My system is written in Scala on Gradle and functions by emitting C/++ and CMake files for Visual Studio. All of this produces a C/++11&frasl;14 and GLFW/GLAD/OpenGL4.3&frasl;4.5 executable that displays someone else&rsquo;s ShaderToy project. Nothing revolutionary, but I&rsquo;m after pretty-code that I can keep using rather than actual hard &ldquo;street cred&rdquo; quality demo results.</div>
+I&rsquo;ve cobbled together a toolchain/asset-conditioning-pipeline of sorts for demoscene type stuff. My system is written in Scala on Gradle and functions by emitting C/++ and CMake files for Visual Studio. All of this produces a C/++11/14 and GLFW/GLAD/OpenGL4.3/4.5 executable that displays someone else&rsquo;s ShaderToy project. Nothing revolutionary, but I&rsquo;m after pretty-code that I can keep using rather than actual hard &ldquo;street cred&rdquo; quality demo results.</div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2017-12-03T00:00:00Z">December 03, 2017</time>
 	</div>

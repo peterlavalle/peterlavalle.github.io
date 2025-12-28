@@ -12,9 +12,10 @@
 <meta property="og:description" content="This is a quick post-mortem on the three methods I examined for nesting some of our Git repos.
 In the end, I ran out of time and felt that the diversity of a CS team means that special handling would not produce a time saving benefit for me." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/marhsalling-gits/" />
-<meta property="article:published_time" content="2018-03-25T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-03-25T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/marhsalling-gits/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-03-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-03-25T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -95,60 +96,43 @@ if (!doNotTrack) {
 				<h1 class="entry__title">Marshalling Gits</h1>
 				<div class="entry__content"><p>This is a quick post-mortem on the three methods I examined for nesting some of our Git repos.
 In the end, I ran out of time and felt that the <em>diversity</em> of a CS team means that special handling would not produce a time saving benefit for me.</p>
-
-<hr />
-
+<hr>
 <h2 id="submodule">submodule</h2>
-
 <p>Git&rsquo;s (somewhat) anointed solution is &ldquo;submodules&rdquo; and comes built in.
 Google&rsquo;s CORGI project (et al) use it.</p>
-
 <h4 id="trial">trial</h4>
-
 <p>I created two <em>shared</em> repositories and a third <em>master</em> repository.
 While submodules seemed to work at first (and showed up pretty on <a href="https://gitbucket.github.io">GitBucket</a>) they required extra commands to work right.</p>
-
 <h2 id="subtree">subtree</h2>
-
 <p><a href="https://github.com/apenwarr/git-subtree/blob/master/git-subtree.txt">https://github.com/apenwarr/git-subtree/blob/master/git-subtree.txt</a></p>
-
 <p>Looks dead - not sure how to install it?
 Seems to be a tool for weaving history trees together or apart; I find this attractive but not useful.</p>
-
 <h2 id="sub-repo">sub-repo</h2>
-
 <p><a href="http://www.mos6581.org/git_subtree_alternative">http://www.mos6581.org/git_subtree_alternative</a></p>
-
 <p>This looked like a neat idea, but, mentions that it&rsquo;s only a proof-of-concept.</p>
-
 <h2 id="bonus-quack">BONUS; quack</h2>
-
 <p><a href="https://github.com/Autodesk/quack">I came across this when I was preparing this post.</a>
 It sounds attractive, but, it&rsquo;s written in Python.
 Everything I&rsquo;ve worked with in Python seems to;</p>
-
 <ul>
 <li>check if the <em>correct</em> version of Python is being used</li>
 <li>check for any other versions of Python
-
 <ul>
 <li>silently throw toys from pram and refuses to start if there&rsquo;s a <em>wrong</em> version</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p>I&rsquo;m not discussing proper-published projects; I&rsquo;m discussing the half finished internal things from work.
 As an example; while Google&rsquo;s TensorFlow plays nice from an Anaconda sandbox, the tool we wanted to rewrite in TensorFlow didn&rsquo;t like Anaconda and didn&rsquo;t want to start.
 In &ldquo;If I have to fix it; it is broken&rdquo; terms; I feel like being written in Python makes software inherently broken.</p>
-
 <h1 id="conclusion">Conclusion</h1>
-
 <p>I really need a hands-off solution, and, these are not it.
 I found that I was able to achieve most of what I wanted by hard-coding various gubbins into CMakeLists.</p></div>
 				
 				<footer class="entry__footer">
 					
 <div class="entry__tags">
-			<a class="entry__tag btn" href="/tags/git/">git</a>
+			<a class="entry__tag btn" href="/tags/git/">Git</a>
 </div>
 					
 <div class="entry__share share">

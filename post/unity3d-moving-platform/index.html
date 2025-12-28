@@ -13,11 +13,12 @@
 Based on this tweet, I spent &hellip; 30 minutes? Maybe? putting it together.
  This writeup took longer.
  The approach uses two behaviour classes to achive the classical effect of moving platforms that follow some path.
- mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&rsquo;ve reached the Waypoint, continue with its next one   My example;" />
+ mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&rsquo;ve reached the Waypoint, continue with its next one    My example;" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/unity3d-moving-platform/" />
-<meta property="article:published_time" content="2017-12-27T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-12-27T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/unity3d-moving-platform/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2017-12-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-12-27T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -97,36 +98,28 @@ if (!doNotTrack) {
 	</div>
 				<h1 class="entry__title">Moving Platforms in Unity3D</h1>
 				<div class="entry__content"><p>This is a short example of moving platforms in Unity3D.</p>
-
 <p>Based on <a href="https://twitter.com/g_pechorin/status/946058521182965762">this tweet</a>, I spent &hellip; 30 minutes? Maybe? putting it together.</p>
-
 <blockquote>
 <p>This writeup took longer.</p>
 </blockquote>
-
 <p>The approach uses two behaviour classes to achive the classical effect of moving platforms that follow some path.</p>
-
 <ol>
 <li>mark some empty <a href="https://docs.unity3d.com/Manual/class-GameObject.html">GameObject</a> as <a href="https://github.com/g-pechorin/PlattyForm/blob/master/Assets/PlattyForm/Assets/Waypoint.cs"><code>Waypoint</code></a> instances</li>
 <li>give each <a href="https://github.com/g-pechorin/PlattyForm/blob/master/Assets/PlattyForm/Assets/Waypoint.cs"><code>Waypoint</code></a> a <code>next</code> field</li>
 <li>attach a <a href="https://github.com/g-pechorin/PlattyForm/blob/master/Assets/PlattyForm/Assets/Mover.cs"><code>Mover</code></a> instance to your platform(s)
-
 <ul>
 <li>drag the platform towards the next <a href="https://github.com/g-pechorin/PlattyForm/blob/master/Assets/PlattyForm/Assets/Waypoint.cs"><code>Waypoint</code></a> at a fixed rate</li>
 <li>when you&rsquo;ve reached the <a href="https://github.com/g-pechorin/PlattyForm/blob/master/Assets/PlattyForm/Assets/Waypoint.cs"><code>Waypoint</code></a>, continue with its next one</li>
-</ul></li>
+</ul>
+</li>
 </ol>
-
 <p>My example;</p>
-
 <ul>
 <li>uses the concept of <code>fuel</code> to avoid losing movement when fast moving platforms don&rsquo;t have far to travel</li>
 <li>provides some <a href="https://docs.unity3d.com/ScriptReference/Gizmos.html"><code>Gizmo</code></a> logic to make looking at it easier</li>
 </ul>
-
 <p>Normal Unity3D <a href="https://docs.unity3d.com/ScriptReference/Rigidbody.html">Rigidbody</a> instaces will impact with normal cubes - so if your platforms have a collider you&rsquo;re all set.
 If you need-need <a href="https://docs.unity3d.com/ScriptReference/Rigidbody.html">Rigidbody</a> platforms; you can make them <a href="https://docs.unity3d.com/ScriptReference/Rigidbody-isKinematic.html"><code>Kinematic</code></a> to avoid weirdness.</p>
-
 <p>The platform will stop when it reaches the &ldquo;last&rdquo; <a href="https://github.com/g-pechorin/PlattyForm/blob/master/Assets/PlattyForm/Assets/Waypoint.cs"><code>Waypoint</code></a> so you could modify the <a href="https://github.com/g-pechorin/PlattyForm/blob/master/Assets/PlattyForm/Assets/Mover.cs"><code>Mover</code></a> to move backwards, or, just have the last platform point to the first platform and create a loop.</p>
 </div>
 				

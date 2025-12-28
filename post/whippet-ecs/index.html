@@ -9,13 +9,14 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Of Entity-Component-Systems" />
-<meta property="og:description" content="I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of modern game-engines.
+<meta property="og:description" content="I [made a semi-cache coherent container][ghWhippet] which provides an [Entity-Component-System][wikiECS]. These are the bones of [modern game-engines][wikiECSGame].
 This post is largely a gooey weasel opinion piece. It started as an introduction that grew out of control. So, for now, it&rsquo;s just a bit of rambling while I clean-up the documentation for my tool.
-Of Entity-Component-Systems Among other things, Jason Gregory&rsquo;s book Game Engine Architecture discusses the concept of a data-driven architecture for game software." />
+Of Entity-Component-Systems Among other things, Jason Gregory&rsquo;s book [Game Engine Architecture][bookGAE] discusses the concept of a data-driven architecture for game software." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/whippet-ecs/" />
-<meta property="article:published_time" content="2018-01-19T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-01-19T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/whippet-ecs/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-01-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-01-19T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -94,59 +95,50 @@ if (!doNotTrack) {
 	<time class="entry__meta-published meta-published" datetime="2018-01-19T00:00:00Z">January 19, 2018</time>
 	</div>
 				<h1 class="entry__title">Of Entity-Component-Systems</h1>
-				<div class="entry__content">
-
-<p>I <a href="https://github.com/g-pechorin/whippet/">made a semi-cache coherent container</a> which provides an <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93component%E2%80%93system">Entity-Component-System</a>.
-These are the bones of <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93component%E2%80%93system#Game_example">modern game-engines</a>.</p>
-
+				<div class="entry__content"><p>I [made a semi-cache coherent container][ghWhippet] which provides an [Entity-Component-System][wikiECS].
+These are the bones of [modern game-engines][wikiECSGame].</p>
 <p>This post is largely a gooey weasel opinion piece.
 It started as an introduction that grew out of control.
 So, for now, it&rsquo;s just a bit of rambling while I clean-up the documentation for my tool.</p>
-
 <h1 id="of-entity-component-systems">Of Entity-Component-Systems</h1>
-
-<p>Among other things, Jason Gregory&rsquo;s book <a href="http://gameenginebook.com/">Game Engine Architecture</a> discusses the concept of a data-driven architecture for game software.<sup class="footnote-ref" id="fnref:propertyBased"><a href="#fn:propertyBased">1</a></sup>
-Google has published a <a href="https://google.github.io/corgi/">project CORGI</a> which uses this approach, calling it an <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93component%E2%80%93system">Entity-Component-System</a>.
-Unity3D&rsquo;s scripting system seems to have originally been structured around this, but allows a tremendous flexibility.<sup class="footnote-ref" id="fnref:noSource"><a href="#fn:noSource">2</a></sup>
+<p>Among other things, Jason Gregory&rsquo;s book [Game Engine Architecture][bookGAE] discusses the concept of a data-driven architecture for game software.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+Google has published a [project CORGI][ghpCORGI] which uses this approach, calling it an [Entity-Component-System][wikiECS].
+Unity3D&rsquo;s scripting system seems to have originally been structured around this, but allows a tremendous flexibility.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
 All of these example share a pattern;</p>
-
 <ul>
 <li>Entities are created to represent <em>things</em> in the game</li>
 <li>Components are attached to entities to let these things do stuff</li>
 <li>System singletons exist which are (ideally) stateless and provide reusable logic</li>
 </ul>
-
-<p>Gregory (and others have) suggested that this pattern rose to prominence as a reaction against, what I&rsquo;d call, the classical <a href="https://en.wikipedia.org/wiki/God_object">&ldquo;object-oriented-god-object&rdquo; pattern</a>.
-The <a href="https://en.wikipedia.org/wiki/God_object">OOGO</a> feels <em>natural</em> within the structure of object oriented programming languages.
+<p>Gregory (and others have) suggested that this pattern rose to prominence as a reaction against, what I&rsquo;d call, the classical [&ldquo;object-oriented-god-object&rdquo; pattern][wikiGOD].
+The [OOGO][wikiGOD] feels <em>natural</em> within the structure of object oriented programming languages.
 Students are taught that everything is an object, so, programs are designed to treat everything as an object.
 Storing data (in the way that C++ stores data) and relying on their <code>virtual</code> dynamic dispatch led to performance problems.
-The CPU data and instruction caches on 7th generation game consoles meant that <a href="https://en.wikipedia.org/wiki/God_object">OOGO&rsquo;s</a> use of these techniques produced a bottleneck and a noticeable performance problem.
+The CPU data and instruction caches on 7th generation game consoles meant that [OOGO&rsquo;s][wikiGOD] use of these techniques produced a bottleneck and a noticeable performance problem.
 While C++ and dynamic dispatch had their place, it was not necessarily at such a fundamental level of design.
-<a href="https://en.wikipedia.org/wiki/Entity%E2%80%93component%E2%80%93system">Entity-Component-System</a> offer a potential workaround by placing the components (which Gregory calls properties) near each other in memory.
+[Entity-Component-System][wikiECS] offer a potential workaround by placing the components (which Gregory calls properties) near each other in memory.
 Since individual component instances are near each other, (as far as the CPU is concerned) the data is more likely to be in the cache when it is needed.
-The instruction cache benefits as well given that processing or updating many records can avoid <code>virtual</code> invocations.<sup class="footnote-ref" id="fnref:limitations"><a href="#fn:limitations">3</a></sup>
+The instruction cache benefits as well given that processing or updating many records can avoid <code>virtual</code> invocations.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>
 Putting the technical justification aside, the approach is <em>in vouge</em> as of 2018 and made an interesting project.
 The separation of concerns isolates features outside of an inheritance hierarchy; code and logic for components exist independently and <em>feel</em> less coupled to each other.
-I encountered <a href="http://google.github.io/corgi/corgi_guide_building_windows.html">frustration with building CORGI</a>, and due to its lack of <a href="https://github.com/google/corgi/issues/1">cache coherency</a> I wanted to see if I could produce &ldquo;my own&rdquo; to experiment with in the future.</p>
-
-<p>So that&rsquo;s where <a href="https://github.com/g-pechorin/whippet/">this</a> came from.</p>
-
-<p><a href="https://github.com/g-pechorin/whippet/">Whippet on GitHub</a></p>
-
-<p>Going forward; function pointers <em>might</em> introduce fewer pipeline steps (as they are direct jumps rather than indirect) however I lack any evidence to support that.</p>
-<div class="footnotes">
-
-<hr />
-
+I encountered [frustration with building CORGI][corgiBuild], and due to its lack of [cache coherency][corgiCache] I wanted to see if I could produce &ldquo;my own&rdquo; to experiment with in the future.</p>
+<p>So that&rsquo;s where [this][ghWhippet] came from.</p>
+<p>[Whippet on GitHub][ghWhippet]</p>
+<p>My container <em>does</em> use <code>virtual</code> on nested classes to allow template-based inheritance.
+Going forward; function pointers <em>might</em> introduce fewer pipeline steps (as they are direct jumps rather than indirect) however I lack any evidence to support that.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:propertyBased">Gregory refers to this as a <strong>property driven</strong> architecture, and uses the label <strong>component based</strong> to refer to something else.
- <a class="footnote-return" href="#fnref:propertyBased"><sup>[return]</sup></a></li>
-<li id="fn:noSource">Since Unity3D is a closed source system, I can only guess what&rsquo;s going on in the engine.
- <a class="footnote-return" href="#fnref:noSource"><sup>[return]</sup></a></li>
-<li id="fn:limitations">My container <em>does</em> use <code>virtual</code> on nested classes to allow template-based inheritance.
- <a class="footnote-return" href="#fnref:limitations"><sup>[return]</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p>Gregory refers to this as a <strong>property driven</strong> architecture, and uses the label <strong>component based</strong> to refer to something else.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Since Unity3D is a closed source system, I can only guess what&rsquo;s going on in the engine.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></li>
 </ol>
-</div>
+</section>
 </div>
 				
 				<footer class="entry__footer">

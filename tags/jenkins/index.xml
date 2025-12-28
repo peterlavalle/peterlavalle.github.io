@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jenkins on Peter&#39;s Notebook</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Jenkins on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 18 Sep 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://peterlavalle.github.io/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 18 Sep 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MultiBranch Mercurial JenkinsFile</title>
       <link>https://peterlavalle.github.io/post/multibranch-mercurial-jenkins/</link>
@@ -40,7 +36,7 @@ convert the build The actual conversion was embarrassingly easy since the gradle
       <guid>https://peterlavalle.github.io/post/myspaceships/</guid>
       <description>I have an old Unity project that I haven&amp;rsquo;t looked at in awhile - this one. If memory serves; assembling a WebGL version is slow and boring - so I&amp;rsquo;m making my eager little Jenkins server do it.
 Really I&amp;rsquo;m a bit bored with sbt-launch malarkey and I wanted to see if I could get this rolling. Broadly the steps that I followed went like this;
- Install Unity (5.</description>
+ Install Unity (5.3.3) with WebGL modules  5.</description>
     </item>
     
     <item>

@@ -12,9 +12,10 @@
 <meta property="og:description" content="I&rsquo;m trying to use a Google AIY Voice V1 with Pi4J.
 I had a bit of trouble finding the pins, so I&rsquo;m posting this here in case anyone else is looking." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/aiy-voice-v1-reference/" />
-<meta property="article:published_time" content="2018-09-16T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-09-16T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/aiy-voice-v1-reference/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-09-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-09-16T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -95,14 +96,10 @@ if (!doNotTrack) {
 				<h1 class="entry__title">AIY and Pi4j (Voice V1) GPIO Reference</h1>
 				<div class="entry__content"><p>I&rsquo;m trying to use a <a href="https://aiyprojects.withgoogle.com/voice-v1/">Google AIY Voice V1</a> with <a href="http://pi4j.com/">Pi4J</a>.
 I had a bit of trouble finding the pins, so I&rsquo;m posting this here in case anyone else is looking.</p>
-
-<hr />
-
+<hr>
 <p>Basically; there are three numbers for the pins.
 The <a href="https://github.com/google/aiyprojects-raspbian/blob/e48363018e37b1fdc22d5ddc4b221db97c2cf47b/src/aiy/voicehat.py#L21">AIY SDK uses one number,</a> the header has a different number, and (after experimentation I&rsquo;ve determined that) the <a href="http://pi4j.com/pins/model-3b-plus-rev1.html#J8_Pinout_40-pin_Header">Pi4J API uses a different layout.</a></p>
-
 <p>Anyway, this table shows the <code>RaspiPin</code> for the Button and LED interfaces.</p>
-
 <table>
 <thead>
 <tr>
@@ -112,7 +109,6 @@ The <a href="https://github.com/google/aiyprojects-raspbian/blob/e48363018e37b1f
 <th>AIY SDK PIN Name</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>LED</td>
@@ -120,7 +116,6 @@ The <a href="https://github.com/google/aiyprojects-raspbian/blob/e48363018e37b1f
 <td>22</td>
 <td>25</td>
 </tr>
-
 <tr>
 <td>Button Press</td>
 <td>RaspiPin.GPIO_04</td>

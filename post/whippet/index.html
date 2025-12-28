@@ -9,13 +9,14 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Whippet" />
-<meta property="og:description" content="I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of contemporary game-engines.
+<meta property="og:description" content="I [made a semi-cache coherent container][ghWhippet] which provides an [Entity-Component-System][wikiECS]. These are the bones of [contemporary game-engines][wikiECSGame].
 This post is a bit crude; I keep thinking about it then adding features to Whippet instead of writing this up.
-Whippet on GitHub Google built CORGI which isn&rsquo;t (yet?) trying to act cache coherent. It also is more than trivial to build, and suffers from NIH for me. Actually; that last bit isn&rsquo;t likely to be a problem for most, but I didn&rsquo;t like their license." />
+[Whippet on GitHub][ghWhippet] [Google built CORGI][googleCorgi] which isn&rsquo;t (yet?) [trying to act cache coherent][corgiCache]. It also is [more than trivial][corgiBuild] to build, and suffers from [NIH][wikiNIH] for me. Actually; that last bit isn&rsquo;t likely to be a problem for most, but I didn&rsquo;t like their license." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/whippet/" />
-<meta property="article:published_time" content="2018-01-28T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-01-28T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/whippet/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-01-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-01-28T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -94,148 +95,142 @@ if (!doNotTrack) {
 	<time class="entry__meta-published meta-published" datetime="2018-01-28T00:00:00Z">January 28, 2018</time>
 	</div>
 				<h1 class="entry__title">Whippet</h1>
-				<div class="entry__content">
-
-<p>I <a href="https://github.com/g-pechorin/whippet/">made a semi-cache coherent container</a> which provides an <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93component%E2%80%93system">Entity-Component-System</a>.
-These are the bones of <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93component%E2%80%93system#Game_example">contemporary game-engines</a>.</p>
-
+				<div class="entry__content"><p>I [made a semi-cache coherent container][ghWhippet] which provides an [Entity-Component-System][wikiECS].
+These are the bones of [contemporary game-engines][wikiECSGame].</p>
 <p>This post is a bit crude; I keep thinking about it then adding features to Whippet instead of writing this up.</p>
-
-<h1 id="whippet-on-github-ghwhippet"><a href="https://github.com/g-pechorin/whippet/">Whippet on GitHub</a></h1>
-
-<p><a href="http://google.github.io/corgi/">Google built CORGI</a> which isn&rsquo;t (yet?) <a href="https://github.com/google/corgi/issues/1">trying to act cache coherent</a>.
-It also is <a href="http://google.github.io/corgi/corgi_guide_building_windows.html">more than trivial</a> to build, and suffers from <a href="https://en.wikipedia.org/wiki/Not_invented_here">NIH</a> for me.
-Actually; that last bit isn&rsquo;t likely to be a problem for most, but I didn&rsquo;t like their license.<sup class="footnote-ref" id="fnref:worseLicense"><a href="#fn:worseLicense">1</a></sup></p>
-
+<h1 id="whippet-on-githubghwhippet">[Whippet on GitHub][ghWhippet]</h1>
+<p>[Google built CORGI][googleCorgi] which isn&rsquo;t (yet?) [trying to act cache coherent][corgiCache].
+It also is [more than trivial][corgiBuild] to build, and suffers from [NIH][wikiNIH] for me.
+Actually; that last bit isn&rsquo;t likely to be a problem for most, but I didn&rsquo;t like their license.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>So I wrote my own tool and attached an even less interesting license to it for the time being.</p>
 <h2 id="goals">Goals</h2>
-
 <ul>
 <li>Entity-Component-System
-
 <ul>
 <li>Entities and Components share a common pool of GUID values</li>
-<li>Systems utilise a lazy creation mechanism with LIFO clean-up</li>
+<li>Systems utilise a lazy creation mechanism with LIFO clean-up
+<ul>
 <li>Components and Systems are accessed through templates</li>
 <li>use of <code>std::type_index</code> avoids binding anything to names</li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>&ldquo;Pure, Hard, C++ Source&rdquo;
-
 <ul>
-<li>the core of the system is built as a collection of C/++ files with no dependencies</li>
+<li>the core of the system is built as a collection of C/++ files with no dependencies
+<ul>
 <li>the <code>test/</code> contents will need GoogleTest but they&rsquo;re not expected to be part of usage</li>
 <li>there&rsquo;s one way to do it; the way I meant to</li>
 <li>constructors are used when objects are created
-
 <ul>
 <li>a pre-new trick is used to set state on the object before construction</li>
-</ul></li>
+</ul>
+</li>
 <li>destructors are used when objects are destroyed</li>
 <li>I use a <code>template strong&lt;&gt;</code> to try and enforce strong typing</li>
+</ul>
+</li>
 <li>harsh, but, helps with the next goal</li>
-</ul></li>
+</ul>
+</li>
 <li>minimal compiled footprint / &ldquo;hard crashing&rdquo; for errors that shouldn&rsquo;t be possible without misuse
-
 <ul>
 <li>ex; cyclical dependencies in components (A needs B, B needs A) will cause infinite loops
-
 <ul>
 <li>this is (kind of) a vanity goal; I want something that fits onto a 1.47MB floppy</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>light speed / wherever possible; I&rsquo;ll try to avoid work that&rsquo;s unneeded
-
 <ul>
 <li>ex; userdata+callback is used in favor of <code>std::function</code> to avoid the copies</li>
 <li>ex; queries can &ldquo;bail out&rdquo; if they find an acceptable answer early</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="status">Status</h2>
-
 <ul>
 <li>modest suite of unit tests should cover all code paths (I ran down all stubs)</li>
 <li>it&rsquo;s usable (I think) and has no known (shippable or otherwise) bugs</li>
 <li>all state is contained in an isolated <code>whippet::universe</code></li>
 <li>entities and components have unique 32bit IDs</li>
 <li>components are attached instead of <code>new</code>&lsquo;ed
-
 <ul>
 <li>constructed with a variadic template</li>
 <li>some dark sorcery is used to run the baseclass constructor before the derrived class; no globals!</li>
 <li>key&rsquo;ed by class which is resolved to a <code>std::type_index</code></li>
 <li><code>install&lt;&gt;()</code> must be called before this can be done</li>
-</ul></li>
+</ul>
+</li>
 <li>system objects can be created at any time
-
 <ul>
 <li>they don&rsquo;t do vardric</li>
 <li>they also use pre-main so they can initialise references to requirements</li>
-</ul></li>
+</ul>
+</li>
 <li>just headers and source
-
 <ul>
 <li>no funky confgiure buidl steps</li>
 <li>no generated code</li>
 <li>no external dependencies (for the main sources the tests use GoogleTest)</li>
-</ul></li>
+</ul>
+</li>
 <li>create entities/components within a world</li>
 <li>11 unit tests written with GoogleTest 1.8.0
-
 <ul>
-<li>no non-trivial code was added unless it was &ldquo;hit&rdquo; by a unit-test</li>
+<li>no non-trivial code was added unless it was &ldquo;hit&rdquo; by a unit-test
+<ul>
 <li>it passes them all</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="future">Future</h2>
-
 <ul>
 <li>scripted component(s)
-
 <ul>
 <li>using <a href="http://duktape.org/">DukTape</a> as an ECMAScript engine</li>
 <li>it basically &ldquo;works&rdquo; now, but, lacks any tools to make bringing the scripts into the project practical
-
 <ul>
-<li>probably will use <a href="https://buble.surge.sh/#behaviour(%7B%0A%20%20Snake%3A%20%7B%0A%20%20%20%20owner%3A%20%22will%20be%20overwritten%22%2C%0A%20%20%20%20onCreate%3A%20function()%20%7B%0A%20%20%20%20%20%20return%20print(%60Hello%20%24%7Bthis.owner%7D%60)%3B%0A%20%20%20%20%7D%2C%0A%20%20%20%20onStart%3A%20function()%20%7B%0A%20%20%20%20%20%20return%20print('I%20am%20up')%3B%0A%20%20%20%20%7D%2C%0A%20%20%20%20onUpdate%3A%20function()%20%7B%0A%20%20%20%20%20%20return%20print('Hi!')%3B%0A%20%20%20%20%7D%2C%0A%20%20%20%20onStop%3A%20function()%20%7B%0A%20%20%20%20%20%20return%20print('I%20am%20asleep')%3B%0A%20%20%20%20%7D%2C%0A%20%20%20%20onDestroy%3A%20function()%20%7B%0A%20%20%20%20%20%20return%20print('Goodbye')%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D)%3B%0A">Bublé</a> to simplify it</li>
+<li>probably will use [Bublé][bubleCode] to simplify it</li>
 <li>&hellip; or maybe Babylon &hellip;</li>
-</ul></li>
-<li>likely based on <a href="http://coffeescript.org/#try:%0A%09behaviour%20Snake%3A%0A%09%09%09owner%3A%20%22will%20be%20overwritten%22%0A%0A%09%09%09onCreate%3A%20-%3E%0A%09%09%09%09%09print%20%22Hello%20%23%7B%40owner%7D%22%0A%0A%09%09%09onStart%3A%20-%3E%0A%09%09%09%09%09print%20'I%20am%20up'%0A%0A%09%09%09onUpdate%3A%20-%3E%0A%09%09%09%09%09print%20'Hi!'%0A%0A%09%09%09onStop%3A%20-%3E%0A%09%09%09%09%09print%20'I%20am%20asleep'%0A%0A%09%09%09onDestroy%3A%20-%3E%0A%09%09%09%09%09print%20'Goodbye'">CoffeeScript</a> conventions</li>
+</ul>
+</li>
+<li>likely based on [CoffeeScript][coffeeCode] conventions</li>
 <li>&hellip; maybe use <a href="https://www.minifier.org/">https://www.minifier.org/</a> or something to compress scripts?</li>
-</ul></li>
+</ul>
+</li>
 <li>message queueing system
-
 <ul>
 <li>allow asynchronous events and communication</li>
 <li>when I know how; I need a <strong>use</strong> before I can design <strong>re-use</strong></li>
-</ul></li>
+</ul>
+</li>
 <li>fused source; combine all (used) source code into a single header
-
 <ul>
 <li>will involve rewriting the utility things to be modular</li>
-</ul></li>
+</ul>
+</li>
 <li>a &ldquo;standard&rdquo; transform-type component</li>
 <li>stripped down <a href="https://github.com/g-pechorin/bullet2stripped/branches">Bullet3D</a>
-
 <ul>
 <li>maybe based on a current version</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h2 id="source">Source</h2>
-
-<p>While I intend to continue development in a/my private (Mercurial) repository, I&rsquo;m using <a href="https://github.com/g-pechorin/gitout">some black magic</a> to mirror it to GitHub on occasion.</p>
-
-<p><a href="https://github.com/g-pechorin/whippet/">Whippet on GitHub</a></p>
-<div class="footnotes">
-
-<hr />
-
+<p>While I intend to continue development in a/my private (Mercurial) repository, I&rsquo;m using [some black magic][ghGOut] to mirror it to GitHub on occasion.</p>
+<p>[Whippet on GitHub][ghWhippet]</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:worseLicense">So I wrote my own tool and attached an even less interesting license to it for the time being.
- <a class="footnote-return" href="#fnref:worseLicense"><sup>[return]</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></li>
 </ol>
-</div>
+</section>
 </div>
 				
 				<footer class="entry__footer">

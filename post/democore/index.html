@@ -10,11 +10,12 @@
 	<meta name="description" content="">
 		<meta property="og:title" content="Adventures in Demo Making" />
 <meta property="og:description" content="I should just &ldquo;blog&rdquo; informally more often - so here goes.
-I&rsquo;ve cobbled together a toolchain/asset-conditioning-pipeline of sorts for demoscene type stuff. My system is written in Scala on Gradle and functions by emitting C/&#43;&#43; and CMake files for Visual Studio. All of this produces a C/&#43;&#43;11&frasl;14 and GLFW/GLAD/OpenGL4.3&frasl;4.5 executable that displays someone else&rsquo;s ShaderToy project. Nothing revolutionary, but I&rsquo;m after pretty-code that I can keep using rather than actual hard &ldquo;street cred&rdquo; quality demo results." />
+I&rsquo;ve cobbled together a toolchain/asset-conditioning-pipeline of sorts for demoscene type stuff. My system is written in Scala on Gradle and functions by emitting C/&#43;&#43; and CMake files for Visual Studio. All of this produces a C/&#43;&#43;11/14 and GLFW/GLAD/OpenGL4.3/4.5 executable that displays someone else&rsquo;s ShaderToy project. Nothing revolutionary, but I&rsquo;m after pretty-code that I can keep using rather than actual hard &ldquo;street cred&rdquo; quality demo results." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/democore/" />
-<meta property="article:published_time" content="2017-12-03T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-12-03T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/democore/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2017-12-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-12-03T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -94,12 +95,10 @@ if (!doNotTrack) {
 	</div>
 				<h1 class="entry__title">Adventures in Demo Making</h1>
 				<div class="entry__content"><p>I should just &ldquo;blog&rdquo; informally more often - so here goes.</p>
-
 <p>I&rsquo;ve cobbled together a toolchain/asset-conditioning-pipeline of sorts for <a href="https://en.wikipedia.org/wiki/Demoscene">demoscene</a> type stuff.
 My system is written in Scala on Gradle and functions by emitting C/++ and CMake files for Visual Studio.
-All of this produces a C/++<sup>11</sup>&frasl;<sub>14</sub> and GLFW/GLAD/OpenGL4.<sup>3</sup>&frasl;<sub>4</sub>.5 executable that displays <a href="https://www.shadertoy.com/view/lty3Rt">someone else&rsquo;s ShaderToy project</a>.
+All of this produces a C/++11/14 and GLFW/GLAD/OpenGL4.3/4.5 executable that displays <a href="https://www.shadertoy.com/view/lty3Rt">someone else&rsquo;s ShaderToy project</a>.
 Nothing revolutionary, but I&rsquo;m after pretty-code that I can keep using rather than actual hard &ldquo;street cred&rdquo; quality demo results.</p>
-
 <p>The renderer I wrote tries to run all GL code in an asynchronous thread.
 The example shader runs smoothly, fullscreen, in the WebGL browser, but, not so smoothly on my Desktop.
 I&rsquo;m confused because the renderer does just about zilch and it&rsquo;s displaying this
@@ -109,45 +108,43 @@ The system uses a lot of STL so <em>maybe</em> something less <em>hinkey</em> wo
 Things to explore, but I don&rsquo;t have anything to throw out.
 I&rsquo;m (basically) fine with it as-is.
 My first attempt, at best a derivative work, but an interesting learning experince.</p>
-
 <ul>
 <li>Shows a demo just fine on three+ computers, with green and blue GPUs.</li>
 <li>I&rsquo;m stuck at 49.5k with UPX; this is the big ick for me
-
 <ul>
 <li>I might be exporting symbols or using TLS; I should kill that
-
 <ul>
 <li>&hellip; if I do that; I can use the kkrunchy as compressors too</li>
-</ul></li>
+</ul>
+</li>
 <li>I haven&rsquo;t tried crinkler</li>
 <li>I haven&rsquo;t tried using a minimal-C runtime; that&rsquo;d likely give a wee kick</li>
 <li>finally; I should audit my GL function lists, since, I&rsquo;m likely grabbing pointers to things that I don&rsquo;t use and the strings/calls are redundant</li>
-</ul></li>
+</ul>
+</li>
 <li>I&rsquo;m not done with the tooling/asset conditioning pipeline&rsquo;s internals
-
 <ul>
 <li>the way that I need to declare source-sets in Gradle is infuriating
-
 <ul>
 <li>to match the <code>sourceSets.main.java</code> stuff you need a field and a method named <code>java</code></li>
 <li>&hellip; implementing <code>GroovyObject</code> wasn&rsquo;t good enough</li>
 <li>maybe I can <em>just</em> generate Groovy classes in text and use them?</li>
-</ul></li>
+</ul>
+</li>
 <li>someway to make gradle run constantly would be cool
-
 <ul>
 <li>there are hooks for this but I haven&rsquo;t sat down to read about them</li>
-</ul></li>
-</ul></li>
+</ul>
+</li>
+</ul>
+</li>
 <li>I need audio
-
 <ul>
 <li>I need audio</li>
 <li>&hellip; really; no audio = bad!</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p>Anyway &hellip; I&rsquo;m off to write some StackOveflow/Reddit questions.</p>
 </div>
 				

@@ -13,9 +13,10 @@
 If the text is used as a series of drawing commands, including saving and restoring the cursor&rsquo;s position, the technique can generate fairly interesting foliage.
 A scene graph offers the ability to save/restore by chaining segments together. I used Unity3D&rsquo;s ScriptableObject to create &ldquo;Languages&rdquo; with replacement rules. I also created &ldquo;Dictionaries&rdquo; mapping symbols to segments made from GameObject prefabs." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/palsystem/" />
-<meta property="article:published_time" content="2016-11-12T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2016-11-12T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/palsystem/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2016-11-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-11-12T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -95,18 +96,14 @@ if (!doNotTrack) {
 	</div>
 				<h1 class="entry__title">PAL-System</h1>
 				<div class="entry__content"><p><a href="https://en.wikipedia.org/wiki/L-system">Lindenmayer Systems</a> allow one to specify a series of replacement rules for transforming strings.</p>
-
 <p>If the text is used as a series of drawing commands, including saving and restoring the cursor&rsquo;s position, the technique can generate fairly interesting foliage.</p>
-
 <p>A scene graph offers the ability to save/restore by chaining segments together.
 I used Unity3D&rsquo;s <a href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObject</a> to create &ldquo;<a href="https://github.com/g-pechorin/PALSystem/blob/master/Plugins/PALSystemLanguage.cs">Languages</a>&rdquo; with replacement rules.
 I also created &ldquo;<a href="https://github.com/g-pechorin/PALSystem/blob/master/Plugins/PALSystemDictionary.cs">Dictionaries</a>&rdquo; mapping symbols to segments made from <a href="https://docs.unity3d.com/Manual/class-GameObject.html">GameObject</a> <a href="https://docs.unity3d.com/Manual/Prefabs.html">prefabs</a>.
 Finally, I explicitly marked a node in the segment as being the Leaf to which any successive stuff should be attached.</p>
-
 <p>By allowing multiple overlapping rules, I let the system show a lot of variances.
 I added &ldquo;<a href="https://github.com/g-pechorin/PALSystem/blob/eee945308a0f9104c056a608bcc0638655113acc/Plugins/PALSystem.cs#L7">Soar</a>&rdquo; mutilators to tweak the spawned things and show some more variance.
 By tweaking the &ldquo;seed&rdquo; value with the world position, I ended up with something that could use the same prefab to produce a whole forest of trees.</p>
-
 <p>Overall I&rsquo;m happy to move forward with this as a tool for filling in my own virtual forests.
 I think that it needs some work on the &ldquo;usability&rdquo; and could stand to take some lessons from Unity3D&rsquo;s built-in tree system.
 Seems pretty good for a Saturday afternoon bit of messing about</p>

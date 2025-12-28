@@ -12,9 +12,10 @@
 <meta property="og:description" content="These are some old notes on using a Pi3 as a VPN host - I can&rsquo;t remember why I un-published them.
 Might be fun to stuff in a container someday." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/pi3-openvpn/" />
-<meta property="article:published_time" content="2019-10-26T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-10-26T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/pi3-openvpn/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-10-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-10-26T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -95,24 +96,18 @@ if (!doNotTrack) {
 				<h1 class="entry__title">OpenVPN on a Pi3</h1>
 				<div class="entry__content"><p>These are some old notes on using a Pi3 as a VPN host - I can&rsquo;t remember why I un-published them.
 Might be fun to <a href="https://hub.docker.com/r/raspbian/stretch">stuff in a container someday.</a></p>
-
-<hr />
-
+<hr>
 <aside style="float: right;">
 	<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#background">Background</a></li>
-<li><a href="#vpn-on-the-pi3">VPN on the Pi3</a></li>
-<li><a href="#vpn-client-on-my-ubuntu-laptop">VPN Client on my Ubuntu laptop</a></li>
-<li><a href="#vpn-client-on-my-windows-laptop">VPN Client on my Windows laptop</a></li>
-<li><a href="#do-again">Do Again</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#vpn-on-the-pi3">VPN on the Pi3</a></li>
+    <li><a href="#vpn-client-on-my-ubuntu-laptop">VPN Client on my Ubuntu laptop</a></li>
+    <li><a href="#vpn-client-on-my-windows-laptop">VPN Client on my Windows laptop</a></li>
+    <li><a href="#do-again">Do Again</a></li>
+  </ul>
 </nav>
 </aside>
-
 <blockquote>
 <ul>
 <li>These instructions won&rsquo;t help with <a href="https://www.congress.gov/bill/115th-congress/house-joint-resolution/86">H.J.Res.86</a>.</li>
@@ -120,97 +115,72 @@ Might be fun to <a href="https://hub.docker.com/r/raspbian/stretch">stuff in a c
 <li>Unless your home is outside of the USA, this does nothing to help defend you against <code>H.J.Res.86</code>.</li>
 </ul>
 </blockquote>
-
 <p>Have I mentioned that I own a Pi3?
 Well &hellip; this is how I use the Pi3 as an OpenVPN server to remotely work on my home network.
 This (anecdotal) post comprises</p>
-
 <ul>
 <li>a background summary of what OpenVPN does</li>
 <li>details of how I ran-the-script</li>
 <li>notes on what I had to do to connect</li>
 <li>speculation on when I&rsquo;d want this</li>
 </ul>
-
 <h2 id="background">Background</h2>
-
 <p>Virtual Private Networks (hereafter VPNs) refer to a client-server system where a client uses an existing network to route all of its traffic through a server.
 The advantage is that, if the client is in an insecure location (Bar!) they can access resources (build servers!) that no sane person would expose to the public internet.</p>
-
 <p>Also; if the client is in a country with draconian laws, (or a poor NetFlix catalog) but the server is in a more enlightened region; the setup allows someone to masquerade as being in the other location.</p>
-
 <p>My chief interest is in being able to access BitBucket/Jenkins/GitLab/GitHub/Kallithea et al when I&rsquo;m in a coffee shop.
 There&rsquo;s a mountain of tweaks and voodoo that you can setup as well for this - but it&rsquo;s beyond my interest in this case.</p>
-
 <h2 id="vpn-on-the-pi3">VPN on the Pi3</h2>
-
 <p>I have a Raspberry Pi3 with Jesse-Lite installed - so <a href="http://www.pivpn.io/">I was all set for these instructions.</a></p>
-
 <blockquote>
-<p><code>curl -L https://install.pivpn.io | bash</code><sup class="footnote-ref" id="fnref:noJustRun"><a href="#fn:noJustRun">1</a></sup></p>
+<p><code>curl -L https://install.pivpn.io | bash</code><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 </blockquote>
-
 <p>The script worked as described, my only deviation was sending the traffic through TCP port 443.
-I&rsquo;m trying to use this in cafes with restrictive internet - so I need to fake being a webpage.<sup class="footnote-ref" id="fnref:thatsOkayRight"><a href="#fn:thatsOkayRight">2</a></sup></p>
-
+I&rsquo;m trying to use this in cafes with restrictive internet - so I need to fake being a webpage.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
 <p>There was a long period of generating my 2k keys; don&rsquo;t use 4k keys since it takes forever.
 I also don&rsquo;t understand &ldquo;upstream provider&rdquo; so I chose Google - seems to all work fine now.</p>
-
 <p>Following the setup of the server software, I logged into my (podunk) router and directed the FireWall to assign port 443 to my Pi3, and to use a static IP for the Pi3.
 Pretty standard router stuff which never follows a standard UI - so I&rsquo;m not posting mine here.</p>
-
 <h2 id="vpn-client-on-my-ubuntu-laptop">VPN Client on my Ubuntu laptop</h2>
-
 <p>I have a (pokey) Ubuntu-Mate laptop; go me!
 On my Pi3 - I used the new <code>pivpn add</code> command to create a new VPN &hellip; account?
 This popped out a single config file - very nice - which I copied to my laptop.
 Installing the OpenVPN Client software was a matter of <code>sudo apt-get install openvpn</code> to get it.
 The final step was to actually connect.
-Based on <a href="http://askubuntu.com/questions/508250/openvpn-gui-client-for-udp-tcp#508296">this StackOverflow post</a> the command is `<code>sudo openvpn --config ~/ovpn/ppeters-shiny-pi3-vpn.ovpn</code> with <strong><code>~/ovpn/ppeters-shiny-pi3-vpn.ovpn</code></strong> being the path to the config file which I copied to my laptop.
+Based on <a href="http://askubuntu.com/questions/508250/openvpn-gui-client-for-udp-tcp#508296">this StackOverflow post</a> the command is ``sudo openvpn &ndash;config ~/ovpn/ppeters-shiny-pi3-vpn.ovpn<code> with **</code>~/ovpn/ppeters-shiny-pi3-vpn.ovpn`** being the path to the config file which I copied to my laptop.
 I was able to test this by accessing my Jenkins server after tethering my laptop to my cellular phone, but your local Wetherspoon&rsquo;s would be a better place to check.</p>
-
 <h2 id="vpn-client-on-my-windows-laptop">VPN Client on my Windows laptop</h2>
-
 <p>Client; <a href="https://github.com/OpenVPN/openvpn-gui">https://github.com/OpenVPN/openvpn-gui</a></p>
-
 <p>I&rsquo;ve noticed a lot of public WiFi networks muck around with <code>http://</code> traffic &hellip; likely to insert their own adds.
 Not sure if this is legal &hellip; so let&rsquo;s see if I can get around it with my VPN!</p>
-
 <p>On my Pi3 - I used the new <code>pivpn add</code> command to create a new VPN &hellip; account?
 This popped out a single config file - very nice - which I copied to my laptop.</p>
-
 <p>I used the official OpenVPN Client.
 I added the <code>.ovpn</code> config file to <code>$(HOME)/OpenVPN/config/</code> and was able to connect and view my own servers fine.</p>
-
 <p>YaY! &hellip; but &hellip; I need to do something to see hosts outside of my home network.
 (Like Google &hellip; or this website)
 seems to match this problem <a href="https://forums.openvpn.net/viewtopic.php?t=23261">https://forums.openvpn.net/viewtopic.php?t=23261</a></p>
-
 <p>&hellip; just rebooted my home-server and it didn&rsquo;t like it &hellip;</p>
-
 <h2 id="do-again">Do Again</h2>
-
 <p>If you&rsquo;re from a dystopian future - <a href="/raw/install.pivpn.io">I&rsquo;ve dumped a copy of the setup script to accompany this post.</a>
 If I find myself in a small group with a need for a VPN again - I&rsquo;d advocate this approach; the £35 Pi3 with a £10 microSD is a very quick solution for this work.
 There are probably other roles that a Pi server can fulfill for a small shop that needs their tools to be on-site.</p>
-
 <p>Anyway &hellip; <a href="https://www.google.co.uk/search?q=albert+einstein+birthday">Happy Birthday to me</a> I guess &hellip;</p>
-<div class="footnotes">
-
-<hr />
-
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:noJustRun"><p>I didn&rsquo;t actually <em>just</em> run a script fromt he interent.
+<li id="fn:1" role="doc-endnote">
+<p>I didn&rsquo;t actually <em>just</em> run a script fromt he interent.
 That&rsquo;d be stupid.
-In the real world, you should never ever run a script from the internet without checking it.</p>
- <a class="footnote-return" href="#fnref:noJustRun"><sup>[return]</sup></a></li>
-
-<li id="fn:thatsOkayRight"><p>I don&rsquo;t actually <em>know</em> what I&rsquo;m doing.
+In the real world, you should never ever run a script from the internet without checking it.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>I don&rsquo;t actually <em>know</em> what I&rsquo;m doing.
 I want this running over/across the <code>https://</code> ports to try and trick snoopy routers.
-UDP didn&rsquo;t work - so I used TCP &hellip; right?</p>
- <a class="footnote-return" href="#fnref:thatsOkayRight"><sup>[return]</sup></a></li>
+UDP didn&rsquo;t work - so I used TCP &hellip; right?&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div></div>
+</section></div>
 				
 				<footer class="entry__footer">
 					

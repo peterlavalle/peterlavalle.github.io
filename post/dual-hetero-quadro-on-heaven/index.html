@@ -11,9 +11,10 @@
 		<meta property="og:title" content="Dual Hetero Quadro on Heaven" />
 <meta property="og:description" content="Literally the punchiest title I could come up with. I&rsquo;ve been told that heterogeneous GPU setups are ridiculously slower than a single-GPU. This is largely an anecdotal shrug of &ldquo;hey - a second GPU doesn&rsquo;t really slow my computer down in any meaningful manner at all!&rdquo; I&rsquo;m sure that I did this all wrong and that the GPU is capable of being tweaked into a setting where this all becomes conclusively - the legwork for that isn&rsquo;t interesting to me so I haven&rsquo;t done it." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/dual-hetero-quadro-on-heaven/" />
-<meta property="article:published_time" content="2016-05-12T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2016-05-12T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/dual-hetero-quadro-on-heaven/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2016-05-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-05-12T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -92,27 +93,19 @@ if (!doNotTrack) {
 	<time class="entry__meta-published meta-published" datetime="2016-05-12T00:00:00Z">May 12, 2016</time>
 	</div>
 				<h1 class="entry__title">Dual Hetero Quadro on Heaven</h1>
-				<div class="entry__content">
-
-<p>Literally the punchiest title I could come up with.
+				<div class="entry__content"><p>Literally the punchiest title I could come up with.
 I&rsquo;ve been told that heterogeneous GPU setups are ridiculously slower than a single-GPU.
 This is largely an anecdotal shrug of &ldquo;hey - a second GPU doesn&rsquo;t really slow my computer down in any meaningful manner at all!&rdquo;
 I&rsquo;m sure that I did this all wrong and that the GPU is capable of being tweaked into a setting where this all becomes conclusively - the legwork for that isn&rsquo;t interesting to me so I haven&rsquo;t done it.</p>
-
 <p>TL: DR; A second GPU which doesn&rsquo;t match up or SLI won&rsquo;t give you cooties.</p>
-
 <h1 id="background">Background</h1>
-
 <p>My workstation came with a NVidia PNY Quadro K600 GPU, which was replaced with a K620.
 I decided to put the K600 back into my computer as a secondary card and run <a href="https://unigine.com/products/benchmarks/heaven/">UniGine Heaven</a> benchmark to see just how slow a third wheel makes it.
 All tests were carried out at full-screen-exclusive resolution but were otherwise using the Heaven Benchmark&rsquo;s default settings for their namesake.
 Stereoscopy was disabled for the non-stereo setting, and I used <code>3d Vision</code> as UniGine&rsquo;s the stereo method.
 For stereo settings, the <code>3D OpenGL Stereo</code> profile was used with <code>Stereo= Enabled</code> and <code>Display Mode= Generic Active Stereo</code>.</p>
-
 <h1 id="statistics">Statistics</h1>
-
 <p>I really can&rsquo;t see any reason that a consumer would use this setup - it just amused me.</p>
-
 <table>
 <thead>
 <tr>
@@ -125,7 +118,6 @@ For stereo settings, the <code>3D OpenGL Stereo</code> profile was used with <co
 <th>Maximum FPS</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>K620</td>
@@ -136,7 +128,6 @@ For stereo settings, the <code>3D OpenGL Stereo</code> profile was used with <co
 <td>3.5</td>
 <td>24.4</td>
 </tr>
-
 <tr>
 <td>K620</td>
 <td>Basic</td>
@@ -146,7 +137,6 @@ For stereo settings, the <code>3D OpenGL Stereo</code> profile was used with <co
 <td>5.2</td>
 <td>21.6</td>
 </tr>
-
 <tr>
 <td>K620</td>
 <td>Extreme</td>
@@ -156,7 +146,6 @@ For stereo settings, the <code>3D OpenGL Stereo</code> profile was used with <co
 <td>7.3</td>
 <td>22.5</td>
 </tr>
-
 <tr>
 <td>K620</td>
 <td>Basic</td>
@@ -166,7 +155,6 @@ For stereo settings, the <code>3D OpenGL Stereo</code> profile was used with <co
 <td>15.0</td>
 <td>42.2</td>
 </tr>
-
 <tr>
 <td>K620 + K600</td>
 <td>Extreme</td>
@@ -176,7 +164,6 @@ For stereo settings, the <code>3D OpenGL Stereo</code> profile was used with <co
 <td>3.7</td>
 <td>10.0</td>
 </tr>
-
 <tr>
 <td>K620 + K600</td>
 <td>Basic</td>
@@ -186,7 +173,6 @@ For stereo settings, the <code>3D OpenGL Stereo</code> profile was used with <co
 <td>8.2</td>
 <td>18.4</td>
 </tr>
-
 <tr>
 <td>K620 + K600</td>
 <td>Extreme</td>
@@ -196,7 +182,6 @@ For stereo settings, the <code>3D OpenGL Stereo</code> profile was used with <co
 <td>7.2</td>
 <td>22.0</td>
 </tr>
-
 <tr>
 <td>K620 + K600</td>
 <td>Basic</td>
@@ -208,22 +193,22 @@ For stereo settings, the <code>3D OpenGL Stereo</code> profile was used with <co
 </tr>
 </tbody>
 </table>
-
 <h1 id="analysis">Analysis</h1>
-
-<p>The relation between the numbers suggests that;
-* the second GPU does kind of slow it down measurably
-* the second GPU doesn&rsquo;t slow it down noticeably
-* the Dual-GPU is a teensy bit helpful with Stereo rendering, but not quite worth the cost
-* in a real game, I could tell the second GPU to do PhysX work and maybe see some improvement?</p>
-
+<p>The relation between the numbers suggests that;</p>
+<ul>
+<li>the second GPU does kind of slow it down measurably</li>
+<li>the second GPU doesn&rsquo;t slow it down noticeably</li>
+<li>the Dual-GPU is a teensy bit helpful with Stereo rendering, but not quite worth the cost</li>
+<li>in a real game, I could tell the second GPU to do PhysX work and maybe see some improvement?</li>
+</ul>
 <p>I may have left some junk running on the desktop during the single-GPU tests, so the difference could be skewed a bit.
 Regardless; I&rsquo;m confident that adding the second GPU to this desktop hasn&rsquo;t sucked up all my PCIe lanes or something silly.</p>
-
-<p>Questions;
-* how would this work in an AMD/NVidia mix? (Red/Green)
-* would an x86 OS work any good/evil with x86 benchmark?
-* would something with PhysX really be that different good/evil?</p>
+<p>Questions;</p>
+<ul>
+<li>how would this work in an AMD/NVidia mix? (Red/Green)</li>
+<li>would an x86 OS work any good/evil with x86 benchmark?</li>
+<li>would something with PhysX really be that different good/evil?</li>
+</ul>
 </div>
 				
 				<footer class="entry__footer">

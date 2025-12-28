@@ -11,9 +11,10 @@
 		<meta property="og:title" content="Wavefront .Obj" />
 <meta property="og:description" content="Notes from adding (WaveFront) .obj export to a Unity3D plugin I&rsquo;m working on." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/notes.wobj/" />
-<meta property="article:published_time" content="2022-03-02T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2022-03-02T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/notes.wobj/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-03-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-03-02T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -93,65 +94,43 @@ if (!doNotTrack) {
 	</div>
 				<h1 class="entry__title">Wavefront .Obj</h1>
 				<div class="entry__content"><p>Notes from adding (WaveFront) <code>.obj</code> export to a <a href="https://unity.com/">Unity3D plugin</a> I&rsquo;m working on.</p>
-
-<hr />
-
+<hr>
 <aside style="float: right;">
-	<nav id="TableOfContents">
-<ul>
-<li><a href="#motivation">Motivation</a></li>
-<li><a href="#plan">Plan</a></li>
-<li><a href="#code">Code</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
-</ul>
-</nav>
+	<nav id="TableOfContents"></nav>
 </aside>
-
 <h1 id="motivation">Motivation</h1>
-
 <p>I want to &hellip; use &hellip; geometry &hellip; elsewhere.</p>
-
 <p>I want to use Unity3D as a (sort of) map editor thing that I could pull the data out of and mess with it.
-Specifically, I&rsquo;m trying to export geometry for &ldquo;asset time&rdquo;<sup class="footnote-ref" id="fnref:bake"><a href="#fn:bake">1</a></sup> manipulation in the form of old-school <code>.bsp</code> files.
-I want to play with this in [PureScript]() (or [whatever]()) before loading it in a C/++ application.
+Specifically, I&rsquo;m trying to export geometry for &ldquo;asset time&rdquo;<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> manipulation in the form of old-school <code>.bsp</code> files.
+I want to play with this in <a href="">PureScript</a> (or <a href="">whatever</a>) before loading it in a C/++ application.
 I want something I can dump from a Unity plugin, pull into a more suitable programming language, then re-export as a final baked format.</p>
-
 <p>I&rsquo;m using a <code>.zip</code> file with all geometry as a series of (merged) <code>.obj</code> files and a <code>.png</code> file per-merged object.</p>
-
 <p>Crude stuff.</p>
-
 <h1 id="plan">Plan</h1>
-
 <p>I&rsquo;ll use an (otherwise conformant) subset of the <code>.obj</code> format that has;</p>
-
 <ul>
 <li>all vertex coordinates and texture coordinates
-
 <ul>
 <li>the &ldquo;full&rdquo; version of <code>.obj</code> can handle more data</li>
 <li>I don&rsquo;t care about normals - they can be recomputed anyway[^unbake]</li>
 <li>Tangents (et al) aren&rsquo;t present in <code>.obj</code> AFAIK</li>
-</ul></li>
+</ul>
+</li>
 <li>all triangles following coordinates
-
 <ul>
 <li>the &ldquo;full&rdquo; version of <code>.obj</code> can handle n-gons</li>
 <li>&hellip; and other types of geometry</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p>Okay, so, my plan for developing this was to;</p>
-
 <ol>
 <li>write a sample model file by hand</li>
 <li>test/check import sample to Blender / Unity</li>
 <li>code and test Unity plugin based on this</li>
 </ol>
-
 <p>As always Paul Bourke&rsquo;s webpage is my go-to reference <a href="http://paulbourke.net/dataformats/obj/">http://paulbourke.net/dataformats/obj/</a></p>
-
 <p>It looks like the format can hold a lot of stuff, but, I&rsquo;ll <em>only</em> need;</p>
-
 <table>
 <thead>
 <tr>
@@ -160,26 +139,22 @@ I want something I can dump from a Unity plugin, pull into a more suitable progr
 <th>usage</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>#</code></td>
 <td>comment</td>
 <td>starts comments that are otherwise ignored</td>
 </tr>
-
 <tr>
 <td><code>v</code></td>
 <td>vertex coordinate</td>
 <td>it can be a lot of things, but, I&rsquo;ll <em>just</em> do x/y/z</td>
 </tr>
-
 <tr>
 <td><code>vt</code></td>
 <td>texture coordinate</td>
 <td>it can hold up to three! but I only need the two</td>
 </tr>
-
 <tr>
 <td><code>f</code></td>
 <td>face</td>
@@ -187,10 +162,9 @@ I want something I can dump from a Unity plugin, pull into a more suitable progr
 </tr>
 </tbody>
 </table>
-
 <p>My sample file came out like this, and, it worked in Blender and Unity.
 I needed the latter to check the texture coordinates by applying a material.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-obj" data-lang="obj">v 1 0 0
+<pre><code class="language-obj" data-lang="obj">v 1 0 0
 vt 1 0
 
 v 0 1 0
@@ -199,92 +173,89 @@ vt 0 1
 v 0 0 1
 vt 0 0
 
-f 1/1 2/2 3/3</code></pre></div>
-<h1 id="code">Code</h1>
-
+f 1/1 2/2 3/3
+</code></pre><h1 id="code">Code</h1>
 <p>With the sample, I learned that the indices start at 1 (like animals would do it) and that I didn&rsquo;t need the full v/vt/vn form.
 I also don&rsquo;t need any sort of naming thing &hellip; which was surprising.
 I whacked together a <code>C#</code> section in an existing exporter (that already did the <code>.png</code> writing and <code>.zip</code>) and it looked like this;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs">... <span style="color:#75715e">// do something prior to find/collect the/a scene tree/s you want in this surface brush
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cs" data-lang="cs">
+... <span style="color:#75715e">// do something prior to find/collect the/a scene tree/s you want in this surface brush
 </span><span style="color:#75715e"></span>
 
 <span style="color:#75715e">// write the obj geometry
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> (<span style="color:#66d9ef">var</span> writer = <span style="color:#66d9ef">new</span> StreamWriter(file.CreateEntry(<span style="color:#e6db74">&#34;brush/&#34;</span> + surface + <span style="color:#e6db74">&#34;.obj&#34;</span>).Open()))
 {
-    writer.Write(<span style="color:#e6db74">&#34;# bsp brush &#39;&#34;</span> + surface + <span style="color:#e6db74">&#34;&#39;&#34;</span>);
+	writer.Write(<span style="color:#e6db74">&#34;# bsp brush &#39;&#34;</span> + surface + <span style="color:#e6db74">&#34;&#39;&#34;</span>);
 
-    <span style="color:#75715e">// where we record the vertex/texture
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> v = <span style="color:#66d9ef">new</span> Dictionary&lt;<span style="color:#66d9ef">string</span>, <span style="color:#66d9ef">int</span>&gt;();
-    <span style="color:#66d9ef">var</span> t = <span style="color:#66d9ef">new</span> Dictionary&lt;<span style="color:#66d9ef">string</span>, <span style="color:#66d9ef">int</span>&gt;();
+	<span style="color:#75715e">// where we record the vertex/texture
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">var</span> v = <span style="color:#66d9ef">new</span> Dictionary&lt;<span style="color:#66d9ef">string</span>, <span style="color:#66d9ef">int</span>&gt;();
+	<span style="color:#66d9ef">var</span> t = <span style="color:#66d9ef">new</span> Dictionary&lt;<span style="color:#66d9ef">string</span>, <span style="color:#66d9ef">int</span>&gt;();
 
-    <span style="color:#75715e">// where we record the faces - i&#39;m appending them (all) since that should make loading simpler
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">var</span> f = <span style="color:#66d9ef">new</span> LinkedList&lt;<span style="color:#66d9ef">string</span>&gt;();
+	<span style="color:#75715e">// where we record the faces - i&#39;m appending them (all) since that should make loading simpler
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">var</span> f = <span style="color:#66d9ef">new</span> LinkedList&lt;<span style="color:#66d9ef">string</span>&gt;();
 
-    <span style="color:#75715e">// ====
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// write the vertices and textures
+	<span style="color:#75715e">// ====
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">// write the vertices and textures
 </span><span style="color:#75715e"></span>
-    <span style="color:#75715e">// write a vertex coordinate
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> put_vertex(Vector3 xyz)
-    {
-        <span style="color:#66d9ef">var</span> txt = xyz.x + <span style="color:#e6db74">&#34; &#34;</span> + xyz.y + <span style="color:#e6db74">&#34; &#34;</span> + xyz.z;
+	<span style="color:#75715e">// write a vertex coordinate
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">int</span> put_vertex(Vector3 xyz)
+	{
+		<span style="color:#66d9ef">var</span> txt = xyz.x + <span style="color:#e6db74">&#34; &#34;</span> + xyz.y + <span style="color:#e6db74">&#34; &#34;</span> + xyz.z;
 
-        <span style="color:#66d9ef">if</span> (!v.ContainsKey(txt))
-        {
-            v<span style="color:#a6e22e">[txt]</span> = v.Count + <span style="color:#ae81ff">1</span>;
-            writer.Write(<span style="color:#e6db74">&#34;\nv &#34;</span> + txt);
-        }
+		<span style="color:#66d9ef">if</span> (!v.ContainsKey(txt))
+		{
+			v[txt] = v.Count + <span style="color:#ae81ff">1</span>;
+			writer.Write(<span style="color:#e6db74">&#34;\nv &#34;</span> + txt);
+		}
 
-        <span style="color:#66d9ef">return</span> v<span style="color:#a6e22e">[txt]</span>;
-    }
+		<span style="color:#66d9ef">return</span> v[txt];
+	}
 
-    <span style="color:#75715e">// write a texture coordinate
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> put_texture(Vector2 uv)
-    {
-        <span style="color:#66d9ef">var</span> txt = uv.x + <span style="color:#e6db74">&#34; &#34;</span> + uv.y;
+	<span style="color:#75715e">// write a texture coordinate
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">int</span> put_texture(Vector2 uv)
+	{
+		<span style="color:#66d9ef">var</span> txt = uv.x + <span style="color:#e6db74">&#34; &#34;</span> + uv.y;
 
-        <span style="color:#66d9ef">if</span> (!t.ContainsKey(txt))
-        {
-            t<span style="color:#a6e22e">[txt]</span> = t.Count + <span style="color:#ae81ff">1</span>;
-            writer.Write(<span style="color:#e6db74">&#34;\nvt &#34;</span> + txt);
-        }
+		<span style="color:#66d9ef">if</span> (!t.ContainsKey(txt))
+		{
+			t[txt] = t.Count + <span style="color:#ae81ff">1</span>;
+			writer.Write(<span style="color:#e6db74">&#34;\nvt &#34;</span> + txt);
+		}
 
-        <span style="color:#66d9ef">return</span> t<span style="color:#a6e22e">[txt]</span>;
-    }
+		<span style="color:#66d9ef">return</span> t[txt];
+	}
 
-    <span style="color:#75715e">// loop through all triangles
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> triangle <span style="color:#66d9ef">in</span> data<span style="color:#a6e22e">[surface]</span>)
-    {
-        <span style="color:#75715e">// start the line
-</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">var</span> l = <span style="color:#e6db74">&#34;\nf&#34;</span>;
+	<span style="color:#75715e">// loop through all triangles
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> triangle <span style="color:#66d9ef">in</span> data[surface])
+	{
+		<span style="color:#75715e">// start the line
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">var</span> l = <span style="color:#e6db74">&#34;\nf&#34;</span>;
 
-        <span style="color:#75715e">// append the verticies
-</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i = <span style="color:#ae81ff">0</span>; i &lt; <span style="color:#ae81ff">3</span>; ++i)
-            l += <span style="color:#e6db74">&#34; &#34;</span> + put_vertex(triangle<span style="color:#a6e22e">[i]</span>.xyz) + <span style="color:#e6db74">&#34;/&#34;</span> + put_texture(triangle<span style="color:#a6e22e">[i]</span>.uv);
+		<span style="color:#75715e">// append the verticies
+</span><span style="color:#75715e"></span>		<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i = <span style="color:#ae81ff">0</span>; i &lt; <span style="color:#ae81ff">3</span>; ++i)
+			l += <span style="color:#e6db74">&#34; &#34;</span> + put_vertex(triangle[i].xyz) + <span style="color:#e6db74">&#34;/&#34;</span> + put_texture(triangle[i].uv);
 
-        <span style="color:#75715e">// put it in the list
-</span><span style="color:#75715e"></span>        f.AddLast(l);
-    }
+		<span style="color:#75715e">// put it in the list
+</span><span style="color:#75715e"></span>		f.AddLast(l);
+	}
 
-    <span style="color:#75715e">// ====
-</span><span style="color:#75715e"></span>    <span style="color:#75715e">// write the faces now
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> l <span style="color:#66d9ef">in</span> f)
-        writer.Write(l);
+	<span style="color:#75715e">// ====
+</span><span style="color:#75715e"></span>	<span style="color:#75715e">// write the faces now
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">foreach</span> (<span style="color:#66d9ef">var</span> l <span style="color:#66d9ef">in</span> f)
+		writer.Write(l);
 }
-</code></pre></div>
-<h1 id="conclusion">Conclusion</h1>
-
+</code></pre></div><h1 id="conclusion">Conclusion</h1>
 <p>So &hellip; I can now write <code>.obj</code> files from geometry.
 I can get some data out of Unity3D scenes for other tools.</p>
-<div class="footnotes">
-
-<hr />
-
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:bake"><p><code>.obj</code> is not a format you should load at runtime.
-Bake your assets for your engine.</p>
- <a class="footnote-return" href="#fnref:bake"><sup>[return]</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p><code>.obj</code> is not a format you should load at runtime.
+Bake your assets for your engine.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div></div>
+</section></div>
 				
 				<footer class="entry__footer">
 					

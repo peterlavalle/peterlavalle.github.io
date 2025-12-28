@@ -12,9 +12,10 @@
 <meta property="og:description" content="Some clever clogs made a snazzy tool called SciLab as another not-MatLab.1 Flex Dock is the framework that (I think) they developed for docking frames. It&rsquo;s not in Maven Central so I&rsquo;ve forked it and deployed it to my own repository.
 convert the build The actual conversion was embarrassingly easy since the gradle importer stuff really works for this sort of thing. As a matter of personal preference, I re-arranged the build scripts to be a single file but otherwise left them as-is." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/gradlfy-flexdock/" />
-<meta property="article:published_time" content="2017-11-01T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-11-01T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/gradlfy-flexdock/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2017-11-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-11-01T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -93,42 +94,34 @@ if (!doNotTrack) {
 	<time class="entry__meta-published meta-published" datetime="2017-11-01T00:00:00Z">November 01, 2017</time>
 	</div>
 				<h1 class="entry__title">Gradlification of FlexDock</h1>
-				<div class="entry__content">
-
-<p>Some clever clogs made a snazzy tool called <a href="https://www.scilab.org/">SciLab</a> as another not-MatLab.<sup class="footnote-ref" id="fnref:unfair"><a href="#fn:unfair">1</a></sup>
+				<div class="entry__content"><p>Some clever clogs made a snazzy tool called <a href="https://www.scilab.org/">SciLab</a> as another not-MatLab.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
 <a href="https://github.com/opencollab/flexdock">Flex Dock</a> is the framework that (I think) they developed for docking frames.
 It&rsquo;s not in <a href="http://mvnrepository.com/search?q=flexdock">Maven Central</a> so I&rsquo;ve forked it and deployed it to <a href="https://github.com/g-pechorin/m2-repo">my own repository.</a></p>
-
 <h1 id="convert-the-build">convert the build</h1>
-
 <p>The actual conversion was embarrassingly easy since <a href="https://docs.gradle.org/4.0/userguide/build_init_plugin.html#sec:pom_maven_conversion_">the gradle importer stuff really works</a> for this sort of thing.
 As a matter of personal preference, I re-arranged the build scripts to be a <a href="https://github.com/g-pechorin/flexdock/blob/3c4746051f657b495237215082b20e7d15101805/build.gradle">single file</a> but otherwise left them as-is.
 I did set the demos to assemble a <a href="https://github.com/g-pechorin/flexdock/blob/3c4746051f657b495237215082b20e7d15101805/build.gradle#L57">single fat-jar</a> when they&rsquo;re built.
 This means that there&rsquo;s a <a href="https://github.com/g-pechorin/m2-repo/blob/gh-pages/com/peterlavalle/flexdock-demo/1.3/flexdock-demo-1.3.jar">downloadable .jar somewhere</a> for anyone so inclined.</p>
-
 <h1 id="publish">publish</h1>
-
-<p>Getting the project to publish was predictably tricky, the <a href="https://github.com/g-pechorin/flexdock/blob/3c4746051f657b495237215082b20e7d15101805/build.gradle#L27">maven and gradle bits were finickier than I remember</a> but basically work.<sup class="footnote-ref" id="fnref:finicky"><a href="#fn:finicky">2</a></sup>
+<p>Getting the project to publish was predictably tricky, the <a href="https://github.com/g-pechorin/flexdock/blob/3c4746051f657b495237215082b20e7d15101805/build.gradle#L27">maven and gradle bits were finickier than I remember</a> but basically work.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
 With that out of the way; it&rsquo;s all over except for the crying.
 I have a functioning <a href="https://github.com/g-pechorin/rpi-docker/tree/master/palpi-jenkins">Jenkins instance</a> which I&rsquo;m deploying from happily these days.
 Shockingly, <a href="https://github.com/g-pechorin/flexdock/blob/3c4746051f657b495237215082b20e7d15101805/Jenkinsfile">my JenkinsFile worked on the first try</a> and the remaining &ldquo;problems&rdquo; were quickly resolved.</p>
-
 <h1 id="result">result</h1>
-
 <p>So &hellip; yeah; pretty good for a night in.
 Now &hellip; I need to figure out how to use and persist it.
 I like the <a href="https://github.com/g-pechorin/flexdock/blob/3c4746051f657b495237215082b20e7d15101805/flexdock-demo/src/main/java/org/flexdock/demos/view/ViewDemo.java">pinnable and closable ViewDemo</a> and will likely be working from that.</p>
-<div class="footnotes">
-
-<hr />
-
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:unfair">Not-MatLab is a bit <em>harsh</em> but it is an accurate &ldquo;short answer&rdquo;
- <a class="footnote-return" href="#fnref:unfair"><sup>[return]</sup></a></li>
-<li id="fn:finicky">At the time of writing, I was on my third attempt to proerly build it.
- <a class="footnote-return" href="#fnref:finicky"><sup>[return]</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p>Not-MatLab is a bit <em>harsh</em> but it is an accurate &ldquo;short answer&rdquo;&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>At the time of writing, I was on my third attempt to proerly build it.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div>
+</section>
 </div>
 				
 				<footer class="entry__footer">

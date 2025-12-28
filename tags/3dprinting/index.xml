@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3DPrinting on Peter&#39;s Notebook</title>
@@ -6,11 +6,7 @@
     <description>Recent content in 3DPrinting on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 09 May 2024 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://peterlavalle.github.io/tags/3dprinting/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 09 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/3dprinting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bracken Court; Portal to The Gloaming</title>
       <link>https://peterlavalle.github.io/post/hobby.bracken-court/</link>
@@ -29,7 +25,6 @@ Hey there! So, let&amp;rsquo;s dive into this blog post about sprucing up some 3
       <guid>https://peterlavalle.github.io/hobby.printing/</guid>
       <description>&lt;p&gt;This is a rough (and uneditied) log of my 3D printing attempts.
 I&amp;rsquo;m posting it mainly as I see no harm in that, rather than a believe that my poorly written scribbling with be of greate sorcial benefit.&lt;/p&gt;
-
 &lt;p&gt;(The spelling mistakes above and below should be considered as intentional here as they are in 419 scams)&lt;/p&gt;</description>
     </item>
     

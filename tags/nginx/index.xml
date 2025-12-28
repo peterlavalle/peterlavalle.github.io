@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nGinx on Peter&#39;s Notebook</title>
@@ -6,11 +6,7 @@
     <description>Recent content in nGinx on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Tue, 19 Sep 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://peterlavalle.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 19 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pi3 nGinx Reverse Proxy</title>
       <link>https://peterlavalle.github.io/post/pi3-nginx/</link>

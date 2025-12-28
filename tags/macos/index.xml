@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>macOS on Peter&#39;s Notebook</title>
@@ -6,11 +6,7 @@
     <description>Recent content in macOS on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 10 Jan 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://peterlavalle.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 10 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open macOS Terminal in Folder</title>
       <link>https://peterlavalle.github.io/post/macos-open-terminal-in-folder/</link>
@@ -21,7 +17,7 @@
 I have (to use) a macOS computer. I choose to use TortoiseHG because it is lovely. TortoiseHG has a &amp;ldquo;launch the terminal&amp;rdquo; context menu entry.
 Under macOS, you need to specify the terminal command that TortoiseHG should use. You need this, in your preference, to launch the terminal in the repo;
  /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal %(root)s
-  https://stackoverflow.com/questions/4404242/programmatically-launch-terminal-app-with-a-specified-command-and-custom-colors [return]   </description>
+   https://stackoverflow.</description>
     </item>
     
   </channel>

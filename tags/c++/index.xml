@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C&#43;&#43; on Peter&#39;s Notebook</title>
@@ -6,11 +6,7 @@
     <description>Recent content in C&#43;&#43; on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 20 Nov 2025 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://peterlavalle.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 20 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nifty Fips</title>
       <link>https://peterlavalle.github.io/post/2025-nifty-fips/</link>
@@ -45,9 +41,9 @@ This was part of an effort to create a JVM &amp;hellip; for &lt;code&gt;$reasons
       <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/whippet/</guid>
-      <description>I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of contemporary game-engines.
+      <description>I [made a semi-cache coherent container][ghWhippet] which provides an [Entity-Component-System][wikiECS]. These are the bones of [contemporary game-engines][wikiECSGame].
 This post is a bit crude; I keep thinking about it then adding features to Whippet instead of writing this up.
-Whippet on GitHub Google built CORGI which isn&amp;rsquo;t (yet?) trying to act cache coherent. It also is more than trivial to build, and suffers from NIH for me. Actually; that last bit isn&amp;rsquo;t likely to be a problem for most, but I didn&amp;rsquo;t like their license.</description>
+[Whippet on GitHub][ghWhippet] [Google built CORGI][googleCorgi] which isn&amp;rsquo;t (yet?) [trying to act cache coherent][corgiCache]. It also is [more than trivial][corgiBuild] to build, and suffers from [NIH][wikiNIH] for me. Actually; that last bit isn&amp;rsquo;t likely to be a problem for most, but I didn&amp;rsquo;t like their license.</description>
     </item>
     
     <item>
@@ -56,9 +52,9 @@ Whippet on GitHub Google built CORGI which isn&amp;rsquo;t (yet?) trying to act 
       <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/whippet-ecs/</guid>
-      <description>I made a semi-cache coherent container which provides an Entity-Component-System. These are the bones of modern game-engines.
+      <description>I [made a semi-cache coherent container][ghWhippet] which provides an [Entity-Component-System][wikiECS]. These are the bones of [modern game-engines][wikiECSGame].
 This post is largely a gooey weasel opinion piece. It started as an introduction that grew out of control. So, for now, it&amp;rsquo;s just a bit of rambling while I clean-up the documentation for my tool.
-Of Entity-Component-Systems Among other things, Jason Gregory&amp;rsquo;s book Game Engine Architecture discusses the concept of a data-driven architecture for game software.</description>
+Of Entity-Component-Systems Among other things, Jason Gregory&amp;rsquo;s book [Game Engine Architecture][bookGAE] discusses the concept of a data-driven architecture for game software.</description>
     </item>
     
     <item>
@@ -67,7 +63,7 @@ Of Entity-Component-Systems Among other things, Jason Gregory&amp;rsquo;s book G
       <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/pal-pipe-sink/</guid>
-      <description>I had an idea/desire for a &amp;ldquo;simple&amp;rdquo; template class that&amp;rsquo;d work as my OpenGL thread. A contemporary design for multi-threaded 3D games10 seems to be pooling work and processing it in whatever threads are available. IME OpenGL/GLFW are not re-entrant; Apple2 and GLFW3 explicitly states that it won&amp;rsquo;t work - so it seems safe to assume that I shouldn&amp;rsquo;t call functions from different threads. So to make a super-fast 3D game (or whatever) I need to do less work on the thread which is running OpenGL while allowing other threads to send it whatever work they please.</description>
+      <description>I had an idea/desire for a &amp;ldquo;simple&amp;rdquo; template class that&amp;rsquo;d work as my OpenGL thread. A contemporary design for multi-threaded 3D games12 (or whatever) seems to be pooling work and processing it in whatever threads are available. IME OpenGL/GLFW are not re-entrant; Apple3 and GLFW4 explicitly states that it won&amp;rsquo;t work - so it seems safe to assume that I shouldn&amp;rsquo;t call functions from different threads. So to make a super-fast 3D game (or whatever) I need to do less work on the thread which is running OpenGL while allowing other threads to send it whatever work they please.</description>
     </item>
     
     <item>
@@ -91,7 +87,7 @@ Basically; I took the 2.</description>
       
       <guid>https://peterlavalle.github.io/post/hungarian-notation/</guid>
       <description>In which I pontificate on the subject of Hungarian Notation
-Hungarian Notation is a contentious topic It boils down to an ambiguity for the word &amp;ldquo;type&amp;rdquo; within English / C++. MicroSfot&amp;rsquo;s modern style-guide says not to use &amp;ldquo;Abbreviations and Acronyms&amp;rdquo; or &amp;ldquo;Hungarian Notation&amp;rdquo; - originally Hungarian Notation was a style of abbreviation. I&amp;rsquo;m going to paraphrase a long blog post by Joel on Software and summarize my thoughts at the end.</description>
+ Hungarian Notation is a contentious topic It boils down to an ambiguity for the word &amp;ldquo;type&amp;rdquo; within English / C++. MicroSfot&amp;rsquo;s modern style-guide says not to use &amp;ldquo;Abbreviations and Acronyms&amp;rdquo; or &amp;ldquo;Hungarian Notation&amp;rdquo; - originally Hungarian Notation was a style of abbreviation. I&amp;rsquo;m going to paraphrase a long blog post by Joel on Software and summarize my thoughts at the end.</description>
     </item>
     
     <item>

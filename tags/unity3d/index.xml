@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unity3D on Peter&#39;s Notebook</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Unity3D on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 02 Mar 2022 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://peterlavalle.github.io/tags/unity3d/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 02 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/unity3d/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wavefront .Obj</title>
       <link>https://peterlavalle.github.io/post/notes.wobj/</link>
@@ -39,7 +35,7 @@
 Based on this tweet, I spent &amp;hellip; 30 minutes? Maybe? putting it together.
  This writeup took longer.
  The approach uses two behaviour classes to achive the classical effect of moving platforms that follow some path.
- mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&amp;rsquo;ve reached the Waypoint, continue with its next one   My example;</description>
+ mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&amp;rsquo;ve reached the Waypoint, continue with its next one    My example;</description>
     </item>
     
     <item>
@@ -73,7 +69,7 @@ Teleporting everywhere feels wrong, so my suggestion is to use the Vive wand lik
       <description>Awhile ago I undertook a goofy little &amp;ldquo;game-play study&amp;rdquo; with space ships.
 It has space ships
 I&amp;rsquo;m calling it Space-Ships.
-I wanted to see if 2D game-play (like S.P.A.Z.) could &amp;ldquo;feel&amp;rdquo; like traditional 3D. (like Freelancer) To study this I built a game-play prototype with a 2.5D chase-cam in (Unity) a 3D game engine. I used engine&amp;rsquo;s existing rigid body simulator (PhysX) to provide a limited version of physics. After constraining everything to a 2D plane and fiddling with the inertia values in various ways I was happy with the flight mechanics.</description>
+ I wanted to see if 2D game-play (like S.P.A.Z.) could &amp;ldquo;feel&amp;rdquo; like traditional 3D. (like Freelancer) To study this I built a game-play prototype with a 2.5D chase-cam in (Unity) a 3D game engine. I used engine&amp;rsquo;s existing rigid body simulator (PhysX) to provide a limited version of physics. After constraining everything to a 2D plane and fiddling with the inertia values in various ways I was happy with the flight mechanics.</description>
     </item>
     
     <item>
@@ -84,7 +80,7 @@ I wanted to see if 2D game-play (like S.P.A.Z.) could &amp;ldquo;feel&amp;rdquo;
       <guid>https://peterlavalle.github.io/post/myspaceships/</guid>
       <description>I have an old Unity project that I haven&amp;rsquo;t looked at in awhile - this one. If memory serves; assembling a WebGL version is slow and boring - so I&amp;rsquo;m making my eager little Jenkins server do it.
 Really I&amp;rsquo;m a bit bored with sbt-launch malarkey and I wanted to see if I could get this rolling. Broadly the steps that I followed went like this;
- Install Unity (5.</description>
+ Install Unity (5.3.3) with WebGL modules  5.</description>
     </item>
     
   </channel>

@@ -10,12 +10,13 @@
 	<meta name="description" content="">
 		<meta property="og:title" content="GoGS on a Pi3 (via Docker)" />
 <meta property="og:description" content="I&rsquo;ve been assembling a &ldquo;full stack&rdquo;1 for development that runs on my Pi3.
-This is all happening inside of Docker containers which made cleanup redonkulously easy.
+This is all happening inside of [Docker][piDocker] containers which made cleanup redonkulously easy.
 Today I was looking at a source code management system; something of a &ldquo;my own GitHub&rdquo; which I can run on my own network." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://peterlavalle.github.io/post/pi3-docker-gogs/" />
-<meta property="article:published_time" content="2017-09-07T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-09-07T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://peterlavalle.github.io/post/pi3-docker-gogs/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2017-09-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-09-07T00:00:00+00:00" />
+
 
 	<link rel="stylesheet" href="/css/bundle.css">
 	<link rel="icon" href="/icons/16.png" sizes="16x16" type="image/png">
@@ -94,54 +95,43 @@ if (!doNotTrack) {
 	<time class="entry__meta-published meta-published" datetime="2017-09-07T00:00:00Z">September 07, 2017</time>
 	</div>
 				<h1 class="entry__title">GoGS on a Pi3 (via Docker)</h1>
-				<div class="entry__content"><p>I&rsquo;ve been assembling a &ldquo;full stack&rdquo;<sup class="footnote-ref" id="fnref:fwiw"><a href="#fn:fwiw">1</a></sup> for development that runs on my Pi3.
-This is all happening inside of <a href="https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/">Docker</a> containers which made cleanup redonkulously easy.
+				<div class="entry__content"><p>I&rsquo;ve been assembling a &ldquo;full stack&rdquo;<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> for development that runs on my Pi3.
+This is all happening inside of [Docker][piDocker] containers which made cleanup redonkulously easy.
 Today I was looking at a source code management system; something of a &ldquo;my own GitHub&rdquo; which I can run on my own network.</p>
-
-<hr />
-
+<hr>
 <p>We have <a href="https://about.gitlab.com/">GitLab</a> at work; so I wanted something different &hellip; also; the authors don&rsquo;t suggest using a Pi3 for &ldquo;real.&rdquo;
-BitBucket had some (hobbyist?) package for $10, but, it doesn&rsquo;t support Mercurial<sup class="footnote-ref" id="fnref:insult"><a href="#fn:insult">2</a></sup> and also recommends against using a Pi3.
+BitBucket had some (hobbyist?) package for $10, but, it doesn&rsquo;t support Mercurial<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> and also recommends against using a Pi3.
 <a href="https://secure.phabricator.com/">Phabricator</a> clearly turns their nose up at the Pi3; next!</p>
-
 <p>I looked at <a href="https://rhodecode.com/">RhodeCode</a>, <a href="https://kallithea-scm.org/">Kallithea</a>, and then ignored <a href="https://allura.apache.org/">Allura</a> and <a href="https://www.scm-manager.org/">SCM-Manager</a> since I <em>really</em> didn&rsquo;t like the way that they looked.</p>
-
 <p><a href="https://gitbucket.github.io/">GitBucket</a> was (is) pretty and easy to run, however, it performs poorly on the Pi3.</p>
-
-<p>While looking for PikaCode, I found; <a href="https://try.gogs.io/">Gogs</a> which is now my tool.</p>
-
-<h1 id="gogs-iogogs"><a href="https://try.gogs.io/">Gogs</a></h1>
-
-<p><a href="https://try.gogs.io/">Gogs</a> is a &ldquo;belligerently painless&rdquo; self-hosted git system.
+<p>While looking for PikaCode, I found; [Gogs][ioGogs] which is now my tool.</p>
+<h1 id="gogsiogogs">[Gogs][ioGogs]</h1>
+<p>[Gogs][ioGogs] is a &ldquo;belligerently painless&rdquo; self-hosted git system.
 It says RaspberryPi and Docker on the front page; I&rsquo;m in love!</p>
-
 <p>Setup in a Pi3 container went like this;</p>
-
 <ol>
 <li><code>$ docker pull gogs/gogs-rpi</code>
-
 <ul>
 <li>this will take awhile; get a coffee</li>
 <li>technically redundant</li>
 <li>we/I want to get this done <em>now</em> AoT to avoid confusion and delays</li>
-</ul></li>
+</ul>
+</li>
 <li><code>$ sudo mkdir /var/gogs-pi3</code>
-
 <ul>
 <li>here <code>/var/gogs-pi3</code> is just a <em>host</em> folder that I want GoGS to write to</li>
-</ul></li>
+</ul>
+</li>
 <li><code>$ docker create --name=gogs-rpi --restart always -p 3022:22 -p 3000:3000 -v /var/gogs-pi3:/data gogs/gogs-rpi</code>
-
 <ul>
 <li>here <code>/var/gogs-pi3</code> is my earlier <em>host</em> folder</li>
 <li><code>/data</code> is the folder that the <code>gogs/gogs-rpi</code> image expects to write to; I don&rsquo;t know/care how to change it. (Sorry)</li>
-</ul></li>
+</ul>
+</li>
 <li><code>$ docker start gogs-rpi</code></li>
 </ol>
-
 <p>I then launched it from <a href="https://portainer.io/">portainer</a> and browsed to the new site to set it up.
 The configurtaion parameters were a bit finicky, I got them to work;</p>
-
 <ul>
 <li>SQLite database in /data/gogs.db</li>
 <li>correct hostname to reach the Pi3</li>
@@ -149,38 +139,37 @@ The configurtaion parameters were a bit finicky, I got them to work;</p>
 <li>setup and admin account for me to use</li>
 <li>didn&rsquo;t use the built-in SSH-server since that didn&rsquo;t work quite right</li>
 </ul>
-
 <p>At the moment, I can import <a href="https://github.com/AHBU/caffe">a Caffe fork</a> just fine, so I&rsquo;d say that&rsquo;s working.
 There&rsquo;s <a href="https://github.com/gogits/gogs/issues/125">an open ticket for Mercurial support</a> but it hasn&rsquo;t been touched in awhile so &hellip; I&rsquo;m sceptical.
 The <a href="https://www.docker.com/">Docker</a> step is really important to me.
 Being able to pop the whole thing out and discard it from my PC is a critical requirement if I&rsquo;m going to keep experimenting.
 I&rsquo;d really like some sort of <a href="https://en.wikipedia.org/wiki/Virtual_hosting">Virtual Host</a> system so that I can use the same URL to access the system in and out of my network.
 An <a href="http://www.ateijelo.com/blog/2016/07/09/share-port-22-between-docker-gogs-ssh-and-local-system">approximation for SSH</a> would also be nice.</p>
-
 <p>Overally; the system is pleasantly responsive - better than the one at work.
 It&rsquo;s also <em>clean</em> and easy to navigate.
 While it lacks a CI thingie; I&rsquo;m more than happy with Jenkins - so that&rsquo;s not at all a problem for me.</p>
-
 <p>Going forward; if you/I have to setup a git host for a small business - use this one on a Pi3 with a big hard drive.</p>
-<div class="footnotes">
-
-<hr />
-
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:fwiw">for whatever it&rsquo;s worth
- <a class="footnote-return" href="#fnref:fwiw"><sup>[return]</sup></a></li>
-<li id="fn:insult">There&rsquo;s a <em>very</em> patronising response from BitBucket about why they won&rsquo;t support Mercurial.
- <a class="footnote-return" href="#fnref:insult"><sup>[return]</sup></a></li>
+<li id="fn:1" role="doc-endnote">
+<p>for whatever it&rsquo;s worth
+[piDocker]: <a href="https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/">https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/</a>
+[ioGogs]: <a href="https://try.gogs.io/">https://try.gogs.io/</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>There&rsquo;s a <em>very</em> patronising response from BitBucket about why they won&rsquo;t support Mercurial.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div></div>
+</section></div>
 				
 				<footer class="entry__footer">
 					
 <div class="entry__tags">
 			<a class="entry__tag btn" href="/tags/pi3/">Pi3</a>
 			<a class="entry__tag btn" href="/tags/docker/">Docker</a>
-			<a class="entry__tag btn" href="/tags/git/">git</a>
-			<a class="entry__tag btn" href="/tags/gogs/">Gogs</a>
+			<a class="entry__tag btn" href="/tags/git/">Git</a>
+			<a class="entry__tag btn" href="/tags/gogs/">GoGS</a>
 			<a class="entry__tag btn" href="/tags/fullstak/">fullstak</a>
 			<a class="entry__tag btn" href="/tags/howto/">HowTo</a>
 </div>
