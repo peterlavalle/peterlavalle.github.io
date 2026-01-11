@@ -2,19 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://peterlavalle.github.io/post/dumb-sling/</loc>
+    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/hg/</loc>
+    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/linux/</loc>
+    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/</loc>
+    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/pi5/</loc>
+    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/post/</loc>
+    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/shugits/</loc>
+    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://peterlavalle.github.io/post/jupyter-homelab/</loc>
     <lastmod>2025-12-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/post/</loc>
-    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://peterlavalle.github.io/tags/python/</loc>
-    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
     <lastmod>2025-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/tags/c&#43;&#43;/</loc>
@@ -315,9 +330,6 @@
     <lastmod>2019-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/tags/k620/</loc>
-    <lastmod>2019-07-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/linux/</loc>
     <lastmod>2019-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/tags/nvidia/</loc>
