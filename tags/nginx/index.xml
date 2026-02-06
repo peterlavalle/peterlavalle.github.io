@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nGinx on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/nginx/</link>
+    <description>Recent content in nGinx on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Tue, 19 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pi3 nGinx Reverse Proxy</title>
+      <link>https://peterlavalle.github.io/post/pi3-nginx/</link>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-nginx/</guid>
+      <description>So &amp;hellip; you&amp;rsquo;ve got a Pi3 running as a Docker host with some services that you want your buddies to have access to. You could try and get them to SSH into your home network; just like you could type all your programs with a touchscreen.
+I&amp;rsquo;m going to use nGinx to setup a reverse-proxy from my real-Pi3 to various Docker containers based on URL rewriting.
+I&amp;rsquo;m doing something else (of course) I&amp;rsquo;m setting up (what I call) name-based-virtual-hosting.</description>
+    </item>
+    
+  </channel>
+</rss>

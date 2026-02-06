@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GoGS on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/gogs/</link>
+    <description>Recent content in GoGS on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/gogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pushing (from GoGS) with `post-receive` (to a mirror)</title>
+      <link>https://peterlavalle.github.io/post/gogs-push-on-push/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/gogs-push-on-push/</guid>
+      <description>&lt;p&gt;I have a &lt;a href=&#34;https://gogs.io/&#34;&gt;GoGS&lt;/a&gt; server for my work.
+I want to back it up off-site to &lt;a href=&#34;https://gitlab.com/gitlab-org/gitlab-ce&#34;&gt;our GitLab instance&lt;/a&gt;.
+According to a &lt;a href=&#34;https://www.atlassian.com/git/tutorials/git-hooks#server-side-hooks&#34;&gt;document I read&lt;/a&gt; this should be possible using &lt;code&gt;post-receive&lt;/code&gt; hooks.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pi3 nGinx Reverse Proxy</title>
+      <link>https://peterlavalle.github.io/post/pi3-nginx/</link>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-nginx/</guid>
+      <description>So &amp;hellip; you&amp;rsquo;ve got a Pi3 running as a Docker host with some services that you want your buddies to have access to. You could try and get them to SSH into your home network; just like you could type all your programs with a touchscreen.
+I&amp;rsquo;m going to use nGinx to setup a reverse-proxy from my real-Pi3 to various Docker containers based on URL rewriting.
+I&amp;rsquo;m doing something else (of course) I&amp;rsquo;m setting up (what I call) name-based-virtual-hosting.</description>
+    </item>
+    
+    <item>
+      <title>GoGS on a Pi3 (via Docker)</title>
+      <link>https://peterlavalle.github.io/post/pi3-docker-gogs/</link>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-docker-gogs/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been assembling a &amp;ldquo;full stack&amp;rdquo;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; for development that runs on my Pi3.
+This is all happening inside of [Docker][piDocker] containers which made cleanup redonkulously easy.
+Today I was looking at a source code management system; something of a &amp;ldquo;my own GitHub&amp;rdquo; which I can run on my own network.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

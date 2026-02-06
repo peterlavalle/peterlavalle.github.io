@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43; on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Thu, 20 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nifty Fips</title>
+      <link>https://peterlavalle.github.io/post/2025-nifty-fips/</link>
+      <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/2025-nifty-fips/</guid>
+      <description>&lt;p&gt;Fips is a good tool.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>palPool / C&#43;&#43; String Pool (that never empties)</title>
+      <link>https://peterlavalle.github.io/post/pal-pool/</link>
+      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pal-pool/</guid>
+      <description>&lt;p&gt;I developed a C++ string pooling class as a single-header utility.
+This was part of an effort to create a JVM &amp;hellip; for &lt;code&gt;$reasons&lt;/code&gt; &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>fips on Visual Studio 2019</title>
+      <link>https://peterlavalle.github.io/post/fips-on-vs2019/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/fips-on-vs2019/</guid>
+      <description>&lt;p&gt;Getting &lt;a href=&#34;https://floooh.github.io/fips/&#34;&gt;fips&lt;/a&gt; working today in &lt;a href=&#34;https://visualstudio.microsoft.com/vs/&#34;&gt;Visual Studio 2019&lt;/a&gt; was quite unpleasant because of &lt;a href=&#34;https://cmake.org/&#34;&gt;CMake&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Whippet</title>
+      <link>https://peterlavalle.github.io/post/whippet/</link>
+      <pubDate>Sun, 28 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/whippet/</guid>
+      <description>I [made a semi-cache coherent container][ghWhippet] which provides an [Entity-Component-System][wikiECS]. These are the bones of [contemporary game-engines][wikiECSGame].
+This post is a bit crude; I keep thinking about it then adding features to Whippet instead of writing this up.
+[Whippet on GitHub][ghWhippet] [Google built CORGI][googleCorgi] which isn&amp;rsquo;t (yet?) [trying to act cache coherent][corgiCache]. It also is [more than trivial][corgiBuild] to build, and suffers from [NIH][wikiNIH] for me. Actually; that last bit isn&amp;rsquo;t likely to be a problem for most, but I didn&amp;rsquo;t like their license.</description>
+    </item>
+    
+    <item>
+      <title>Of Entity-Component-Systems</title>
+      <link>https://peterlavalle.github.io/post/whippet-ecs/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/whippet-ecs/</guid>
+      <description>I [made a semi-cache coherent container][ghWhippet] which provides an [Entity-Component-System][wikiECS]. These are the bones of [modern game-engines][wikiECSGame].
+This post is largely a gooey weasel opinion piece. It started as an introduction that grew out of control. So, for now, it&amp;rsquo;s just a bit of rambling while I clean-up the documentation for my tool.
+Of Entity-Component-Systems Among other things, Jason Gregory&amp;rsquo;s book [Game Engine Architecture][bookGAE] discusses the concept of a data-driven architecture for game software.</description>
+    </item>
+    
+    <item>
+      <title>Pipe Sink</title>
+      <link>https://peterlavalle.github.io/post/pal-pipe-sink/</link>
+      <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pal-pipe-sink/</guid>
+      <description>I had an idea/desire for a &amp;ldquo;simple&amp;rdquo; template class that&amp;rsquo;d work as my OpenGL thread. A contemporary design for multi-threaded 3D games12 (or whatever) seems to be pooling work and processing it in whatever threads are available. IME OpenGL/GLFW are not re-entrant; Apple3 and GLFW4 explicitly states that it won&amp;rsquo;t work - so it seems safe to assume that I shouldn&amp;rsquo;t call functions from different threads. So to make a super-fast 3D game (or whatever) I need to do less work on the thread which is running OpenGL while allowing other threads to send it whatever work they please.</description>
+    </item>
+    
+    <item>
+      <title>Single Header Bullet</title>
+      <link>https://peterlavalle.github.io/post/oth-bullet/</link>
+      <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/oth-bullet/</guid>
+      <description>https://github.com/g-pechorin/bullet2stripped
+What? I reduced Bullet 2.83 to a single C++ header file.
+Why? Largely to see if I could &amp;hellip; hey - SQLite saw a 5% - 10% speed boost when they did this right?
+&amp;hellip; oh - and to ease adoption I guess &amp;hellip; maybe &amp;hellip;
+How? I used a slightly complicated Scala script that I&amp;rsquo;m not interested in examining again &amp;hellip; for now &amp;hellip;
+Basically; I took the 2.</description>
+    </item>
+    
+    <item>
+      <title>Hungarian Notation</title>
+      <link>https://peterlavalle.github.io/post/hungarian-notation/</link>
+      <pubDate>Wed, 02 Mar 2016 15:39:37 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/hungarian-notation/</guid>
+      <description>In which I pontificate on the subject of Hungarian Notation
+ Hungarian Notation is a contentious topic It boils down to an ambiguity for the word &amp;ldquo;type&amp;rdquo; within English / C++. MicroSfot&amp;rsquo;s modern style-guide says not to use &amp;ldquo;Abbreviations and Acronyms&amp;rdquo; or &amp;ldquo;Hungarian Notation&amp;rdquo; - originally Hungarian Notation was a style of abbreviation. I&amp;rsquo;m going to paraphrase a long blog post by Joel on Software and summarize my thoughts at the end.</description>
+    </item>
+    
+    <item>
+      <title>Swag</title>
+      <link>https://peterlavalle.github.io/post/swag/</link>
+      <pubDate>Thu, 12 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/swag/</guid>
+      <description>You don’t need members when you’ve got SWAG!
+Actually &amp;hellip; you don&amp;rsquo;t get many members with this idea. By casting this I can pass around an immutable structure of up-to sizeof(void*) bytes.
+Gist; https://gist.github.com/g-pechorin/d5eb8a1a770f783943a0
+ </description>
+    </item>
+    
+    <item>
+      <title>First Post</title>
+      <link>https://peterlavalle.github.io/post/first-post/</link>
+      <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/first-post/</guid>
+      <description>Can I use polymorphic-static-templates to automagically wire meta-functions into a Lua allocator?
+Presently I’m using several “make—” functions to “decorate” objects after allocation and enable get/set/run meta-functions. I keep feeling the “smell” that some esoteric template thingies could be used to make these steps declarative (or maybe automatic!)</description>
+    </item>
+    
+  </channel>
+</rss>

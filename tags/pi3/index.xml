@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pi3 on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/pi3/</link>
+    <description>Recent content in Pi3 on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Sun, 04 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/pi3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OctoPrint Container</title>
+      <link>https://peterlavalle.github.io/post/ocotoprint-container/</link>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/ocotoprint-container/</guid>
+      <description>&lt;p&gt;I keep forgetting how I setup octoprint.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OpenVPN on a Pi3</title>
+      <link>https://peterlavalle.github.io/post/pi3-openvpn/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-openvpn/</guid>
+      <description>&lt;p&gt;These are some old notes on using a Pi3 as a VPN host - I can&amp;rsquo;t remember why I un-published them.
+Might be fun to &lt;a href=&#34;https://hub.docker.com/r/raspbian/stretch&#34;&gt;stuff in a container someday.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AIY and Pi4j (Voice V1) GPIO Reference</title>
+      <link>https://peterlavalle.github.io/post/aiy-voice-v1-reference/</link>
+      <pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/aiy-voice-v1-reference/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m trying to use a &lt;a href=&#34;https://aiyprojects.withgoogle.com/voice-v1/&#34;&gt;Google AIY Voice V1&lt;/a&gt; with &lt;a href=&#34;http://pi4j.com/&#34;&gt;Pi4J&lt;/a&gt;.
+I had a bit of trouble finding the pins, so I&amp;rsquo;m posting this here in case anyone else is looking.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WiFi on a headless Raspberry Pi</title>
+      <link>https://peterlavalle.github.io/post/pi3-wifi/</link>
+      <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-wifi/</guid>
+      <description>&lt;p&gt;I have no idea why the other guides for this take four pages.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pi3 nGinx Reverse Proxy</title>
+      <link>https://peterlavalle.github.io/post/pi3-nginx/</link>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-nginx/</guid>
+      <description>So &amp;hellip; you&amp;rsquo;ve got a Pi3 running as a Docker host with some services that you want your buddies to have access to. You could try and get them to SSH into your home network; just like you could type all your programs with a touchscreen.
+I&amp;rsquo;m going to use nGinx to setup a reverse-proxy from my real-Pi3 to various Docker containers based on URL rewriting.
+I&amp;rsquo;m doing something else (of course) I&amp;rsquo;m setting up (what I call) name-based-virtual-hosting.</description>
+    </item>
+    
+    <item>
+      <title>GoGS on a Pi3 (via Docker)</title>
+      <link>https://peterlavalle.github.io/post/pi3-docker-gogs/</link>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-docker-gogs/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been assembling a &amp;ldquo;full stack&amp;rdquo;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; for development that runs on my Pi3.
+This is all happening inside of [Docker][piDocker] containers which made cleanup redonkulously easy.
+Today I was looking at a source code management system; something of a &amp;ldquo;my own GitHub&amp;rdquo; which I can run on my own network.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pi3 NameCheap</title>
+      <link>https://peterlavalle.github.io/post/pi3-namecheap/</link>
+      <pubDate>Thu, 29 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-namecheap/</guid>
+      <description>This is a followup to a previous post because that one stopped working, now - this works.
+There&amp;rsquo;s not a lot of OC here, just clarity.
+NameCheap DynDNS on a Pi3 I use NameCheap (because they&amp;rsquo;re anti-SOPA) for DNS. The client program, ddclient, can connect to NameCheap.
+I&amp;rsquo;m using raspbian, so, first;
+  run sudo apt-get install ddclient on your Pi
+  find the dynamic DNS settings on NameCheap&amp;rsquo;s website</description>
+    </item>
+    
+    <item>
+      <title>Pi3 DynDNS</title>
+      <link>https://peterlavalle.github.io/post/pi3-dyndns/</link>
+      <pubDate>Sun, 21 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/pi3-dyndns/</guid>
+      <description>This has been replaced
+Pi3 DynDNS I want to give my home&amp;rsquo;s Raspberry Pi3 a DNS name so that I can access it more easily.
+DNS and Dynamic IP Addresses The Domain Naming System is how those readable textual names like example.com become the actual IP Addresses like 127.0.0.1 that web pages, email, and everything else needs to work. Various groups allow people to register a domain (or subdomain) and specify the IP address of a computer that the domain should reffer to.</description>
+    </item>
+    
+  </channel>
+</rss>

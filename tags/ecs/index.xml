@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ECS on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/ecs/</link>
+    <description>Recent content in ECS on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Fri, 19 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/ecs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Of Entity-Component-Systems</title>
+      <link>https://peterlavalle.github.io/post/whippet-ecs/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/whippet-ecs/</guid>
+      <description>I [made a semi-cache coherent container][ghWhippet] which provides an [Entity-Component-System][wikiECS]. These are the bones of [modern game-engines][wikiECSGame].
+This post is largely a gooey weasel opinion piece. It started as an introduction that grew out of control. So, for now, it&amp;rsquo;s just a bit of rambling while I clean-up the documentation for my tool.
+Of Entity-Component-Systems Among other things, Jason Gregory&amp;rsquo;s book [Game Engine Architecture][bookGAE] discusses the concept of a data-driven architecture for game software.</description>
+    </item>
+    
+  </channel>
+</rss>

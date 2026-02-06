@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unity3D on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/unity3d/</link>
+    <description>Recent content in Unity3D on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Wed, 02 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/unity3d/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wavefront .Obj</title>
+      <link>https://peterlavalle.github.io/post/notes.wobj/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/notes.wobj/</guid>
+      <description>&lt;p&gt;Notes from adding (WaveFront) &lt;code&gt;.obj&lt;/code&gt; export to a &lt;a href=&#34;https://unity.com/&#34;&gt;Unity3D plugin&lt;/a&gt; I&amp;rsquo;m working on.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>3DPrinting `.unity3d` Web Archives</title>
+      <link>https://peterlavalle.github.io/post/3dprinting-unity3d/</link>
+      <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/3dprinting-unity3d/</guid>
+      <description>&lt;p&gt;How to convert the &lt;code&gt;.unity3d&lt;/code&gt; web archives to &lt;code&gt;.stl&lt;/code&gt; files for 3D Printing.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Moving Platforms in Unity3D</title>
+      <link>https://peterlavalle.github.io/post/unity3d-moving-platform/</link>
+      <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/unity3d-moving-platform/</guid>
+      <description>This is a short example of moving platforms in Unity3D.
+Based on this tweet, I spent &amp;hellip; 30 minutes? Maybe? putting it together.
+ This writeup took longer.
+ The approach uses two behaviour classes to achive the classical effect of moving platforms that follow some path.
+ mark some empty GameObject as Waypoint instances give each Waypoint a next field attach a Mover instance to your platform(s)  drag the platform towards the next Waypoint at a fixed rate when you&amp;rsquo;ve reached the Waypoint, continue with its next one    My example;</description>
+    </item>
+    
+    <item>
+      <title>PAL-System</title>
+      <link>https://peterlavalle.github.io/post/palsystem/</link>
+      <pubDate>Sat, 12 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/palsystem/</guid>
+      <description>Lindenmayer Systems allow one to specify a series of replacement rules for transforming strings.
+If the text is used as a series of drawing commands, including saving and restoring the cursor&amp;rsquo;s position, the technique can generate fairly interesting foliage.
+A scene graph offers the ability to save/restore by chaining segments together. I used Unity3D&amp;rsquo;s ScriptableObject to create &amp;ldquo;Languages&amp;rdquo; with replacement rules. I also created &amp;ldquo;Dictionaries&amp;rdquo; mapping symbols to segments made from GameObject prefabs.</description>
+    </item>
+    
+    <item>
+      <title>Vive Cane</title>
+      <link>https://peterlavalle.github.io/post/vive-cane/</link>
+      <pubDate>Sun, 04 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/vive-cane/</guid>
+      <description>I&amp;rsquo;m still alive just &amp;hellip; busy, not bloggy &amp;hellip; maybe someday I&amp;rsquo;ll be more bloggy. Here&amp;rsquo;s something that kept me busy &amp;hellip;
+Teleporting everywhere feels wrong, so my suggestion is to use the Vive wand like a cane. Two minutes feels a bit long, but here&amp;rsquo;s a video showing it off.
+  More or less; when you grip the/a wand - your avatar is planting a cane in the world from which you can push yourself.</description>
+    </item>
+    
+    <item>
+      <title>Space Ships</title>
+      <link>https://peterlavalle.github.io/post/space-ships/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/space-ships/</guid>
+      <description>Awhile ago I undertook a goofy little &amp;ldquo;game-play study&amp;rdquo; with space ships.
+It has space ships
+I&amp;rsquo;m calling it Space-Ships.
+ I wanted to see if 2D game-play (like S.P.A.Z.) could &amp;ldquo;feel&amp;rdquo; like traditional 3D. (like Freelancer) To study this I built a game-play prototype with a 2.5D chase-cam in (Unity) a 3D game engine. I used engine&amp;rsquo;s existing rigid body simulator (PhysX) to provide a limited version of physics. After constraining everything to a 2D plane and fiddling with the inertia values in various ways I was happy with the flight mechanics.</description>
+    </item>
+    
+    <item>
+      <title>Automated Unity WebGL Deployment</title>
+      <link>https://peterlavalle.github.io/post/myspaceships/</link>
+      <pubDate>Fri, 26 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/myspaceships/</guid>
+      <description>I have an old Unity project that I haven&amp;rsquo;t looked at in awhile - this one. If memory serves; assembling a WebGL version is slow and boring - so I&amp;rsquo;m making my eager little Jenkins server do it.
+Really I&amp;rsquo;m a bit bored with sbt-launch malarkey and I wanted to see if I could get this rolling. Broadly the steps that I followed went like this;
+ Install Unity (5.3.3) with WebGL modules  5.</description>
+    </item>
+    
+  </channel>
+</rss>

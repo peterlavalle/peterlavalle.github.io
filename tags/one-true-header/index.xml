@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>one-true-header on Peter&#39;s Notebook</title>
+    <link>https://peterlavalle.github.io/tags/one-true-header/</link>
+    <description>Recent content in one-true-header on Peter&#39;s Notebook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Mon, 09 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/one-true-header/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Single Header Bullet</title>
+      <link>https://peterlavalle.github.io/post/oth-bullet/</link>
+      <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/oth-bullet/</guid>
+      <description>https://github.com/g-pechorin/bullet2stripped
+What? I reduced Bullet 2.83 to a single C++ header file.
+Why? Largely to see if I could &amp;hellip; hey - SQLite saw a 5% - 10% speed boost when they did this right?
+&amp;hellip; oh - and to ease adoption I guess &amp;hellip; maybe &amp;hellip;
+How? I used a slightly complicated Scala script that I&amp;rsquo;m not interested in examining again &amp;hellip; for now &amp;hellip;
+Basically; I took the 2.</description>
+    </item>
+    
+    <item>
+      <title>Peter&#39;s Awesome Lua with the Core functionality we care about</title>
+      <link>https://peterlavalle.github.io/post/oth-palua-core/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/oth-palua-core/</guid>
+      <description>TL:DR ; results
+DukTape is a C engine for executing ECMAScript 5.1ish. (&amp;hellip; or JavaScript or whatever we&amp;rsquo;re calling it this week) Notably, it&amp;rsquo;s distributed as a trio of source files to ease integration.
+Lua is a C script engine (for the Lua languages) and is not distributed in such a nice way. So I spent a few hours preparing a (Python) script to repack Lua 5.3.3 into a single header.</description>
+    </item>
+    
+  </channel>
+</rss>
