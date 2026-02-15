@@ -8,6 +8,16 @@
     <language>en-GB</language>
     <lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Tools</title>
+      <link>https://peterlavalle.github.io/tools/</link>
+      <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tools/</guid>
+      <description>&amp;hellip; that I like &amp;hellip; and so should you!
+ uv (&amp;hellip; and NO MORE PYTHON) Codium / Code-OSS / Visual Code / Antigravity cmder (on Windows) hg (aka Mercurial) KDiff3 - it&amp;rsquo;s in hg   fips sbt   CoffeeScript DukTape Open JDK   Mermaid PanDoc   GoGS source hut   Work Work has a thread to this extent (might be secret - here&amp;rsquo;s what I said)</description>
+    </item>
+    
+    <item>
       <title>yay TortoiseHg (on SteamDeck)</title>
       <link>https://peterlavalle.github.io/post/yay-thg/</link>
       <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
@@ -487,16 +497,6 @@ The issue was that the PTFE tube was not flush with the nozzle, due to the hot e
       
       <guid>https://peterlavalle.github.io/post/github-pages-publish/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub pages&lt;/a&gt; allows a GitHub repository to function as a static web-server thing.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Tools</title>
-      <link>https://peterlavalle.github.io/tools/</link>
-      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tools/</guid>
-      <description>&amp;hellip; that I like
- cmder GitFiend hg (aka Mercurial) KDiff3 - it&amp;rsquo;s in hg Visual Code   fips sbt   CoffeeScript DukTape Open JDK   Mermaid PanDoc   GoGS source hut   Daily cmder  https://cmder.net/ fixes the windows shell; use this instead of cmd get the big one with git; now you have a bunch of UNIX tools too  GitFiend  https://gitfiend.</description>
     </item>
     
     <item>
