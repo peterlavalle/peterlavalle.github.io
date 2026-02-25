@@ -96,7 +96,7 @@ if (!doNotTrack) {
 				<div class="entry__content"><p>How to make VisualCode/Codium/Antigravity/Cursor use Cmder as the shell.</p>
 <hr>
 <p>Quick post - I&rsquo;m using Windows again at work, and I want/need Cmder.
-Yes, PowerShell is there &hellip; it&rsquo;s just funny looking and slow.[^win11]
+Yes, PowerShell is there &hellip; it&rsquo;s just funny looking and slow.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
 So this blast of a guide is how to fixit.</p>
 <p>Once you have Codium and Cmder installed &hellip;</p>
 <p>You need to create a new terminal profile, tell it to use <code>cmd.exe</code> and to run <code>vendor/init.bat</code> on startup.</p>
@@ -105,25 +105,31 @@ So this blast of a guide is how to fixit.</p>
 <li><code>CTRL+J</code> ande selecte the <code>TERMINAL</code> tab</li>
 <li>next to the little <code>+</code> open the dropdown and select &ldquo;Configure Terminal Settings&rdquo;</li>
 <li>The settings section has &hellip; stuff &hellip; scroll around and click/select &ldquo;<code>Edit in settings.json</code>&rdquo;</li>
-<li>Add the following sections (adjust) the <code>.bat</code> path</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">       <span style="color:#e6db74">&#34;terminal.integrated.profiles.windows&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
-           <span style="color:#960050;background-color:#1e0010">...</span>
-           <span style="color:#f92672">&#34;cmder&#34;</span>: {
-               <span style="color:#f92672">&#34;path&#34;</span>: <span style="color:#e6db74">&#34;C:\\WINDOWS\\System32\\cmd.exe&#34;</span>,
-               <span style="color:#f92672">&#34;args&#34;</span>: [
-                   <span style="color:#e6db74">&#34;/K&#34;</span>,
-                   <span style="color:#e6db74">&#34;C:\\find\\your\\cmder\\install\\and\\vendor\\init.bat&#34;</span>
-    ]
+<li>Add the following sections (adjust) the <code>.bat</code> path
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">  <span style="color:#e6db74">&#34;terminal.integrated.profiles.windows&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
+    <span style="color:#960050;background-color:#1e0010">...</span>
+    <span style="color:#f92672">&#34;cmder&#34;</span>: {
+      <span style="color:#f92672">&#34;path&#34;</span>: <span style="color:#e6db74">&#34;C:\\WINDOWS\\System32\\cmd.exe&#34;</span>,
+      <span style="color:#f92672">&#34;args&#34;</span>: [
+        <span style="color:#e6db74">&#34;/K&#34;</span>,
+        <span style="color:#e6db74">&#34;C:\\find\\your\\cmder\\install\\and\\vendor\\init.bat&#34;</span>
+      ]
     },
-           <span style="color:#960050;background-color:#1e0010">...</span>
-    }<span style="color:#960050;background-color:#1e0010">,</span>
-       <span style="color:#e6db74">&#34;terminal.integrated.defaultProfile.windows&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;cmder&#34;</span>
-</code></pre></div><ol start="6">
+    <span style="color:#960050;background-color:#1e0010">...</span>
+  }<span style="color:#960050;background-color:#1e0010">,</span>
+  <span style="color:#e6db74">&#34;terminal.integrated.defaultProfile.windows&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;cmder&#34;</span>
+</code></pre></div></li>
 <li>re-check the terminal panel; <code>cmder</code> should be an option now, and you can use it - right?</li>
 </ol>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
 <p>&hellip; under Windows 11 - Win11 is slow.
-There are a lot of dumb changes with Windows 11, for example, <code>CTRL+C</code> (or right click) doesn&rsquo;t reliably copy text - I need to wait and use the &ldquo;on hover&rdquo; popup.</p></div>
+There are a lot of dumb changes with Windows 11, for example, <code>CTRL+C</code> (or right click) doesn&rsquo;t reliably copy text - I need to wait and use the &ldquo;on hover&rdquo; popup.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section></div>
 				
 				<footer class="entry__footer">
 					
