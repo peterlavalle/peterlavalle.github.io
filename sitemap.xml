@@ -2,31 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://peterlavalle.github.io/tags/cmder/</loc>
+    <lastmod>2026-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/post/cmder-in-code/</loc>
+    <lastmod>2026-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/howto/</loc>
+    <lastmod>2026-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/</loc>
+    <lastmod>2026-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/post/</loc>
+    <lastmod>2026-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2026-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/windows/</loc>
+    <lastmod>2026-02-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://peterlavalle.github.io/tools/</loc>
     <lastmod>2026-02-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/tags/hg/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://peterlavalle.github.io/tags/howto/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://peterlavalle.github.io/tags/linux/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/post/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/tags/steam/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/tags/steamos/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/post/yay-thg/</loc>
@@ -172,9 +181,6 @@
   </url><url>
     <loc>https://peterlavalle.github.io/tags/youtube/</loc>
     <lastmod>2022-07-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/windows/</loc>
-    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/post/notes.chrome-portable/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
@@ -451,9 +457,6 @@
   </url><url>
     <loc>https://peterlavalle.github.io/post/whippet-ecs/</loc>
     <lastmod>2018-01-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/cmder/</loc>
-    <lastmod>2018-01-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/post/cmder-intortoisehg/</loc>
     <lastmod>2018-01-15T00:00:00+00:00</lastmod>
