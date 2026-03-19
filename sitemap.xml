@@ -2,22 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://peterlavalle.github.io/tags/debian/</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/docker/</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/forgejo/</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/post/forgejo-runner/</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/post/</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/post/antigravity-on-steam-deck/</loc>
+    <lastmod>2026-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/howto/</loc>
+    <lastmod>2026-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/linux/</loc>
+    <lastmod>2026-03-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/steamos/</loc>
+    <lastmod>2026-03-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://peterlavalle.github.io/tags/cmder/</loc>
     <lastmod>2026-02-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/post/cmder-in-code/</loc>
-    <lastmod>2026-02-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/howto/</loc>
-    <lastmod>2026-02-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2026-02-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/post/</loc>
-    <lastmod>2026-02-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
     <lastmod>2026-02-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/tags/windows/</loc>
@@ -29,13 +50,7 @@
     <loc>https://peterlavalle.github.io/tags/hg/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://peterlavalle.github.io/tags/linux/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://peterlavalle.github.io/tags/steam/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/steamos/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/post/yay-thg/</loc>
@@ -89,14 +104,8 @@
     <loc>https://peterlavalle.github.io/post/2025-nifty-fips/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://peterlavalle.github.io/tags/forgejo/</loc>
-    <lastmod>2025-07-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://peterlavalle.github.io/post/forgejo-actions2/</loc>
     <lastmod>2025-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/docker/</loc>
-    <lastmod>2025-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/post/docker-clean/</loc>
     <lastmod>2025-03-19T00:00:00+00:00</lastmod>

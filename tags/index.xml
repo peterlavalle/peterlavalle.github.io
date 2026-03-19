@@ -6,22 +6,67 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 25 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cmder</title>
-      <link>https://peterlavalle.github.io/tags/cmder/</link>
-      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <title>Debian</title>
+      <link>https://peterlavalle.github.io/tags/debian/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>https://peterlavalle.github.io/tags/cmder/</guid>
+      <guid>https://peterlavalle.github.io/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://peterlavalle.github.io/tags/docker/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>forgejo</title>
+      <link>https://peterlavalle.github.io/tags/forgejo/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/forgejo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>HowTo</title>
       <link>https://peterlavalle.github.io/tags/howto/</link>
-      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/howto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://peterlavalle.github.io/tags/linux/</link>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SteamOS</title>
+      <link>https://peterlavalle.github.io/tags/steamos/</link>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/steamos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cmder</title>
+      <link>https://peterlavalle.github.io/tags/cmder/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/cmder/</guid>
       <description></description>
     </item>
     
@@ -44,29 +89,11 @@
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>https://peterlavalle.github.io/tags/linux/</link>
-      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Steam</title>
       <link>https://peterlavalle.github.io/tags/steam/</link>
       <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/steam/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SteamOS</title>
-      <link>https://peterlavalle.github.io/tags/steamos/</link>
-      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/steamos/</guid>
       <description></description>
     </item>
     
@@ -157,24 +184,6 @@
       <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/fips/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>forgejo</title>
-      <link>https://peterlavalle.github.io/tags/forgejo/</link>
-      <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/forgejo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://peterlavalle.github.io/tags/docker/</link>
-      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/docker/</guid>
       <description></description>
     </item>
     

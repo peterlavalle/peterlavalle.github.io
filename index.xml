@@ -6,7 +6,26 @@
     <description>Recent content on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Wed, 25 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>forgejo Runner (again)</title>
+      <link>https://peterlavalle.github.io/post/forgejo-runner/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/forgejo-runner/</guid>
+      <description>&lt;p&gt;Notes on how to add a runner to your forgejo instance.
+(Will probably work with CodeBerg)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Antigravity on SteamDeck</title>
+      <link>https://peterlavalle.github.io/post/antigravity-on-steam-deck/</link>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/antigravity-on-steam-deck/</guid>
+      <description>&lt;p&gt;Getting it installed wasn&amp;rsquo;t super obvious - so - here&amp;rsquo;s what I think is the right answer.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Cmder in Code</title>
       <link>https://peterlavalle.github.io/post/cmder-in-code/</link>
