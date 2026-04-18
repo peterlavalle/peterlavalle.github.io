@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://peterlavalle.github.io/</loc>
+    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/post/</loc>
+    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/post/redeck-steam/</loc>
+    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://peterlavalle.github.io/tags/debian/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
@@ -12,12 +21,6 @@
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/post/forgejo-runner/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/post/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/tags/</loc>
