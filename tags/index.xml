@@ -6,7 +6,52 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>forgejo</title>
+      <link>https://peterlavalle.github.io/tags/forgejo/</link>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/forgejo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hg</title>
+      <link>https://peterlavalle.github.io/tags/hg/</link>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/hg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala</title>
+      <link>https://peterlavalle.github.io/tags/scala/</link>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/scala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala3</title>
+      <link>https://peterlavalle.github.io/tags/scala3/</link>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/scala3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shugits</title>
+      <link>https://peterlavalle.github.io/tags/shugits/</link>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/shugits/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Debian</title>
       <link>https://peterlavalle.github.io/tags/debian/</link>
@@ -22,15 +67,6 @@
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>forgejo</title>
-      <link>https://peterlavalle.github.io/tags/forgejo/</link>
-      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/forgejo/</guid>
       <description></description>
     </item>
     
@@ -76,15 +112,6 @@
       <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hg</title>
-      <link>https://peterlavalle.github.io/tags/hg/</link>
-      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/hg/</guid>
       <description></description>
     </item>
     
@@ -148,15 +175,6 @@
       <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/pi5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shugits</title>
-      <link>https://peterlavalle.github.io/tags/shugits/</link>
-      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/shugits/</guid>
       <description></description>
     </item>
     
@@ -346,15 +364,6 @@
       <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/sbt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scala</title>
-      <link>https://peterlavalle.github.io/tags/scala/</link>
-      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/scala/</guid>
       <description></description>
     </item>
     

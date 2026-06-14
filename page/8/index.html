@@ -89,6 +89,17 @@ if (!doNotTrack) {
 			<div class="cards">
 					<div class="card card--2col">
 					<article class="entry card__box block">
+	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pi3-docker-gogs/">GoGS on a Pi3 (via Docker)</a></h1>
+	<div class="entry__content"><p>I&rsquo;ve been assembling a &ldquo;full stack&rdquo;<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> for development that runs on my Pi3.
+This is all happening inside of [Docker][piDocker] containers which made cleanup redonkulously easy.
+Today I was looking at a source code management system; something of a &ldquo;my own GitHub&rdquo; which I can run on my own network.</p></div>
+	<div class="entry__meta meta mt tar">
+	<time class="entry__meta-published meta-published" datetime="2017-09-07T00:00:00Z">September 07, 2017</time>
+	</div>
+</article>
+					</div>
+					<div class="card card--2col">
+					<article class="entry card__box block">
 	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/pal-pipe-sink/">Pipe Sink</a></h1>
 	<div class="entry__content">I had an idea/desire for a &ldquo;simple&rdquo; template class that&rsquo;d work as my OpenGL thread. A contemporary design for multi-threaded 3D games12 (or whatever) seems to be pooling work and processing it in whatever threads are available. IME OpenGL/GLFW are not re-entrant; Apple3 and GLFW4 explicitly states that it won&rsquo;t work - so it seems safe to assume that I shouldn&rsquo;t call functions from different threads. So to make a super-fast 3D game (or whatever) I need to do less work on the thread which is running OpenGL while allowing other threads to send it whatever work they please.</div>
 	<div class="entry__meta meta mt tar">
@@ -189,16 +200,6 @@ Teleporting everywhere feels wrong, so my suggestion is to use the Vive wand lik
  Hit CTRL+, &gt; click on Keybindings &gt; click on the blue text that says your keymap file    paste this wodge into the bottom of your keybindings.</div>
 	<div class="entry__meta meta mt tar">
 	<time class="entry__meta-published meta-published" datetime="2016-08-11T00:00:00Z">August 11, 2016</time>
-	</div>
-</article>
-					</div>
-					<div class="card card--2col">
-					<article class="entry card__box block">
-	<h1 class="entry__title title-excerpt"><a class="entry__title-link" href="/post/mirroring-github-to-bitbucket/">Mirroring Git/GitHub to Hg/BitBucket</a></h1>
-	<div class="entry__content">This seemed a lot longer when I planned it in my notebook at lunch.
-   GitHub user project (both sides) BitBucket user SCM Schedule     ocornut imgui g-pechorin None Periodic     Install hg-git  You&rsquo;ll have to do this on the Jenkins server You&rsquo;ll have to do it either for the Jenkins user or all I&rsquo;m using an OsX machine as my host, so I was able to use easy_install to install hg-git and dulwich   setup a project on GitHub create a Jenkins Freestyle project which runs periodically  Polling the SCM was NOT an option since there&rsquo;s no default branch on GitHub  &hellip; this is a quirk of hg-git &hellip; I think &hellip; IIRC/YRMV - so sling me a tweet or whatever if I&rsquo;m wrong     program the job to pull from git, push to hg, and ignore results of 1  this was only elaborate because I needed it to not fail when there were no changes #!</div>
-	<div class="entry__meta meta mt tar">
-	<time class="entry__meta-published meta-published" datetime="2016-07-22T00:00:00Z">July 22, 2016</time>
 	</div>
 </article>
 					</div>

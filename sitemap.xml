@@ -2,14 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://peterlavalle.github.io/gallery/</loc>
-    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
+    <loc>https://peterlavalle.github.io/tags/forgejo/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/hg/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/post/</loc>
-    <lastmod>2026-04-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/scala/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/scala3/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/shugits/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/post/shugits.full-steam/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/gallery/</loc>
+    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/post/redeck-steam/</loc>
     <lastmod>2026-04-18T00:00:00+00:00</lastmod>
@@ -20,13 +41,7 @@
     <loc>https://peterlavalle.github.io/tags/docker/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://peterlavalle.github.io/tags/forgejo/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://peterlavalle.github.io/post/forgejo-runner/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/post/antigravity-on-steam-deck/</loc>
@@ -52,9 +67,6 @@
   </url><url>
     <loc>https://peterlavalle.github.io/tools/</loc>
     <lastmod>2026-02-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/hg/</loc>
-    <lastmod>2026-02-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/tags/steam/</loc>
     <lastmod>2026-02-08T00:00:00+00:00</lastmod>
@@ -90,9 +102,6 @@
     <lastmod>2026-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/tags/pi5/</loc>
-    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/shugits/</loc>
     <lastmod>2026-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/post/jupyter-homelab/</loc>
@@ -240,9 +249,6 @@
     <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/tags/sbt/</loc>
-    <lastmod>2022-02-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/scala/</loc>
     <lastmod>2022-02-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/special-miniatures/</loc>
