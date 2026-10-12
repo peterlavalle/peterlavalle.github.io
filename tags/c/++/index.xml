@@ -7,6 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language><atom:link href="https://peterlavalle.github.io/tags/c/++/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Property Binding Redemption Arc</title>
+      <link>https://peterlavalle.github.io/post/sd.property-binding/</link>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/sd.property-binding/</guid>
+      <description>This week I try to atone for my sins.
+Proper Properties I&amp;rsquo;ve got to get better at this socializing or social media or self-presentation and promotion, right? Last weekend I transcribed my thoughts into a YouTube slideshow &amp;hellip;
+ LINK &amp;gt;
+ &amp;hellip; and I missed an issue that meant I needed to replace all of it. Quite embarrassing.
+The Issue I&amp;rsquo;m binding and &amp;ldquo;instrumenting&amp;rdquo; C++/17 classes via Template Meta Programming.</description>
+    </item>
+    
+    <item>
       <title>fips on Visual Studio 2019</title>
       <link>https://peterlavalle.github.io/post/fips-on-vs2019/</link>
       <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>

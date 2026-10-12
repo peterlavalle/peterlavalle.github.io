@@ -34,7 +34,8 @@ Lua is a C script engine (for the Lua languages) and is not distributed in such 
       
       <guid>https://peterlavalle.github.io/post/first-post/</guid>
       <description>Can I use polymorphic-static-templates to automagically wire meta-functions into a Lua allocator?
-Presently I’m using several “make—” functions to “decorate” objects after allocation and enable get/set/run meta-functions. I keep feeling the “smell” that some esoteric template thingies could be used to make these steps declarative (or maybe automatic!)</description>
+Presently I’m using several “make—” functions to “decorate” objects after allocation and enable get/set/run meta-functions. I keep feeling the “smell” that some esoteric template thingies could be used to make these steps declarative (or maybe automatic!)
+Future Update - Yes</description>
     </item>
     
   </channel>
