@@ -8,6 +8,18 @@
     <language>en-GB</language>
     <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>.plaan</title>
+      <link>https://peterlavalle.github.io/plaan/</link>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/plaan/</guid>
+      <description>This is an informal plan to &amp;ldquo;keep me honest&amp;rdquo; with the for-fun projects.
+I don&amp;rsquo;t post work stuff publicly.
+pb scripting serialization and inspection in their purist form
+ pbd; pb based duktape (rewrite)  pass the soak tests  fix remaining pointer tests fix actual soak tests   implement modules cleanup anything with fips-libs    fips-libs  check / auto-dork the pyproject file verb to pytest the fips-libs  pal-et-al CI want/need CI again</description>
+    </item>
+    
+    <item>
       <title>Property Binding Redemption Arc</title>
       <link>https://peterlavalle.github.io/post/sd.property-binding/</link>
       <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
