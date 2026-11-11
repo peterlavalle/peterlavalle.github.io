@@ -10,13 +10,14 @@
     <item>
       <title>.plaan</title>
       <link>https://peterlavalle.github.io/plaan/</link>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/plaan/</guid>
       <description>This is an informal plan to &amp;ldquo;keep me honest&amp;rdquo; with the for-fun projects.
 I don&amp;rsquo;t post work stuff publicly.
 pb scripting serialization and inspection in their purist form
- pbd; pb based duktape (rewrite)  pass the soak tests  fix remaining pointer tests fix actual soak tests   implement modules cleanup anything with fips-libs    fips-libs  check / auto-dork the pyproject file verb to pytest the fips-libs  pal-et-al CI want/need CI again</description>
+ pbd; pb based duktape (rewrite)  implement modules cleanup anything with fips-libs    fips-libs  check / auto-dork the pyproject file verb to pytest the fips-libs  pal-et-al CI want/need CI again
+ allow extra ; in code without warnings on GCC  -Wno-extra-semi i use ; to make format pretty   get GCC open and see what&amp;rsquo;s what with templates  it&amp;rsquo;s an odd headache    blog  finish blog post about migration  images  normalize the repository (somehow) and have it build the containers less weird consider a pre-commit or verb to update workflows  something to re-download workflows, pass them through a template, then overwrite   get it cron&amp;rsquo;ing on sam0 and sam1 and label those  amd64-debian arm-raspbian   see if it can work on provous for windows builds consider a mac host  tuff  support CTE in CTEs, but, strip them flat for checking  spood  import git commits (somehow?</description>
     </item>
     
     <item>
@@ -25,11 +26,8 @@ pb scripting serialization and inspection in their purist form
       <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/sd.property-binding/</guid>
-      <description>This week I try to atone for my sins.
-Proper Properties I&amp;rsquo;ve got to get better at this socializing or social media or self-presentation and promotion, right? Last weekend I transcribed my thoughts into a YouTube slideshow &amp;hellip;
- LINK &amp;gt;
- &amp;hellip; and I missed an issue that meant I needed to replace all of it. Quite embarrassing.
-The Issue I&amp;rsquo;m binding and &amp;ldquo;instrumenting&amp;rdquo; C++/17 classes via Template Meta Programming.</description>
+      <description>&lt;p&gt;This week I try to atone for my sins.&lt;/p&gt;
+&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;</description>
     </item>
     
     <item>
