@@ -10,14 +10,13 @@
     <item>
       <title>.plaan</title>
       <link>https://peterlavalle.github.io/plaan/</link>
-      <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/plaan/</guid>
       <description>This is an informal plan to &amp;ldquo;keep me honest&amp;rdquo; with the for-fun projects.
 I don&amp;rsquo;t post work stuff publicly.
 pb scripting serialization and inspection in their purist form
- pbd; pb based duktape (rewrite)  implement modules cleanup anything with fips-libs    fips-libs  check / auto-dork the pyproject file verb to pytest the fips-libs  pal-et-al CI want/need CI again
- allow extra ; in code without warnings on GCC  -Wno-extra-semi i use ; to make format pretty   get GCC open and see what&amp;rsquo;s what with templates  it&amp;rsquo;s an odd headache    blog  finish blog post about migration  images  normalize the repository (somehow) and have it build the containers less weird consider a pre-commit or verb to update workflows  something to re-download workflows, pass them through a template, then overwrite   get it cron&amp;rsquo;ing on sam0 and sam1 and label those  amd64-debian arm-raspbian   see if it can work on provous for windows builds consider a mac host  tuff  support CTE in CTEs, but, strip them flat for checking  spood  import git commits (somehow?</description>
+pbd - pb based duktape (rewrite)  raw pointers but only as arguments (read but not push or return)  pb_damphe / dampbe - pb based yaml encoder  make pb save/load to palyml (with cycles!) not sure what will happen with shared/factories  fips-libs / fips-deck / srclike / vcgraph  i added a verb to pytest the fips-libs it looks like the fips-deck stuff needs to be fixed so let&amp;rsquo;s really dumb-down / KISS the projects and vcfips  srclike works (so far) replace pallike and stblike (everywhere!</description>
     </item>
     
     <item>
