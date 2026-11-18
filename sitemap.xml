@@ -3,7 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://peterlavalle.github.io/plaan/</loc>
-    <lastmod>2026-11-14T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/forgejo/</loc>
+    <lastmod>2026-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/git/</loc>
+    <lastmod>2026-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/hg/</loc>
+    <lastmod>2026-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/mercurial/</loc>
+    <lastmod>2026-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/post/hg-migration/</loc>
+    <lastmod>2026-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/</loc>
+    <lastmod>2026-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/post/</loc>
+    <lastmod>2026-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://peterlavalle.github.io/tags/</loc>
+    <lastmod>2026-11-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/tags/c/</loc>
     <lastmod>2026-09-24T00:00:00+00:00</lastmod>
@@ -11,26 +35,11 @@
     <loc>https://peterlavalle.github.io/tags/c&#43;&#43;/</loc>
     <lastmod>2026-09-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://peterlavalle.github.io/</loc>
-    <lastmod>2026-09-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/post/</loc>
-    <lastmod>2026-09-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://peterlavalle.github.io/post/sd.property-binding/</loc>
-    <lastmod>2026-09-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/</loc>
     <lastmod>2026-09-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/tags/template-programming/</loc>
     <lastmod>2026-09-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/forgejo/</loc>
-    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/hg/</loc>
-    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/tags/scala/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
@@ -346,9 +355,6 @@
   </url><url>
     <loc>https://peterlavalle.github.io/post/tc-ced/</loc>
     <lastmod>2020-08-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://peterlavalle.github.io/tags/git/</loc>
-    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://peterlavalle.github.io/tags/github/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>

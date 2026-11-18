@@ -6,17 +6,28 @@
     <description>Recent content on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>.plaan</title>
       <link>https://peterlavalle.github.io/plaan/</link>
-      <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/plaan/</guid>
-      <description>This is an informal plan to &amp;ldquo;keep me honest&amp;rdquo; with the for-fun projects.
-I don&amp;rsquo;t post work stuff publicly.
-pb scripting serialization and inspection in their purist form
-pbd - pb based duktape (rewrite)  raw pointers but only as arguments (read but not push or return)  pb_damphe / dampbe - pb based yaml encoder  make pb save/load to palyml (with cycles!) not sure what will happen with shared/factories  fips-libs / fips-deck / srclike / vcgraph  i added a verb to pytest the fips-libs it looks like the fips-deck stuff needs to be fixed so let&amp;rsquo;s really dumb-down / KISS the projects and vcfips  srclike works (so far) replace pallike and stblike (everywhere!</description>
+      <description>.plan This is a plan to &amp;ldquo;keep me honest&amp;rdquo; with the for-fun projects and stay on task.
+&amp;hellip; obviously; it&amp;rsquo;s not what I do for a day job &amp;hellip; that&amp;rsquo;s always been under NDA like stuff &amp;hellip;
+pb this has become my primary focus - all other concerns are related to it
+scripting serialization and inspection in their purist form
+palyml updates i need/want to improve the palyml library to use YAML features rather than just-json i&amp;rsquo;d done previously</description>
+    </item>
+    
+    <item>
+      <title>Migrating Hg to ... IDK ... codeberg/sr.ht?</title>
+      <link>https://peterlavalle.github.io/post/hg-migration/</link>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/hg-migration/</guid>
+      <description>&lt;p&gt;Shugits is dead - I just don&amp;rsquo;t have the time.
+Here&amp;rsquo;s what I&amp;rsquo;m doing instead to keep using Mercurial in an increasingly git world.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -25,8 +36,7 @@ pbd - pb based duktape (rewrite)  raw pointers but only as arguments (read but n
       <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/post/sd.property-binding/</guid>
-      <description>&lt;p&gt;This week I try to atone for my sins.&lt;/p&gt;
-&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;</description>
+      <description>&lt;p&gt;This week I try to atone for my sins.&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -6,7 +6,17 @@
     <description>Recent content in Hg on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Sun, 14 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/hg/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/hg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating Hg to ... IDK ... codeberg/sr.ht?</title>
+      <link>https://peterlavalle.github.io/post/hg-migration/</link>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/post/hg-migration/</guid>
+      <description>&lt;p&gt;Shugits is dead - I just don&amp;rsquo;t have the time.
+Here&amp;rsquo;s what I&amp;rsquo;m doing instead to keep using Mercurial in an increasingly git world.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Shugits / Full Steam Ahead</title>
       <link>https://peterlavalle.github.io/post/shugits.full-steam/</link>

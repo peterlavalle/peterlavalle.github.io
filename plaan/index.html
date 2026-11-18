@@ -9,14 +9,15 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content=".plaan" />
-<meta property="og:description" content="This is an informal plan to &ldquo;keep me honest&rdquo; with the for-fun projects.
-I don&rsquo;t post work stuff publicly.
-pb scripting serialization and inspection in their purist form
-pbd - pb based duktape (rewrite)  raw pointers but only as arguments (read but not push or return)  pb_damphe / dampbe - pb based yaml encoder  make pb save/load to palyml (with cycles!) not sure what will happen with shared/factories  fips-libs / fips-deck / srclike / vcgraph  i added a verb to pytest the fips-libs it looks like the fips-deck stuff needs to be fixed so let&rsquo;s really dumb-down / KISS the projects and vcfips  srclike works (so far) replace pallike and stblike (everywhere!" />
+<meta property="og:description" content=".plan This is a plan to &ldquo;keep me honest&rdquo; with the for-fun projects and stay on task.
+&hellip; obviously; it&rsquo;s not what I do for a day job &hellip; that&rsquo;s always been under NDA like stuff &hellip;
+pb this has become my primary focus - all other concerns are related to it
+scripting serialization and inspection in their purist form
+palyml updates i need/want to improve the palyml library to use YAML features rather than just-json i&rsquo;d done previously" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://peterlavalle.github.io/plaan/" /><meta property="article:section" content="" />
-<meta property="article:published_time" content="2026-11-14T00:00:00+00:00" />
-<meta property="article:modified_time" content="2026-11-14T00:00:00+00:00" />
+<meta property="article:published_time" content="2026-11-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2026-11-18T00:00:00+00:00" />
 
 
 	<link rel="stylesheet" href="/css/bundle.css">
@@ -100,109 +101,212 @@ if (!doNotTrack) {
 		<div class="single block">
 			<article class="entry">
 	<div class="entry__meta meta mb">
-	<time class="entry__meta-published meta-published" datetime="2026-11-14T00:00:00Z">November 14, 2026</time>
+	<time class="entry__meta-published meta-published" datetime="2026-11-18T00:00:00Z">November 18, 2026</time>
 	</div>
 				<h1 class="entry__title">.plaan</h1>
-				<div class="entry__content"><p>This is an informal plan to &ldquo;keep me honest&rdquo; with the for-fun projects.</p>
-<p>I don&rsquo;t post work stuff publicly.</p>
+				<div class="entry__content"><h1 id="plan">.plan</h1>
+<p>This is a plan to &ldquo;keep me honest&rdquo; with the for-fun projects and stay on task.</p>
+<p>&hellip; obviously; it&rsquo;s not what I do for a day job &hellip; that&rsquo;s always been under NDA like stuff &hellip;</p>
 <h2 id="pb">pb</h2>
+<p>this has become my primary focus - all other concerns are related to it</p>
 <p>scripting serialization and inspection in their purist form</p>
-<h2 id="pbd---pb-based-duktape-rewrite">pbd - pb based duktape (rewrite)</h2>
+<h2 id="palyml-updates">palyml updates</h2>
+<p>i need/want to improve the palyml library to use YAML features rather than just-json i&rsquo;d done previously</p>
+<p>now that&rsquo;s use/write multi-docs in addition to singles</p>
 <ul>
-<li>raw pointers but only as arguments (read but not push or return)</li>
-</ul>
-<h2 id="pb_damphe--dampbe---pb-based-yaml-encoder">pb_damphe / dampbe - pb based yaml encoder</h2>
+<li><input checked="" disabled="" type="checkbox"> add doc/seq type to node</li>
+<li><input checked="" disabled="" type="checkbox"> add load/save signatures</li>
+<li><input checked="" disabled="" type="checkbox"> change &ldquo;single node&rdquo; to defer to the multinode calls</li>
+<li>introduce tests with multidoc
 <ul>
-<li>make pb save/load to palyml (with cycles!)</li>
-<li>not sure what will happen with shared/factories</li>
-</ul>
-<h2 id="fips-libs--fips-deck--srclike--vcgraph">fips-libs / fips-deck / srclike / vcgraph</h2>
-<ul>
-<li>i added a verb to pytest the fips-libs</li>
-<li>it looks like the fips-deck stuff needs to be fixed</li>
-<li>so let&rsquo;s really dumb-down / KISS the projects and vcfips
-<ul>
-<li><input checked="" disabled="" type="checkbox"> srclike works (so far)</li>
-<li><input disabled="" type="checkbox"> replace pallike and stblike (everywhere!)</li>
-<li><input disabled="" type="checkbox"> vcgraph to replace WTF vcfips is doing
-<ul>
-<li>need to find run dirs</li>
+<li><input checked="" disabled="" type="checkbox"> placeholders in place</li>
+<li><input disabled="" type="checkbox"> implement tests</li>
+<li><input disabled="" type="checkbox"> pass tests</li>
 </ul>
 </li>
 </ul>
+<h2 id="dont-diy-images">don&rsquo;t DIY images</h2>
+<p><a href="https://keep.google.com/#NOTE/1dQZXWlUy9U4qbIOD6sqFbSgesTpO-OsPlycu4tjlgw1Mo-IoRxU5Pbb8k4EhooQ">notes in keep</a></p>
+<p>setup a local-action for forgejo that builds a docker/fips contianer and runs in that instead of &hellip; what i&rsquo;m doing now</p>
+<p>&hellip; and insteead of actually building real images &hellip;</p>
+<h2 id="pb_damphe--dampbe---pb-based-encoder">pb_damphe / dampbe - pb based encoder</h2>
+<p>with the &ldquo;root leaf&rdquo; pb implementation tested and safe for scripts, i want to use it for data serialization.</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> fix srclike to mark its turf and re-run</li>
+<li><input disabled="" type="checkbox"> design new/final dampbe format
+<ul>
+<li>&hellip; or just rewrite keeper to use pb &hellip;</li>
+</ul>
+</li>
+<li>add/switch/use tags</li>
+<li>can i do multidoc?</li>
+<li><input disabled="" type="checkbox"> make pb save/load to palyml
+<ul>
+<li>cycles</li>
+<li>nulls</li>
+<li>use tags</li>
+<li>have &ldquo;wrong&rdquo; tags</li>
+<li>have extra data</li>
+<li>guid/lookup</li>
+</ul>
+</li>
+<li>consider soak tests?</li>
+</ul>
+<h2 id="pb---more">pb - more</h2>
+<ul>
+<li>pbentt; whatever for components
+<ul>
+<li>make pb/pbd/dampbe work for entt stuff (somehow)</li>
+<li>this&rsquo;ll mean &hellip; reconciling the unstable address of components and other headaches</li>
+<li>&hellip; then dear will work - right?</li>
+</ul>
+</li>
+<li>pbdear;
+<ul>
+<li>redork a pb inspector and stuff</li>
+<li>fixup the sd demo app thing so it works with pb</li>
+<li>get the widgets all happy again and saving and loading</li>
+</ul>
 </li>
 </ul>
+<h2 id="test-qfys">test qfys</h2>
+<p>add/expose/do a <code>p_test_qfys()</code> macro/fixture that &hellip;</p>
+<ul>
+<li>mounts <code>__FILE__ / test_name /</code> as a RO filesystem</li>
+<li>adds <code>__FILE__.(*.*)</code> as <code>/(*.*)</code></li>
+<li>layers an RW in-memory overlay on-top</li>
+</ul>
+<p>&hellip; and the update palyml&rsquo;s tests to use that</p>
 <h2 id="pal-et-al-ci--gcc">pal-et-al CI / GCC</h2>
 <p>want/need CI again</p>
 <ul>
-<li>get GCC open and see what&rsquo;s what with templates
-<ul>
+<li>get GCC open and see what&rsquo;s what with templates</li>
 <li>it&rsquo;s an odd headache</li>
+<li>see if the semicolons can be swapped for //</li>
+<li>&hellip; heeyyy &hellip; can i use remote-containers on Neo?
+<ul>
+<li>&hellip; will this be ANOTHER verb?</li>
 </ul>
 </li>
 <li>get / setup Clang and GCC linux images/containers</li>
-<li>test the vcfips / srclike rewrites</li>
+<li>possibly a docker/whatnot to build-on-neo</li>
+<li>run the fips-libs pytest verb for deck (et al)</li>
 </ul>
-<h2 id="blog">blog</h2>
+<h2 id="pal--etry--type_t--stream-separate">pal / etry / type_t / stream separate</h2>
 <ul>
-<li>finish blog post about migration</li>
-<li>write pycode post</li>
+<li>? see if <code>pal::etry</code> can be spun-out to a leaf project independent of pal</li>
+<li>do it for type_t and stream too</li>
+<li>push through to make downstream projects less &ldquo;depend on everything&rdquo;</li>
 </ul>
-<h2 id="fips-prek">fips-prek</h2>
+<h2 id="pre-commit-check-method-for-hg">pre-commit check method for hg</h2>
 <ul>
-<li>test/check using prek for hg repo
+<li>
+<p>prek also won&rsquo;t work outside of git &hellip; yaayyy &hellip;</p>
+</li>
+<li>
+<p>reverse engineer what&rsquo;s actually happening &hellip;</p>
+</li>
+<li>
+<p>like &hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">-  <span style="color:#f92672">repo</span>:  <span style="color:#ae81ff">https://github.com/astral-sh/ruff-pre-commit</span>
+      <span style="color:#f92672">rev</span>:  <span style="color:#ae81ff">v0.16.7</span>
+      <span style="color:#f92672">hooks</span>:
+          -  <span style="color:#f92672">id</span>:  <span style="color:#ae81ff">ruff</span>
+              <span style="color:#f92672">args</span>:  [--<span style="color:#ae81ff">fix]</span>
+          -  <span style="color:#f92672">id</span>:  <span style="color:#ae81ff">ruff-format</span>
+</code></pre></div></li>
+<li>
+<p>&hellip; so &hellip; just git clone {repo} / uv add {repo} then uv-run ruff?</p>
+</li>
+<li>
+<p>so something i can <code>uvx  prec</code> and it&rsquo;ll install hooks</p>
+</li>
+<li>
+<p>stash/shelve changes <a href="https://mercurial-scm.org/help/commands/shelve">https://mercurial-scm.org/help/commands/shelve</a></p>
+</li>
+<li>
+<p>run code on the commit</p>
+</li>
+<li>
+<p>check if it changed antyhing</p>
 <ul>
-<li><a href="https://prek.j178.dev/">https://prek.j178.dev/</a></li>
+<li>got changes
+<ul>
+<li>revert changes done by hook</li>
+<li>unshelve stash</li>
+<li>reject commit</li>
 </ul>
 </li>
-<li>get it going in spood
+<li>no changes
 <ul>
-<li>&hellip; then fips-deck and pal?</li>
+<li>unshelve stash</li>
+<li>accept commit</li>
 </ul>
 </li>
-<li>remove verbs/prec
-<ul>
-<li><a href="https://codeberg.org/paintgoblin/fips-deck/src/branch/default/fips-files/verbs/prec.py">https://codeberg.org/paintgoblin/fips-deck/src/branch/default/fips-files/verbs/prec.py</a></li>
 </ul>
 </li>
-<li>verb to install a prek-hook?
-<ul>
-<li>&hellip; for git and hg!</li>
-<li>&hellip; and into all deps via the dag-traverse thing
+<li>
+<p>get it going in spood</p>
+</li>
+<li>
+<p>&hellip; then fips-deck and pal?</p>
+</li>
+<li>
+<p>remove verbs/prec</p>
+</li>
+<li>
+<p><a href="https://codeberg.org/paintgoblin/fips-deck/src/branch/default/fips-files/verbs/prec.py">https://codeberg.org/paintgoblin/fips-deck/src/branch/default/fips-files/verbs/prec.py</a></p>
+</li>
+<li>
+<p>verb to install a pre-hook?</p>
+</li>
+<li>
+<p>&hellip; for git and hg!</p>
+</li>
+<li>
+<p>&hellip; and into all deps via the dag-traverse thing</p>
 <ul>
 <li>&hellip; so pre-commit it recurs onto all repos &hellip;</li>
 </ul>
 </li>
+<li>
+<p>&hellip; and snowball pre-commit-hooks.yaml from parents up to us</p>
+<ul>
+<li>so need a dag-tree!</li>
+</ul>
+</li>
+</ul>
+<h2 id="blog">blog</h2>
+<ul>
+<li>finish slide-cast about fips</li>
+<li>write pycode post or slide-cast</li>
+</ul>
+<h2 id="pycode">pycode</h2>
+<ul>
+<li>automate build/check/test</li>
+<li>canonize this</li>
+<li>start the yaml-editor fork</li>
+<li>can i uv add git:// for a subdir?
+<ul>
+<li>&hellip; can vscode extensions share code?</li>
+<li>&hellip; so &hellip; so pycode could buildup my big bad extension lib?</li>
 </ul>
 </li>
 </ul>
 <h2 id="container-images">container images</h2>
 <ul>
-<li>make a runner (or something) to pull and CI whatever docker images</li>
-<li>normalize the repository (somehow) and have it build the containers less weird</li>
-<li>consider a pre-commit or verb to update workflows
-<ul>
-<li>something to re-download workflows, pass them through a template, then overwrite</li>
-</ul>
-</li>
-<li>get it cron&rsquo;ing on sam0 and sam1 and label those
-<ul>
-<li>amd64-debian</li>
-<li>arm-raspbian</li>
-</ul>
-</li>
+<li>grow up and setup docker cross platform builds</li>
+<li>build fips containers for (arm64|amd64)-(linux-(gcc|clang)|darwin|msvc|raspbian)</li>
 <li>see if it can work on provous for windows builds</li>
 <li>consider a mac host</li>
 </ul>
-<h2 id="r-pythontranscrypt-to-duktapec-or-spy">r-python/transcrypt to duktape/c or spy</h2>
-<ul>
-<li>all should be viable</li>
-<li>really - this is another dalliance</li>
-</ul>
 <h2 id="tuff">tuff</h2>
 <ul>
+<li>build a pre-commit task</li>
+<li>use sql-glot rather than &hellip; whatever i&rsquo;ve been doing</li>
 <li>integrate python linters and formatters</li>
-<li>allow/do CTE from <code>.csv</code> and &ldquo;other&rdquo; folders</li>
+<li>&hellip; or consider VSCode extension</li>
+<li>allow/do &ldquo;live mode&rdquo; versions</li>
 </ul>
 <h2 id="spood">spood</h2>
 <ul>
@@ -222,31 +326,11 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-<h2 id="pb---more">pb - more</h2>
-<ul>
-<li>pbentt; whatever for components
-<ul>
-<li>make pb/pbd/dampbe work for entt stuff (somehow)</li>
-<li>this&rsquo;ll mean &hellip; reconciling the unstable address of components and other headaches</li>
-<li>&hellip; then dear will work - right?</li>
-</ul>
-</li>
-<li>pbdear;
-<ul>
-<li>redork a pb inspector and stuff</li>
-<li>fixup the sd demo app thing so it works with pb</li>
-<li>get the widgets all happy again and saving and loading</li>
-</ul>
-</li>
-</ul>
 <h2 id="sd---i-mean-it-this-time">sd - i mean it this time</h2>
 <ul>
 <li>view-frame</li>
-<li>consolidate sokol and entt et al to ONE repo that i pull from
-<ul>
+<li>consolidate sokol and entt et al to ONE repo that i pull from</li>
 <li>palpd!</li>
-</ul>
-</li>
 </ul>
 <h2 id="sd-3d-graph">sd 3d graph</h2>
 <ul>
@@ -259,6 +343,11 @@ if (!doNotTrack) {
 <ul>
 <li>load models somehow?</li>
 <li>bake-in assimp imported assets?</li>
+</ul>
+<h2 id="r-pythontranscrypt-to-duktapec-or-spy">r-python/transcrypt to duktape/c or spy</h2>
+<ul>
+<li>all should be viable</li>
+<li>really - this is another dalliance</li>
 </ul>
 <h2 id="sd-pure">sd pure</h2>
 <ul>
@@ -274,11 +363,8 @@ if (!doNotTrack) {
 <p>big weird parallel jobs for entt</p>
 <ul>
 <li>get it in a branch, test some of it</li>
-<li>implement as dumb shallow approach (first)
-<ul>
+<li>implement as dumb shallow approach (first)</li>
 <li>&hellip; might be just &ldquo;how i do it&rdquo; with/for the/a scene</li>
-</ul>
-</li>
 <li>post for feedback</li>
 </ul>
 </div>

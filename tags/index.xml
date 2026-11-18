@@ -6,7 +6,43 @@
     <description>Recent content in Tags on Peter&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://peterlavalle.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>forgejo</title>
+      <link>https://peterlavalle.github.io/tags/forgejo/</link>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/forgejo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://peterlavalle.github.io/tags/git/</link>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hg</title>
+      <link>https://peterlavalle.github.io/tags/hg/</link>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/hg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mercurial</title>
+      <link>https://peterlavalle.github.io/tags/mercurial/</link>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://peterlavalle.github.io/tags/mercurial/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>C</title>
       <link>https://peterlavalle.github.io/tags/c/</link>
@@ -31,24 +67,6 @@
       <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/template-programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>forgejo</title>
-      <link>https://peterlavalle.github.io/tags/forgejo/</link>
-      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/forgejo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hg</title>
-      <link>https://peterlavalle.github.io/tags/hg/</link>
-      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/hg/</guid>
       <description></description>
     </item>
     
@@ -481,15 +499,6 @@
       <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/tags/warhammer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>https://peterlavalle.github.io/tags/git/</link>
-      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://peterlavalle.github.io/tags/git/</guid>
       <description></description>
     </item>
     
