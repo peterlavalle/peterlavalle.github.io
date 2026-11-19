@@ -10,14 +10,15 @@
     <item>
       <title>.plaan</title>
       <link>https://peterlavalle.github.io/plaan/</link>
-      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
       
       <guid>https://peterlavalle.github.io/plaan/</guid>
       <description>.plan This is a plan to &amp;ldquo;keep me honest&amp;rdquo; with the for-fun projects and stay on task.
 &amp;hellip; obviously; it&amp;rsquo;s not what I do for a day job &amp;hellip; that&amp;rsquo;s always been under NDA like stuff &amp;hellip;
 pb this has become my primary focus - all other concerns are related to it
 scripting serialization and inspection in their purist form
-palyml updates i need/want to improve the palyml library to use YAML features rather than just-json i&amp;rsquo;d done previously</description>
+don&amp;rsquo;t DIY images notes in keep
+setup a local-action for forgejo that builds a docker/fips contianer and runs in that instead of &amp;hellip; what i&amp;rsquo;m doing now</description>
     </item>
     
     <item>

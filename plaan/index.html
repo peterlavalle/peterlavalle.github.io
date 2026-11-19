@@ -13,11 +13,12 @@
 &hellip; obviously; it&rsquo;s not what I do for a day job &hellip; that&rsquo;s always been under NDA like stuff &hellip;
 pb this has become my primary focus - all other concerns are related to it
 scripting serialization and inspection in their purist form
-palyml updates i need/want to improve the palyml library to use YAML features rather than just-json i&rsquo;d done previously" />
+don&rsquo;t DIY images notes in keep
+setup a local-action for forgejo that builds a docker/fips contianer and runs in that instead of &hellip; what i&rsquo;m doing now" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://peterlavalle.github.io/plaan/" /><meta property="article:section" content="" />
-<meta property="article:published_time" content="2026-11-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2026-11-18T00:00:00+00:00" />
+<meta property="article:published_time" content="2026-11-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2026-11-19T00:00:00+00:00" />
 
 
 	<link rel="stylesheet" href="/css/bundle.css">
@@ -101,7 +102,7 @@ if (!doNotTrack) {
 		<div class="single block">
 			<article class="entry">
 	<div class="entry__meta meta mb">
-	<time class="entry__meta-published meta-published" datetime="2026-11-18T00:00:00Z">November 18, 2026</time>
+	<time class="entry__meta-published meta-published" datetime="2026-11-19T00:00:00Z">November 19, 2026</time>
 	</div>
 				<h1 class="entry__title">.plaan</h1>
 				<div class="entry__content"><h1 id="plan">.plan</h1>
@@ -110,26 +111,29 @@ if (!doNotTrack) {
 <h2 id="pb">pb</h2>
 <p>this has become my primary focus - all other concerns are related to it</p>
 <p>scripting serialization and inspection in their purist form</p>
-<h2 id="palyml-updates">palyml updates</h2>
-<p>i need/want to improve the palyml library to use YAML features rather than just-json i&rsquo;d done previously</p>
-<p>now that&rsquo;s use/write multi-docs in addition to singles</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> add doc/seq type to node</li>
-<li><input checked="" disabled="" type="checkbox"> add load/save signatures</li>
-<li><input checked="" disabled="" type="checkbox"> change &ldquo;single node&rdquo; to defer to the multinode calls</li>
-<li>introduce tests with multidoc
-<ul>
-<li><input checked="" disabled="" type="checkbox"> placeholders in place</li>
-<li><input disabled="" type="checkbox"> implement tests</li>
-<li><input disabled="" type="checkbox"> pass tests</li>
-</ul>
-</li>
-</ul>
 <h2 id="dont-diy-images">don&rsquo;t DIY images</h2>
 <p><a href="https://keep.google.com/#NOTE/1dQZXWlUy9U4qbIOD6sqFbSgesTpO-OsPlycu4tjlgw1Mo-IoRxU5Pbb8k4EhooQ">notes in keep</a></p>
 <p>setup a local-action for forgejo that builds a docker/fips contianer and runs in that instead of &hellip; what i&rsquo;m doing now</p>
 <p>&hellip; and insteead of actually building real images &hellip;</p>
+<h2 id="pepp">pepp</h2>
+<p>get the standalone to compile/build the headers</p>
+<h2 id="nival">nival</h2>
+<p>clean it up and add pre-commit &hellip; or just do it as hg</p>
 <h2 id="pb_damphe--dampbe---pb-based-encoder">pb_damphe / dampbe - pb based encoder</h2>
+<p>rewrite (sorry) to be more-like-unity (sorry again)</p>
+<ul>
+<li>use tags and multi-doc</li>
+<li>rely on trait or something to control lookup/et-al</li>
+<li>on save;
+<ul>
+<li>guid per object</li>
+<li>tag all objects</li>
+<li>file guid?</li>
+<li>refs via a lookup to get them?</li>
+</ul>
+</li>
+</ul>
+<p>&hellip; or just go back and &hellip;</p>
 <p>with the &ldquo;root leaf&rdquo; pb implementation tested and safe for scripts, i want to use it for data serialization.</p>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> fix srclike to mark its turf and re-run</li>
@@ -139,7 +143,7 @@ if (!doNotTrack) {
 </ul>
 </li>
 <li>add/switch/use tags</li>
-<li>can i do multidoc?</li>
+<li>can i do multi-doc?</li>
 <li><input disabled="" type="checkbox"> make pb save/load to palyml
 <ul>
 <li>cycles</li>
