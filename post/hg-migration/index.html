@@ -103,15 +103,17 @@ if (!doNotTrack) {
 				<h1 class="entry__title">Migrating Hg to ... IDK ... codeberg/sr.ht?</h1>
 				<div class="entry__content"><p>Shugits is dead - I just don&rsquo;t have the time.
 Here&rsquo;s what I&rsquo;m doing instead to keep using Mercurial in an increasingly git world.</p>
-<hr>
 <p>&hellip; hopefully I don&rsquo;t prove myself wrong 24 hours after posting this &hellip;</p>
-<p>Every few years I try to &ldquo;swtich to git&rdquo; and hit some issue after a week.
+<blockquote>
+<p>I did find typos!</p>
+</blockquote>
+<p>Every few years I try to &ldquo;switch to git&rdquo; and hit some issue after a week.
 Git&rsquo;s just harder to use, and, requires more of the human&rsquo;s memory and attention.</p>
 <p>So.</p>
 <p>I&rsquo;ve put aside my all-singing-all-dancing hg+git layer, and, I&rsquo;m now &hellip; mirroring hg, to git, and using free hosting for both.
 Here&rsquo;s how I got there.</p>
 <h2 id="self-hosting">Self Hosting?</h2>
-<p>I assessed several self-hosted solutions &hellip; and didn;t like any of them.</p>
+<p>I assessed several self-hosted solutions &hellip; and didn&rsquo;t like any of them.</p>
 <table>
 <thead>
 <tr>
@@ -123,6 +125,10 @@ Here&rsquo;s how I got there.</p>
 <tr>
 <td>hgkeeper</td>
 <td>missing the ci/issues and general completeness</td>
+</tr>
+<tr>
+<td></td>
+<td>could be a good self-hosted hg-only server</td>
 </tr>
 <tr>
 <td>hglab</td>
@@ -154,19 +160,23 @@ Here&rsquo;s how I got there.</p>
 </tr>
 <tr>
 <td>source.hut</td>
-<td>too complext to get through docs - again</td>
+<td>too complex to get through docs - again</td>
+</tr>
+<tr>
+<td></td>
+<td>no web editor</td>
 </tr>
 </tbody>
 </table>
 <h2 id="best-of-both-worlds">Best of Both Worlds</h2>
 <p>My current solution goes like this &hellip;</p>
 <ul>
-<li>i ahve a sr.ht accountl i put my hg repos there</li>
+<li>i have a sr.ht account i put my hg repos there</li>
 <li>i have a codeberg account; i put my git repos, and git mirrors there</li>
-<li>i have a rasperry pi, it &hellip;
+<li>i have a raspberry pi, it &hellip;
 <ul>
 <li>checks/updates a list of projects to poll/check</li>
-<li>hg clone/pull a few of them every 15 mintes from sr.ht</li>
+<li>hg clone/pull a few of them every 15 minutes from sr.ht</li>
 <li>hg-git push&rsquo;s them to codeberg</li>
 </ul>
 </li>
