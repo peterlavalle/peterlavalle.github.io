@@ -11,14 +11,11 @@
 		<meta property="og:title" content=".plaan" />
 <meta property="og:description" content=".plan This is a plan to &ldquo;keep me honest&rdquo; with the for-fun projects and stay on task.
 &hellip; obviously; it&rsquo;s not what I do for a day job &hellip; that&rsquo;s always been under NDA like stuff &hellip;
-pb this has become my primary focus - all other concerns are related to it
-scripting serialization and inspection in their purist form
-don&rsquo;t DIY images notes in keep
-setup a local-action for forgejo that builds a docker/fips contianer and runs in that instead of &hellip; what i&rsquo;m doing now" />
+ pb is the big deal - and it&rsquo;s stressing me out a lot of this relates to that, but, i&rsquo;ve been trying to avoid getting bogged down eel_pit and recook are the end-goals but i&rsquo;m not there yet  pal / dekact  verb to check/merge workflows  ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://peterlavalle.github.io/plaan/" /><meta property="article:section" content="" />
-<meta property="article:published_time" content="2026-11-19T00:00:00+00:00" />
-<meta property="article:modified_time" content="2026-11-19T00:00:00+00:00" />
+<meta property="article:published_time" content="2026-11-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2026-11-22T00:00:00+00:00" />
 
 
 	<link rel="stylesheet" href="/css/bundle.css">
@@ -102,60 +99,95 @@ if (!doNotTrack) {
 		<div class="single block">
 			<article class="entry">
 	<div class="entry__meta meta mb">
-	<time class="entry__meta-published meta-published" datetime="2026-11-19T00:00:00Z">November 19, 2026</time>
+	<time class="entry__meta-published meta-published" datetime="2026-11-22T00:00:00Z">November 22, 2026</time>
 	</div>
 				<h1 class="entry__title">.plaan</h1>
 				<div class="entry__content"><h1 id="plan">.plan</h1>
 <p>This is a plan to &ldquo;keep me honest&rdquo; with the for-fun projects and stay on task.</p>
 <p>&hellip; obviously; it&rsquo;s not what I do for a day job &hellip; that&rsquo;s always been under NDA like stuff &hellip;</p>
-<h2 id="pb">pb</h2>
-<p>this has become my primary focus - all other concerns are related to it</p>
-<p>scripting serialization and inspection in their purist form</p>
-<h2 id="dont-diy-images">don&rsquo;t DIY images</h2>
-<p><a href="https://keep.google.com/#NOTE/1dQZXWlUy9U4qbIOD6sqFbSgesTpO-OsPlycu4tjlgw1Mo-IoRxU5Pbb8k4EhooQ">notes in keep</a></p>
-<p>setup a local-action for forgejo that builds a docker/fips contianer and runs in that instead of &hellip; what i&rsquo;m doing now</p>
-<p>&hellip; and insteead of actually building real images &hellip;</p>
-<h2 id="pepp">pepp</h2>
-<p>get the standalone to compile/build the headers</p>
-<h2 id="nival">nival</h2>
-<p>clean it up and add pre-commit &hellip; or just do it as hg</p>
+<ul>
+<li><a href="https://codeberg.org/paintgoblin/pal/src/branch/default/pb">pb</a> is the big deal - and it&rsquo;s stressing me out</li>
+<li>a lot of this relates to that, but, i&rsquo;ve been trying to avoid getting bogged down</li>
+<li>eel_pit and recook are the end-goals but i&rsquo;m not there yet</li>
+</ul>
+<h2 id="pal--dekact">pal / dekact</h2>
+<ul>
+<li>verb to check/merge workflows</li>
+</ul>
+<h2 id="plan-issues">.plan issues</h2>
+<p>something like; <a href="https://codeberg.org/api/v1/users/paintgoblin/repos?limit=50">https://codeberg.org/api/v1/users/paintgoblin/repos?limit=50</a></p>
+<p>&hellip; but retyped &hellip;</p>
+<p>compute/scan for any/all non-parent repos with open issues and list them into a markdown table for the blog&rsquo;s .plan</p>
+<table>
+<thead>
+<tr>
+<th>repo</th>
+<th>issue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>foo</td>
+<td>3 issues</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="line.to/foo/issue/312">eat a cake</a></td>
+</tr>
+</tbody>
+</table>
+<p>&hellip; and maybe use mako templates in peterblog &hellip;</p>
+<h2 id="spood-state">spood state</h2>
+<p>separate config/state .yaml files
+assume matching project names and allow key:val usernames</p>
+<h2 id="clang-container">clang container</h2>
+<ul>
+<li>clang container and tests; something to work with clang</li>
+</ul>
+<h2 id="pre-commit-check-method-for-hg">pre-commit check method for hg</h2>
+<ul>
+<li>rewrote what i had to be just a test</li>
+<li>&hellip; so &hellip; pass the test</li>
+<li>&hellip; and workout how to shelve things &hellip; and all the other stuff</li>
+<li>also; add transclude as my first hook!</li>
+</ul>
+<h2 id="tuff">tuff</h2>
+<ul>
+<li>finish poly glot rewrite</li>
+<li>extract CTEs or delete the CTE folder
+<ul>
+<li>loop each <code>sql/*.sql</code></li>
+<li>extract each cte</li>
+<li>diff/merge it into <code>sql/cte/*.sql</code></li>
+</ul>
+</li>
+<li>detect usage things
+<ul>
+<li>when the body queries from a CTE name</li>
+<li>when the body defined a CTE name</li>
+<li>unused CTEs in a script</li>
+</ul>
+</li>
+<li>construct a pre-commit task</li>
+<li>integrate python linters and formatters
+<ul>
+<li>sqlglot seems to start this</li>
+</ul>
+</li>
+<li>allow/do &ldquo;live mode&rdquo; switch</li>
+<li>cte folder out of source?</li>
+</ul>
 <h2 id="pb_damphe--dampbe---pb-based-encoder">pb_damphe / dampbe - pb based encoder</h2>
-<p>rewrite (sorry) to be more-like-unity (sorry again)</p>
-<ul>
-<li>use tags and multi-doc</li>
-<li>rely on trait or something to control lookup/et-al</li>
-<li>on save;
-<ul>
-<li>guid per object</li>
-<li>tag all objects</li>
-<li>file guid?</li>
-<li>refs via a lookup to get them?</li>
-</ul>
-</li>
-</ul>
-<p>&hellip; or just go back and &hellip;</p>
-<p>with the &ldquo;root leaf&rdquo; pb implementation tested and safe for scripts, i want to use it for data serialization.</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> fix srclike to mark its turf and re-run</li>
-<li><input disabled="" type="checkbox"> design new/final dampbe format
-<ul>
-<li>&hellip; or just rewrite keeper to use pb &hellip;</li>
-</ul>
-</li>
-<li>add/switch/use tags</li>
-<li>can i do multi-doc?</li>
-<li><input disabled="" type="checkbox"> make pb save/load to palyml
-<ul>
-<li>cycles</li>
-<li>nulls</li>
-<li>use tags</li>
-<li>have &ldquo;wrong&rdquo; tags</li>
-<li>have extra data</li>
-<li>guid/lookup</li>
-</ul>
-</li>
-<li>consider soak tests?</li>
-</ul>
+<p>just do repacking</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">header</span>:
+  <span style="color:#f92672">root</span>: { <span style="color:#ae81ff">guid }</span>
+<span style="color:#f92672">packed</span>:
+  { <span style="color:#f92672">guid }</span>: !<span style="color:#ae81ff">class</span>
+    <span style="color:#f92672">key</span>: <span style="color:#ae81ff">val</span>
+    <span style="color:#f92672">ref_to_local_object</span>: <span style="color:#ae81ff">guid</span>
+    <span style="color:#f92672">something_that_is_foreign</span>: !<span style="color:#ae81ff">guid guid</span>
+  { <span style="color:#f92672">guid2 }</span>: <span style="color:#ae81ff">...</span>
+</code></pre></div><p>i&rsquo;d like to do this in palyml this time</p>
 <h2 id="pb---more">pb - more</h2>
 <ul>
 <li>pbentt; whatever for components
@@ -173,117 +205,161 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-<h2 id="test-qfys">test qfys</h2>
-<p>add/expose/do a <code>p_test_qfys()</code> macro/fixture that &hellip;</p>
+<h2 id="blog">blog</h2>
 <ul>
-<li>mounts <code>__FILE__ / test_name /</code> as a RO filesystem</li>
-<li>adds <code>__FILE__.(*.*)</code> as <code>/(*.*)</code></li>
-<li>layers an RW in-memory overlay on-top</li>
+<li>finish slide-cast about fips</li>
+<li>write pycode post or slide-cast</li>
+<li>nival post or something</li>
+<li>forgejo local actions post</li>
 </ul>
-<p>&hellip; and the update palyml&rsquo;s tests to use that</p>
-<h2 id="pal-et-al-ci--gcc">pal-et-al CI / GCC</h2>
-<p>want/need CI again</p>
+<h2 id="spood-sshd">spood sshd</h2>
+<p>allow push-to-spood</p>
 <ul>
-<li>get GCC open and see what&rsquo;s what with templates</li>
-<li>it&rsquo;s an odd headache</li>
-<li>see if the semicolons can be swapped for //</li>
-<li>&hellip; heeyyy &hellip; can i use remote-containers on Neo?
+<li>need locks</li>
+<li>simple sshd server</li>
+<li>on push git
 <ul>
-<li>&hellip; will this be ANOTHER verb?</li>
+<li>check key/project</li>
+<li>forward to codeberg on spood&rsquo;s key</li>
 </ul>
 </li>
-<li>get / setup Clang and GCC linux images/containers</li>
-<li>possibly a docker/whatnot to build-on-neo</li>
-<li>run the fips-libs pytest verb for deck (et al)</li>
+<li>on push hg
+<ul>
+<li>check key/project</li>
+<li>forward to sr.ht on spood&rsquo;s key</li>
+<li>at exit; launch a synch thread</li>
+</ul>
+</li>
+</ul>
+<h2 id="spood-webhooks">spood webhooks</h2>
+<ul>
+<li>get/check spood file locking</li>
+<li>do webhooks from sr.ht</li>
+</ul>
+<h3 id="locking">locking?</h3>
+<ul>
+<li>use one lock file for the config.yaml</li>
+<li>use another for the projects</li>
+</ul>
+<p>&hellip; so what&rsquo;s the python API?</p>
+<h3 id="webhooks">webhooks</h3>
+<h4 id="test-of-web">test of web</h4>
+<ul>
+<li>make python web server; just log requests to file</li>
+<li>make it public</li>
+<li>configure sr.ht to point to the service and push some things</li>
+<li>check we/i got messages for;
+<ul>
+<li>new repo</li>
+<li>push</li>
+</ul>
+</li>
+</ul>
+<h4 id="test-parsing">test parsing</h4>
+<ul>
+<li>make/write unit tests to analyze whatever sr.ht is giving us for the params</li>
+</ul>
+<h4 id="wire-it-up">wire it up</h4>
+<ul>
+<li>when receive event</li>
+<li>check who sent it</li>
+<li>translate who/wat it is</li>
+<li>invoke the cron job (manually)</li>
+</ul>
+<h2 id="spood-import">spood import</h2>
+<p>import git changes into current branch as a tool</p>
+<ul>
+<li>hg-git import from a git repo, then peel off any git revs
+<ul>
+<li>that don&rsquo;t have a hg-branch note</li>
+<li>and don&rsquo;t only descend from the current branch</li>
+</ul>
+</li>
+<li>rename any only-gits</li>
+<li>add a nonsense hg commit at the end, if we can, to solidify the branch name</li>
+</ul>
+<h2 id="pepp">pepp</h2>
+<p>get the standalone to compile/build the headers</p>
+<p>do something based on the code above (i guess?)</p>
+<p>don&rsquo;t worry about offside rules</p>
+<pre><code>let '[' a ']' = 'std::list&lt;' a '&gt;'
+
+trait damphe&lt;type T&gt;(self: &amp;T) {
+  def save&lt;type V&gt;($pal::guid, object: &amp;V): !yaml::doc {
+    val todo: [ fun&lt;void&gt; ]
+    val document: !yaml::doc = (!yaml::doc)::pass(new yaml::doc())
+
+    inhume(guid, document, todo, object)
+
+    while !todo.empty() {
+      todo.pull()()
+    }
+
+    return document
+  }
+
+  def load&lt;type V&gt;($yaml::doc, $guid, &amp;object): !yaml::doc {
+    ???
+  }
+
+  def T::guidof($yaml::doc, $guid, type_t, type_t, *void): !?(guid|(guid, guid))
+  def T::lookup($yaml::doc, $guid, type_t, type_t, (guid|(guid, guid))): !?*void
+
+  private def inhume&lt;type V&gt;($pal::guid, todo: &amp;[fun&lt;void&gt;], &amp;!yaml::doc, object: &amp;V): void {
+    struct {
+      val node = yaml::node::new_obj()
+
+      pb::bind&lt;V&gt;(this)
+
+      def pb_method&lt;R, A...&gt;() ...
+
+      def pb_field&lt;F&gt;(const char*, get: (&amp;V): !&amp;F, set: (&amp;V, F): !void)
+          &amp;val = get(object)
+          if F::is_atomic || yaml
+              node.put(name, val)
+          else:
+              guid = guidof(val)
+              node.put(name, guid)
+              todo += [val, guid]
+              {
+                  if guid in doc
+                      return - we're already done
+
+                  inhume(guid, todo, doc, val)
+
+              }
+          
+      }
+  }
+}
+</code></pre><h2 id="nival">nival</h2>
+<ul>
+<li>
+<p>csv files &hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">problem <span style="color:#f92672">=</span> <span style="color:#f92672">...</span>
+
+<span style="color:#a6e22e">@problem</span><span style="color:#f92672">.</span>csv(path_to_csv)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">yield_cat_for_row</span>(col1, col2, colr3)
+    <span style="color:#66d9ef">yield</span> <span style="color:#f92672">...</span> <span style="color:#75715e"># one row</span>
+</code></pre></div></li>
+<li>
+<p>only work for .solver() and only solve for those</p>
+</li>
+<li>
+<p>database creator</p>
+<ul>
+<li>&hellip; see the demographics example &hellip;</li>
+</ul>
+</li>
+<li>
+<p>improve the solver</p>
+</li>
 </ul>
 <h2 id="pal--etry--type_t--stream-separate">pal / etry / type_t / stream separate</h2>
 <ul>
 <li>? see if <code>pal::etry</code> can be spun-out to a leaf project independent of pal</li>
 <li>do it for type_t and stream too</li>
 <li>push through to make downstream projects less &ldquo;depend on everything&rdquo;</li>
-</ul>
-<h2 id="pre-commit-check-method-for-hg">pre-commit check method for hg</h2>
-<ul>
-<li>
-<p>prek also won&rsquo;t work outside of git &hellip; yaayyy &hellip;</p>
-</li>
-<li>
-<p>reverse engineer what&rsquo;s actually happening &hellip;</p>
-</li>
-<li>
-<p>like &hellip;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">-  <span style="color:#f92672">repo</span>:  <span style="color:#ae81ff">https://github.com/astral-sh/ruff-pre-commit</span>
-      <span style="color:#f92672">rev</span>:  <span style="color:#ae81ff">v0.16.7</span>
-      <span style="color:#f92672">hooks</span>:
-          -  <span style="color:#f92672">id</span>:  <span style="color:#ae81ff">ruff</span>
-              <span style="color:#f92672">args</span>:  [--<span style="color:#ae81ff">fix]</span>
-          -  <span style="color:#f92672">id</span>:  <span style="color:#ae81ff">ruff-format</span>
-</code></pre></div></li>
-<li>
-<p>&hellip; so &hellip; just git clone {repo} / uv add {repo} then uv-run ruff?</p>
-</li>
-<li>
-<p>so something i can <code>uvx  prec</code> and it&rsquo;ll install hooks</p>
-</li>
-<li>
-<p>stash/shelve changes <a href="https://mercurial-scm.org/help/commands/shelve">https://mercurial-scm.org/help/commands/shelve</a></p>
-</li>
-<li>
-<p>run code on the commit</p>
-</li>
-<li>
-<p>check if it changed antyhing</p>
-<ul>
-<li>got changes
-<ul>
-<li>revert changes done by hook</li>
-<li>unshelve stash</li>
-<li>reject commit</li>
-</ul>
-</li>
-<li>no changes
-<ul>
-<li>unshelve stash</li>
-<li>accept commit</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>get it going in spood</p>
-</li>
-<li>
-<p>&hellip; then fips-deck and pal?</p>
-</li>
-<li>
-<p>remove verbs/prec</p>
-</li>
-<li>
-<p><a href="https://codeberg.org/paintgoblin/fips-deck/src/branch/default/fips-files/verbs/prec.py">https://codeberg.org/paintgoblin/fips-deck/src/branch/default/fips-files/verbs/prec.py</a></p>
-</li>
-<li>
-<p>verb to install a pre-hook?</p>
-</li>
-<li>
-<p>&hellip; for git and hg!</p>
-</li>
-<li>
-<p>&hellip; and into all deps via the dag-traverse thing</p>
-<ul>
-<li>&hellip; so pre-commit it recurs onto all repos &hellip;</li>
-</ul>
-</li>
-<li>
-<p>&hellip; and snowball pre-commit-hooks.yaml from parents up to us</p>
-<ul>
-<li>so need a dag-tree!</li>
-</ul>
-</li>
-</ul>
-<h2 id="blog">blog</h2>
-<ul>
-<li>finish slide-cast about fips</li>
-<li>write pycode post or slide-cast</li>
 </ul>
 <h2 id="pycode">pycode</h2>
 <ul>
@@ -296,21 +372,6 @@ if (!doNotTrack) {
 <li>&hellip; so &hellip; so pycode could buildup my big bad extension lib?</li>
 </ul>
 </li>
-</ul>
-<h2 id="container-images">container images</h2>
-<ul>
-<li>grow up and setup docker cross platform builds</li>
-<li>build fips containers for (arm64|amd64)-(linux-(gcc|clang)|darwin|msvc|raspbian)</li>
-<li>see if it can work on provous for windows builds</li>
-<li>consider a mac host</li>
-</ul>
-<h2 id="tuff">tuff</h2>
-<ul>
-<li>build a pre-commit task</li>
-<li>use sql-glot rather than &hellip; whatever i&rsquo;ve been doing</li>
-<li>integrate python linters and formatters</li>
-<li>&hellip; or consider VSCode extension</li>
-<li>allow/do &ldquo;live mode&rdquo; versions</li>
 </ul>
 <h2 id="spood">spood</h2>
 <ul>
@@ -342,6 +403,10 @@ if (!doNotTrack) {
 <li>draw 3d cube on enabled objects</li>
 <li>move/save/load that component as normal</li>
 <li>possibly do a dumb eel-pit impl</li>
+</ul>
+<h2 id="sd-plg--rg">sd plg / rg</h2>
+<ul>
+<li>try the decorator/problem approach</li>
 </ul>
 <h2 id="sd-models">sd models</h2>
 <ul>
