@@ -11,7 +11,7 @@
 		<meta property="og:title" content=".plaan" />
 <meta property="og:description" content=".plan This is a plan to &ldquo;keep me honest&rdquo; with the for-fun projects and stay on task.
 &hellip; obviously; it&rsquo;s not what I do for a day job &hellip; that&rsquo;s always been under NDA like stuff &hellip;
- pb is the big deal - and it&rsquo;s stressing me out a lot of this relates to that, but, i&rsquo;ve been trying to avoid getting bogged down eel_pit and recook are the end-goals but i&rsquo;m not there yet  pal / dekact  verb to check/merge workflows  ." />
+ pb is the big deal - and it&rsquo;s stressing me out a lot of this relates to that, but, i&rsquo;ve been trying to avoid getting bogged down eel_pit and recook are the end-goals but i&rsquo;m not there yet  pal / dekact  verb to check/merge workflows  uvpal  merge this into pal  versions  tag with fi{date} when ci passes for pal  ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://peterlavalle.github.io/plaan/" /><meta property="article:section" content="" />
 <meta property="article:published_time" content="2026-11-22T00:00:00+00:00" />
@@ -110,9 +110,18 @@ if (!doNotTrack) {
 <li>a lot of this relates to that, but, i&rsquo;ve been trying to avoid getting bogged down</li>
 <li>eel_pit and recook are the end-goals but i&rsquo;m not there yet</li>
 </ul>
-<h2 id="pal--dekact">pal / dekact</h2>
+<h2 id="pal-">pal /</h2>
+<h3 id="dekact">dekact</h3>
 <ul>
 <li>verb to check/merge workflows</li>
+</ul>
+<h3 id="uvpal">uvpal</h3>
+<ul>
+<li>merge this into pal</li>
+</ul>
+<h3 id="versions">versions</h3>
+<ul>
+<li>tag with fi{date} when ci passes for pal</li>
 </ul>
 <h2 id="plan-issues">.plan issues</h2>
 <p>something like; <a href="https://codeberg.org/api/v1/users/paintgoblin/repos?limit=50">https://codeberg.org/api/v1/users/paintgoblin/repos?limit=50</a></p>
@@ -215,7 +224,11 @@ assume matching project names and allow key:val usernames</p>
 <h2 id="spood-sshd">spood sshd</h2>
 <p>allow push-to-spood</p>
 <ul>
-<li>need locks</li>
+<li>need locks
+<ul>
+<li>use uvpal/pal</li>
+</ul>
+</li>
 <li>simple sshd server</li>
 <li>on push git
 <ul>
@@ -233,15 +246,13 @@ assume matching project names and allow key:val usernames</p>
 </ul>
 <h2 id="spood-webhooks">spood webhooks</h2>
 <ul>
-<li>get/check spood file locking</li>
+<li>get/check spood file locking
+<ul>
+<li>use uvpal/pal</li>
+</ul>
+</li>
 <li>do webhooks from sr.ht</li>
 </ul>
-<h3 id="locking">locking?</h3>
-<ul>
-<li>use one lock file for the config.yaml</li>
-<li>use another for the projects</li>
-</ul>
-<p>&hellip; so what&rsquo;s the python API?</p>
 <h3 id="webhooks">webhooks</h3>
 <h4 id="test-of-web">test of web</h4>
 <ul>
@@ -375,11 +386,9 @@ trait damphe&lt;type T&gt;(self: &amp;T) {
 </ul>
 <h2 id="spood">spood</h2>
 <ul>
-<li>locking - per-repo locking</li>
-<li>import git commits (somehow?)
+<li>locking - per-repo locking
 <ul>
-<li>try it with an isolated setup and a single project</li>
-<li>see if import/amend-commit/loop works</li>
+<li>use uvpal/pal</li>
 </ul>
 </li>
 <li>find/delete &ldquo;included&rdquo; git branches</li>
@@ -413,10 +422,54 @@ trait damphe&lt;type T&gt;(self: &amp;T) {
 <li>load models somehow?</li>
 <li>bake-in assimp imported assets?</li>
 </ul>
-<h2 id="r-pythontranscrypt-to-duktapec-or-spy">r-python/transcrypt to duktape/c or spy</h2>
+<h2 id="transcrypt-to-duktape">transcrypt to duktape</h2>
+<p>should be viable</p>
+<p>do a feasability test first</p>
+<p>build a uvx tool</p>
 <ul>
-<li>all should be viable</li>
-<li>really - this is another dalliance</li>
+<li>build .py files into js</li>
+<li>downgrade/rewrite to be common-js / es5.1</li>
+<li>create/update a <code>.yaml</code> doc with/of them</li>
+<li>make a pbd loader</li>
+<li>create/do a <code>.yab</code> thing?</li>
+</ul>
+<h2 id="palyml-yab">palyml yab</h2>
+<ul>
+<li>binary format
+<ul>
+<li>header</li>
+<li>{int24 index : string pool}</li>
+<li>nodes (recursive)
+<ul>
+<li>type
+<ul>
+<li>0 null</li>
+<li>1 string</li>
+<li>2 map + count + [(keys, vals)]</li>
+<li>3 seq + count + [entries]</li>
+<li>4 bool</li>
+<li>5 int8</li>
+<li>6 int16</li>
+<li>7 int (in constant pool as text)</li>
+<li>8 number (in constant pool as text)</li>
+<li>9 tag (in const pool as text) non-tagged</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>write c++ loader/writer in #ifdef</li>
+<li>write python loader/writer
+<ul>
+<li>&hellip; and get repo tagging and usable as a uv/pip dep</li>
+</ul>
+</li>
+</ul>
+<h2 id="spy--small-python">spy / small python</h2>
+<ul>
+<li><a href="https://github.com/soasme/small-python/">https://github.com/soasme/small-python/</a></li>
+<li>try this out with pb (just a little)</li>
 </ul>
 <h2 id="sd-pure">sd pure</h2>
 <ul>

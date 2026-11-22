@@ -10,7 +10,8 @@
 	<meta name="description" content="">
 		<meta property="og:title" content="forgejo Runner (again)" />
 <meta property="og:description" content="Notes on how to add a runner to your forgejo instance.
-(Will probably work with CodeBerg)" />
+(Will probably work with CodeBerg)
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://peterlavalle.github.io/post/forgejo-runner/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2026-03-19T00:00:00+00:00" />
@@ -103,7 +104,10 @@ if (!doNotTrack) {
 				<h1 class="entry__title">forgejo Runner (again)</h1>
 				<div class="entry__content"><p>Notes on how to add a runner to your forgejo instance.
 (Will probably work with CodeBerg)</p>
-<hr>
+<h2 id="heading"></h2>
+<blockquote>
+<p><a href="/post/forgejo-runner/">READ THIS NEWER POST - IT&rsquo;S BETTER</a></p>
+</blockquote>
 <p>I have developed a <a href="http://floooh.github.io/fips/">fips</a> plugin that makes CI for C++ easy &hellip; for me anyway.
 I&rsquo;m now awaiting CI completion before I can merge &hellip; because I always test before merging!
 So, naturally, here&rsquo;s a guide for future me to add another Foregjo Runner to my setup.</p>
@@ -186,7 +190,7 @@ I do know that <code>:latest</code> seemed to be missing &hellip; which is weird
 </span><span style="color:#ae81ff"></span> -v /var/run/docker.sock:/var/run/docker.sock <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>  -v ~/daz1_2.volume:/data <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span> code.forgejo.org/forgejo/runner:11 <span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span>  forgejo-runner register 
+</span><span style="color:#ae81ff"></span>  forgejo-runner register
 </code></pre></div><p>You can see;</p>
 <ul>
 <li>it&rsquo;s interactive, and discards on exit
@@ -207,7 +211,7 @@ I do know that <code>:latest</code> seemed to be missing &hellip; which is weird
 <li>the runner&rsquo;s name; you know it!</li>
 </ul>
 <p>&hellip; and at the end you should see some more messages ending with &hellip;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">DEBU Successfully pinged the Forgejo instance server 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">DEBU Successfully pinged the Forgejo instance server
 INFO Runner registered successfully.
 </code></pre></div><p>&hellip; which means you won!
 So the next/last step is to actually start the runner.</p>
